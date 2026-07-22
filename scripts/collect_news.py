@@ -18,6 +18,20 @@ KBS_SEARCH_URLS=[
  "https://www.kbs.co.kr/m/search/replay.html?keyword=%EB%8F%99%ED%96%89",
 ]
 DISASTER_DAYS=30
+NGO_DAYS=30
+NGO_KEYWORDS=[
+ "NGO","비정부기구","모금","후원","후원금","기부","기부금","나눔","캠페인","구호",
+ "긴급구호","긴급지원","인도적 지원","지원사업","아동지원","취약계층","국제개발협력",
+ "현지사업","봉사","배분사업","공모사업","사업성과","후원자","정기후원"
+]
+NGO_SOURCES=[
+ {"name":"월드비전","domains":["worldvision.or.kr"],"pages":["https://www.worldvision.or.kr/informationCenter/story"]},
+ {"name":"굿네이버스","domains":["goodneighbors.kr"],"pages":["https://www.goodneighbors.kr/story/gnnews"]},
+ {"name":"유니세프한국위원회","domains":["unicef.or.kr"],"pages":["https://www.unicef.or.kr/what-we-do/news/"]},
+ {"name":"대한적십자사","domains":["redcross.or.kr"],"pages":["https://www.redcross.or.kr/news/news_press.do"]},
+ {"name":"세이브더칠드런","domains":["sc.or.kr"],"pages":["https://www.sc.or.kr/news/noticeList.do"]},
+ {"name":"초록우산","domains":["childfund.or.kr"],"pages":["https://www.childfund.or.kr/news/pressList.do"]},
+]
 KR_DISASTER_KEYWORDS=[
  "재난","재해","산불","화재","홍수","침수","범람","지진","태풍","호우","집중호우",
  "산사태","폭염","대설","한파","강풍","붕괴","폭발","대피","인명피해",
@@ -53,7 +67,6 @@ SOURCES=[
  ("csr","csr","기업 사회공헌 사례 ESG 기부 트렌드 사회적가치",[]),
  ("disaster","disaster_kr","국내 재난 발생 산불 홍수 지진 태풍 피해",[ "mois.go.kr","kma.go.kr","nfa.go.kr"]),
  ("disaster","disaster_global","해외 재난 발생 earthquake flood wildfire typhoon humanitarian",[ "reliefweb.int","gdacs.org","unocha.org"]),
- ("ngo","ngo","NGO 모금 캠페인 사업 사례 구호 월드비전 굿네이버스 유니세프",[]),
  ("kbs","kbs_donghaeng",'"KBS 동행" 프로그램 OR "동행" 후원',[ "kbs.co.kr"]),
 ]
 SUB_LABELS={
@@ -70,7 +83,7 @@ KEYS={
  "csr":["사회공헌","ESG","기부","사회적 가치","지속가능"],
  "disaster_kr":KR_DISASTER_KEYWORDS,
  "disaster_global":GLOBAL_DISASTER_KEYWORDS,
- "ngo":["NGO","모금","캠페인","구호","지원사업"],
+ "ngo":NGO_KEYWORDS,
  "kbs_donghaeng":["동행","후원"]
 }
 
@@ -223,6 +236,63 @@ def keep_recent_disasters(old_items,days=DISASTER_DAYS):
   if stamp>=cutoff: kept.append(item)
  return kept
 
+def ngo_item(title,url,context,published_at,source,source_type):
+ title=clean(title); context=clean(context)
+ if not title or not url or not published_at: return None
+ text=(title+" "+context).lower()
+ matched=[k for k in NGO_KEYWORDS if k.lower() in text]
+ if not matched: return None
+ return {
+  "id":"","category":"ngo","subcategory":"ngo","subcategory_label":SUB_LABELS["ngo"],
+  "title":title,"summary":context[:360] or title,"source":source,"url":url,
+  "published_at":published_at,"keywords":matched[:6],"priority":min(5,2+min(3,len(matched)//2)),
+  "ai_analyzed":False,"insight":"","trend_tags":[],"confidence":"공식 NGO 자료" if "공식" in source_type else "원문 확인 필요",
+  "source_type":source_type,"final_source":source,"verification_url":url
+ }
+
+def is_official_ngo(url,domains):
+ host=urlparse(url).netloc.lower().split(":")[0]
+ return any(host==d or host.endswith("."+d) for d in domains)
+
+def collect_ngo_official():
+ out=[]; errors=[]
+ for ngo in NGO_SOURCES:
+  for page_url in ngo["pages"]:
+   try:
+    doc=fetch(page_url).decode("utf-8","replace"); seen=set()
+    for m in re.finditer(r'<a\\b[^>]*href=["\\']([^"\\']+)["\\'][^>]*>(.*?)</a>',doc,re.I|re.S):
+     url=urljoin(page_url,html.unescape(m.group(1)))
+     if not is_official_ngo(url,ngo["domains"]) or url in seen: continue
+     title=clean(m.group(2))
+     context=clean(doc[max(0,m.start()-500):min(len(doc),m.end()+500)])
+     stamp=parse_date_flexible(context)
+     item=ngo_item(title,url,context,stamp,ngo["name"],"NGO 공식 홈페이지 직접수집")
+     if item: seen.add(url); out.append(item)
+   except Exception as e:
+    errors.append({"source":"NGO 공식 "+ngo["name"],"error":str(e)[:160]})
+ return out,errors
+
+def collect_ngo_google():
+ out=[]; errors=[]
+ activity='("모금" OR "후원" OR "기부" OR "캠페인" OR "긴급구호" OR "지원사업" OR "아동지원" OR "국제개발협력" OR "사업성과")'
+ for ngo in NGO_SOURCES:
+  domains=" OR ".join("site:"+d for d in ngo["domains"])
+  query='"'+ngo["name"]+'" '+activity+" OR ("+domains+") "+activity
+  try: out+=parse_rss(fetch(google_rss(query)),"ngo","ngo")
+  except Exception as e: errors.append({"source":"NGO Google 뉴스 "+ngo["name"],"error":str(e)[:160]})
+ return out,errors
+
+def keep_recent_ngo(old_items,days=NGO_DAYS):
+ cutoff=datetime.now(timezone.utc)-timedelta(days=days); kept=[]
+ for item in old_items:
+  if item.get("category")!="ngo": continue
+  try:
+   stamp=datetime.fromisoformat(item.get("published_at","").replace("Z","+00:00"))
+   if stamp.tzinfo is None: stamp=stamp.replace(tzinfo=timezone.utc)
+  except Exception: continue
+  if stamp>=cutoff: kept.append(item)
+ return kept
+
 def is_official_kbs(url):
  host=urlparse(url).netloc.lower().split(":")[0]
  return host=="kbs.co.kr" or host.endswith(".kbs.co.kr")
@@ -367,6 +437,13 @@ def main():
   full=q+(" ("+" OR ".join("site:"+d for d in domains)+")" if domains else "")
   try: items+=parse_rss(fetch(google_rss(full)),cat,sub)
   except Exception as e: errors.append({"source":sub,"error":str(e)[:160]})
+ # NGO 공식 홈페이지는 주 수집원, 기관별 OR 검색 Google 뉴스는 보조 수집원이다.
+ ngo_official,ngo_official_errors=collect_ngo_official()
+ ngo_google,ngo_google_errors=collect_ngo_google()
+ items+=ngo_official+ngo_google
+ errors+=ngo_official_errors+ngo_google_errors
+ # 개별 기관 실패나 신규 게시물 부재와 관계없이 기존 NGO 자료는 게시일 기준 30일 유지한다.
+ items+=keep_recent_ngo(old.get("items",[]),NGO_DAYS)
  # 국내·해외 공식 재해 수집은 서로 독립 실행하며 Google 뉴스 RSS는 보조 경로다.
  kr_disasters,kr_errors=collect_kr_official()
  global_disasters,global_errors=collect_global_official()
