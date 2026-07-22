@@ -2736,29 +2736,6 @@
       "verification_url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE12TTJhZDhQR240MXAwOS0tQ1FQekhXbklPajNMUTdCRTdMOFJnNWd3Q0VNaVdaUHUyeTYxYWdDTzNGb2lXOXdIU1Q3cFY5WUpqQTdDbk5LckpZZ2pncEpUUVg3cTRKUQ?oc=5"
     },
     {
-      "id": "4a8ccc3b2cea20c692",
-      "category": "disaster",
-      "subcategory": "disaster_global",
-      "subcategory_label": "해외 재해",
-      "title": "Orange earthquake (Magnitude 5.5M, Depth:10km) in Peru 19/07/2026 02:24 UTC, 240 thousand (in MMI>=VII).",
-      "summary": "On 7/19/2026 2:24:35 AM, an earthquake occurred in Peru potentially affecting 240 thousand (in MMI>=VII). The earthquake had Magnitude 5.5M, Depth:10km.",
-      "source": "GDACS",
-      "url": "https://www.gdacs.org/report.aspx?eventtype=EQ&eventid=1552752",
-      "published_at": "2026-07-19T02:42:14+00:00",
-      "keywords": [
-        "earthquake"
-      ],
-      "priority": 3,
-      "ai_analyzed": false,
-      "insight": "",
-      "trend_tags": [],
-      "confidence": "공식기관 자료",
-      "source_type": "해외 공식 재난경보",
-      "final_source": "GDACS",
-      "verification_url": "https://www.gdacs.org/report.aspx?eventtype=EQ&eventid=1552752",
-      "gdacs_score": 1.93224355119598
-    },
-    {
       "id": "cb7e70e7c79f576a12",
       "category": "disaster",
       "subcategory": "disaster_global",
@@ -3823,29 +3800,6 @@
       "verification_url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t0d0"
     },
     {
-      "id": "e3c02c720acccc1da8",
-      "category": "disaster",
-      "subcategory": "disaster_global",
-      "subcategory_label": "해외 재해",
-      "title": "Drought is on going in Kazakhstan",
-      "summary": "The Drought notification level is Green.",
-      "source": "GDACS",
-      "url": "https://www.gdacs.org/report.aspx?eventtype=DR&eventid=1027491",
-      "published_at": "2026-07-14T14:07:56+00:00",
-      "keywords": [
-        "drought"
-      ],
-      "priority": 3,
-      "ai_analyzed": false,
-      "insight": "",
-      "trend_tags": [],
-      "confidence": "공식기관 자료",
-      "source_type": "해외 공식 재난경보",
-      "final_source": "GDACS",
-      "verification_url": "https://www.gdacs.org/report.aspx?eventtype=DR&eventid=1027491",
-      "gdacs_score": 1
-    },
-    {
       "id": "ea3073c813c91ff261",
       "category": "ngo",
       "subcategory": "ngo",
@@ -4116,98 +4070,6 @@
       "source_type": "KBS 공식 회차·방송정보",
       "final_source": "KBS",
       "verification_url": "https://vod.kbs.co.kr/m/index.html?program_code=T2014-0877&program_id=PS-2026112094-01-000&section_code=05&sname=vod&source=episode&stype=vod"
-    },
-    {
-      "id": "c289b757bfb3a59149",
-      "category": "disaster",
-      "subcategory": "disaster_global",
-      "subcategory_label": "해외 재해",
-      "title": "Drought is on going in Ethiopia, Kenya, Somalia",
-      "summary": "The Drought notification level is Orange.",
-      "source": "GDACS",
-      "url": "https://www.gdacs.org/report.aspx?eventtype=DR&eventid=1027450",
-      "published_at": "2026-07-03T12:57:44+00:00",
-      "keywords": [
-        "drought"
-      ],
-      "priority": 3,
-      "ai_analyzed": false,
-      "insight": "",
-      "trend_tags": [],
-      "confidence": "공식기관 자료",
-      "source_type": "해외 공식 재난경보",
-      "final_source": "GDACS",
-      "verification_url": "https://www.gdacs.org/report.aspx?eventtype=DR&eventid=1027450",
-      "gdacs_score": 2
-    },
-    {
-      "id": "13229776b042eeed9a",
-      "category": "disaster",
-      "subcategory": "disaster_global",
-      "subcategory_label": "해외 재해",
-      "title": "Drought is on going in Costa Rica, Honduras, Nicaragua, El Salvador",
-      "summary": "The Drought notification level is Green.",
-      "source": "GDACS",
-      "url": "https://www.gdacs.org/report.aspx?eventtype=DR&eventid=1027449",
-      "published_at": "2026-07-03T12:57:40+00:00",
-      "keywords": [
-        "drought"
-      ],
-      "priority": 3,
-      "ai_analyzed": false,
-      "insight": "",
-      "trend_tags": [],
-      "confidence": "공식기관 자료",
-      "source_type": "해외 공식 재난경보",
-      "final_source": "GDACS",
-      "verification_url": "https://www.gdacs.org/report.aspx?eventtype=DR&eventid=1027449",
-      "gdacs_score": 1
-    },
-    {
-      "id": "552ac0bab32e9cddc9",
-      "category": "disaster",
-      "subcategory": "disaster_global",
-      "subcategory_label": "해외 재해",
-      "title": "Drought is on going in Colombia, , Ecuador, Panama, Venezuela",
-      "summary": "The Drought notification level is Green.",
-      "source": "GDACS",
-      "url": "https://www.gdacs.org/report.aspx?eventtype=DR&eventid=1023877",
-      "published_at": "2026-07-03T12:57:35+00:00",
-      "keywords": [
-        "drought"
-      ],
-      "priority": 3,
-      "ai_analyzed": false,
-      "insight": "",
-      "trend_tags": [],
-      "confidence": "공식기관 자료",
-      "source_type": "해외 공식 재난경보",
-      "final_source": "GDACS",
-      "verification_url": "https://www.gdacs.org/report.aspx?eventtype=DR&eventid=1023877",
-      "gdacs_score": 1
-    },
-    {
-      "id": "9a51734f8548e337c4",
-      "category": "disaster",
-      "subcategory": "disaster_global",
-      "subcategory_label": "해외 재해",
-      "title": "Drought is on going in Brazil",
-      "summary": "The Drought notification level is Green.",
-      "source": "GDACS",
-      "url": "https://www.gdacs.org/report.aspx?eventtype=DR&eventid=1027448",
-      "published_at": "2026-07-03T12:57:24+00:00",
-      "keywords": [
-        "drought"
-      ],
-      "priority": 3,
-      "ai_analyzed": false,
-      "insight": "",
-      "trend_tags": [],
-      "confidence": "공식기관 자료",
-      "source_type": "해외 공식 재난경보",
-      "final_source": "GDACS",
-      "verification_url": "https://www.gdacs.org/report.aspx?eventtype=DR&eventid=1027448",
-      "gdacs_score": 1
     },
     {
       "id": "64c24e9ded85d5020b",
@@ -4587,75 +4449,6 @@
       "verification_url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTFA1STZpS2ktSnExTW1DamRlU0tGS1ZJZzhDRVNEQTZVLWw4bWpTdHZaMjlKTWZ6dkhUU05ta1RxN1hfMVhIQmc?oc=5"
     },
     {
-      "id": "f175ca2b6dded259cb",
-      "category": "disaster",
-      "subcategory": "disaster_global",
-      "subcategory_label": "해외 재해",
-      "title": "Drought is on going in Australia, Indonesia, Cambodia, Laos, Papua New Guinea, Philippines, Thailand, Vietnam",
-      "summary": "The Drought notification level is Green.",
-      "source": "GDACS",
-      "url": "https://www.gdacs.org/report.aspx?eventtype=DR&eventid=1018545",
-      "published_at": "2026-04-30T13:07:47+00:00",
-      "keywords": [
-        "drought"
-      ],
-      "priority": 3,
-      "ai_analyzed": false,
-      "insight": "",
-      "trend_tags": [],
-      "confidence": "공식기관 자료",
-      "source_type": "해외 공식 재난경보",
-      "final_source": "GDACS",
-      "verification_url": "https://www.gdacs.org/report.aspx?eventtype=DR&eventid=1018545",
-      "gdacs_score": 1
-    },
-    {
-      "id": "23c7426e18872499ac",
-      "category": "disaster",
-      "subcategory": "disaster_global",
-      "subcategory_label": "해외 재해",
-      "title": "Drought is on going in Canada, United States",
-      "summary": "The Drought notification level is Green.",
-      "source": "GDACS",
-      "url": "https://www.gdacs.org/report.aspx?eventtype=DR&eventid=1018546",
-      "published_at": "2026-04-30T13:07:44+00:00",
-      "keywords": [
-        "drought"
-      ],
-      "priority": 3,
-      "ai_analyzed": false,
-      "insight": "",
-      "trend_tags": [],
-      "confidence": "공식기관 자료",
-      "source_type": "해외 공식 재난경보",
-      "final_source": "GDACS",
-      "verification_url": "https://www.gdacs.org/report.aspx?eventtype=DR&eventid=1018546",
-      "gdacs_score": 1
-    },
-    {
-      "id": "656bdc0e11a52f4262",
-      "category": "disaster",
-      "subcategory": "disaster_global",
-      "subcategory_label": "해외 재해",
-      "title": "Drought is on going in Madagascar",
-      "summary": "The Drought notification level is Orange.",
-      "source": "GDACS",
-      "url": "https://www.gdacs.org/report.aspx?eventtype=DR&eventid=1018431",
-      "published_at": "2026-04-30T13:07:35+00:00",
-      "keywords": [
-        "drought"
-      ],
-      "priority": 3,
-      "ai_analyzed": false,
-      "insight": "",
-      "trend_tags": [],
-      "confidence": "공식기관 자료",
-      "source_type": "해외 공식 재난경보",
-      "final_source": "GDACS",
-      "verification_url": "https://www.gdacs.org/report.aspx?eventtype=DR&eventid=1018431",
-      "gdacs_score": 2
-    },
-    {
       "id": "7ede9f30fd9d907832",
       "category": "ngo",
       "subcategory": "ngo",
@@ -4676,52 +4469,6 @@
       "source_type": "NGO 공식 홈페이지 직접수집",
       "final_source": "초록우산",
       "verification_url": "https://www.childfund.or.kr/contents/greenList.do?pageNo=1&categoryCd=#reportReview"
-    },
-    {
-      "id": "bb0108252d295789e9",
-      "category": "disaster",
-      "subcategory": "disaster_global",
-      "subcategory_label": "해외 재해",
-      "title": "Drought is on going in Albania, Austria, Bosnia & Herzegovina, Bulgaria, Belarus, Switzerland, Czech Republic, Germany, Denmark, Spain, France, Croatia, Hungary, Italy, Liechtenstein, Monaco, Montenegro, The Republic of North Macedonia, Poland, Romania, Serbia, Russia, Sweden, Slovakia, San Marino, Ukraine, ,",
-      "summary": "The Drought notification level is Orange.",
-      "source": "GDACS",
-      "url": "https://www.gdacs.org/report.aspx?eventtype=DR&eventid=1018332",
-      "published_at": "2026-02-11T09:57:31+00:00",
-      "keywords": [
-        "drought"
-      ],
-      "priority": 3,
-      "ai_analyzed": false,
-      "insight": "",
-      "trend_tags": [],
-      "confidence": "공식기관 자료",
-      "source_type": "해외 공식 재난경보",
-      "final_source": "GDACS",
-      "verification_url": "https://www.gdacs.org/report.aspx?eventtype=DR&eventid=1018332",
-      "gdacs_score": 2
-    },
-    {
-      "id": "3f5f5150f292ff5e6e",
-      "category": "disaster",
-      "subcategory": "disaster_global",
-      "subcategory_label": "해외 재해",
-      "title": "Drought is on going in Republic of Congo, Gabon, Equatorial Guinea",
-      "summary": "The Drought notification level is Green.",
-      "source": "GDACS",
-      "url": "https://www.gdacs.org/report.aspx?eventtype=DR&eventid=1018344",
-      "published_at": "2026-02-04T09:58:20+00:00",
-      "keywords": [
-        "drought"
-      ],
-      "priority": 3,
-      "ai_analyzed": false,
-      "insight": "",
-      "trend_tags": [],
-      "confidence": "공식기관 자료",
-      "source_type": "해외 공식 재난경보",
-      "final_source": "GDACS",
-      "verification_url": "https://www.gdacs.org/report.aspx?eventtype=DR&eventid=1018344",
-      "gdacs_score": 1
     },
     {
       "id": "00a84116364cad15c8",
@@ -4789,29 +4536,6 @@
       "source_type": "뉴스·기관자료",
       "final_source": "원문 제공기관",
       "verification_url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFAxRFpDc2xtckJTc1JwWjM5TUM2V09EWUdjWDI2X1JzcXZXT0d3ZkJFRXJmdy01THZRaDV0b3M3d0VxTnJCM3RsRFhoU1NLRk5u?oc=5"
-    },
-    {
-      "id": "ae9a4340745cbdc71f",
-      "category": "disaster",
-      "subcategory": "disaster_global",
-      "subcategory_label": "해외 재해",
-      "title": "Drought is on going in Mexico, United States",
-      "summary": "The Drought notification level is Green.",
-      "source": "GDACS",
-      "url": "https://www.gdacs.org/report.aspx?eventtype=DR&eventid=1018093",
-      "published_at": "2025-10-02T10:20:21+00:00",
-      "keywords": [
-        "drought"
-      ],
-      "priority": 3,
-      "ai_analyzed": false,
-      "insight": "",
-      "trend_tags": [],
-      "confidence": "공식기관 자료",
-      "source_type": "해외 공식 재난경보",
-      "final_source": "GDACS",
-      "verification_url": "https://www.gdacs.org/report.aspx?eventtype=DR&eventid=1018093",
-      "gdacs_score": 1
     },
     {
       "id": "2c804e04555d2e1bdf",
