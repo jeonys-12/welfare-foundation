@@ -10,15 +10,16 @@ import xml.etree.ElementTree as ET
 ROOT=Path(__file__).resolve().parents[1]
 OUT=ROOT/"data/news.json"
 UA="Mozilla/5.0 (compatible; PublicValueMonitor/2.0; +https://github.com/jeonys-12/welfare-foundation)"
-OPENAI_API_KEY=os.getenv("OPENAI_API_KEY","").strip()
+OPENAI_API_KEY=(os.getenv("OPENAI_API_KEY") or os.getenv("OPEN_API_KEY") or "").strip()
 OPENAI_MODEL=os.getenv("OPENAI_MODEL","gpt-5-mini").strip()
 
 SOURCES=[
- ("law","tax_reform","공익법인 세법 개정안 OR 세제개편 OR 세법개정",[ "moef.go.kr","nts.go.kr","law.go.kr"]),
- ("law","corporate_tax","공익법인 법인세법 OR 법인세법 시행령",[ "nts.go.kr","law.go.kr"]),
- ("law","gift_tax","공익법인 증여세법 OR 상속세 및 증여세법",[ "nts.go.kr","law.go.kr"]),
- ("law","fair_trade","공익법인 공정거래법 OR 대기업집단 공익법인",[ "ftc.go.kr","law.go.kr"]),
- ("law","accounting","공익법인 회계기준 OR 결산서류 공시",[ "nts.go.kr","law.go.kr","kasb.or.kr"]),
+ # category, subcategory, query, authoritative discovery domains
+ ("law","tax_reform","공익법인 세법개정안 OR 세제개편 OR 세법 개정",[ "moef.go.kr","likms.assembly.go.kr","assembly.go.kr"]),
+ ("law","corporate_tax","공익법인 법인세법 OR 법인세법 시행령 OR 기부금 세무",[ "law.go.kr","taxlaw.nts.go.kr","nts.go.kr"]),
+ ("law","gift_tax","공익법인 상속세 및 증여세법 OR 출연재산 OR 의무지출",[ "law.go.kr","taxlaw.nts.go.kr","nts.go.kr"]),
+ ("law","fair_trade","대기업집단 공익법인 공정거래법 OR 공익법인 의결권",[ "ftc.go.kr","law.go.kr"]),
+ ("law","accounting","공익법인회계기준 OR 공익법인 결산서류 공시 OR 외부회계감사",[ "law.go.kr","nts.go.kr","kasb.or.kr"]),
  ("csr","csr","기업 사회공헌 사례 ESG 기부 트렌드 사회적가치",[]),
  ("disaster","disaster_kr","국내 재난 발생 산불 홍수 지진 태풍 피해",[ "mois.go.kr","kma.go.kr","nfa.go.kr"]),
  ("disaster","disaster_global","해외 재난 발생 earthquake flood wildfire typhoon humanitarian",[ "reliefweb.int","gdacs.org","unocha.org"]),
@@ -27,20 +28,28 @@ SOURCES=[
 ]
 SUB_LABELS={
  "tax_reform":"공익법인 세법개정안","corporate_tax":"공익법인 법인세법",
- "gift_tax":"공익법인 증여세법","fair_trade":"공익법인 공정거래법",
+ "gift_tax":"상속세 및 증여세법","fair_trade":"공정거래법상 공익법인 규제",
  "accounting":"공익법인 회계기준","csr":"기업 사회공헌 사례",
  "disaster_kr":"국내 재해","disaster_global":"해외 재해",
  "ngo":"NGO 모금·사업","kbs_donghaeng":"KBS 동행"
 }
 KEYS={
- "tax_reform":["공익법인","세법개정","세제개편"],"corporate_tax":["공익법인","법인세법"],
- "gift_tax":["공익법인","증여세","상속세"],"fair_trade":["공익법인","공정거래","대기업집단"],
+ "tax_reform":["공익법인","세법개정","세제개편","세법 개정"],"corporate_tax":["공익법인","법인세법","기부금"],
+ "gift_tax":["공익법인","증여세","상속세","출연재산","의무지출"],"fair_trade":["공익법인","공정거래","대기업집단","의결권"],
  "accounting":["공익법인","회계기준","결산서류","공시"],
  "csr":["사회공헌","ESG","기부","사회적 가치","지속가능"],
  "disaster_kr":["재난","산불","홍수","지진","태풍","피해"],
  "disaster_global":["earthquake","flood","wildfire","typhoon","disaster","humanitarian"],
  "ngo":["NGO","모금","캠페인","구호","지원사업"],
  "kbs_donghaeng":["동행","후원"]
+}
+
+SOURCE_GUIDES={
+ "tax_reform":{"type":"개정안·입법동향","final_source":"기획재정부·국회 의안정보시스템","url":"https://www.moef.go.kr/"},
+ "corporate_tax":{"type":"현행법·세무해석","final_source":"국가법령정보센터·국세법령정보시스템","url":"https://taxlaw.nts.go.kr/"},
+ "gift_tax":{"type":"현행법·세무해석","final_source":"국가법령정보센터·국세법령정보시스템","url":"https://www.law.go.kr/"},
+ "fair_trade":{"type":"규제·정책","final_source":"공정거래위원회·국가법령정보센터","url":"https://www.ftc.go.kr/"},
+ "accounting":{"type":"회계기준·공시","final_source":"국세청·국가법령정보센터","url":"https://www.nts.go.kr/"}
 }
 
 def clean(s):
@@ -83,7 +92,10 @@ def parse_rss(raw,cat,sub):
    "id":"","category":cat,"subcategory":sub,"subcategory_label":SUB_LABELS[sub],
    "title":title,"summary":desc[:360] or title,"source":source,"url":link,
    "published_at":stamp,"keywords":matched[:4],"priority":min(5,2+len(matched)),
-   "ai_analyzed":False,"insight":"","trend_tags":[],"confidence":"원문 확인 필요"
+   "ai_analyzed":False,"insight":"","trend_tags":[],"confidence":"원문 확인 필요",
+   "source_type":SOURCE_GUIDES.get(sub,{}).get("type","뉴스·기관자료"),
+   "final_source":SOURCE_GUIDES.get(sub,{}).get("final_source","원문 제공기관"),
+   "verification_url":SOURCE_GUIDES.get(sub,{}).get("url",link)"
   })
  return out
 
@@ -150,7 +162,7 @@ def main():
   errors.append({"source":"openai","error":str(e)[:200]})
   ai_status={"enabled":bool(OPENAI_API_KEY),"analyzed":0,"message":"AI 분석 실패 — 기본 요약 유지"}
  payload={"updated_at":datetime.now(timezone.utc).isoformat(),"item_count":len(dedup),
-          "errors":errors,"ai_status":ai_status,"items":dedup[:240]}
+          "errors":errors,"ai_status":ai_status,"source_guides":SOURCE_GUIDES,"items":dedup[:240]}
  OUT.parent.mkdir(exist_ok=True)
  OUT.write_text(json.dumps(payload,ensure_ascii=False,indent=2),encoding="utf-8")
  print(f"collected={len(dedup)} ai={ai_status['analyzed']} errors={len(errors)}")
