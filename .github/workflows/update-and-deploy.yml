@@ -69,7 +69,10 @@ jobs:
           timeout 20m python scripts/collect_news.py
           python -m json.tool data/news.json > /dev/null
 
+      # A push-triggered run deploys the freshly generated artifact only. Committing from
+      # that same run races with subsequent source edits and causes non-fast-forward failures.
       - name: Commit refreshed data
+        if: github.event_name != 'push'
         shell: bash
         run: |
           set -euo pipefail
