@@ -95,7 +95,7 @@ def parse_rss(raw,cat,sub):
    "ai_analyzed":False,"insight":"","trend_tags":[],"confidence":"원문 확인 필요",
    "source_type":SOURCE_GUIDES.get(sub,{}).get("type","뉴스·기관자료"),
    "final_source":SOURCE_GUIDES.get(sub,{}).get("final_source","원문 제공기관"),
-   "verification_url":SOURCE_GUIDES.get(sub,{}).get("url",link)"
+   "verification_url":SOURCE_GUIDES.get(sub,{}).get("url",link)
   })
  return out
 
