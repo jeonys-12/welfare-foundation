@@ -17,6 +17,26 @@ KBS_SEARCH_URLS=[
  "https://www.kbs.co.kr/m/search/main.html?keyword=%EB%8F%99%ED%96%89",
  "https://www.kbs.co.kr/m/search/replay.html?keyword=%EB%8F%99%ED%96%89",
 ]
+DISASTER_DAYS=30
+KR_DISASTER_KEYWORDS=[
+ "재난","재해","산불","화재","홍수","침수","범람","지진","태풍","호우","집중호우",
+ "산사태","폭염","대설","한파","강풍","붕괴","폭발","대피","인명피해",
+ "비상대응","중앙재난안전대책본부","중대본","특보"
+]
+GLOBAL_DISASTER_KEYWORDS=[
+ "earthquake","flood","wildfire","typhoon","disaster","humanitarian","cyclone",
+ "hurricane","landslide","heatwave","tsunami","volcanic eruption","eruption",
+ "storm","drought","casualties","evacuation","emergency","tropical depression"
+]
+KR_OFFICIAL_PAGES=[
+ ("행정안전부","https://www.mois.go.kr/frt/bbs/type001/commonSelectBoardList.do?bbsId=BBSMSTR_000000000336"),
+ ("기상청","https://www.weather.go.kr/w/eqk-vol/recent-eqk.do"),
+ ("소방청","https://www.nfa.go.kr/nfa/news/pressrelease/press/?boardId=bbs_0000000000000010&mode=list"),
+]
+GDACS_RSS_URL="https://www.gdacs.org/xml/rss.xml"
+RELIEFWEB_API_URL="https://api.reliefweb.int/v1/reports?appname=welfare-foundation-monitor&limit=40&profile=list&preset=latest"
+USGS_FEED_URL="https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/significant_month.geojson"
+
 KBS_VERIFIED_SEEDS=[
  ("동행 567회 산골 소녀 지민이의 독립 선언","2026-07-18","https://vod.kbs.co.kr/m/index.html?program_code=T2014-0877&program_id=PS-2026122474-01-000&section_code=05&sname=vod&source=episode&stype=vod"),
  ("동행 566회 기적의 아빠, 상봉 씨","2026-07-11","https://vod.kbs.co.kr/m/index.html?program_code=T2014-0877&program_id=PS-2026112095-01-000&section_code=05&sname=vod&source=episode&stype=vod"),
@@ -48,8 +68,8 @@ KEYS={
  "gift_tax":["공익법인","증여세","상속세","출연재산","의무지출"],"fair_trade":["공익법인","공정거래","대기업집단","의결권"],
  "accounting":["공익법인","회계기준","결산서류","공시"],
  "csr":["사회공헌","ESG","기부","사회적 가치","지속가능"],
- "disaster_kr":["재난","산불","홍수","지진","태풍","피해"],
- "disaster_global":["earthquake","flood","wildfire","typhoon","disaster","humanitarian"],
+ "disaster_kr":KR_DISASTER_KEYWORDS,
+ "disaster_global":GLOBAL_DISASTER_KEYWORDS,
  "ngo":["NGO","모금","캠페인","구호","지원사업"],
  "kbs_donghaeng":["동행","후원"]
 }
@@ -108,6 +128,100 @@ def parse_rss(raw,cat,sub):
    "verification_url":SOURCE_GUIDES.get(sub,{}).get("url",link)
   })
  return out
+
+
+def disaster_item(sub,title,url,summary,published_at,source,source_type):
+ title=clean(title); summary=clean(summary)
+ if not title or not url: return None
+ keywords=KR_DISASTER_KEYWORDS if sub=="disaster_kr" else GLOBAL_DISASTER_KEYWORDS
+ text=(title+" "+summary).lower()
+ matched=[k for k in keywords if k.lower() in text]
+ if not matched: return None
+ return {
+  "id":"","category":"disaster","subcategory":sub,
+  "subcategory_label":SUB_LABELS[sub],"title":title,
+  "summary":summary[:360] or title,"source":source,"url":url,
+  "published_at":published_at,"keywords":matched[:6],
+  "priority":min(5,3+min(2,len(matched)//2)),"ai_analyzed":False,
+  "insight":"","trend_tags":[],"confidence":"공식기관 자료",
+  "source_type":source_type,"final_source":source,"verification_url":url
+ }
+
+def parse_date_flexible(text):
+ text=clean(text)
+ patterns=[
+  r"(20\d{2})[.\-/년]\s*(\d{1,2})[.\-/월]\s*(\d{1,2})",
+  r"(20\d{2})(\d{2})(\d{2})"
+ ]
+ for pattern in patterns:
+  m=re.search(pattern,text)
+  if not m: continue
+  try: return datetime(int(m.group(1)),int(m.group(2)),int(m.group(3)),tzinfo=timezone.utc).isoformat()
+  except ValueError: pass
+ return ""
+
+def collect_kr_official():
+ out=[]; errors=[]
+ for source,url in KR_OFFICIAL_PAGES:
+  try:
+   doc=fetch(url).decode("utf-8","replace")
+   seen=set()
+   for m in re.finditer(r'<a\b[^>]*href=["\']([^"\']+)["\'][^>]*>(.*?)</a>',doc,re.I|re.S):
+    link=urljoin(url,html.unescape(m.group(1)))
+    title=clean(m.group(2))
+    context=clean(doc[max(0,m.start()-350):min(len(doc),m.end()+350)])
+    stamp=parse_date_flexible(context)
+    if not stamp or link in seen: continue
+    item=disaster_item("disaster_kr",title,link,context,stamp,source,"국내 공식기관 직접수집")
+    if item: seen.add(link); out.append(item)
+  except Exception as e:
+   errors.append({"source":"국내 공식 "+source,"error":str(e)[:160]})
+ return out,errors
+
+def collect_global_official():
+ out=[]; errors=[]
+ try:
+  for item in parse_rss(fetch(GDACS_RSS_URL),"disaster","disaster_global"):
+   item.update({"source":"GDACS","source_type":"해외 공식 재난경보",
+                "final_source":"GDACS","confidence":"공식기관 자료",
+                "verification_url":item["url"]})
+   out.append(item)
+ except Exception as e: errors.append({"source":"GDACS","error":str(e)[:160]})
+ try:
+  payload=json.loads(fetch(RELIEFWEB_API_URL))
+  for row in payload.get("data",[]):
+   f=row.get("fields",{})
+   stamp=f.get("date",{}).get("created") or f.get("date",{}).get("original") or ""
+   url=f.get("url_alias") or ("https://reliefweb.int/node/"+str(row.get("id","")))
+   item=disaster_item("disaster_global",f.get("title",""),url,
+                      f.get("body-html",""),stamp,"ReliefWeb","해외 공식 상황보고")
+   if item: out.append(item)
+ except Exception as e: errors.append({"source":"ReliefWeb","error":str(e)[:160]})
+ try:
+  payload=json.loads(fetch(USGS_FEED_URL))
+  for row in payload.get("features",[]):
+   p=row.get("properties",{}); epoch=p.get("time")
+   if not epoch: continue
+   stamp=datetime.fromtimestamp(epoch/1000,tz=timezone.utc).isoformat()
+   mag=p.get("mag"); title=p.get("title","")
+   summary=("USGS significant earthquake"+((" magnitude "+str(mag)) if mag is not None else ""))
+   item=disaster_item("disaster_global",title,p.get("url",""),summary,stamp,
+                      "USGS","해외 공식 지진정보")
+   if item: out.append(item)
+ except Exception as e: errors.append({"source":"USGS","error":str(e)[:160]})
+ return out,errors
+
+def keep_recent_disasters(old_items,days=DISASTER_DAYS):
+ cutoff=datetime.now(timezone.utc)-timedelta(days=days)
+ kept=[]
+ for item in old_items:
+  if item.get("category")!="disaster": continue
+  try:
+   stamp=datetime.fromisoformat(item.get("published_at","").replace("Z","+00:00"))
+   if stamp.tzinfo is None: stamp=stamp.replace(tzinfo=timezone.utc)
+  except Exception: continue
+  if stamp>=cutoff: kept.append(item)
+ return kept
 
 def is_official_kbs(url):
  host=urlparse(url).netloc.lower().split(":")[0]
@@ -253,6 +367,13 @@ def main():
   full=q+(" ("+" OR ".join("site:"+d for d in domains)+")" if domains else "")
   try: items+=parse_rss(fetch(google_rss(full)),cat,sub)
   except Exception as e: errors.append({"source":sub,"error":str(e)[:160]})
+ # 국내·해외 공식 재해 수집은 서로 독립 실행하며 Google 뉴스 RSS는 보조 경로다.
+ kr_disasters,kr_errors=collect_kr_official()
+ global_disasters,global_errors=collect_global_official()
+ items+=kr_disasters+global_disasters
+ errors+=kr_errors+global_errors
+ # 일부 공식기관이 응답하지 않거나 신규 게시물이 없어도 기존 재해 기록은 30일간 유지한다.
+ items+=keep_recent_disasters(old.get("items",[]),DISASTER_DAYS)
  # KBS 공식 프로그램·통합검색은 주 수집원, Google 뉴스는 보조 수집원이다.
  kbs_items,kbs_errors=collect_kbs_official()
  items+=kbs_items
