@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-22T03:57:47.490072+00:00",
+  "updated_at": "2026-07-22T04:04:28.569693+00:00",
   "item_count": 22,
   "errors": [],
   "ai_status": {
@@ -42,7 +42,7 @@
       "subcategory": "csr",
       "subcategory_label": "기업 사회공헌 사례",
       "title": "‘함께하는 ESG’ 하나금융 계열사, 사회공헌 영역 확장 - 라이센스뉴스",
-      "summary": "하나금융 계열사가 사회공헌 영역을 확대하고 있다.",
+      "summary": "하나금융 계열사가 ‘함께하는 ESG’ 명칭 하에 사회공헌 영역을 확장하고 있다.",
       "source": "라이센스뉴스",
       "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBQSGNORFp3SFFzdHdkREV4UHZMa3VNSkowb2ZnNUlHYXVDNllDZXRVc2J6NnVKSTIyUEtnLV9fN3hiLVlKTWZVRjJNVzg0RW5vSWxBdHNfaFN4eXViVV9Bbkx5cmpzYjh5S2JF?oc=5",
       "published_at": "2026-07-21T23:45:00+00:00",
@@ -50,15 +50,14 @@
         "사회공헌",
         "ESG"
       ],
-      "priority": 4,
+      "priority": 3,
       "ai_analyzed": true,
-      "insight": "금융계열의 사회공헌 확대는 계열사 간 연계 프로그램을 통해 지역사회 임팩트를 키울 수 있는 기회다.",
+      "insight": "금융계열의 사회공헌 확대는 공익법인과의 파트너십·프로그램 연계 기회를 제공한다.",
       "trend_tags": [
-        "금융권",
-        "사회공헌",
-        "확장"
+        "금융권 ESG",
+        "사회공헌확대"
       ],
-      "confidence": "낮음",
+      "confidence": "보통",
       "source_type": "뉴스·기관자료",
       "final_source": "원문 제공기관",
       "verification_url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBQSGNORFp3SFFzdHdkREV4UHZMa3VNSkowb2ZnNUlHYXVDNllDZXRVc2J6NnVKSTIyUEtnLV9fN3hiLVlKTWZVRjJNVzg0RW5vSWxBdHNfaFN4eXViVV9Bbkx5cmpzYjh5S2JF?oc=5"
@@ -69,7 +68,7 @@
       "subcategory": "csr",
       "subcategory_label": "기업 사회공헌 사례",
       "title": "오비맥주, 사회 공헌 넘어 ESG 경영으로···지속가능한 성장 전략은 - 뉴스프리존",
-      "summary": "오비맥주가 사회공헌을 넘어 ESG 경영 체제로 전환하며 지속가능한 성장 전략을 추진하고 있다.",
+      "summary": "오비맥주가 기존 사회공헌을 넘어 ESG 경영을 도입해 지속가능한 성장 전략을 추진하고 있다.",
       "source": "뉴스프리존",
       "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1JbndrQU9fekMyallzYkN4Q3pGNlNoRUpfNjd2aXV1YVlrSnVnU0tEYzFkUmV3b3pzWUxoV2wwLV9GVGtXNFBzN2x3MXFHcXlHelJpZXViQ2UyTkF3dEplQkhuRFZuMmc0V3pkZS1yYVc1SjBRelpN0gF3QVVfeXFMTUlud2tBT196QzJqWXNiQ3hDekY2U2hFSl82N3ZpdXVhWWtKdWdTS0RjMWRSZXdvenNZTGhXbDAtX0ZUa1c0UHM3bHcxcUdxeUd6UmlldWJDZTJOQXd0SmVCSG5EVm4yZzRXemRlLXJhVzVKMFF6Wk0?oc=5",
       "published_at": "2026-07-21T02:34:17+00:00",
@@ -77,15 +76,15 @@
         "ESG",
         "지속가능"
       ],
-      "priority": 4,
+      "priority": 3,
       "ai_analyzed": true,
-      "insight": "기업이 ESG를 경영 전략으로 통합할 때는 성과지표와 사업연계성을 명확히 해 공익성과 지속성을 확보해야 한다.",
+      "insight": "소비재 기업의 ESG 전환은 공익단체와의 협업(환경·지역사회 프로그램) 수요를 높일 수 있다.",
       "trend_tags": [
-        "ESG전환",
-        "지속가능경영",
-        "식음료"
+        "ESG경영",
+        "지속가능성",
+        "제조업"
       ],
-      "confidence": "낮음",
+      "confidence": "보통",
       "source_type": "뉴스·기관자료",
       "final_source": "원문 제공기관",
       "verification_url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1JbndrQU9fekMyallzYkN4Q3pGNlNoRUpfNjd2aXV1YVlrSnVnU0tEYzFkUmV3b3pzWUxoV2wwLV9GVGtXNFBzN2x3MXFHcXlHelJpZXViQ2UyTkF3dEplQkhuRFZuMmc0V3pkZS1yYVc1SjBRelpN0gF3QVVfeXFMTUlud2tBT196QzJqWXNiQ3hDekY2U2hFSl82N3ZpdXVhWWtKdWdTS0RjMWRSZXdvenNZTGhXbDAtX0ZUa1c0UHM3bHcxcUdxeUd6UmlldWJDZTJOQXd0SmVCSG5EVm4yZzRXemRlLXJhVzVKMFF6Wk0?oc=5"
@@ -96,7 +95,7 @@
       "subcategory": "csr",
       "subcategory_label": "기업 사회공헌 사례",
       "title": "[청년나눔 글로벌확장]KT&G복지재단, 중앙아시아에 ‘상상위더스’ 파견…청년 나눔으로 글로벌 사회공헌 확대 - 전국뉴스",
-      "summary": "KT&G복지재단이 중앙아시아에 '상상위더스'를 파견해 청년 나눔으로 글로벌 사회공헌을 확대하고 있다.",
+      "summary": "KT&G복지재단이 중앙아시아에 '상상위더스'를 파견하며 청년 나눔을 통한 글로벌 사회공헌을 확대한다.",
       "source": "전국뉴스",
       "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5JMWdTVFJBRW9LMHN3RkZlb2JaTFN6UUVIeFJNa3BWMVRMUzl1WmFHTmY2QXVBMTNUcVJEZmJyM3Q1cmE5WFc3ZktkNkpYdVZPTmV4bXY3U1BzUnJ1VU5rSXVWX1hRdzVQbG54NzdBVms?oc=5",
       "published_at": "2026-07-21T01:27:43+00:00",
@@ -105,13 +104,13 @@
       ],
       "priority": 3,
       "ai_analyzed": true,
-      "insight": "해외 파견형 사회공헌은 현지 파트너십과 성과 모니터링 구조를 사전에 설계해야 공익적 효과를 높일 수 있다.",
+      "insight": "청년 파견형 해외봉사 프로그램은 공익법인과의 국제협력 및 역량교류 기회로 활용될 수 있다.",
       "trend_tags": [
-        "글로벌봉사",
-        "청년참여",
-        "재단"
+        "글로벌사회공헌",
+        "청년봉사",
+        "해외파견"
       ],
-      "confidence": "낮음",
+      "confidence": "보통",
       "source_type": "뉴스·기관자료",
       "final_source": "원문 제공기관",
       "verification_url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5JMWdTVFJBRW9LMHN3RkZlb2JaTFN6UUVIeFJNa3BWMVRMUzl1WmFHTmY2QXVBMTNUcVJEZmJyM3Q1cmE5WFc3ZktkNkpYdVZPTmV4bXY3U1BzUnJ1VU5rSXVWX1hRdzVQbG54NzdBVms?oc=5"
@@ -122,7 +121,7 @@
       "subcategory": "csr",
       "subcategory_label": "기업 사회공헌 사례",
       "title": "[ESG 현장점검] SK렌터카 \"전기차부터 탄소감축까지···친환경 모빌리티 전환 가속\" - 데일리e뉴스",
-      "summary": "SK렌터카가 전기차 도입과 탄소감축을 통해 친환경 모빌리티 전환을 가속화하고 있다.",
+      "summary": "SK렌터카가 전기차 도입과 탄소감축 등 친환경 모빌리티 전환을 가속화하고 있다.",
       "source": "데일리e뉴스",
       "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1WWWtYYnRDa2hWRDBDaHFqZGF6cE9JcWMxNUFtQzBFOUtZLWpHZVg4V2JVY01mWjlrUkVsa3M4LTRBZ2x5YmEyN21KM3F5THdHUUNsX0k1TzdrbXFvRGhUa3NXVnR0Sm81Zk54UEZJMA?oc=5",
       "published_at": "2026-07-21T00:57:11+00:00",
@@ -131,13 +130,13 @@
       ],
       "priority": 4,
       "ai_analyzed": true,
-      "insight": "렌터카 중심의 모빌리티 전환은 충전인프라·취약계층 접근성 등 지역사회 연계 과제와 협력을 요구한다.",
+      "insight": "모빌리티 부문의 전환은 지역 기반의 전기차 인프라·배출저감 사업에서 공익단체 협업 수요를 촉진한다.",
       "trend_tags": [
-        "전기차",
+        "친환경모빌리티",
         "탄소감축",
-        "모빌리티"
+        "전기차"
       ],
-      "confidence": "낮음",
+      "confidence": "보통",
       "source_type": "뉴스·기관자료",
       "final_source": "원문 제공기관",
       "verification_url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1WWWtYYnRDa2hWRDBDaHFqZGF6cE9JcWMxNUFtQzBFOUtZLWpHZVg4V2JVY01mWjlrUkVsa3M4LTRBZ2x5YmEyN21KM3F5THdHUUNsX0k1TzdrbXFvRGhUa3NXVnR0Sm81Zk54UEZJMA?oc=5"
@@ -148,7 +147,7 @@
       "subcategory": "csr",
       "subcategory_label": "기업 사회공헌 사례",
       "title": "롯데카드, 러닝으로 기후위기 대응 나선다… 시민 참여형 ESG 캠페인 추진 - 라이센스뉴스",
-      "summary": "롯데카드가 러닝을 활용한 시민 참여형 ESG 캠페인으로 기후위기 대응에 나선다.",
+      "summary": "롯데카드가 러닝을 활용한 시민 참여형 ESG 캠페인을 추진하며 기후위기 대응에 나선다.",
       "source": "라이센스뉴스",
       "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9mLTNyTFFKNF9yWGNKR3ZrZnJURFlvZGY0V0h6UEo3OXg0VDhXQXROQWFmanJrcmtmTnY4RGRjMWF2ZFVlWmJFMFd3dTduR0lUYW5xNjhDQ3BERHlvQUZEd2ZsQUI3TDZPWkUw?oc=5",
       "published_at": "2026-07-21T00:05:00+00:00",
@@ -157,13 +156,13 @@
       ],
       "priority": 3,
       "ai_analyzed": true,
-      "insight": "시민 참여형 캠페인은 인식 제고와 자원 동원을 동시에 노릴 수 있으나, 실질적 기후영향 측정 방안이 필요하다.",
+      "insight": "시민참여형 캠페인은 참여형 기부·자원봉사 프로그램 설계에 적합한 협업 모델이다.",
       "trend_tags": [
         "시민참여",
         "기후캠페인",
-        "헬스CSR"
+        "ESG캠페인"
       ],
-      "confidence": "낮음",
+      "confidence": "보통",
       "source_type": "뉴스·기관자료",
       "final_source": "원문 제공기관",
       "verification_url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9mLTNyTFFKNF9yWGNKR3ZrZnJURFlvZGY0V0h6UEo3OXg0VDhXQXROQWFmanJrcmtmTnY4RGRjMWF2ZFVlWmJFMFd3dTduR0lUYW5xNjhDQ3BERHlvQUZEd2ZsQUI3TDZPWkUw?oc=5"
@@ -183,13 +182,13 @@
       ],
       "priority": 3,
       "ai_analyzed": true,
-      "insight": "고객 참여형 모델은 참여자 확대에 유리하므로 투명한 기부처리와 결과 공개가 신뢰를 좌우한다.",
+      "insight": "카드사 기반의 고객참여 플랫폼은 소액기부·마이크로펀딩 등 확장형 사회공헌 모델로 활용 가능하다.",
       "trend_tags": [
         "고객참여",
         "글로벌나눔",
-        "금융권"
+        "일상속ESG"
       ],
-      "confidence": "낮음",
+      "confidence": "보통",
       "source_type": "뉴스·기관자료",
       "final_source": "원문 제공기관",
       "verification_url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5HcmswdDlBZmZkN01xRVEtQmRGeXBuV0dGRkp3bnRtVC0yN1hoYnE4R3ZxOG41bHltbFhBWmNfMXhwb2hCYUdGSlhuOXZFemo3dndybktnNlU4cGFqNjNtYjk0a1M5QWFua2ZxS3Zab3A?oc=5"
@@ -200,7 +199,7 @@
       "subcategory": "csr",
       "subcategory_label": "기업 사회공헌 사례",
       "title": "[ESG 현장점검] BGF리테일 \"글로벌 ESG 규제 대응·해외 확장 동시 추진···'A+' 경쟁력으로 지속가능경영 새 기준 제시\" - 데일리e뉴스",
-      "summary": "BGF리테일이 글로벌 ESG 규제 대응과 해외 확장을 동시에 추진하며 'A+' 경쟁력을 내세우고 있다.",
+      "summary": "BGF리테일이 글로벌 ESG 규제 대응과 해외 확장을 동시에 추진하며 지속가능경영 기준을 제시하려 한다.",
       "source": "데일리e뉴스",
       "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9FNEptdFM0a3RVb0IzbEh3TmdfRHNVcjctUFc0d25XNG9JZFJvaWpEaS1odkpxa01BQ0xTNllQdEUxU3doYlZmRVJ6bnZHcUpKUUFhSXRMQ2JZNV9JN1htTzdHNjM1djJIdTkyTDVlSQ?oc=5",
       "published_at": "2026-07-20T05:28:00+00:00",
@@ -210,42 +209,42 @@
       ],
       "priority": 4,
       "ai_analyzed": true,
-      "insight": "해외 진출을 고려하는 유통기업은 국제적 ESG 기준 준수와 내부관리체계 강화를 병행해야 리스크를 줄일 수 있다.",
+      "insight": "글로벌 규제 대응 중심의 전략은 공익법인이 기업의 규정 준수·보고 기준을 모니터링할 때 참고할 요소가 된다.",
       "trend_tags": [
-        "규제대응",
-        "해외진출",
-        "유통"
+        "글로벌규제",
+        "지속가능경영",
+        "해외진출"
       ],
-      "confidence": "낮음",
+      "confidence": "보통",
       "source_type": "뉴스·기관자료",
       "final_source": "원문 제공기관",
       "verification_url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9FNEptdFM0a3RVb0IzbEh3TmdfRHNVcjctUFc0d25XNG9JZFJvaWpEaS1odkpxa01BQ0xTNllQdEUxU3doYlZmRVJ6bnZHcUpKUUFhSXRMQ2JZNV9JN1htTzdHNjM1djJIdTkyTDVlSQ?oc=5"
     },
     {
-      "id": "c5a9206787b81c8683",
+      "id": "09c01228975f83514d",
       "category": "csr",
       "subcategory": "csr",
       "subcategory_label": "기업 사회공헌 사례",
-      "title": "CCBS ESG 가치경영 백서 핵심읽기 제1편 좋은 기업은 무엇으로 기억되는가 - 한국AI부동산신문",
-      "summary": "CCBS의 ESG 가치경영 백서 제1편이 '좋은 기업'의 기억 요소를 다루고 있다.",
-      "source": "한국AI부동산신문",
-      "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE1FVnBwdlNqaTFFRWI2dU5ubDlxNFpSaHRuRVBxSGVRcENkdEZFbGsxZUpNWW9kSzNScnFNaXg5TWxNMC1vWnZfNF9CcFc?oc=5",
-      "published_at": "2026-07-20T03:25:28+00:00",
+      "title": "CCBS ESG 가치경영 백서 핵심읽기 제1편 좋은 기업은 무엇으로 기억되는가 - 한국공공정책신문",
+      "summary": "CCBS의 ESG 가치경영 백서 제1편이 '좋은 기업'의 기억되는 요소를 다루고 있다.",
+      "source": "한국공공정책신문",
+      "url": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTE9lRjFsYWFaWllDYVB6SVZ1eUo5NTh0VUNFQ0k4SWdVV0FlQVRFazk3UHROSTktWDlJSGlUenBIc2RHTU0?oc=5",
+      "published_at": "2026-07-20T03:24:23+00:00",
       "keywords": [
         "ESG"
       ],
       "priority": 2,
       "ai_analyzed": true,
-      "insight": "가치경영 백서는 공익법인과 협업해 사회적 기준을 구체화하고 기업 행동강령으로 연결할 수 있는 자료가 된다.",
+      "insight": "가치경영을 정리한 백서는 공익법인의 기업평가·협력 전략 수립에 이론적 참고가 된다.",
       "trend_tags": [
+        "ESG백서",
         "가치경영",
-        "백서",
-        "기업이미지"
+        "기업평판"
       ],
       "confidence": "낮음",
       "source_type": "뉴스·기관자료",
       "final_source": "원문 제공기관",
-      "verification_url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE1FVnBwdlNqaTFFRWI2dU5ubDlxNFpSaHRuRVBxSGVRcENkdEZFbGsxZUpNWW9kSzNScnFNaXg5TWxNMC1vWnZfNF9CcFc?oc=5"
+      "verification_url": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTE9lRjFsYWFaWllDYVB6SVZ1eUo5NTh0VUNFQ0k4SWdVV0FlQVRFazk3UHROSTktWDlJSGlUenBIc2RHTU0?oc=5"
     },
     {
       "id": "c551de252e9fc63beb",
@@ -253,7 +252,7 @@
       "subcategory": "csr",
       "subcategory_label": "기업 사회공헌 사례",
       "title": "[청년이 미래다] 미래세대 키우는 기업 사회공헌…문화유산부터 금융교육·해외봉사까지 '교육 CSR' 확산 - 코리아포스트 한글판",
-      "summary": "기업들이 문화유산, 금융교육, 해외봉사 등 교육 중심의 CSR로 미래세대 지원을 확대하고 있다.",
+      "summary": "기업 사회공헌에서 문화유산·금융교육·해외봉사 등 교육 중심의 CSR이 확산되고 있다.",
       "source": "코리아포스트 한글판",
       "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9NaGpVTmd2YkRvTGpPaTZDNUk3T3IzUjRkZDFDNVdwdHdjN1JzTnFHem9TR0VzcHYtbUp2WVlmYk1XSTFLeHVVUGJWX2ZEaFBfMXlvaDJ3VTJTS1U2UkFYZUFYOGNlLUVXSEdpREJB?oc=5",
       "published_at": "2026-07-20T02:09:16+00:00",
@@ -262,13 +261,13 @@
       ],
       "priority": 3,
       "ai_analyzed": true,
-      "insight": "교육 CSR은 장기적 사회투자이므로 공익법인과의 협력을 통해 지속가능한 교육성과 관리가 필요하다.",
+      "insight": "교육 CSR은 장기적 사회투자 범주에 들어 공익법인과의 프로그램 공동개발에 적합하다.",
       "trend_tags": [
         "교육CSR",
-        "미래세대",
-        "사회공헌"
+        "청년지원",
+        "해외봉사"
       ],
-      "confidence": "낮음",
+      "confidence": "보통",
       "source_type": "뉴스·기관자료",
       "final_source": "원문 제공기관",
       "verification_url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9NaGpVTmd2YkRvTGpPaTZDNUk3T3IzUjRkZDFDNVdwdHdjN1JzTnFHem9TR0VzcHYtbUp2WVlmYk1XSTFLeHVVUGJWX2ZEaFBfMXlvaDJ3VTJTS1U2UkFYZUFYOGNlLUVXSEdpREJB?oc=5"
@@ -279,7 +278,7 @@
       "subcategory": "csr",
       "subcategory_label": "기업 사회공헌 사례",
       "title": "[ESG] 기업·의료계, 자원순환 연계형 ESG 활동 기부로 이어지는 선행 - consumerwide.com",
-      "summary": "기업과 의료계에서 자원순환 연계형 ESG 활동이 기부로 이어지는 사례가 보고되고 있다.",
+      "summary": "기업과 의료계에서 자원순환 연계형 ESG 활동이 기부로 이어지는 사례들이 보고되고 있다.",
       "source": "consumerwide.com",
       "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE8wWjR2dXdoT01JYmhhNklka1pFeVd3MUdwbUstWUxYa2JNVzMyTzh3aWUtME9sNjRKOXhaMGpVSzBfT1BQaE1NTDhlbzFpQUQ1TWZScGZFTV9FcnlhUnNGWVJ4S2RsaEpQN1EweTJHc9IBc0FVX3lxTE1KN09GRU1Pa0tGa0lFVTNiVDNORVZBNWo1Vi1OekFlLW1EWThfaVNmTzZJcGFkMW9tZGNRaV90WVlqb191MFBUODFOTzFVZFgxVXJqM3o1cW12d0xzOGpmWFpvWTZteFowSXVwN0pRdWlhOTQ?oc=5",
       "published_at": "2026-07-16T13:35:18+00:00",
@@ -289,13 +288,13 @@
       ],
       "priority": 3,
       "ai_analyzed": true,
-      "insight": "자원순환 활동을 기부와 연계하면 환경성과와 사회적 지원을 동시에 구현할 수 있어 공익사업 설계에 유리하다.",
+      "insight": "자원순환과 기부를 연결하는 모델은 순환경제와 복지사업을 동시에 강화할 수 있다.",
       "trend_tags": [
         "자원순환",
-        "의료계",
+        "의료계ESG",
         "기부연계"
       ],
-      "confidence": "낮음",
+      "confidence": "보통",
       "source_type": "뉴스·기관자료",
       "final_source": "원문 제공기관",
       "verification_url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE8wWjR2dXdoT01JYmhhNklka1pFeVd3MUdwbUstWUxYa2JNVzMyTzh3aWUtME9sNjRKOXhaMGpVSzBfT1BQaE1NTDhlbzFpQUQ1TWZScGZFTV9FcnlhUnNGWVJ4S2RsaEpQN1EweTJHc9IBc0FVX3lxTE1KN09GRU1Pa0tGa0lFVTNiVDNORVZBNWo1Vi1OekFlLW1EWThfaVNmTzZJcGFkMW9tZGNRaV90WVlqb191MFBUODFOTzFVZFgxVXJqM3o1cW12d0xzOGpmWFpvWTZteFowSXVwN0pRdWlhOTQ?oc=5"
@@ -306,7 +305,7 @@
       "subcategory": "csr",
       "subcategory_label": "기업 사회공헌 사례",
       "title": "[ESG트렌드] ESG 문화 유튜브 ‘대담해’, 지속가능한 국내외 여행지와 ESG 실천법 소개 外 - 베이비뉴스",
-      "summary": "ESG 문화 유튜브 채널 '대담해'가 지속가능한 여행지와 ESG 실천법을 소개한다.",
+      "summary": "유튜브 채널 '대담해' 등 디지털 콘텐츠가 지속가능 여행지와 ESG 실천법을 소개하고 있다.",
       "source": "베이비뉴스",
       "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9kQVdQLUkyVkhidnN3SGRubi14VGlvN0JBTW1WWWV2dlBxQlpSdVJGdkdacl9oUGRUOU9MS2lXQWxUTzlQS3ZZMktVZExqcmVEeE9OZDJIUzZnMVY5T1poamlpOVYtazBYT0pKaQ?oc=5",
       "published_at": "2026-07-16T05:50:09+00:00",
@@ -316,11 +315,11 @@
       ],
       "priority": 2,
       "ai_analyzed": true,
-      "insight": "디지털 콘텐츠는 대중 인식 제고에 효과적이므로 공익단체의 교육·홍보 채널로 적극 활용할 수 있다.",
+      "insight": "디지털 미디어를 통한 ESG 교육은 대중 인식 제고에 효과적이므로 공익단체의 홍보·교육 협업 채널로 유용하다.",
       "trend_tags": [
+        "ESG교육",
         "디지털콘텐츠",
-        "지속가능여행",
-        "ESG교육"
+        "지속가능여행"
       ],
       "confidence": "낮음",
       "source_type": "뉴스·기관자료",
@@ -333,7 +332,7 @@
       "subcategory": "csr",
       "subcategory_label": "기업 사회공헌 사례",
       "title": "[ESG] 산업·재계, 소외계층 보듬는 기부로 ESG 사회공헌 진행 - consumerwide.com",
-      "summary": "산업계와 재계가 소외계층을 대상으로 기부 중심의 ESG 사회공헌을 진행하고 있다.",
+      "summary": "산업·재계가 소외계층을 위한 기부를 통해 ESG 사회공헌을 진행하고 있다.",
       "source": "consumerwide.com",
       "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9rTHR1TFM4X2ozODFOOVJKV0kwWHZaMEM2TUJtU1dRUVZCS1ZoN19oVXVJY0o0TTliY3ljaWdIQmpjcGlUcFdybGt1N24yZW5FUk9qelhCbENBWTFJcnhjUDlFdU5VT1FpRzdxQUt4QdIBc0FVX3lxTE1zNUI4TV9OTDRVZUFNOFVva2xHdU8zNjJGaURTQ19TbjVhNXRJNDhQRzBNNVJNTUl5dVZMSS1xMHEyQS1xLVpFVmhoN3NNQTFMOXB6bUV2TkNLbjJ4elNZWGxqdGhMNnFaOFlJZzlxc0tfYlk?oc=5",
       "published_at": "2026-07-15T13:05:50+00:00",
@@ -344,13 +343,13 @@
       ],
       "priority": 3,
       "ai_analyzed": true,
-      "insight": "기부 중심의 사회공헌은 단기적 지원을 넘어 수혜자의 자립·연계 프로그램 설계가 필요하다.",
+      "insight": "기업의 기부 활동은 사회적 안전망 보완 측면에서 공익재단과의 연계사업 기회를 제공한다.",
       "trend_tags": [
         "기부",
-        "소외계층",
-        "사회공헌"
+        "소외계층지원",
+        "산업계ESG"
       ],
-      "confidence": "낮음",
+      "confidence": "보통",
       "source_type": "뉴스·기관자료",
       "final_source": "원문 제공기관",
       "verification_url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9rTHR1TFM4X2ozODFOOVJKV0kwWHZaMEM2TUJtU1dRUVZCS1ZoN19oVXVJY0o0TTliY3ljaWdIQmpjcGlUcFdybGt1N24yZW5FUk9qelhCbENBWTFJcnhjUDlFdU5VT1FpRzdxQUt4QdIBc0FVX3lxTE1zNUI4TV9OTDRVZUFNOFVva2xHdU8zNjJGaURTQ19TbjVhNXRJNDhQRzBNNVJNTUl5dVZMSS1xMHEyQS1xLVpFVmhoN3NNQTFMOXB6bUV2TkNLbjJ4elNZWGxqdGhMNnFaOFlJZzlxc0tfYlk?oc=5"
@@ -361,22 +360,22 @@
       "subcategory": "csr",
       "subcategory_label": "기업 사회공헌 사례",
       "title": "대신파이낸셜그룹, 임직원·가족과 ESG 활동…\"도심 숲 조성·무료급식\" - v.daum.net",
-      "summary": "대신파이낸셜그룹이 임직원 및 가족과 함께 도심 숲 조성과 무료급식 등 ESG 활동을 진행하고 있다.",
+      "summary": "대신파이낸셜그룹이 임직원·가족과 함께 도심 숲 조성·무료급식 등 ESG 활동을 진행하고 있다.",
       "source": "v.daum.net",
       "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE0zNFBCeDdMVVl0TUFRdTZyM3QzN3hCWUdrMWR6a09FSXc5OVdqTThhRVFheWgyTVNqbXVDQ2NHWVJ2SUwxeGc?oc=5",
       "published_at": "2026-07-13T00:12:43+00:00",
       "keywords": [
         "ESG"
       ],
-      "priority": 2,
+      "priority": 3,
       "ai_analyzed": true,
-      "insight": "직원·가족 참여형 활동은 지역사회 연계와 조직문화 강화에 동시에 기여할 수 있다.",
+      "insight": "임직원 참여형 지역활동은 기업 내부의 사회적 책임 문화 강화와 지역사회 직접지원에 효과적이다.",
       "trend_tags": [
-        "직원참여",
+        "임직원참여",
         "지역사회",
-        "환경복지"
+        "도심숲"
       ],
-      "confidence": "낮음",
+      "confidence": "보통",
       "source_type": "뉴스·기관자료",
       "final_source": "원문 제공기관",
       "verification_url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE0zNFBCeDdMVVl0TUFRdTZyM3QzN3hCWUdrMWR6a09FSXc5OVdqTThhRVFheWgyTVNqbXVDQ2NHWVJ2SUwxeGc?oc=5"
@@ -398,13 +397,13 @@
       ],
       "priority": 2,
       "ai_analyzed": true,
-      "insight": "장기간의 수상·인정은 기업의 사회공헌 지속성과 신뢰도를 높이는 요인으로 작용한다.",
+      "insight": "지속적 수상 실적은 기업의 사회공헌 지속성 및 신뢰성 제고에 기여한다.",
       "trend_tags": [
-        "상훈",
-        "장기성과",
-        "ESG리더십"
+        "수상",
+        "지속가능경영",
+        "사회공헌"
       ],
-      "confidence": "낮음",
+      "confidence": "보통",
       "source_type": "뉴스·기관자료",
       "final_source": "원문 제공기관",
       "verification_url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5VUWEzVGFqNGxGSWwxcUdzcDBHX20xd185cWx4WkM1NVFxYi1obTFGRGF0NDRkdFNMRlQ0OUJ1THJhNXlSUnVhMmFxUQ?oc=5"
@@ -415,7 +414,7 @@
       "subcategory": "csr",
       "subcategory_label": "기업 사회공헌 사례",
       "title": "라이프 큐레이터…보람그룹, 5년 연속 ‘사회공헌기업’ ESG부문 대상 - 매일경제",
-      "summary": "보람그룹이 5년 연속 사회공헌기업 ESG 부문 대상을 받았다는 보도가 나왔다.",
+      "summary": "보람그룹이 5년 연속 사회공헌기업 ESG 부문 대상을 수상했다(유사 보도).",
       "source": "매일경제",
       "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5NclpubS0tMWdxTmxvZEQxczQxSkdqOUVuVTlhQmVKVXFidnNrQ21nQmIxUWVNUGVwZllrVE1jWU8tTlVGWng1X3ZBLV82NTNQR1Q1UFhn?oc=5",
       "published_at": "2026-07-10T07:00:00+00:00",
@@ -425,13 +424,13 @@
       ],
       "priority": 2,
       "ai_analyzed": true,
-      "insight": "반복적인 수상 기록은 공익 파트너십 확대와 내부 역량 강화의 근거로 활용될 수 있다.",
+      "insight": "반복 수상 사례는 공익법인이 장기 파트너십 가능성을 평가할 때 유의미한 신호다.",
       "trend_tags": [
-        "보상·인증",
-        "지속성",
-        "사회공헌"
+        "수상",
+        "사회공헌",
+        "브랜드신뢰"
       ],
-      "confidence": "낮음",
+      "confidence": "보통",
       "source_type": "뉴스·기관자료",
       "final_source": "원문 제공기관",
       "verification_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5NclpubS0tMWdxTmxvZEQxczQxSkdqOUVuVTlhQmVKVXFidnNrQ21nQmIxUWVNUGVwZllrVE1jWU8tTlVGWng1X3ZBLV82NTNQR1Q1UFhn?oc=5"
@@ -442,7 +441,7 @@
       "subcategory": "csr",
       "subcategory_label": "기업 사회공헌 사례",
       "title": "사회공헌·기부에서 기후위기 대응까지…달라진 제약업계 ESG - v.daum.net",
-      "summary": "제약업계의 ESG 활동이 사회공헌·기부에서 기후위기 대응까지 확대되고 있다.",
+      "summary": "제약업계의 ESG가 전통적 사회공헌·기부에서 기후위기 대응까지 확장되고 있다.",
       "source": "v.daum.net",
       "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE4tUG8yUGFSSmpDNEU4VXppLVNQdllPZWFDVEdZZksyNXowSVc4bEVZUS01QzZVbnZOLW41MzNCM0hIc3BiSmZNelFDYklnc2ZlTkJrMg?oc=5",
       "published_at": "2026-07-06T20:00:03+00:00",
@@ -451,15 +450,15 @@
         "ESG",
         "기부"
       ],
-      "priority": 4,
+      "priority": 3,
       "ai_analyzed": true,
-      "insight": "제약사의 기후 대응 확대는 공급망·폐기물 관리 개선이 필요해 공익단체와의 협업 여지가 크다.",
+      "insight": "제약사의 환경 이슈 참여는 보건·환경 교차영역에서 공익단체와의 협업 가능성을 높인다.",
       "trend_tags": [
-        "제약",
+        "제약업계ESG",
         "기후대응",
-        "ESG전환"
+        "기부"
       ],
-      "confidence": "낮음",
+      "confidence": "보통",
       "source_type": "뉴스·기관자료",
       "final_source": "원문 제공기관",
       "verification_url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE4tUG8yUGFSSmpDNEU4VXppLVNQdllPZWFDVEdZZksyNXowSVc4bEVZUS01QzZVbnZOLW41MzNCM0hIc3BiSmZNelFDYklnc2ZlTkJrMg?oc=5"
@@ -470,7 +469,7 @@
       "subcategory": "csr",
       "subcategory_label": "기업 사회공헌 사례",
       "title": "[나눔 트렌드] (주)비엔씨티, 소아암 어린이 치료비 1천만 원 기부 外 - v.daum.net",
-      "summary": "(주)비엔씨티가 소아암 어린이 치료비 1천만 원을 기부했다.",
+      "summary": "(주)비엔씨티가 소아암 어린이 치료비 1천만 원을 기부하는 등 나눔 활동이 보고됐다.",
       "source": "v.daum.net",
       "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1VT1JKTGFtYXF3WTBrSmZSTnhieVlzUlhKVm5BaFJ3eG1iVmIxVEVSMG9xTzJYWFAyY3hXUzVKdERyM3V2NUF1TDItTQ?oc=5",
       "published_at": "2026-07-01T07:00:00+00:00",
@@ -479,11 +478,11 @@
       ],
       "priority": 2,
       "ai_analyzed": true,
-      "insight": "중소기업의 개별 기부는 지역 공익사업과 연계해 장기적 지원으로 발전시킬 수 있다.",
+      "insight": "기업의 개별 기부 사례는 소액 기부자 관리·치료비 지원 모델을 설계할 때 참고될 수 있다.",
       "trend_tags": [
-        "기부사례",
+        "기부",
         "소아암",
-        "중소기업"
+        "나눔트렌드"
       ],
       "confidence": "보통",
       "source_type": "뉴스·기관자료",
@@ -496,7 +495,7 @@
       "subcategory": "csr",
       "subcategory_label": "기업 사회공헌 사례",
       "title": "고립 예방부터 청년 일자리까지…기업 사회적 가치 실현 확대 - 한국면세뉴스",
-      "summary": "기업들이 고립 예방부터 청년 일자리 창출까지 사회적 가치 실현을 확대하고 있다.",
+      "summary": "기업들이 고립 예방부터 청년 일자리 창출까지 다양한 사회적 가치 실현을 확대하고 있다.",
       "source": "한국면세뉴스",
       "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5uWEp3RDhGWmlSLTE4SE40ODRVeEFUV3poTndMbWhuOE9haElCa1JhQVhYbEdFcklZMmE1OGYxbUxBSjQ5eXB6dEs2cG5teERiQi0yaEY1RW1XSWI5U2pGM0JpOHMzSklPNmc?oc=5",
       "published_at": "2026-06-30T05:08:01+00:00",
@@ -505,13 +504,13 @@
       ],
       "priority": 3,
       "ai_analyzed": true,
-      "insight": "사회적 가치 프로그램은 대상별 맞춤형 모델과 측정지표를 갖춰 지역사회 효과를 극대화해야 한다.",
+      "insight": "다영역 사회적 가치 프로그램은 공익법인과의 다중적 협력·프로그램 통합 가능성을 시사한다.",
       "trend_tags": [
         "사회적가치",
-        "고립예방",
-        "청년일자리"
+        "청년일자리",
+        "고립예방"
       ],
-      "confidence": "낮음",
+      "confidence": "보통",
       "source_type": "뉴스·기관자료",
       "final_source": "원문 제공기관",
       "verification_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5uWEp3RDhGWmlSLTE4SE40ODRVeEFUV3poTndMbWhuOE9haElCa1JhQVhYbEdFcklZMmE1OGYxbUxBSjQ5eXB6dEs2cG5teERiQi0yaEY1RW1XSWI5U2pGM0JpOHMzSklPNmc?oc=5"
@@ -522,7 +521,7 @@
       "subcategory": "csr",
       "subcategory_label": "기업 사회공헌 사례",
       "title": "[허프 트렌드] 현대차는 왜 디저트 생산 지원할까 : '장애인 표준사업장' 통해 사회적 가치 창출 나서는 기업들 - 허프포스트코리아",
-      "summary": "현대차가 장애인 표준사업장 지원을 통해 사회적 가치를 창출하고 있다.",
+      "summary": "기업들이 장애인 표준사업장(예: 디저트 생산) 지원을 통해 사회적 가치를 창출하고 있다.",
       "source": "허프포스트코리아",
       "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1heEVhd1UwMWtTMVdyRWwtTklsTk5IdWloeTE5Nk9JYnlDUEVVc1NkUHhMMWxSMHp5Qm5SeWdzVk1NTGZKbGpLRGxjMWI0c25WQXhJTFp3UQ?oc=5",
       "published_at": "2026-06-24T07:00:00+00:00",
@@ -531,13 +530,13 @@
       ],
       "priority": 3,
       "ai_analyzed": true,
-      "insight": "표준사업장 지원은 장애인 고용 확대와 사회적기업 생태계 강화 측면에서 공익법인과의 협업이 유의미하다.",
+      "insight": "표준사업장 지원은 장애인 고용 확대와 지속가능한 공급망 구축에서 공익단체의 협업 기회로 작용한다.",
       "trend_tags": [
+        "사회적기업",
         "장애인고용",
-        "표준사업장",
-        "사회적가치"
+        "표준사업장"
       ],
-      "confidence": "낮음",
+      "confidence": "보통",
       "source_type": "뉴스·기관자료",
       "final_source": "원문 제공기관",
       "verification_url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1heEVhd1UwMWtTMVdyRWwtTklsTk5IdWloeTE5Nk9JYnlDUEVVc1NkUHhMMWxSMHp5Qm5SeWdzVk1NTGZKbGpLRGxjMWI0c25WQXhJTFp3UQ?oc=5"
@@ -548,7 +547,7 @@
       "subcategory": "csr",
       "subcategory_label": "기업 사회공헌 사례",
       "title": "[ESG 트렌드] 42년 숲환경 캠페인 철학 담은 ‘유한킴벌리 푸른숲체’ 공개 外 - 베이비뉴스",
-      "summary": "유한킴벌리가 42년 숲환경 캠페인 철학을 담은 '푸른숲체'를 공개했다.",
+      "summary": "유한킴벌리가 42년간의 숲환경 캠페인 철학을 담은 ‘푸른숲체’를 공개했다.",
       "source": "베이비뉴스",
       "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9DME93STQxb1JkQ3lZWUJTaUdGVWI5NlVxZDBWYWdEYTdwM1M2ekhDMklweEhuRzZ0NkdxSXJtRlVmdWNIWHlVYVhkV0JSS0Z0WFczaGNoSVpjOHRoVWZTT0R5SFlLZWxGbU9QZQ?oc=5",
       "published_at": "2026-06-23T07:00:00+00:00",
@@ -557,11 +556,11 @@
       ],
       "priority": 2,
       "ai_analyzed": true,
-      "insight": "장기 캠페인 자원은 교육·홍보 자료로 공익단체와 공유하면 지속성 확대에 도움이 된다.",
+      "insight": "오랜 기간 축적된 캠페인 자산의 브랜드화는 환경보전 메시지 확산에 도움이 된다.",
       "trend_tags": [
-        "장기캠페인",
-        "숲환경",
-        "브랜딩"
+        "환경캠페인",
+        "브랜딩",
+        "숲보전"
       ],
       "confidence": "낮음",
       "source_type": "뉴스·기관자료",
@@ -574,22 +573,22 @@
       "subcategory": "csr",
       "subcategory_label": "기업 사회공헌 사례",
       "title": "[나눔 트렌드] 'D.O.경수다움', 소아암 환아 위해 7년째 온기…고액기부자 클럽 ‘드림아너스 골드회원’ 1호 위촉 外 - 베이비뉴스",
-      "summary": "'D.O.경수다움'이 소아암 환아 지원을 7년째 이어가며 고액기부자 클럽 '드림아너스 골드회원' 1호를 위촉했다.",
+      "summary": "'D.O.경수다움'이 소아암 환아를 위해 7년째 지원을 이어가고, 고액기부자 클럽의 첫 골드회원이 위촉됐다.",
       "source": "베이비뉴스",
       "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9kbUoydjI3TVUyNnhCT3M3UXZBN0ZvR0ZRNEYwc0pxc1lTVF9xdDBWekRJLUVULTlsbmJiZ3lmcjI3OXR3dmVkbDZFRW1BV0U3aF9OcWNod1dkUU9UWk1FVWRQQUNQNDNNSVAzUg?oc=5",
       "published_at": "2026-06-23T07:00:00+00:00",
       "keywords": [
         "기부"
       ],
-      "priority": 2,
+      "priority": 3,
       "ai_analyzed": true,
-      "insight": "고액기부자 클럽 운영은 장기 기부 유지를 위한 전략적 수단으로 공익단체의 모금 역량과 연계해 활용할 수 있다.",
+      "insight": "장기적 개인 기부자 프로그램과 고액기부자 클럽은 치료비 지원의 지속성 확보에 기여한다.",
       "trend_tags": [
-        "소아암지원",
         "장기기부",
+        "소아암",
         "고액기부자"
       ],
-      "confidence": "낮음",
+      "confidence": "보통",
       "source_type": "뉴스·기관자료",
       "final_source": "원문 제공기관",
       "verification_url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9kbUoydjI3TVUyNnhCT3M3UXZBN0ZvR0ZRNEYwc0pxc1lTVF9xdDBWekRJLUVULTlsbmJiZ3lmcjI3OXR3dmVkbDZFRW1BV0U3aF9OcWNod1dkUU9UWk1FVWRQQUNQNDNNSVAzUg?oc=5"
@@ -600,7 +599,7 @@
       "subcategory": "csr",
       "subcategory_label": "기업 사회공헌 사례",
       "title": "[심층분석] ‘가치경영’이 기술혁신과 만날 때…HS효성, 장애인 스포츠 지원으로 ESG 경쟁력 확장 - 뉴스밸류",
-      "summary": "HS효성이 기술혁신과 가치경영을 결합해 장애인 스포츠 지원으로 ESG 경쟁력을 확장하고 있다.",
+      "summary": "HS효성이 기술혁신과 가치경영을 접목해 장애인 스포츠 지원으로 ESG 경쟁력을 확장하고 있다.",
       "source": "뉴스밸류",
       "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE15RVp5SEJ6R2NQS3V3aEtRVHdYMmFPMGhMR0ZoUXJTWmw5WFBSeUtEMVV4ZnN0ZFdscGpnNTlsZHh2ajhBZ0RkcG0teTlJRHVmRGt2M1lXZHFDa3Y2TG12ZTRUVDhUZGJuemc?oc=5",
       "published_at": "2026-06-22T07:00:00+00:00",
@@ -609,13 +608,13 @@
       ],
       "priority": 3,
       "ai_analyzed": true,
-      "insight": "장애인 스포츠 지원은 포용성 강화를 위한 실천 사례로 공익단체와 기술적 협업 모델을 모색할 수 있다.",
+      "insight": "장애인 스포츠 지원은 포용성 강화와 기업의 사회적 브랜드 제고에 실질적 도움이 된다.",
       "trend_tags": [
-        "기술혁신",
         "장애인스포츠",
-        "가치경영"
+        "가치경영",
+        "포용성"
       ],
-      "confidence": "낮음",
+      "confidence": "보통",
       "source_type": "뉴스·기관자료",
       "final_source": "원문 제공기관",
       "verification_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE15RVp5SEJ6R2NQS3V3aEtRVHdYMmFPMGhMR0ZoUXJTWmw5WFBSeUtEMVV4ZnN0ZFdscGpnNTlsZHh2ajhBZ0RkcG0teTlJRHVmRGt2M1lXZHFDa3Y2TG12ZTRUVDhUZGJuemc?oc=5"
