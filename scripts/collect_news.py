@@ -214,6 +214,34 @@ def collect_kr_official():
  return out,errors
 
 
+def gdacs_api_score(event_type,event_id):
+ if not event_type or not event_id: return None
+ url=("https://www.gdacs.org/gdacsapi/api/events/geteventdata?eventtype="
+      +quote(event_type)+"&eventid="+quote(event_id))
+ payload=json.loads(fetch(url,tries=1,timeout=25))
+ preferred=[]; fallback=[]
+ def walk(value):
+  if isinstance(value,dict):
+   for key,val in value.items():
+    name=str(key).lower().replace("_","")
+    if name=="alertscore": preferred.append(val)
+    elif name=="score": fallback.append(val)
+    walk(val)
+  elif isinstance(value,list):
+   for val in value: walk(val)
+ walk(payload)
+ for value in preferred+fallback:
+  try: return float(value)
+  except (TypeError,ValueError): pass
+ return None
+
+def gdacs_xml_value(element,name):
+ for child in element.iter():
+  if child.tag.rsplit("}",1)[-1].lower()==name:
+   value=clean(child.text)
+   if value: return value
+ return ""
+
 def parse_gdacs_rss(raw,min_score=GDACS_MIN_SCORE):
  root=ET.fromstring(raw); out=[]
  for e in root.findall(".//item")[:40]:
@@ -225,9 +253,15 @@ def parse_gdacs_rss(raw,min_score=GDACS_MIN_SCORE):
    if local=="alertscore":
     score_text=clean(child.text)
     if score_text: break
-  try: score=float(score_text)
+  event_type=gdacs_xml_value(e,"eventtype")
+  event_id=gdacs_xml_value(e,"eventid")
+  try: rss_score=float(score_text)
   except (TypeError,ValueError): continue
-  if score<min_score: continue
+  # 상세 API의 수치가 웹 이벤트 화면과 동일한 최종 GDACS Score다.
+  # RSS 값만으로 통과시키지 않으며 API 검증 실패 항목도 보수적으로 제외한다.
+  try: score=gdacs_api_score(event_type,event_id)
+  except Exception: continue
+  if score is None or score<min_score: continue
   title=clean(e.findtext("title")); link=clean(e.findtext("link"))
   desc=clean(e.findtext("description")); source=clean(e.findtext("source")) or "GDACS"
   combined=title+" "+desc+" "+source
