@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/style.css?v=20260722-more-button">
-  <script src="assets/app.js?v=20260722-law-baseline" defer></script>
+  <script src="assets/app.js?v=20260722-daily-priority" defer></script>
 </head>
 <body>
 <a class="skip" href="#content">본문 바로가기</a>
@@ -28,12 +28,12 @@
     <div class="section-head"><div><p class="kicker">MONITORING</p><h2>분야별 주요 소식</h2></div><p>사회공헌·재해·NGO·KBS 동행 소식</p></div>
     <div class="controls">
       <div class="period-monitor" aria-label="모니터링 기간">
-        <button type="button" class="period-card" data-period="1"><strong>일일 동향</strong><small>24시간</small><b id="dailyCount">0건</b></button>
-        <button type="button" class="period-card active" data-period="7"><strong>주간 동향</strong><small>7일</small><b id="weeklyCount">0건</b></button>
+        <button type="button" class="period-card active" data-period="1"><strong>일일 동향</strong><small>24시간</small><b id="dailyCount">0건</b></button>
+        <button type="button" class="period-card" data-period="7"><strong>주간 동향</strong><small>7일</small><b id="weeklyCount">0건</b></button>
         <button type="button" class="period-card" data-period="30"><strong>월간 추세</strong><small>30일</small><b id="monthlyCount">0건</b></button>
       </div>
       <div class="toolbar"><div class="search"><span aria-hidden="true">⌕</span><input id="searchInput" type="search" placeholder="제목, 요약, 출처 검색" aria-label="뉴스 검색"></div>
-        <label><span>정렬</span><select id="sortFilter"><option value="newest">최신순</option><option value="priority">중요도순</option></select></label>
+        <label><span>정렬</span><select id="sortFilter"><option value="priority" selected>중요도순</option><option value="newest">최신순</option></select></label>
       </div>
       <div class="category-tabs" id="categoryTabs" role="tablist" aria-label="분야 필터"></div>
     </div>
