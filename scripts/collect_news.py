@@ -23,6 +23,7 @@ NGO_DAYS=30
 LAW_DAYS=365
 MAX_RESPONSE_BYTES=5*1024*1024
 MAX_PAGE_LINKS=300
+MAX_ITEMS=150
 NGO_KEYWORDS=[
  "NGO","비정부기구","모금","후원","후원금","기부","기부금","나눔","캠페인","구호",
  "긴급구호","긴급지원","인도적 지원","지원사업","아동지원","취약계층","국제개발협력",
@@ -612,8 +613,10 @@ def main():
  except Exception as e:
   errors.append({"source":"openai","error":str(e)[:200]})
   ai_status={"enabled":bool(OPENAI_API_KEY),"analyzed":0,"message":"AI 분석 실패 — 기본 요약 유지"}
+ dedup.sort(key=lambda x:((x.get("priority") if isinstance(x.get("priority"),(int,float)) else 0),x.get("published_at","")),reverse=True)
+ dedup=dedup[:MAX_ITEMS]
  payload={"updated_at":datetime.now(timezone.utc).isoformat(),"item_count":len(dedup),
-          "errors":errors,"ai_status":ai_status,"source_guides":SOURCE_GUIDES,"items":dedup[:240]}
+          "errors":errors,"ai_status":ai_status,"source_guides":SOURCE_GUIDES,"items":dedup}
  OUT.parent.mkdir(exist_ok=True)
  OUT.write_text(json.dumps(payload,ensure_ascii=False,indent=2),encoding="utf-8")
  print(f"collected={len(dedup)} ai={ai_status['analyzed']} errors={len(errors)}")
