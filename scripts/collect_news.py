@@ -17,6 +17,11 @@ KBS_SEARCH_URLS=[
  "https://www.kbs.co.kr/m/search/main.html?keyword=%EB%8F%99%ED%96%89",
  "https://www.kbs.co.kr/m/search/replay.html?keyword=%EB%8F%99%ED%96%89",
 ]
+KBS_VERIFIED_SEEDS=[
+ ("동행 567회 산골 소녀 지민이의 독립 선언","2026-07-18","https://vod.kbs.co.kr/m/index.html?program_code=T2014-0877&program_id=PS-2026122474-01-000&section_code=05&sname=vod&source=episode&stype=vod"),
+ ("동행 566회 기적의 아빠, 상봉 씨","2026-07-11","https://vod.kbs.co.kr/m/index.html?program_code=T2014-0877&program_id=PS-2026112095-01-000&section_code=05&sname=vod&source=episode&stype=vod"),
+ ("동행 565회 오늘도 활짝, 무공해 삼 남매","2026-07-04","https://vod.kbs.co.kr/m/index.html?program_code=T2014-0877&program_id=PS-2026112094-01-000&section_code=05&sname=vod&source=episode&stype=vod"),
+]
 
 SOURCES=[
  # category, subcategory, query, authoritative discovery domains
@@ -168,6 +173,16 @@ def parse_kbs_html(raw,page_url,source):
    seen.add(item["url"]); out.append(item)
  return out
 
+def verified_kbs_seeds(days=30):
+ cutoff=datetime.now(timezone.utc)-timedelta(days=days)
+ out=[]
+ for title,date,url in KBS_VERIFIED_SEEDS:
+  stamp=datetime.fromisoformat(date).replace(tzinfo=timezone.utc)
+  if stamp<cutoff: continue
+  item=kbs_item(title,url,title+" "+date,"KBS 공식 다시보기")
+  if item: out.append(item)
+ return out
+
 def collect_kbs_official():
  out=[]; errors=[]
  targets=[(KBS_PROGRAM_URL,"KBS 동행 공식 프로그램")]
@@ -241,6 +256,8 @@ def main():
  # KBS 공식 프로그램·통합검색은 주 수집원, Google 뉴스는 보조 수집원이다.
  kbs_items,kbs_errors=collect_kbs_official()
  items+=kbs_items
+ # KBS가 검색 목록을 동적으로 제공하는 동안에는 검증된 공식 회차를 초기 기록으로 사용한다.
+ items+=verified_kbs_seeds(30)
  errors+=kbs_errors
  # 공식 페이지에 새 방송이 없어도 기존 KBS 기록은 방송일 기준 30일간 유지한다.
  items+=keep_recent_kbs(old.get("items",[]),30)
