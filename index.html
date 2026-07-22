@@ -1,81 +1,21 @@
 <!doctype html>
 <html lang="ko">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-  <meta name="description" content="공익법인·ESG·사회공헌·재난·NGO·KBS 동행 통합 모니터링">
-  <meta name="theme-color" content="#0b1f3a">
-  <title>공익·ESG 인사이트 모니터</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="description" content="공익법인 관련법·사회공헌·재해·NGO·KBS 동행 통합 모니터링">
+  <meta name="theme-color" content="#0b1f3a"><title>공익·사회공헌 인사이트 모니터</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/style.css">
-  <script src="assets/app.js" defer></script>
+  <link rel="stylesheet" href="assets/style.css"><script src="assets/app.js" defer></script>
 </head>
 <body>
-  <a class="skip" href="#content">본문 바로가기</a>
-  <header class="site-header">
-    <a class="brand" href="#top" aria-label="처음으로">
-      <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
-      <span><b>PUBLIC VALUE</b><small>공익·ESG 인사이트 모니터</small></span>
-    </a>
-    <nav aria-label="주요 메뉴">
-      <a href="#dashboard">오늘의 현황</a><a href="#news">모니터링</a><a href="#sources">출처 안내</a>
-    </nav>
-    <button class="menu" type="button" aria-label="메뉴 열기" aria-expanded="false"><span></span><span></span><span></span></button>
-  </header>
-
-  <main id="content">
-    <section class="hero" id="top">
-      <div class="hero-inner">
-        <p class="eyebrow">PUBLIC INTEREST · ESG · SOCIAL IMPACT</p>
-        <h1>더 나은 사회를 위한 변화를<br><em>한눈에 읽습니다.</em></h1>
-        <p class="hero-copy">법·정책부터 ESG, 사회공헌, 재난, NGO, KBS 동행까지<br>공익 분야의 주요 흐름을 매일 아침 정리합니다.</p>
-        <a class="hero-button" href="#news">오늘의 이슈 보기 <span>→</span></a>
-      </div>
-      <div class="hero-orbit" aria-hidden="true"><i></i><i></i><i></i><strong>VALUE</strong></div>
-    </section>
-
-    <section class="dashboard wrap" id="dashboard">
-      <div class="section-head">
-        <div><p class="kicker">TODAY'S OVERVIEW</p><h2>오늘의 공익 인사이트</h2></div>
-        <div class="updated"><span class="pulse"></span><span>최근 업데이트</span><strong id="updatedAt">확인 중</strong></div>
-      </div>
-      <div class="stats" id="stats" aria-live="polite"></div>
-      <div class="notice" id="collectorNotice" hidden></div>
-    </section>
-
-    <section class="monitor" id="news">
-      <div class="wrap">
-        <div class="section-head light">
-          <div><p class="kicker">ISSUE MONITORING</p><h2>분야별 주요 소식</h2></div>
-          <p>기사 제목과 요약은 원문 확인을 위한 참고 정보입니다.</p>
-        </div>
-        <div class="toolbar">
-          <div class="search"><span aria-hidden="true">⌕</span><input id="searchInput" type="search" placeholder="제목·출처·키워드 검색" aria-label="뉴스 검색"></div>
-          <label><span>기간</span><select id="periodFilter"><option value="7">최근 7일</option><option value="1">24시간</option><option value="30">최근 30일</option><option value="all">전체</option></select></label>
-          <label><span>정렬</span><select id="sortFilter"><option value="newest">최신순</option><option value="priority">중요도순</option></select></label>
-        </div>
-        <div class="category-tabs" id="categoryTabs" role="tablist" aria-label="분야 필터"></div>
-        <div class="result-meta"><strong id="resultCount">0건</strong><span id="activeLabel">전체 분야</span></div>
-        <div class="news-grid" id="newsGrid" aria-live="polite"></div>
-        <button class="more" id="moreButton" type="button" hidden>더 보기</button>
-      </div>
-    </section>
-
-    <section class="sources wrap" id="sources">
-      <div class="section-head">
-        <div><p class="kicker">SOURCE PRINCIPLES</p><h2>신뢰 가능한 정보부터</h2></div>
-      </div>
-      <div class="principles">
-        <article><b>01</b><h3>공식 원문 우선</h3><p>정부·법령·국제기구·기관 공식 채널을 우선 수집합니다.</p></article>
-        <article><b>02</b><h3>출처 투명성</h3><p>모든 콘텐츠에 출처, 게시일, 원문 링크를 표시합니다.</p></article>
-        <article><b>03</b><h3>최종 확인 원칙</h3><p>요약은 모니터링용입니다. 중요한 판단은 원문을 확인하세요.</p></article>
-      </div>
-    </section>
-  </main>
-
-  <footer><div class="wrap"><div><b>PUBLIC VALUE MONITOR</b><p>공익과 사회적 가치의 흐름을 연결합니다.</p></div><p>매일 07:00 KST 자동 업데이트 · GitHub Pages</p></div></footer>
-  <noscript>이 페이지를 보려면 JavaScript를 활성화해 주세요.</noscript>
-</body>
-</html>
+<a class="skip" href="#content">본문 바로가기</a>
+<header class="site-header"><a class="brand" href="#top" aria-label="처음으로"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><span><b>PUBLIC VALUE</b><small>공익·사회공헌 인사이트 모니터</small></span></a><nav aria-label="주요 메뉴"><a href="#dashboard">오늘의 현황</a><a href="#news">모니터링</a><a href="#sources">출처 안내</a></nav><button class="menu" type="button" aria-label="메뉴 열기" aria-expanded="false"><span></span><span></span><span></span></button></header>
+<main id="content">
+<section class="hero" id="top"><div class="hero-inner"><p class="eyebrow">PUBLIC INTEREST · SOCIAL IMPACT · DISASTER RESPONSE</p><h1>공익과 나눔의 변화를<br><em>근거 중심으로 읽습니다.</em></h1><p class="hero-copy">공익법인 관련법, 기업 사회공헌과 ESG·기부 트렌드,<br>국내외 재해, NGO 사업, KBS 동행을 매일 분석·요약합니다.</p><a class="hero-button" href="#news">오늘의 이슈 보기 <span>→</span></a></div><div class="hero-orbit" aria-hidden="true"><i></i><i></i><i></i><strong>VALUE</strong></div></section>
+<section class="dashboard wrap" id="dashboard"><div class="section-head"><div><p class="kicker">TODAY'S OVERVIEW</p><h2>오늘의 공익 인사이트</h2></div><div class="updated"><span class="pulse"></span><span>최근 업데이트</span><strong id="updatedAt">확인 중</strong><small id="aiStatus">분석 상태 확인 중</small></div></div><div class="stats" id="stats" aria-live="polite"></div><div class="notice" id="collectorNotice" hidden></div></section>
+<section class="monitor" id="news"><div class="wrap"><div class="section-head light"><div><p class="kicker">ISSUE MONITORING</p><h2>분야별 주요 소식</h2></div><p>AI 요약·시사점은 모니터링 보조자료이며 중요한 판단은 원문을 확인하세요.</p></div><div class="toolbar"><div class="search"><span aria-hidden="true">⌕</span><input id="searchInput" type="search" placeholder="제목·요약·출처·트렌드 검색" aria-label="뉴스 검색"></div><label><span>기간</span><select id="periodFilter"><option value="7">최근 7일</option><option value="1">24시간</option><option value="30">최근 30일</option><option value="all">전체</option></select></label><label><span>정렬</span><select id="sortFilter"><option value="newest">최신순</option><option value="priority">중요도순</option></select></label></div><div class="category-tabs" id="categoryTabs" role="tablist" aria-label="분야 필터"></div><div class="law-sub-tabs" id="lawSubTabs" hidden aria-label="공익법인 관련법 세부분류"></div><div class="result-meta"><strong id="resultCount">0건</strong><span id="activeLabel">전체</span></div><div class="news-grid" id="newsGrid" aria-live="polite"></div><button class="more" id="moreButton" type="button" hidden>더 보기</button></div></section>
+<section class="sources wrap" id="sources"><div class="section-head"><div><p class="kicker">SOURCE PRINCIPLES</p><h2>신뢰 가능한 정보부터</h2></div></div><div class="principles"><article><b>01</b><h3>공식 원문 우선</h3><p>정부·법령·국제기구·기관 공식 채널을 우선 수집합니다.</p></article><article><b>02</b><h3>출처와 AI 구분</h3><p>출처·게시일·원문 링크와 AI 분석 여부를 함께 표시합니다.</p></article><article><b>03</b><h3>최종 확인 원칙</h3><p>요약은 참고용입니다. 법률·재해 대응과 기부 판단은 원문을 확인하세요.</p></article></div></section>
+</main>
+<footer><div class="wrap"><div><b>PUBLIC VALUE MONITOR</b><p>공익과 사회적 가치의 흐름을 연결합니다.</p></div><p>매일 07:00 KST 자동 업데이트 · GitHub Pages</p></div></footer><noscript>이 페이지를 보려면 JavaScript를 활성화해 주세요.</noscript>
+</body></html>
