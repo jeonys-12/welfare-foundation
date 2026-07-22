@@ -20,6 +20,7 @@ KBS_SEARCH_URLS=[
 ]
 DISASTER_DAYS=30
 NGO_DAYS=30
+LAW_DAYS=365
 MAX_RESPONSE_BYTES=5*1024*1024
 MAX_PAGE_LINKS=300
 NGO_KEYWORDS=[
@@ -306,6 +307,18 @@ def collect_global_official():
  except Exception as e: errors.append({"source":"ReliefWeb","error":str(e)[:160]})
  return out,errors
 
+def keep_recent_laws(old_items,days=LAW_DAYS):
+ cutoff=datetime.now(timezone.utc)-timedelta(days=days)
+ kept=[]
+ for item in old_items:
+  if item.get("category")!="law" or item.get("official_baseline"): continue
+  try:
+   stamp=datetime.fromisoformat(item.get("published_at","").replace("Z","+00:00"))
+   if stamp.tzinfo is None: stamp=stamp.replace(tzinfo=timezone.utc)
+  except Exception: continue
+  if stamp>=cutoff: kept.append(item)
+ return kept
+
 def keep_recent_disasters(old_items,days=DISASTER_DAYS):
  cutoff=datetime.now(timezone.utc)-timedelta(days=days)
  kept=[]
@@ -544,6 +557,8 @@ def main():
  except Exception: pass
  # 최근 기사 유무와 무관하게 공식 현행 법령 기본목록을 항상 제공한다.
  items+=collect_official_law_baselines()
+ # 최근 개정·입법 동향은 일시적인 검색 공백에도 1년간 유지한다.
+ items+=keep_recent_laws(old.get("items",[]),LAW_DAYS)
  for cat,sub,q,domains in SOURCES:
   full=q+(" ("+" OR ".join("site:"+d for d in domains)+")" if domains else "")
   try: items+=parse_rss(fetch(google_rss(full)),cat,sub)
