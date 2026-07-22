@@ -14,8 +14,8 @@ OPENAI_API_KEY=(os.getenv("OPENAI_API_KEY") or os.getenv("OPEN_API_KEY") or "").
 OPENAI_MODEL=os.getenv("OPENAI_MODEL","gpt-5-mini").strip()
 KBS_PROGRAM_URL="https://program.kbs.co.kr/1tv/culture/accompany/pc/list.html?smenu=c2cc5a"
 KBS_SEARCH_URLS=[
- "https://search.kbs.co.kr/index.html?keyword=%EB%8F%99%ED%96%89",
- "https://search.kbs.co.kr/search?keyword=%EB%8F%99%ED%96%89",
+ "https://www.kbs.co.kr/m/search/main.html?keyword=%EB%8F%99%ED%96%89",
+ "https://www.kbs.co.kr/m/search/replay.html?keyword=%EB%8F%99%ED%96%89",
 ]
 
 SOURCES=[
