@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """Public-interest monitoring collector with optional OpenAI analysis."""
 import hashlib, html, json, os, re, time
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
-from urllib.parse import quote, urlparse
+from urllib.parse import quote, urljoin, urlparse
 from urllib.request import Request, urlopen
 import xml.etree.ElementTree as ET
 
@@ -12,6 +12,11 @@ OUT=ROOT/"data/news.json"
 UA="Mozilla/5.0 (compatible; PublicValueMonitor/2.0; +https://github.com/jeonys-12/welfare-foundation)"
 OPENAI_API_KEY=(os.getenv("OPENAI_API_KEY") or os.getenv("OPEN_API_KEY") or "").strip()
 OPENAI_MODEL=os.getenv("OPENAI_MODEL","gpt-5-mini").strip()
+KBS_PROGRAM_URL="https://program.kbs.co.kr/1tv/culture/accompany/pc/list.html?smenu=c2cc5a"
+KBS_SEARCH_URLS=[
+ "https://search.kbs.co.kr/index.html?keyword=%EB%8F%99%ED%96%89",
+ "https://search.kbs.co.kr/search?keyword=%EB%8F%99%ED%96%89",
+]
 
 SOURCES=[
  # category, subcategory, query, authoritative discovery domains
@@ -99,6 +104,91 @@ def parse_rss(raw,cat,sub):
   })
  return out
 
+def is_official_kbs(url):
+ host=urlparse(url).netloc.lower().split(":")[0]
+ return host=="kbs.co.kr" or host.endswith(".kbs.co.kr")
+
+def parse_kbs_date(text):
+ patterns=[
+  (r"(20\d{2})[.\-/년]\s*(\d{1,2})[.\-/월]\s*(\d{1,2})",("%Y","%m","%d")),
+  (r"(20\d{2})(\d{2})(\d{2})",("%Y","%m","%d")),
+ ]
+ for pattern,_ in patterns:
+  m=re.search(pattern,text)
+  if not m: continue
+  try:
+   return datetime(int(m.group(1)),int(m.group(2)),int(m.group(3)),tzinfo=timezone.utc).isoformat()
+  except ValueError: pass
+ return ""
+
+def kbs_item(title,url,context,source):
+ title=clean(title)
+ if not title or not is_official_kbs(url): return None
+ episode=re.search(r"(\d{1,4})\s*회",context)
+ date=parse_kbs_date(context)
+ # 공식 동행 프로그램 페이지에서는 KBS 문구가 없어도 인정한다.
+ if "동행" not in title and episode:
+  title="동행 "+episode.group(1)+"회 "+title
+ if "동행" not in title: return None
+ if not date:
+  # 날짜가 없는 공식 검색 결과는 수집 시각을 방송일로 오인하지 않도록 제외한다.
+  return None
+ summary=clean(context)[:360] or title
+ return {
+  "id":"","category":"kbs","subcategory":"kbs_donghaeng",
+  "subcategory_label":SUB_LABELS["kbs_donghaeng"],"title":title,
+  "summary":summary,"source":source,"url":url,"published_at":date,
+  "keywords":["동행"]+([episode.group(1)+"회"] if episode else []),
+  "priority":3,"ai_analyzed":False,"insight":"","trend_tags":[],
+  "confidence":"공식 KBS 자료","source_type":"KBS 공식 회차·방송정보",
+  "final_source":"KBS","verification_url":url
+ }
+
+def parse_kbs_html(raw,page_url,source):
+ doc=raw.decode("utf-8","replace")
+ out=[]; seen=set()
+ # 일반 HTML 링크와 서버 렌더링 결과
+ for m in re.finditer(r'<a\b[^>]*href=["\']([^"\']+)["\'][^>]*>(.*?)</a>',doc,re.I|re.S):
+  url=urljoin(page_url,html.unescape(m.group(1)))
+  if not is_official_kbs(url): continue
+  title=clean(m.group(2))
+  context=clean(doc[max(0,m.start()-450):min(len(doc),m.end()+450)])
+  item=kbs_item(title,url,context,source)
+  if item and item["url"] not in seen:
+   seen.add(item["url"]); out.append(item)
+ # KBS 페이지의 JSON/스크립트 렌더링 데이터
+ for m in re.finditer(r'"(?:title|program_title|episode_title|contents_name)"\s*:\s*"([^"]{2,160})"',doc,re.I):
+  title=clean(m.group(1).replace(r"\/","/"))
+  context=clean(doc[max(0,m.start()-600):min(len(doc),m.end()+900)])
+  um=re.search(r'"(?:url|link_url|contents_url)"\s*:\s*"([^"]+)"',context,re.I)
+  if not um: continue
+  url=urljoin(page_url,html.unescape(um.group(1).replace(r"\/","/")))
+  item=kbs_item(title,url,context,source)
+  if item and item["url"] not in seen:
+   seen.add(item["url"]); out.append(item)
+ return out
+
+def collect_kbs_official():
+ out=[]; errors=[]
+ targets=[(KBS_PROGRAM_URL,"KBS 동행 공식 프로그램")]
+ targets += [(url,"KBS 통합검색") for url in KBS_SEARCH_URLS]
+ for url,source in targets:
+  try: out+=parse_kbs_html(fetch(url),url,source)
+  except Exception as e: errors.append({"source":source,"error":str(e)[:160]})
+ return out,errors
+
+def keep_recent_kbs(old_items,days=30):
+ cutoff=datetime.now(timezone.utc)-timedelta(days=days)
+ kept=[]
+ for item in old_items:
+  if item.get("category")!="kbs": continue
+  try:
+   stamp=datetime.fromisoformat(item.get("published_at","").replace("Z","+00:00"))
+   if stamp.tzinfo is None: stamp=stamp.replace(tzinfo=timezone.utc)
+  except Exception: continue
+  if stamp>=cutoff: kept.append(item)
+ return kept
+
 def extract_output_text(response):
  if response.get("output_text"): return response["output_text"]
  for block in response.get("output",[]):
@@ -148,6 +238,12 @@ def main():
   full=q+(" ("+" OR ".join("site:"+d for d in domains)+")" if domains else "")
   try: items+=parse_rss(fetch(google_rss(full)),cat,sub)
   except Exception as e: errors.append({"source":sub,"error":str(e)[:160]})
+ # KBS 공식 프로그램·통합검색은 주 수집원, Google 뉴스는 보조 수집원이다.
+ kbs_items,kbs_errors=collect_kbs_official()
+ items+=kbs_items
+ errors+=kbs_errors
+ # 공식 페이지에 새 방송이 없어도 기존 KBS 기록은 방송일 기준 30일간 유지한다.
+ items+=keep_recent_kbs(old.get("items",[]),30)
  seen=set(); dedup=[]
  for x in sorted(items,key=lambda z:z["published_at"],reverse=True):
   key=re.sub(r"\W","",x["title"].lower())[:120]
