@@ -524,14 +524,25 @@ def main():
  errors+=kbs_errors
  # 공식 페이지에 새 방송이 없어도 기존 KBS 기록은 방송일 기준 30일간 유지한다.
  items+=keep_recent_kbs(old.get("items",[]),30)
+ # 외부 수집 결과에 비정상 항목이 하나 섞여도 전체 collect를 중단하지 않는다.
+ valid_items=[]
+ for x in items:
+  if not isinstance(x,dict):
+   errors.append({"source":"postprocess","error":"non-object item skipped"})
+   continue
+  required=("title","category","subcategory","published_at")
+  if any(not isinstance(x.get(k),str) or not x.get(k) for k in required):
+   errors.append({"source":"postprocess","error":"item with missing required fields skipped"})
+   continue
+  valid_items.append(x)
  seen=set(); dedup=[]
- for x in sorted(items,key=lambda z:z["published_at"],reverse=True):
-  key=re.sub(r"\W","",x["title"].lower())[:120]
-  if key in seen: continue
+ for x in sorted(valid_items,key=lambda z:z.get("published_at",""),reverse=True):
+  key=re.sub(r"\W","",x.get("title","").lower())[:120]
+  if not key or key in seen: continue
   seen.add(key)
   x["id"]=hashlib.sha256((x["category"]+"|"+x["subcategory"]+"|"+key).encode()).hexdigest()[:18]
   dedup.append(x)
- if not dedup: dedup=old.get("items",[])
+ if not dedup: dedup=[x for x in old.get("items",[]) if isinstance(x,dict)]
  ai_status={"enabled":False,"analyzed":0,"message":"분석 미실행"}
  try: dedup,ai_status=analyze_with_openai(dedup)
  except Exception as e:
@@ -543,4 +554,22 @@ def main():
  OUT.write_text(json.dumps(payload,ensure_ascii=False,indent=2),encoding="utf-8")
  print(f"collected={len(dedup)} ai={ai_status['analyzed']} errors={len(errors)}")
 
-if __name__=="__main__": main()
+if __name__=="__main__":
+ try:
+  main()
+ except Exception as e:
+  # 기존 데이터를 보존하고 오류를 기록해 일시적 예외가 배포 전체를 막지 않게 한다.
+  import traceback
+  traceback.print_exc()
+  try:
+   previous=json.loads(OUT.read_text(encoding="utf-8"))
+  except Exception:
+   previous={"items":[]}
+  previous["updated_at"]=datetime.now(timezone.utc).isoformat()
+  previous.setdefault("errors",[]).append({
+   "source":"collector","error":(type(e).__name__+": "+str(e))[:300]
+  })
+  previous["item_count"]=len(previous.get("items",[]))
+  OUT.parent.mkdir(exist_ok=True)
+  OUT.write_text(json.dumps(previous,ensure_ascii=False,indent=2),encoding="utf-8")
+  print("collector recovered; previous data preserved")
