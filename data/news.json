@@ -1,272 +1,38 @@
 {
-  "updated_at": "2026-07-22T01:20:28.212481+00:00",
-  "item_count": 113,
+  "updated_at": "2026-07-22T01:37:11.699772+00:00",
+  "item_count": 22,
   "errors": [],
+  "ai_status": {
+    "enabled": false,
+    "analyzed": 0,
+    "message": "OPENAI_API_KEY가 없어 기본 요약을 사용했습니다."
+  },
   "items": [
     {
-      "id": "5845094574642246611",
-      "category": "kbs",
-      "title": "“결국 인간이 이겼다”…신진서 카타고에 최종 ‘역전승’ - KBS 뉴스",
-      "summary": "“결국 인간이 이겼다”…신진서 카타고에 최종 ‘역전승’ KBS 뉴스",
-      "source": "KBS 뉴스",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1rM25TYkU4bExHT3F2SjVKSHVkQUt1LXp2VEtPQnpjSk9Xc1JkVTJySklkaTRVLTNoWVViaXNqTFp6cmhEM1Jwa01vakJob0FfN2N0cFc0dGw3YW8?oc=5",
-      "published_at": "2026-07-22T01:02:00+00:00",
-      "keywords": [
-        "KBS"
-      ],
-      "priority": 3
-    },
-    {
-      "id": "2099923867769699956",
+      "id": "e9b25779bf3e51d7b8",
       "category": "csr",
-      "title": "[스마일게이트 사회공헌 분석 ②] 게임처럼 즐겁게 사회문제 해결하기 - 뉴스포스트",
-      "summary": "[스마일게이트 사회공헌 분석 ②] 게임처럼 즐겁게 사회문제 해결하기 뉴스포스트",
-      "source": "뉴스포스트",
-      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1sWHhNbk1lcnQ5Y2dxNzduZl9LZC1GamFBNWZtNGV2QjB3Q3RoZmJQNXJIOXgzdjlocmhSSFJlY0c0VXhNcG9qLW5rcHhqLVdwZEF0T2VtTGd6TWozNFl5bEM1V3lIM21N?oc=5",
-      "published_at": "2026-07-22T00:22:25+00:00",
+      "subcategory": "csr",
+      "subcategory_label": "기업 사회공헌 사례",
+      "title": "‘함께하는 ESG’ 하나금융 계열사, 사회공헌 영역 확장 - 라이센스뉴스",
+      "summary": "‘함께하는 ESG’ 하나금융 계열사, 사회공헌 영역 확장 라이센스뉴스",
+      "source": "라이센스뉴스",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBQSGNORFp3SFFzdHdkREV4UHZMa3VNSkowb2ZnNUlHYXVDNllDZXRVc2J6NnVKSTIyUEtnLV9fN3hiLVlKTWZVRjJNVzg0RW5vSWxBdHNfaFN4eXViVV9Bbkx5cmpzYjh5S2JF?oc=5",
+      "published_at": "2026-07-21T23:45:00+00:00",
       "keywords": [
-        "사회공헌"
+        "사회공헌",
+        "ESG"
       ],
-      "priority": 3
+      "priority": 4,
+      "ai_analyzed": false,
+      "insight": "",
+      "trend_tags": [],
+      "confidence": "원문 확인 필요"
     },
     {
-      "id": "7690782050861678390",
-      "category": "kbs",
-      "title": "다시 쓰는 제주4·3, 무엇을 남길 것인가…4·3의 이름은? - KBS 뉴스",
-      "summary": "다시 쓰는 제주4·3, 무엇을 남길 것인가…4·3의 이름은? KBS 뉴스",
-      "source": "KBS 뉴스",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9LRFA4THhDNlEtbHdoSGYwTER6UXFtV0tySFFiWmtxNlhVczBqQV9reDZyT2pCdUN5cEU0MWZtbzNlWHRIV01TLTNXQjdjcno1ZzByVS11b0dyajg?oc=5",
-      "published_at": "2026-07-21T23:07:00+00:00",
-      "keywords": [
-        "KBS"
-      ],
-      "priority": 3
-    },
-    {
-      "id": "9041625155231466923",
-      "category": "kbs",
-      "title": "[날씨] 제주 오늘도 폭염, 자외선 매우 강해…중산간 이상 ‘약한 비’ - KBS 뉴스",
-      "summary": "[날씨] 제주 오늘도 폭염, 자외선 매우 강해…중산간 이상 ‘약한 비’ KBS 뉴스",
-      "source": "KBS 뉴스",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE0yNnF5Q19uY1FDLWJHaDhnWWR5Ylg1bkgyX1JBaU5MY3BCcENRZmVkT21uQlNkSFdNWW94ODJ1RTBVZ2NXRzNmSkVpNm5fM0RRZ1RLUzRFYnhSaXM?oc=5",
-      "published_at": "2026-07-21T23:01:00+00:00",
-      "keywords": [
-        "KBS"
-      ],
-      "priority": 3
-    },
-    {
-      "id": "475704227440297730",
-      "category": "kbs",
-      "title": "압구정 아파트 화재 주민 대피…로봇 청소기가 화재 원인? - KBS 뉴스",
-      "summary": "압구정 아파트 화재 주민 대피…로봇 청소기가 화재 원인? KBS 뉴스",
-      "source": "KBS 뉴스",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBlN0FyTW1WVjFLQkV3MnE3TVQtVTV2ZTNGQVpJakRtdlJZREtYc0l4MHZ3UjItX0h1WkhyR1BHWlZ1QmMtVmVMekhXY1BOSXl4eXB4RUVZR20wX0U?oc=5",
-      "published_at": "2026-07-21T22:37:00+00:00",
-      "keywords": [
-        "KBS"
-      ],
-      "priority": 3
-    },
-    {
-      "id": "2984024497281967635",
+      "id": "a1801e8c5af98e1939",
       "category": "csr",
-      "title": "[지속가능경영이 글로벌 경쟁력-KB라이프] 참여형 사회공헌·친환경 경영 ESG 실천…포용금융 실천 이어가 - SDG뉴스",
-      "summary": "[지속가능경영이 글로벌 경쟁력-KB라이프] 참여형 사회공헌·친환경 경영 ESG 실천…포용금융 실천 이어가 SDG뉴스",
-      "source": "SDG뉴스",
-      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE55Q2Y1QXAxaG9RQnFWMVZWQkZpZnhiWWRfNGM4blFDUFhEbnZfRTRJSzZ3VWZPV0lnR2c0YVRGRGNjQk9FVUVCYW0ybm14MHZ4U0lVeGd2ZEwwRVBJWnJFUlJQTDBlNGR0SzQ40gFrQVVfeXFMTnlDZjVBcDFob1FCcVYxVlZCRmlmeGJZZF80YzhuUUNQWERudl9FNElLNndVZk9XSWdHZzRhVEZEY2NCT0VVRUJhbTJubXgwdnhTSVV4Z3ZkTDBFUElackVSUlBMMGU0ZHRLNDg?oc=5",
-      "published_at": "2026-07-21T13:44:10+00:00",
-      "keywords": [
-        "사회공헌"
-      ],
-      "priority": 3
-    },
-    {
-      "id": "6878284356759807843",
-      "category": "kbs",
-      "title": "[뉴스9 제주 클로징] - KBS 뉴스",
-      "summary": "[뉴스9 제주 클로징] KBS 뉴스",
-      "source": "KBS 뉴스",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1ES01oanU5UXVYdGE4Tm9BdnpaOGphVm8tRkVZZ2JPRzZFclg5dTMxajEzSm43NDFIdHlZaWFUSUVSOXF4U0dpY3RydFliWmxIZS1mRjJFWk02ME0?oc=5",
-      "published_at": "2026-07-21T12:53:00+00:00",
-      "keywords": [
-        "KBS"
-      ],
-      "priority": 3
-    },
-    {
-      "id": "2801021811190936969",
-      "category": "kbs",
-      "title": "다음 달 25일 민선 9기 제주도정 첫 정기인사 - KBS 뉴스",
-      "summary": "다음 달 25일 민선 9기 제주도정 첫 정기인사 KBS 뉴스",
-      "source": "KBS 뉴스",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1ZdUdVLWxhWFpOUUYwc19jcTNPcnZNUFNnTGlYV3p2dWZqMDNvaHRfY0JsNjl4QUxwUkRfMkJTbmlTUEpFNEZSQ2p0d0dxZnd3T2I5YmFtRlBFQWM?oc=5",
-      "published_at": "2026-07-21T12:49:00+00:00",
-      "keywords": [
-        "KBS"
-      ],
-      "priority": 3
-    },
-    {
-      "id": "6642995905199021505",
-      "category": "kbs",
-      "title": "[서귀포 소식] 세계 청소년 합창단 모여…“음악으로 교류” - KBS 뉴스",
-      "summary": "[서귀포 소식] 세계 청소년 합창단 모여…“음악으로 교류” KBS 뉴스",
-      "source": "KBS 뉴스",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5XNXFQNlE1WWFEWHJOUEMzXzVZZnVjSUVHMElNMFRpdmdaT2ZZRURvVzUzQ0I1SWl4SHItMHcybVBsMmVySWZfNEt0U2dLZF90SEpGVjdfM2M3QVk?oc=5",
-      "published_at": "2026-07-21T10:54:00+00:00",
-      "keywords": [
-        "KBS"
-      ],
-      "priority": 3
-    },
-    {
-      "id": "3751424441541306388",
-      "category": "kbs",
-      "title": "[여기는 충주] 제천∼영월 고속도로 착공식…“2032년 준공 목표” 외 - KBS 뉴스",
-      "summary": "[여기는 충주] 제천∼영월 고속도로 착공식…“2032년 준공 목표” 외 KBS 뉴스",
-      "source": "KBS 뉴스",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1Gb2VHU0dNd25lekZDQUZPVVZGMVhUbnAxWlRQXzhyWGxJSTZndnhJZzZFZ2l1aHJ5Ujd6bzY1M2Rpd1V3UmtOeVVKb1Z3WjIyNVhYb2Q2Rm1rQ0E?oc=5",
-      "published_at": "2026-07-21T10:47:00+00:00",
-      "keywords": [
-        "KBS"
-      ],
-      "priority": 3
-    },
-    {
-      "id": "3984229802829923284",
-      "category": "kbs",
-      "title": "대출 문턱 높은 소상공인…20%는 ‘억울한 거절’ - KBS 뉴스",
-      "summary": "대출 문턱 높은 소상공인…20%는 ‘억울한 거절’ KBS 뉴스",
-      "source": "KBS 뉴스",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFB1azAxQUdteHQ3R3g0MmVLUFJHQTFGSXdQQTRzU1VoSGJ0WG56T0FwQ2NWZWpMUUgzbWxENnVta09WWTE2RDl4Z1c4OEFvUHdQcWpOZFhDY1Y3ZTQ?oc=5",
-      "published_at": "2026-07-21T10:23:00+00:00",
-      "keywords": [
-        "KBS"
-      ],
-      "priority": 3
-    },
-    {
-      "id": "5980019325873600449",
-      "category": "kbs",
-      "title": "시험 한 번에 800만원…중국 유학생 조직적 ‘토픽’ 대리시험 적발 - KBS 뉴스",
-      "summary": "시험 한 번에 800만원…중국 유학생 조직적 ‘토픽’ 대리시험 적발 KBS 뉴스",
-      "source": "KBS 뉴스",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9welhDdUd5cEtOYnBzN1NuNlRQWVkyOUloUGxaNGV4TXNNbXZNV3lfeG1fRGFzT0VPSEN1RGxjV2hablY0NnExdGJNdHJ2X3VrbEpFbkdDX01HcEE?oc=5",
-      "published_at": "2026-07-21T10:19:00+00:00",
-      "keywords": [
-        "KBS"
-      ],
-      "priority": 3
-    },
-    {
-      "id": "119115772527046324",
-      "category": "kbs",
-      "title": "클로징 - KBS 뉴스",
-      "summary": "클로징 KBS 뉴스",
-      "source": "KBS 뉴스",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9hZjF3Ung4ZEFUbjc0YTdZTmFYM0R4WUdHZm8tcTFCZ3RUSEVCc0NtUW4xaGtkQ2dqeEZWVTdyeUswS0pCTWNRcExCcDZ0QXRITnVVc0xoaUt4Z1E?oc=5",
-      "published_at": "2026-07-21T09:28:00+00:00",
-      "keywords": [
-        "KBS"
-      ],
-      "priority": 3
-    },
-    {
-      "id": "5941450324669126820",
-      "category": "kbs",
-      "title": "[이슈픽] “알이 아니라 ○○○라고?”…바다 향 퍼지는 녹진한 한입 ‘성게’ - KBS 뉴스",
-      "summary": "[이슈픽] “알이 아니라 ○○○라고?”…바다 향 퍼지는 녹진한 한입 ‘성게’ KBS 뉴스",
-      "source": "KBS 뉴스",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1Hb3dpWVNuNC1IWWxPSHg4OWgweVpyR21ERVp5bFJpWmMtUTd0eE9IYXZSTTFSRDBVNGJkcWZQMGxQMGYyYkZsOXVJZnFSM0JuX0ZySzRyeUt3bHM?oc=5",
-      "published_at": "2026-07-21T09:26:00+00:00",
-      "keywords": [
-        "KBS"
-      ],
-      "priority": 3
-    },
-    {
-      "id": "2923313598751060270",
-      "category": "kbs",
-      "title": "한국어능력시험 ‘대리 시험 일당’ 검거 - KBS 뉴스",
-      "summary": "한국어능력시험 ‘대리 시험 일당’ 검거 KBS 뉴스",
-      "source": "KBS 뉴스",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5JY3Zvd3Z6ME9jY2J3WFZZNkhKR2NUQjhsbk5GMXE3akhVZFNaV0wxVDRMVm9YM2RURHJVLTRoNGxIcWt0d1NwZ1ZkdFM4cnN0VnlBdGJDUF9lYXc?oc=5",
-      "published_at": "2026-07-21T08:24:00+00:00",
-      "keywords": [
-        "KBS"
-      ],
-      "priority": 3
-    },
-    {
-      "id": "5990362427666445698",
-      "category": "kbs",
-      "title": "휴가철 ‘동행 여행’ 인기…수천만 원 ‘꿀꺽’하고 잠적 - KBS 뉴스",
-      "summary": "휴가철 ‘동행 여행’ 인기…수천만 원 ‘꿀꺽’하고 잠적 KBS 뉴스",
-      "source": "KBS 뉴스",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE15by1xc0JvQ2NTaVVnZ2ZrVnc1YnpHeGViaDYzdGpiSm9VQzZWNF9GUWZqWDVfMWZwWHBaSktSMkFEbURZS1Z0dTJuenB2WXFTZkJMR1lxUGRTOFE?oc=5",
-      "published_at": "2026-07-21T08:23:00+00:00",
-      "keywords": [
-        "동행",
-        "KBS"
-      ],
-      "priority": 4
-    },
-    {
-      "id": "1881195598366632307",
-      "category": "kbs",
-      "title": "‘12·12 가담’·‘5·18 진압’ 등 정부포상 취소 - KBS 뉴스",
-      "summary": "‘12·12 가담’·‘5·18 진압’ 등 정부포상 취소 KBS 뉴스",
-      "source": "KBS 뉴스",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5uVFowMldadm4tdE1HMlNCbTRodnZ1Uld6NXJqVDZfQTVJYXN0VFJVV1FKYzg3ZnZpMjZTMDg0QXFfR1Q5NHliMkNuTTI4YzB2azFDZUZ1MEtyR1k?oc=5",
-      "published_at": "2026-07-21T08:22:00+00:00",
-      "keywords": [
-        "KBS"
-      ],
-      "priority": 3
-    },
-    {
-      "id": "8538225386659627811",
-      "category": "kbs",
-      "title": "‘외유성 출장 의혹’ 선관위 이틀째 압수수색 - KBS 뉴스",
-      "summary": "‘외유성 출장 의혹’ 선관위 이틀째 압수수색 KBS 뉴스",
-      "source": "KBS 뉴스",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9JdjU1UEFlVmsxRldmY1l4a1luUUluVE5ZOFhoT1RVRXFRTjgzZDRpQUMyX1BvVm14NjJwalVEenVYMXhyOVJFNmR1b2MwTWtaV1k1MEw4SHJ5aWs?oc=5",
-      "published_at": "2026-07-21T06:05:00+00:00",
-      "keywords": [
-        "KBS"
-      ],
-      "priority": 3
-    },
-    {
-      "id": "1801953548094856628",
-      "category": "kbs",
-      "title": "다시 쓰는 제주4·3, 무엇을 남길 것인가…끝나지 않은 책임 - KBS 뉴스",
-      "summary": "다시 쓰는 제주4·3, 무엇을 남길 것인가…끝나지 않은 책임 KBS 뉴스",
-      "source": "KBS 뉴스",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5UeEJPdUQzNWZCMVlTNW1ZckdKWUZXaXE3VDlBMWhxeUdoYVYyNHpnU1lRNmw0NEIzaW9ibmVWb1ktYWRCUkdNbTA2NDBDSTB4cTBxdnZKVEZYQ00?oc=5",
-      "published_at": "2026-07-21T06:04:00+00:00",
-      "keywords": [
-        "KBS"
-      ],
-      "priority": 3
-    },
-    {
-      "id": "1994454673077954965",
-      "category": "kbs",
-      "title": "“제주형 항공 PSO(공공서비스) 도입…슬롯 운영 늘려야” - KBS 뉴스",
-      "summary": "“제주형 항공 PSO(공공서비스) 도입…슬롯 운영 늘려야” KBS 뉴스",
-      "source": "KBS 뉴스",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1QZXNjb3MyN3NuNHNZeWNROU1CZWM3bTF1Q3hZQ2Y4bkhCbDFrQWhrRGtaNWM2V2xUdjhLMXV2LXhTRGZPRWJCdjRidFEwRXFrWl9uZE9PNmdYMzQ?oc=5",
-      "published_at": "2026-07-21T06:04:00+00:00",
-      "keywords": [
-        "KBS"
-      ],
-      "priority": 3
-    },
-    {
-      "id": "194467193476413566",
-      "category": "esg",
+      "subcategory": "csr",
+      "subcategory_label": "기업 사회공헌 사례",
       "title": "오비맥주, 사회 공헌 넘어 ESG 경영으로···지속가능한 성장 전략은 - 뉴스프리존",
       "summary": "오비맥주, 사회 공헌 넘어 ESG 경영으로···지속가능한 성장 전략은 뉴스프리존",
       "source": "뉴스프리존",
@@ -276,100 +42,74 @@
         "ESG",
         "지속가능"
       ],
-      "priority": 4
+      "priority": 4,
+      "ai_analyzed": false,
+      "insight": "",
+      "trend_tags": [],
+      "confidence": "원문 확인 필요"
     },
     {
-      "id": "8424718437067865130",
-      "category": "kbs",
-      "title": "“콩나물 콩 수입 확대…농민 생존권 팔아 넘겨” - KBS 뉴스",
-      "summary": "“콩나물 콩 수입 확대…농민 생존권 팔아 넘겨” KBS 뉴스",
-      "source": "KBS 뉴스",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBNVm5rQ1hRbkNnNS1HRnVGM1N5dmxxUmpHWlhRUHdsemVtZkdjZTJkMDZkYnJEc0ZIUkhiQ1VpZlpEcmxQdlE0RVJWRXN4bkpINmY0Mnc3S3czZkk?oc=5",
-      "published_at": "2026-07-21T02:33:00+00:00",
-      "keywords": [
-        "KBS"
-      ],
-      "priority": 3
-    },
-    {
-      "id": "519997889318236790",
-      "category": "kbs",
-      "title": "합수본, 중앙선관위 이틀째 압수수색…“용지 부족 업무연락 대응 조사” - KBS 뉴스",
-      "summary": "합수본, 중앙선관위 이틀째 압수수색…“용지 부족 업무연락 대응 조사” KBS 뉴스",
-      "source": "KBS 뉴스",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1acjRQUTBhY1U3RXNTV19YbFdNMWNUN0FqOUpXbS1YR1dQNk9JeHBlOGZ5VzY5MzJTUGE2ZW1YMGtGZW52aDZIOTNULWZSMW4xRnBTTmxhQW9RaWM?oc=5",
-      "published_at": "2026-07-21T02:18:00+00:00",
-      "keywords": [
-        "KBS"
-      ],
-      "priority": 3
-    },
-    {
-      "id": "2864079428023555521",
-      "category": "kbs",
-      "title": "김수찬, 논밭을 순식간에 콘서트장으로 탈바꿈?! 황신혜도 ‘홀딱’! - MyloveKBS",
-      "summary": "김수찬, 논밭을 순식간에 콘서트장으로 탈바꿈?! 황신혜도 ‘홀딱’! MyloveKBS",
-      "source": "MyloveKBS",
-      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQTnFCQTIzSnpZdzg1UUtQMGVNbGdpSFJvWERoUTFsTDJZT1BCOW1TRy1SNGpqMG1qYXVkMXVDVlFBbURnVkJCTjR4UzlZWUU4eDh3dGpYN0N6RFQ4UklvUXk5aFZ1NFlhbU4wNUtKcm0xaWszOW9iclo5VzlfWFVRRTB1bDB1bUwyU0F2ZzB3N0ZxRGVxejFPcnE4dmhZUS1nQ3RwVnpFV3J6SVV3UWc?oc=5",
-      "published_at": "2026-07-21T01:42:54+00:00",
-      "keywords": [
-        "KBS"
-      ],
-      "priority": 3
-    },
-    {
-      "id": "4550196261844696208",
+      "id": "0f064c8f69b4d3705e",
       "category": "csr",
-      "title": "[ESG] 기업 해외 봉사, ‘시혜’에서 ‘자립·참여형’으로 전환... 국경 없는 상생 가치 - consumerwide.com",
-      "summary": "[ESG] 기업 해외 봉사, ‘시혜’에서 ‘자립·참여형’으로 전환... 국경 없는 상생 가치 consumerwide.com",
-      "source": "consumerwide.com",
-      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1NZDROQWxKZWtnT29NUTl5enFteHoxTVFhbXBqWUtTQkxrSC1EeXU5Wl9RTmsxS3dsaVAwMV9nYkdRNjVtNlMwWUI1WTJoX3lRb3VHbjVxbTF1QWdULWljTzZrWGVYamsxRkt2d0JISG10SDDSAXNBVV95cUxNTWQ0TkFsSmVrZ09vTVE5eXpxbXh6MU1RYW1wallLU0JMa0gtRHl1OVpfUU5rMUt3bGlQMDFfZ2JHUTY1bTZTMFlCNVkyaF95UW91R241cW0xdUFnVC1pY082a1hlWGprMUZLdndCSEhtdEgw?oc=5",
-      "published_at": "2026-07-21T01:15:32+00:00",
+      "subcategory": "csr",
+      "subcategory_label": "기업 사회공헌 사례",
+      "title": "[청년나눔 글로벌확장]KT&G복지재단, 중앙아시아에 ‘상상위더스’ 파견…청년 나눔으로 글로벌 사회공헌 확대 - 전국뉴스",
+      "summary": "[청년나눔 글로벌확장]KT&G복지재단, 중앙아시아에 ‘상상위더스’ 파견…청년 나눔으로 글로벌 사회공헌 확대 전국뉴스",
+      "source": "전국뉴스",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5JMWdTVFJBRW9LMHN3RkZlb2JaTFN6UUVIeFJNa3BWMVRMUzl1WmFHTmY2QXVBMTNUcVJEZmJyM3Q1cmE5WFc3ZktkNkpYdVZPTmV4bXY3U1BzUnJ1VU5rSXVWX1hRdzVQbG54NzdBVms?oc=5",
+      "published_at": "2026-07-21T01:27:43+00:00",
       "keywords": [
-        "기업",
-        "상생",
-        "봉사"
+        "사회공헌"
       ],
-      "priority": 5
+      "priority": 3,
+      "ai_analyzed": false,
+      "insight": "",
+      "trend_tags": [],
+      "confidence": "원문 확인 필요"
     },
     {
-      "id": "2050037139536353332",
-      "category": "law",
-      "title": "교육부와 그 소속기관 직제 시행규칙 - 국가법령정보센터",
-      "summary": "교육부와 그 소속기관 직제 시행규칙 국가법령정보센터",
-      "source": "국가법령정보센터",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQcko5cDh5VHozbTVYelNnWDN3M05zR2kxTV9oZzRYZHBpQWRDRGtJY0VxZ3pkM0ZTRWtKUUROS2tibEoxdm1ubi1EY2tQRkVtbHBPUVVBY2NWVzZqOUctRGE1ODZxbHVnYWtRY3JOc1RudjZEMkdSUWFtQnFaWF91a2VsMy1ScjJPNkZlOW9yTHFSTzZtYlZtQnVyM0Mxek44QTRBZE80NHJ1eGNo?oc=5",
-      "published_at": "2026-07-21T00:41:42+00:00",
-      "keywords": [],
-      "priority": 2
-    },
-    {
-      "id": "2240252525373360748",
-      "category": "kbs",
-      "title": "국산 삼겹살만 판다더니…상황 따라 ‘위장 판매’ - KBS 뉴스",
-      "summary": "국산 삼겹살만 판다더니…상황 따라 ‘위장 판매’ KBS 뉴스",
-      "source": "KBS 뉴스",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1KU2ZRRW8yWHB6UVA5ckxzeU5RcGZWb1dvVXM5OUJZU1A2ZU1FbEpiSVZBelVCRzVoMkFLTlRsWHpNVTVMaUJGc0FpbFRDR0t4UUdsYUp0ZHRMX2M?oc=5",
-      "published_at": "2026-07-20T14:36:00+00:00",
+      "id": "03863e0272f555d4c0",
+      "category": "csr",
+      "subcategory": "csr",
+      "subcategory_label": "기업 사회공헌 사례",
+      "title": "[ESG 현장점검] SK렌터카 \"전기차부터 탄소감축까지···친환경 모빌리티 전환 가속\" - 데일리e뉴스",
+      "summary": "[ESG 현장점검] SK렌터카 \"전기차부터 탄소감축까지···친환경 모빌리티 전환 가속\" 데일리e뉴스",
+      "source": "데일리e뉴스",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1WWWtYYnRDa2hWRDBDaHFqZGF6cE9JcWMxNUFtQzBFOUtZLWpHZVg4V2JVY01mWjlrUkVsa3M4LTRBZ2x5YmEyN21KM3F5THdHUUNsX0k1TzdrbXFvRGhUa3NXVnR0Sm81Zk54UEZJMA?oc=5",
+      "published_at": "2026-07-21T00:57:11+00:00",
       "keywords": [
-        "KBS"
+        "ESG"
       ],
-      "priority": 3
+      "priority": 3,
+      "ai_analyzed": false,
+      "insight": "",
+      "trend_tags": [],
+      "confidence": "원문 확인 필요"
     },
     {
-      "id": "2677697702002243520",
-      "category": "law",
-      "title": "기본정보 - 국세청",
-      "summary": "기본정보 국세청",
-      "source": "국세청",
-      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5qd1FzRDF5al9LanVNOGhlclRpd0lsMGpMcnc5MkpuYWxURVhFOXNTOXlhT0JEYkRrVkVZWHpMQ21DU0tSVm9KTkNCbm9NVHhIUTRWWkZQQnhuRjBkMUluY2hKdWVkZ1BGMG9JSFdQU1BISzNTTzY3X01RZw?oc=5",
-      "published_at": "2026-07-20T13:38:16+00:00",
-      "keywords": [],
-      "priority": 2
+      "id": "f251f24646d1eb5692",
+      "category": "csr",
+      "subcategory": "csr",
+      "subcategory_label": "기업 사회공헌 사례",
+      "title": "롯데카드, 러닝으로 기후위기 대응 나선다… 시민 참여형 ESG 캠페인 추진 - 라이센스뉴스",
+      "summary": "롯데카드, 러닝으로 기후위기 대응 나선다… 시민 참여형 ESG 캠페인 추진 라이센스뉴스",
+      "source": "라이센스뉴스",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9mLTNyTFFKNF9yWGNKR3ZrZnJURFlvZGY0V0h6UEo3OXg0VDhXQXROQWFmanJrcmtmTnY4RGRjMWF2ZFVlWmJFMFd3dTduR0lUYW5xNjhDQ3BERHlvQUZEd2ZsQUI3TDZPWkUw?oc=5",
+      "published_at": "2026-07-21T00:05:00+00:00",
+      "keywords": [
+        "ESG"
+      ],
+      "priority": 3,
+      "ai_analyzed": false,
+      "insight": "",
+      "trend_tags": [],
+      "confidence": "원문 확인 필요"
     },
     {
-      "id": "4634314106615349676",
-      "category": "esg",
+      "id": "2411fc8d6f162fcc7a",
+      "category": "csr",
+      "subcategory": "csr",
+      "subcategory_label": "기업 사회공헌 사례",
       "title": "[일상속글로벌나눔]KB국민카드, 고객 참여형 글로벌 나눔 확대…“일상 속 ESG 실천” - 전국뉴스",
       "summary": "[일상속글로벌나눔]KB국민카드, 고객 참여형 글로벌 나눔 확대…“일상 속 ESG 실천” 전국뉴스",
       "source": "전국뉴스",
@@ -378,73 +118,17 @@
       "keywords": [
         "ESG"
       ],
-      "priority": 3
+      "priority": 3,
+      "ai_analyzed": false,
+      "insight": "",
+      "trend_tags": [],
+      "confidence": "원문 확인 필요"
     },
     {
-      "id": "2146177916554440458",
-      "category": "kbs",
-      "title": "선관위 합수본, 중앙선관위 압수수색…“외유성 출장 의혹 관련” - KBS 뉴스",
-      "summary": "선관위 합수본, 중앙선관위 압수수색…“외유성 출장 의혹 관련” KBS 뉴스",
-      "source": "KBS 뉴스",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE50NEZFanFSaXhRRl9YdVFiemVlRUprS1NjWFpoTWxaS25ycmZOT09nMUFEcnJmdzZwbWNZY3I2SlFoeVpZNzNEek1MMmMwTGMwSHdHeTBKVk1UUTg?oc=5",
-      "published_at": "2026-07-20T08:11:00+00:00",
-      "keywords": [
-        "KBS"
-      ],
-      "priority": 3
-    },
-    {
-      "id": "2199118703162850152",
-      "category": "esg",
-      "title": "상조로 즐기는 '해외 한달살기'…보람그룹, 라이프케어 서비스 확장 가속 - 청년일보",
-      "summary": "상조로 즐기는 '해외 한달살기'…보람그룹, 라이프케어 서비스 확장 가속 청년일보",
-      "source": "청년일보",
-      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE95dl91LVliLWVOUUQ5WkRvWG11NXVyYi1DUXdmdkVTYmd3eTdNWW5DZ2RDV09MQzFxLXU2UGg1aHFPZlAzYW4zQy16bzJuU01JUUhfYlJEcWZHVGRnajlTeGFETDF2RVU?oc=5",
-      "published_at": "2026-07-20T07:45:43+00:00",
-      "keywords": [],
-      "priority": 2
-    },
-    {
-      "id": "7751139839318338249",
+      "id": "a772ebf573a06b2917",
       "category": "csr",
-      "title": "제보왕, 사회공헌 뉴스기사 작성·배포 지원…기부와 후원 활동을 신뢰 있게 알리는 홍보 전략 제시 - 한국투데이",
-      "summary": "제보왕, 사회공헌 뉴스기사 작성·배포 지원…기부와 후원 활동을 신뢰 있게 알리는 홍보 전략 제시 한국투데이",
-      "source": "한국투데이",
-      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFAyVk96RUVoTkdLU2xETUpDZHZfVnhvSmxRZEJXd2pWWU1mR0FHaTFiejE5VFhTaGIxaDU3UjZuUEVpWXdBR05KTHhhZm5sRHFheHV4eGNuTV9WamxkOExrYk92ek1heXJBRDlnNjl30gFuQVVfeXFMUDJWT3pFRWhOR0tTbERNSkNkdl9WeG9KbFFkQld3alZZTWZHQUdpMWJ6MTlUWFNoYjFoNTdSNm5QRWlZd0FHTkpMeGFmbmxEcWF4dXh4Y25NX1ZqbGQ4TGtiT3Z6TWF5ckFEOWc2OXc?oc=5",
-      "published_at": "2026-07-20T06:34:13+00:00",
-      "keywords": [
-        "사회공헌"
-      ],
-      "priority": 3
-    },
-    {
-      "id": "6305898293310186317",
-      "category": "csr",
-      "title": "연수구자원봉사센터, 기업 ESG 실천 위한 '자원봉사 원팀' 활동 추진 - climatepol.com",
-      "summary": "연수구자원봉사센터, 기업 ESG 실천 위한 '자원봉사 원팀' 활동 추진 climatepol.com",
-      "source": "climatepol.com",
-      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE90RjBieUJHZVUxOThjZUE4SzRVaUJ4TmpNWmV1Ym9udWozNjJJVGtwaWZXdHJDUF9zM0JQRllrTzQwR05BMWtMS3dtRVF1ekRfRGtZRF94dDNzZVE0endJelRYbmhwWVFDUmdQVQ?oc=5",
-      "published_at": "2026-07-20T06:28:38+00:00",
-      "keywords": [
-        "기업",
-        "봉사"
-      ],
-      "priority": 4
-    },
-    {
-      "id": "108081229002873499",
-      "category": "csr",
-      "title": "KB국민카드, 고객 참여형 글로벌 나눔 활동 전개…해외 취약계층 아동 지원 - 폴리뉴스 Polinews",
-      "summary": "KB국민카드, 고객 참여형 글로벌 나눔 활동 전개…해외 취약계층 아동 지원 폴리뉴스 Polinews",
-      "source": "폴리뉴스 Polinews",
-      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5DTDRlc3hTbXBram5EYkdKT0VJdFUya0RfbHpNOTE1aFBpQUtDU09IeV9Lcm11Z2dOU1h4U21lNzRYWjhmX0JXZGs3cTRoMHNha1ZBNlYtSkVZSWtOWldrZWhpeElKSTdiZDhPb0RjeW93UdIBckFVX3lxTE5DTDRlc3hTbXBram5EYkdKT0VJdFUya0RfbHpNOTE1aFBpQUtDU09IeV9Lcm11Z2dOU1h4U21lNzRYWjhmX0JXZGs3cTRoMHNha1ZBNlYtSkVZSWtOWldrZWhpeElKSTdiZDhPb0RjeW93UQ?oc=5",
-      "published_at": "2026-07-20T06:03:13+00:00",
-      "keywords": [],
-      "priority": 2
-    },
-    {
-      "id": "3155753802643960279",
-      "category": "esg",
+      "subcategory": "csr",
+      "subcategory_label": "기업 사회공헌 사례",
       "title": "[ESG 현장점검] BGF리테일 \"글로벌 ESG 규제 대응·해외 확장 동시 추진···'A+' 경쟁력으로 지속가능경영 새 기준 제시\" - 데일리e뉴스",
       "summary": "[ESG 현장점검] BGF리테일 \"글로벌 ESG 규제 대응·해외 확장 동시 추진···'A+' 경쟁력으로 지속가능경영 새 기준 제시\" 데일리e뉴스",
       "source": "데일리e뉴스",
@@ -454,242 +138,75 @@
         "ESG",
         "지속가능"
       ],
-      "priority": 4
+      "priority": 4,
+      "ai_analyzed": false,
+      "insight": "",
+      "trend_tags": [],
+      "confidence": "원문 확인 필요"
     },
     {
-      "id": "1357476463051487365",
+      "id": "c5a9206787b81c8683",
       "category": "csr",
+      "subcategory": "csr",
+      "subcategory_label": "기업 사회공헌 사례",
+      "title": "CCBS ESG 가치경영 백서 핵심읽기 제1편 좋은 기업은 무엇으로 기억되는가 - 한국AI부동산신문",
+      "summary": "CCBS ESG 가치경영 백서 핵심읽기 제1편 좋은 기업은 무엇으로 기억되는가 한국AI부동산신문",
+      "source": "한국AI부동산신문",
+      "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE1FVnBwdlNqaTFFRWI2dU5ubDlxNFpSaHRuRVBxSGVRcENkdEZFbGsxZUpNWW9kSzNScnFNaXg5TWxNMC1vWnZfNF9CcFc?oc=5",
+      "published_at": "2026-07-20T03:25:28+00:00",
+      "keywords": [
+        "ESG"
+      ],
+      "priority": 3,
+      "ai_analyzed": false,
+      "insight": "",
+      "trend_tags": [],
+      "confidence": "원문 확인 필요"
+    },
+    {
+      "id": "c551de252e9fc63beb",
+      "category": "csr",
+      "subcategory": "csr",
+      "subcategory_label": "기업 사회공헌 사례",
       "title": "[청년이 미래다] 미래세대 키우는 기업 사회공헌…문화유산부터 금융교육·해외봉사까지 '교육 CSR' 확산 - 코리아포스트 한글판",
       "summary": "[청년이 미래다] 미래세대 키우는 기업 사회공헌…문화유산부터 금융교육·해외봉사까지 '교육 CSR' 확산 코리아포스트 한글판",
       "source": "코리아포스트 한글판",
       "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9NaGpVTmd2YkRvTGpPaTZDNUk3T3IzUjRkZDFDNVdwdHdjN1JzTnFHem9TR0VzcHYtbUp2WVlmYk1XSTFLeHVVUGJWX2ZEaFBfMXlvaDJ3VTJTS1U2UkFYZUFYOGNlLUVXSEdpREJB?oc=5",
       "published_at": "2026-07-20T02:09:16+00:00",
       "keywords": [
-        "사회공헌",
-        "기업",
-        "봉사"
-      ],
-      "priority": 5
-    },
-    {
-      "id": "7007766134047189408",
-      "category": "csr",
-      "title": "[사회공헌 특집(168)] 호텔신라 '30년 CSR·ESG 진화'…\"마라도 해송~반려해변, ‘업 기반 공유가치’로 확장\" - 이코노미톡뉴스",
-      "summary": "[사회공헌 특집(168)] 호텔신라 '30년 CSR·ESG 진화'…\"마라도 해송~반려해변, ‘업 기반 공유가치’로 확장\" 이코노미톡뉴스",
-      "source": "이코노미톡뉴스",
-      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1xRnh4dkllNTVmRXpueS1UTVpFQ2ExOExIaWNFWUJqVkNWQXVDTFB6NWlWenlOcmRBbVZtb0owWlJVQ0hUQkdqZ3BmaWdJTjJtZFlpSVJTZUlUM2FwRWpYNHJ6VDB2S1dpOEdJMA?oc=5",
-      "published_at": "2026-07-20T01:43:51+00:00",
-      "keywords": [
         "사회공헌"
       ],
-      "priority": 3
+      "priority": 3,
+      "ai_analyzed": false,
+      "insight": "",
+      "trend_tags": [],
+      "confidence": "원문 확인 필요"
     },
     {
-      "id": "4567513649525468721",
-      "category": "kbs",
-      "title": "[전격시사] 김영호 더불어민주당 의원 - “현역 의원도 부담…청년에는 과도” “보완수사권 결단할 때, 허용 법안 우려” 청년 최고위원 기탁금 ‘2천만원’ - KBS 뉴스",
-      "summary": "[전격시사] 김영호 더불어민주당 의원 - “현역 의원도 부담…청년에는 과도” “보완수사권 결단할 때, 허용 법안 우려” 청년 최고위원 기탁금 ‘2천만원’ KBS 뉴스",
-      "source": "KBS 뉴스",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBpanlySy1KaTBRc0RZODh6Y1ZTcGVVaDBTdEZZbXhXakdtYm9hYW9JN2VGbkVMUGdRLVYwVmN5dVNBZzVfX2xvMUFvdkZTV0xoMGo1c29TQnEwYk0?oc=5",
-      "published_at": "2026-07-20T01:27:00+00:00",
-      "keywords": [
-        "KBS"
-      ],
-      "priority": 3
-    },
-    {
-      "id": "9050204577082092166",
-      "category": "kbs",
-      "title": "합수본, 노태악 전 중앙선거관리위원장 출장 관련 압수수색 - KBS 뉴스",
-      "summary": "합수본, 노태악 전 중앙선거관리위원장 출장 관련 압수수색 KBS 뉴스",
-      "source": "KBS 뉴스",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE8xcXhjZkNSODFacGc5UmFZR18wNGhJX1NOU2pSV2xrMFFpQ1d3SnhxUFp3dEZBbVp3MjQ0TUYySUVnQXAwYnBKRVBJR1dpeUVhZFlVN0VITEdTSWM?oc=5",
-      "published_at": "2026-07-20T01:27:00+00:00",
-      "keywords": [
-        "KBS"
-      ],
-      "priority": 3
-    },
-    {
-      "id": "1865162675010189755",
-      "category": "kbs",
-      "title": "합수본, ‘외유성 출장 의혹’ 선관위 압수수색 - KBS 뉴스",
-      "summary": "합수본, ‘외유성 출장 의혹’ 선관위 압수수색 KBS 뉴스",
-      "source": "KBS 뉴스",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1QRGdSTy1lT1ZETlg2UURyZUptWGdpN01fUzFOeDFUcGJjOG96cU45Wm1qdHlQTmxfUDBUUXF6bmNIQkh3bnJzS2REVVJfZVZoTnZSODI2TTJ6OVk?oc=5",
-      "published_at": "2026-07-20T01:18:00+00:00",
-      "keywords": [
-        "KBS"
-      ],
-      "priority": 3
-    },
-    {
-      "id": "1010403060523589279",
-      "category": "law",
-      "title": "25-021_국민도움 경제지표 공유 - 국세청",
-      "summary": "25-021_국민도움 경제지표 공유 국세청",
-      "source": "국세청",
-      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPVmpkV2hRS3dHOFEtZ25zencyUDJTZkxoSGc3UVRBbXE5X0VHLU50SVdzcDQ0WDBma1h0TElGRHVyVkxCQkVBQnk5Sjh0WG90SlFZd0hFdjBQMWpwVU5FMFRIX2hYMTBiMVItR1JnN1pEZ3Jfc0hVbkp4REN4T3lZQmNrYlc5WFVTTXlGTVBMUQ?oc=5",
-      "published_at": "2026-07-19T13:55:07+00:00",
-      "keywords": [],
-      "priority": 2
-    },
-    {
-      "id": "1464077549748332460",
-      "category": "kbs",
-      "title": "이 대통령, 부산 세계유산위원회 내빈 만찬…국가무형유산 ‘문배주’ 건배주로 - KBS 뉴스",
-      "summary": "이 대통령, 부산 세계유산위원회 내빈 만찬…국가무형유산 ‘문배주’ 건배주로 KBS 뉴스",
-      "source": "KBS 뉴스",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5DVk1OUVEwNm8xT09oREpBNzlGVzg4bENucHRWcDd1STlyOVFZTTZxUndhSU9hQVYzZElCd2FpaDcwYmhVNWwtSEZGMTg5bEhBUC1FTzQ5ZEoyTTA?oc=5",
-      "published_at": "2026-07-19T13:25:00+00:00",
-      "keywords": [
-        "KBS"
-      ],
-      "priority": 3
-    },
-    {
-      "id": "485844749781170391",
-      "category": "kbs",
-      "title": "김민석, 안동 찾아 “대통령이 심은 씨앗에 물 보탤 것” - KBS 뉴스",
-      "summary": "김민석, 안동 찾아 “대통령이 심은 씨앗에 물 보탤 것” KBS 뉴스",
-      "source": "KBS 뉴스",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5uTllhTGdNSmxZSGkxNVYxbk1nNzFxQ3lOanBlamdXRWVySk5RTERaZTdUTlptZ3Rhblgya043X2h0UE5LQ1JOVDhNMXhweHNYNjBXWTFaSV9xWXc?oc=5",
-      "published_at": "2026-07-19T05:08:00+00:00",
-      "keywords": [
-        "KBS"
-      ],
-      "priority": 3
-    },
-    {
-      "id": "2411660777033357679",
-      "category": "kbs",
-      "title": "[567회] 동행 - KBS 다시보기",
-      "summary": "[567회] 동행 KBS 다시보기",
-      "source": "KBS 다시보기",
-      "url": "https://news.google.com/rss/articles/CBMilAJBVV95cUxNd3g0QnBzRFpKakU5NTZKMUphLVg5T1NHU0VXQ3ZxSEpPZE1TeGFuNVBrV0lNYV9LMDRZTUZfMnNPbEZhMThuVXR0dEtKVEgxYkx1ZmFqbUxzTHlOVmJKOWdqNUdyMDB5OTNoSll4MFZ2YWNqSFdhcllLWU8xdjRoR3lzc19sZzZPUU55bTQwejBNY0FBWG9jYndnR2dxcjBIMDlkMTdJblo2bGtWekxXUkYzWWZHOHBpeU9oMzYzTlUzc2VYWFEtcTAwV1Ayc3NMNkVuSG5KTWVTRWxvS1lvaXRJSzNFeGc0M3Y3cUp4WDEtSzZhTUZ3Z19kczdpSjUxUDh2dVNxUkFoV084SFN1Tm44YnI?oc=5",
-      "published_at": "2026-07-18T09:00:00+00:00",
-      "keywords": [
-        "동행",
-        "KBS"
-      ],
-      "priority": 4
-    },
-    {
-      "id": "8869180446272803857",
+      "id": "9f7f7a08c131aceead",
       "category": "csr",
-      "title": "[사회공헌 특집(167)] 현대제철 … \"기부 → 복지 → 순환경제 → 업 특화 ESG, 안전 인프라↑\" - 이코노미톡뉴스",
-      "summary": "[사회공헌 특집(167)] 현대제철 … \"기부 → 복지 → 순환경제 → 업 특화 ESG, 안전 인프라↑\" 이코노미톡뉴스",
-      "source": "이코노미톡뉴스",
-      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9xUEJBdmJtV3ZPbW05S3NXeUs4a29lRnVFSDVxdHBCOXhsblVYVW9wcTlpUFVUbk9fWVZCYjJ3cGZ0NVlWNnMza2E4ajh1NlFwYUNpb2M4X0dickRpVzV5czZIVWtRRFBEWUQxSA?oc=5",
-      "published_at": "2026-07-18T08:40:01+00:00",
-      "keywords": [
-        "사회공헌"
-      ],
-      "priority": 3
-    },
-    {
-      "id": "7187015975686578000",
-      "category": "csr",
-      "title": "인천 영종구, 자원봉사센터, 기업 ESG 나눔문화 확산 앞장 - 오아시스뉴스",
-      "summary": "인천 영종구, 자원봉사센터, 기업 ESG 나눔문화 확산 앞장 오아시스뉴스",
-      "source": "오아시스뉴스",
-      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFAwT29nQnBzQkVvekF0OXMxa1lYcm02OGthY1lobnFXWmwtVXBYWlowRXFOYjNuWVRGM1ZfUlZjYktLcGlmOVQtZlN5MHlfd0M3RUJldEF5LWtLdGtwYkdacHNka0lFQnUyRE85QmExZ0vSAXRBVV95cUxPVDY4WUxnVVp3bGVqRHlLaDlvX0RMT1JYQVpYQzZhdnlicmowblRmM2llVDlWalFjdEpaVTdkY09EOVp4cFZrTHpRT0Vwd01RZ1JNSVp0ZV9EQnd5bXJIakNXdFVsUVBMaXdZWjd3NV9ZT01oNQ?oc=5",
-      "published_at": "2026-07-18T06:03:08+00:00",
-      "keywords": [
-        "기업",
-        "봉사"
-      ],
-      "priority": 4
-    },
-    {
-      "id": "6202409126174740839",
-      "category": "csr",
-      "title": "[심층 분석] 통합 앞둔 진에어·에어부산·에어서울, '냉감이불 나눔'이 보여준 LCC 통합의 또 다른 과제…사회공헌도 하나의 브랜드로 묶인다 - 뉴스밸류",
-      "summary": "[심층 분석] 통합 앞둔 진에어·에어부산·에어서울, '냉감이불 나눔'이 보여준 LCC 통합의 또 다른 과제…사회공헌도 하나의 브랜드로 묶인다 뉴스밸류",
-      "source": "뉴스밸류",
-      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFAxeUVSLWpCLXhIU3gzRHlYMFZLVmViRm9HbTdhaTNyRFJvSFBKM0w0RW5MY0JEQUE5VjFSSDg4d0NuYzNUUXJYczNnVjV0LV9qTVB5RnBNSUlkSUlvY1ZURllydHRtUkNDNlE?oc=5",
-      "published_at": "2026-07-17T22:00:00+00:00",
-      "keywords": [
-        "사회공헌"
-      ],
-      "priority": 3
-    },
-    {
-      "id": "6304978860993689842",
-      "category": "law",
-      "title": "국세청 - 국세청",
-      "summary": "국세청 국세청",
-      "source": "국세청",
-      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBYRWRkcXAzNW1Ua1kzY1BadktSQXgxdWhucEhmYTQ1WVo5OXBjaTUtc015M0xZQUdtRGc0TnBYb1NtUDJXUnQ3Y0lJYU1KTDhfa21KQVdvanNVN09fanpvbWhSdHN2YWx2MUJHanYxaFk?oc=5",
-      "published_at": "2026-07-17T17:52:34+00:00",
-      "keywords": [],
-      "priority": 2
-    },
-    {
-      "id": "2637390189367644783",
-      "category": "law",
-      "title": "메뉴명없음 - 국세청",
-      "summary": "메뉴명없음 국세청",
-      "source": "국세청",
-      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxONC0xQTJlU0NQSEhEb3llY0JLSFpVNjM1SFJfSnlZZDhFakdHcmQ0ZmV4Y1B2RGI0Z2dyZUtKSDFDRXdLNXRLTnR3S21wNGJpaTZDNmtYZXBnY2h1SU5aSjIyMzVGSmNfTmZRVE9BOVJuTDVmWEIyQk13dHNiRkltcl85RQ?oc=5",
-      "published_at": "2026-07-17T05:14:52+00:00",
-      "keywords": [],
-      "priority": 2
-    },
-    {
-      "id": "8549049023286503215",
-      "category": "csr",
-      "title": "[들어보니] 보험업계, ESG ‘일회성’서 ‘임직원 참여형’ 전환…리스크 관리 수단 ‘우려’ - NSP통신",
-      "summary": "[들어보니] 보험업계, ESG ‘일회성’서 ‘임직원 참여형’ 전환…리스크 관리 수단 ‘우려’ NSP통신",
-      "source": "NSP통신",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9wRkJjZEttVGwtTy1kVXcybHpqb2o5YlBWcFZiRXhNZU1OalR2V2duUUVBRkdBR1lfcmplVGxKN21NWE0tQXUxaXQtaWNnZjgzcWc3cGlWSE8wQVpSZlJ2Vg?oc=5",
-      "published_at": "2026-07-17T03:16:50+00:00",
-      "keywords": [],
-      "priority": 2
-    },
-    {
-      "id": "3267227985197603574",
-      "category": "csr",
-      "title": "따뜻한 사회 만들기 힘쓰는 기업들…안전·환경·나눔 등 다각적 ESG 행보 '눈길' - 데일리팝",
-      "summary": "따뜻한 사회 만들기 힘쓰는 기업들…안전·환경·나눔 등 다각적 ESG 행보 '눈길' 데일리팝",
-      "source": "데일리팝",
-      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1DcWZzbF96Mi0taVdiaTBEcUFyYnVUZjJ5U2VLZngxX2lOdFhXbEZTUk5NUC1nNXVRcXZybHpGRTFxUWxYUjZGc3JSaGYxMEZMeEwyZWJYTUNYUnNxUnVoOUV6Qk1KMElha2c?oc=5",
-      "published_at": "2026-07-17T02:31:00+00:00",
-      "keywords": [
-        "기업"
-      ],
-      "priority": 3
-    },
-    {
-      "id": "5232512153289940511",
-      "category": "esg",
-      "title": "KCC, ′2026 지속가능성보고서′ 발간…ESG 경영 성과·전략 공개 - 일요주간",
-      "summary": "KCC, ′2026 지속가능성보고서′ 발간…ESG 경영 성과·전략 공개 일요주간",
-      "source": "일요주간",
-      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5hMmFrXzlfdmZzbGZDYXBfVHBpM3Uya2pjY2RzVnphTy1qNE0zTy15bVZoRmdsQV9KWGZqd3B2WjVDc2tCRk9lSG5sREc2ZlljVUhZLWJVa2tPcVZCalpyUG1MU1JpUmc1clJ3NThLVWlCWFktN1gwdQ?oc=5",
-      "published_at": "2026-07-16T08:40:17+00:00",
+      "subcategory": "csr",
+      "subcategory_label": "기업 사회공헌 사례",
+      "title": "[ESG] 기업·의료계, 자원순환 연계형 ESG 활동 기부로 이어지는 선행 - consumerwide.com",
+      "summary": "[ESG] 기업·의료계, 자원순환 연계형 ESG 활동 기부로 이어지는 선행 consumerwide.com",
+      "source": "consumerwide.com",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE8wWjR2dXdoT01JYmhhNklka1pFeVd3MUdwbUstWUxYa2JNVzMyTzh3aWUtME9sNjRKOXhaMGpVSzBfT1BQaE1NTDhlbzFpQUQ1TWZScGZFTV9FcnlhUnNGWVJ4S2RsaEpQN1EweTJHc9IBc0FVX3lxTE1KN09GRU1Pa0tGa0lFVTNiVDNORVZBNWo1Vi1OekFlLW1EWThfaVNmTzZJcGFkMW9tZGNRaV90WVlqb191MFBUODFOTzFVZFgxVXJqM3o1cW12d0xzOGpmWFpvWTZteFowSXVwN0pRdWlhOTQ?oc=5",
+      "published_at": "2026-07-16T13:35:18+00:00",
       "keywords": [
         "ESG",
-        "지속가능"
+        "기부"
       ],
-      "priority": 4
+      "priority": 4,
+      "ai_analyzed": false,
+      "insight": "",
+      "trend_tags": [],
+      "confidence": "원문 확인 필요"
     },
     {
-      "id": "9036406005851099420",
+      "id": "7732257d5cd9dafe49",
       "category": "csr",
-      "title": "[ESG 한발 더] 보훈부터 다문화·어르신까지…기업들, 따뜻한 나눔 실천 - 뉴스투데이",
-      "summary": "[ESG 한발 더] 보훈부터 다문화·어르신까지…기업들, 따뜻한 나눔 실천 뉴스투데이",
-      "source": "뉴스투데이",
-      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9vQlVacDJLQXFqNlVLR0F6Rm1VeGZDTUdOT0FXNFRlYTVrc3pHVHAyb1dsVHN0cHJQNzlBUGo0WmZkV3ZRNng5OWx6djdqcnp6cng1MWlUTWFWMC00YkE?oc=5",
-      "published_at": "2026-07-16T06:19:00+00:00",
-      "keywords": [
-        "기업"
-      ],
-      "priority": 3
-    },
-    {
-      "id": "8783114508617140992",
-      "category": "esg",
+      "subcategory": "csr",
+      "subcategory_label": "기업 사회공헌 사례",
       "title": "[ESG트렌드] ESG 문화 유튜브 ‘대담해’, 지속가능한 국내외 여행지와 ESG 실천법 소개 外 - 베이비뉴스",
       "summary": "[ESG트렌드] ESG 문화 유튜브 ‘대담해’, 지속가능한 국내외 여행지와 ESG 실천법 소개 外 베이비뉴스",
       "source": "베이비뉴스",
@@ -699,174 +216,78 @@
         "ESG",
         "지속가능"
       ],
-      "priority": 4
+      "priority": 4,
+      "ai_analyzed": false,
+      "insight": "",
+      "trend_tags": [],
+      "confidence": "원문 확인 필요"
     },
     {
-      "id": "8172564056033233912",
-      "category": "law",
-      "title": "공지사항 - 서울지방국세청",
-      "summary": "공지사항 서울지방국세청",
-      "source": "서울지방국세청",
-      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9IVXVVUHg4dURlN2lQWHpHUXZCX3QxbFROeHBON0tReXI4dzhXbVBkekI0QUVfUHlBZVBzSG5lMEdFRGNKTnNJODNLNlp6MVN2TW0wUktXTDg4TXNYdXZOd1JyNEdkTVA3dlAxV0lxUjBvYlpiTXhPRg?oc=5",
-      "published_at": "2026-07-15T20:06:06+00:00",
-      "keywords": [],
-      "priority": 2
-    },
-    {
-      "id": "4950544766009757904",
-      "category": "kbs",
-      "title": "속초시, 상하수도 요금 ‘온라인 창구’ 시범 운영 - KBS 뉴스",
-      "summary": "속초시, 상하수도 요금 ‘온라인 창구’ 시범 운영 KBS 뉴스",
-      "source": "KBS 뉴스",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFA4UVBUYkF6bVh3YUNmNWQtTzN3Q0N4SHA3c2oydFZWM2huZFdaTlFxM1dnODlwNFFodTczLTFqVVJVNUF3b1ktdlJsZElLMzh1ZWpWTmdkcW42bXc?oc=5",
-      "published_at": "2026-07-15T13:19:00+00:00",
-      "keywords": [
-        "KBS"
-      ],
-      "priority": 3
-    },
-    {
-      "id": "8021497714943776912",
-      "category": "kbs",
-      "title": "강릉시장·시민 직접 소통…시청 1층 ‘들음터’ 운영 - KBS 뉴스",
-      "summary": "강릉시장·시민 직접 소통…시청 1층 ‘들음터’ 운영 KBS 뉴스",
-      "source": "KBS 뉴스",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBqV3hJWFl6R1E1aVJDNnlvWGlzb2pKVGNxcTZXQnFnUDFrbXdoLUc1NlJvWlpmanEwMWJEQy1veUlrWE5vYVJXRW9xMzRUX0JVNjNLQ0JickhoWXM?oc=5",
-      "published_at": "2026-07-15T13:18:00+00:00",
-      "keywords": [
-        "KBS"
-      ],
-      "priority": 3
-    },
-    {
-      "id": "636216442599705065",
-      "category": "kbs",
-      "title": "[여기는 강릉] 강릉 골프장 대책위 “등급 하향 조작…사업 중단해야” 외 - KBS 뉴스",
-      "summary": "[여기는 강릉] 강릉 골프장 대책위 “등급 하향 조작…사업 중단해야” 외 KBS 뉴스",
-      "source": "KBS 뉴스",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBOUlBxV1NzQnVJNFNUVmJleDV2V3pTRWNpNWFmRzdGTW9UXzlCOHhiX2lEZ0NRZFNCZXdmbWx0dngyTG50aTNnV3BFdncxSjZkVUQ3a1pOck5Ka0U?oc=5",
-      "published_at": "2026-07-15T10:45:00+00:00",
-      "keywords": [
-        "KBS"
-      ],
-      "priority": 3
-    },
-    {
-      "id": "5076193505019225722",
-      "category": "kbs",
-      "title": "[대담] “춤추는 섬 제주”…2026 제주국제무용제 개막 - KBS 뉴스",
-      "summary": "[대담] “춤추는 섬 제주”…2026 제주국제무용제 개막 KBS 뉴스",
-      "source": "KBS 뉴스",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9rTFRkWHFublJuMm9jODFOREdISU9uQ2RYOElOQzF5UnNUbDE2dUpTQUNJQVM2bEUxZXJGSjFpN3V1VnRGc0Q1dkRhUVozWG10RnNnZ2MxZzh4ZWM?oc=5",
-      "published_at": "2026-07-15T10:26:00+00:00",
-      "keywords": [
-        "KBS"
-      ],
-      "priority": 3
-    },
-    {
-      "id": "3013854140568111037",
-      "category": "kbs",
-      "title": "[541회] 동행 - KBS 다시보기",
-      "summary": "[541회] 동행 KBS 다시보기",
-      "source": "KBS 다시보기",
-      "url": "https://news.google.com/rss/articles/CBMilgJBVV95cUxNemxPcXNUbVQ2ajByUWtvS2RGcktUV25za3dKdU9FVFEybmU1NXFPS2s3WG9sYUNMYUQtU0JKSkxMYjQydGktcGxfNF9TWW00ZkMtU3ZxQzdTQVlmMFFibjRtaGw3SjRLejJET0V1R2dENlplOWRzRmZHNmlvVDBKYWlvR1RlSXB4TTk1NU56amh0c3lMMnRPNy0walpVWXNtREdsUzhMX3RHRVFZNFBlRkJ6V2hwNDNCQlEyRkVSWjZuM2piQVY2LUlWTDBxbFRLZXFMTzd1empuYi1oeHJ0T0oyVlY4bWtKMG1mcWFBbkhrLW9YaktGNktsQ0Z3RUlNaHAwaU1aMjFxSXlCN21NR2pEcVY0dw?oc=5",
-      "published_at": "2026-07-15T02:10:00+00:00",
-      "keywords": [
-        "동행",
-        "KBS"
-      ],
-      "priority": 4
-    },
-    {
-      "id": "2340350783569362720",
+      "id": "572eedc9e3e762e084",
       "category": "csr",
-      "title": "[함께 만드는 지속 가능성] 폭염부터 청년·장애인·환경까지…기업 사회공헌, '지원' 넘어 사회문제 해결로 진화 - 코리아포스트 한글판",
-      "summary": "[함께 만드는 지속 가능성] 폭염부터 청년·장애인·환경까지…기업 사회공헌, '지원' 넘어 사회문제 해결로 진화 코리아포스트 한글판",
-      "source": "코리아포스트 한글판",
-      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBldGRjNU1NaXhZeThDc1BIQVpzX0N2c2FsQ0x2blFaWk04aUtzck5FaVJGUlp5X1NNVTQybWNXSk5fZW91d2dhZEhHcWpOY3d5SlNfZ0ZtbUVRc0VSRTA3Sk9mcWN4MEZaUk92Z1NB?oc=5",
-      "published_at": "2026-07-14T02:25:08+00:00",
+      "subcategory": "csr",
+      "subcategory_label": "기업 사회공헌 사례",
+      "title": "[ESG] 산업·재계, 소외계층 보듬는 기부로 ESG 사회공헌 진행 - consumerwide.com",
+      "summary": "[ESG] 산업·재계, 소외계층 보듬는 기부로 ESG 사회공헌 진행 consumerwide.com",
+      "source": "consumerwide.com",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9rTHR1TFM4X2ozODFOOVJKV0kwWHZaMEM2TUJtU1dRUVZCS1ZoN19oVXVJY0o0TTliY3ljaWdIQmpjcGlUcFdybGt1N24yZW5FUk9qelhCbENBWTFJcnhjUDlFdU5VT1FpRzdxQUt4QdIBc0FVX3lxTE1zNUI4TV9OTDRVZUFNOFVva2xHdU8zNjJGaURTQ19TbjVhNXRJNDhQRzBNNVJNTUl5dVZMSS1xMHEyQS1xLVpFVmhoN3NNQTFMOXB6bUV2TkNLbjJ4elNZWGxqdGhMNnFaOFlJZzlxc0tfYlk?oc=5",
+      "published_at": "2026-07-15T13:05:50+00:00",
       "keywords": [
         "사회공헌",
-        "기업"
+        "ESG",
+        "기부"
       ],
-      "priority": 4
+      "priority": 5,
+      "ai_analyzed": false,
+      "insight": "",
+      "trend_tags": [],
+      "confidence": "원문 확인 필요"
     },
     {
-      "id": "3627409139041019947",
-      "category": "law",
-      "title": "원천징수영수증 교부 - 국세청",
-      "summary": "원천징수영수증 교부 국세청",
-      "source": "국세청",
-      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5YX3BWMzYwUHhiYVRQV05ZaVhxcjA1Zkcxa1JRMjloRWlNSW5yOU5ZczlhSjU2b2R5ZFV0WHZ6cHhhdEVlMktSXzE5ejR4cHVDbmVlUWt1cEVfUk5QaVRpS0xaMGQzeXBmUjNYV3lra0wwdVYyTzE2d1lNTQ?oc=5",
-      "published_at": "2026-07-13T20:04:36+00:00",
-      "keywords": [],
-      "priority": 2
-    },
-    {
-      "id": "4288071067117049839",
-      "category": "law",
-      "title": "초보 청년 창업자를 위한 세금든든케어 - 국세청",
-      "summary": "초보 청년 창업자를 위한 세금든든케어 국세청",
-      "source": "국세청",
-      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPOG5YTmZ4cnV4UWZnTXZkbUVOamQwcGY2dko0ZTB5ZkwzbmxUdTVQSmVuYmptMHlic3NUWldFYWQtQXJsRE1GY3l0UFpVdVdHVFlJallxV2pFTFZYaV92OWFfWnRKel9jTHdXMURSNFVOMXdzWHVFSWlEQkxfS0d4Z0lGWFJIeDk0Snc?oc=5",
-      "published_at": "2026-07-13T09:11:27+00:00",
-      "keywords": [],
-      "priority": 2
-    },
-    {
-      "id": "455283621291369383",
+      "id": "dda250abd8383b33ec",
       "category": "csr",
-      "title": "글로벌문화교류와 ESG헤리티지를 한 자리에, 서울호비가 그리는 기업 사회공헌 신모델 - 이로운뉴스",
-      "summary": "글로벌문화교류와 ESG헤리티지를 한 자리에, 서울호비가 그리는 기업 사회공헌 신모델 이로운뉴스",
-      "source": "이로운뉴스",
-      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5YYWNiX3NTQzkzRV95cnU5d090LXpnQmVOT3Q0VTJjdUpZTUxZc2dlY3k2Vl9CZ251TEJKc3Q5ZWZCX0RrZE9wUUhkc3VYTVAtUUdJaUdrelNmemtfZkVkQkJ4Yjh0ZFE?oc=5",
-      "published_at": "2026-07-11T07:34:54+00:00",
-      "keywords": [
-        "사회공헌",
-        "기업"
-      ],
-      "priority": 4
-    },
-    {
-      "id": "1965493607317021168",
-      "category": "law",
-      "title": "[별지 제23호서식] (후원회)ㆍ(지정권자)의 잔여재산 인계ㆍ인수서 1. 인계 - 국가법령정보센터",
-      "summary": "[별지 제23호서식] (후원회)ㆍ(지정권자)의 잔여재산 인계ㆍ인수서 1. 인계 국가법령정보센터",
-      "source": "국가법령정보센터",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOVUlsUUxVTGZmRUE4SkdvRWtvTUZuVmVSUllnNUhqQVlEX0FxUzQyTzJCamliOGxPRV85X3BfSjR2Vm1xTVdpa1ZMR0x4ek1kQnVOalprVWxTU2swZnFuTm5pZXNKNGlmcjNOTlJFVjJoVHFJa21fUldmWkpES3A1amdZMHA?oc=5",
-      "published_at": "2026-07-10T07:00:00+00:00",
-      "keywords": [],
-      "priority": 2
-    },
-    {
-      "id": "2462594310450171510",
-      "category": "law",
-      "title": "[별지 제50호서식] 후보자 반환기탁금 및 보전비용 인계ㆍ인수서 1. 인계자 - 국가법령정보센터",
-      "summary": "[별지 제50호서식] 후보자 반환기탁금 및 보전비용 인계ㆍ인수서 1. 인계자 국가법령정보센터",
-      "source": "국가법령정보센터",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPQW1TV20xR1ZnME81U2NHUF9zV1FPMFAxRm5hSEdhOGdfN3BXRkh1aDdMbm9wdERlUmIzaGI3T3JXSW1fbFVEUmI5RUNQam1BQUVLdEZpWDFYQlBRbkhTcGJlWkhEQXg3TG5tbXJ4VzlHTG1Ob0txbWVRcWRySjdONVJFa0g?oc=5",
-      "published_at": "2026-07-10T07:00:00+00:00",
-      "keywords": [],
-      "priority": 2
-    },
-    {
-      "id": "7420515817501838266",
-      "category": "csr",
-      "title": "라이프 큐레이터…보람그룹, 5년 연속 ‘사회공헌기업’ ESG부문 대상 - v.daum.net",
-      "summary": "라이프 큐레이터…보람그룹, 5년 연속 ‘사회공헌기업’ ESG부문 대상 v.daum.net",
+      "subcategory": "csr",
+      "subcategory_label": "기업 사회공헌 사례",
+      "title": "대신파이낸셜그룹, 임직원·가족과 ESG 활동…\"도심 숲 조성·무료급식\" - v.daum.net",
+      "summary": "대신파이낸셜그룹, 임직원·가족과 ESG 활동…\"도심 숲 조성·무료급식\" v.daum.net",
       "source": "v.daum.net",
-      "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE40dHp2U3NMcV9MOUlaQWx4WmFNemVJY1hWdGI1cTRnYTdJZnRTZXRBU0huVi02dmVnTFN1OGlZcFRpQS1Gemc?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE0zNFBCeDdMVVl0TUFRdTZyM3QzN3hCWUdrMWR6a09FSXc5OVdqTThhRVFheWgyTVNqbXVDQ2NHWVJ2SUwxeGc?oc=5",
+      "published_at": "2026-07-13T00:12:43+00:00",
+      "keywords": [
+        "ESG"
+      ],
+      "priority": 3,
+      "ai_analyzed": false,
+      "insight": "",
+      "trend_tags": [],
+      "confidence": "원문 확인 필요"
+    },
+    {
+      "id": "8fa185eb49d78ddfa7",
+      "category": "csr",
+      "subcategory": "csr",
+      "subcategory_label": "기업 사회공헌 사례",
+      "title": "보람그룹, 5년 연속 '사회공헌기업대상' ESG 부문 대상…상부상조 정신으로 지속가능 경영 실천 - v.daum.net",
+      "summary": "보람그룹, 5년 연속 '사회공헌기업대상' ESG 부문 대상…상부상조 정신으로 지속가능 경영 실천 v.daum.net",
+      "source": "v.daum.net",
+      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5VUWEzVGFqNGxGSWwxcUdzcDBHX20xd185cWx4WkM1NVFxYi1obTFGRGF0NDRkdFNMRlQ0OUJ1THJhNXlSUnVhMmFxUQ?oc=5",
       "published_at": "2026-07-10T07:00:00+00:00",
       "keywords": [
         "사회공헌",
-        "기업"
+        "ESG",
+        "지속가능"
       ],
-      "priority": 4
+      "priority": 5,
+      "ai_analyzed": false,
+      "insight": "",
+      "trend_tags": [],
+      "confidence": "원문 확인 필요"
     },
     {
-      "id": "1230544500986510213",
+      "id": "e1d2938d1b255a2171",
       "category": "csr",
+      "subcategory": "csr",
+      "subcategory_label": "기업 사회공헌 사례",
       "title": "라이프 큐레이터…보람그룹, 5년 연속 ‘사회공헌기업’ ESG부문 대상 - 매일경제",
       "summary": "라이프 큐레이터…보람그룹, 5년 연속 ‘사회공헌기업’ ESG부문 대상 매일경제",
       "source": "매일경제",
@@ -874,230 +295,78 @@
       "published_at": "2026-07-10T07:00:00+00:00",
       "keywords": [
         "사회공헌",
-        "기업"
+        "ESG"
       ],
-      "priority": 4
+      "priority": 4,
+      "ai_analyzed": false,
+      "insight": "",
+      "trend_tags": [],
+      "confidence": "원문 확인 필요"
     },
     {
-      "id": "2755151036580284098",
+      "id": "c580b730b21b338b07",
       "category": "csr",
-      "title": "보람그룹, 상부상조 기반 ESG 확대…사회공헌기업대상 5년 연속 수상 - 스포츠한국",
-      "summary": "보람그룹, 상부상조 기반 ESG 확대…사회공헌기업대상 5년 연속 수상 스포츠한국",
-      "source": "스포츠한국",
-      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE82VnY3UG9HWDlwbklIQ05QbV9tY05VOVdsZmltMTcwenJod2dnT2xWRFJ1VG5zQnJXSzJ5QzlMU1M1VUpxNF9EekNvQzByRXlUWWhnZ2F6V3dKWWN6S0hWNVdsczhaVDlTVFBQSWdsR3LSAXRBVV95cUxOT3NPb3h6T09vdFdLSHhHZ2FIQV80X3ZkNDdFZ09pbUV0M2w0dnJoT3llQzdPTmV5OXlHa284cTctTS1uZkV4WTgyNEV5YXJ4eW1NN2dOX19xMEZFQjV4anZUWENSNG1SREJod0d2VDQtUmVEMQ?oc=5",
-      "published_at": "2026-07-10T06:13:41+00:00",
-      "keywords": [
-        "사회공헌",
-        "기업"
-      ],
-      "priority": 4
-    },
-    {
-      "id": "3333440895365393919",
-      "category": "esg",
-      "title": "보람그룹, 5년 연속 '사회공헌기업대상' ESG 부문 대상…상부상조 정신으로 지속가능 경영 실천 - v.daum.net",
-      "summary": "보람그룹, 5년 연속 '사회공헌기업대상' ESG 부문 대상…상부상조 정신으로 지속가능 경영 실천 v.daum.net",
+      "subcategory": "csr",
+      "subcategory_label": "기업 사회공헌 사례",
+      "title": "사회공헌·기부에서 기후위기 대응까지…달라진 제약업계 ESG - v.daum.net",
+      "summary": "사회공헌·기부에서 기후위기 대응까지…달라진 제약업계 ESG v.daum.net",
       "source": "v.daum.net",
-      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE10R3hRdkNEeUQ3T0prbzVsS1VvbjdzRVhfYlFtNzdHWENISURTOUFZQVNWckN5WjJUTlV2SnBjTkFuTWV4UlVKUTl1Ylp3WGVyTVdtQg?oc=5",
-      "published_at": "2026-07-10T06:06:09+00:00",
-      "keywords": [
-        "ESG",
-        "지속가능"
-      ],
-      "priority": 4
-    },
-    {
-      "id": "3701637323232616417",
-      "category": "esg",
-      "title": "하이트진로·동아오츠카, 지속가능경영보고서 발간·낙동강 생물다양성 보전 추진 - 통신일보",
-      "summary": "하이트진로·동아오츠카, 지속가능경영보고서 발간·낙동강 생물다양성 보전 추진 통신일보",
-      "source": "통신일보",
-      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBmckhYLUlPcXlCOEJ3U3paTDk1TFNYLUk5aHZHNzF2QWVPMXB5YTlkLTdwWW1TRHdBbFpVQi03djVHLUFuOHo5ZTVRZkYzVzZGZVNkQ3BPbjlvTVYyUkZVWHNZUQ?oc=5",
-      "published_at": "2026-07-10T02:25:22+00:00",
-      "keywords": [
-        "지속가능"
-      ],
-      "priority": 3
-    },
-    {
-      "id": "3886929964113491470",
-      "category": "csr",
-      "title": "태백시자원봉사센터, 사회적기업 에스엠에코와 ESG 사회공헌 업무협약 체결 - 쿠키뉴스",
-      "summary": "태백시자원봉사센터, 사회적기업 에스엠에코와 ESG 사회공헌 업무협약 체결 쿠키뉴스",
-      "source": "쿠키뉴스",
-      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1ydkVabS15bk1BUU15VDlJeUtzNUlwV1BfbFZJaWFfOHpwTlZ6SWtZNFNqZ0RVckg4d3RTcGJJb3hnUmNEdTdPVG1pODV1aVdxZ1VGdHRtVkg2M1l2VGszbTd2SQ?oc=5",
-      "published_at": "2026-07-09T07:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE4tUG8yUGFSSmpDNEU4VXppLVNQdllPZWFDVEdZZksyNXowSVc4bEVZUS01QzZVbnZOLW41MzNCM0hIc3BiSmZNelFDYklnc2ZlTkJrMg?oc=5",
+      "published_at": "2026-07-06T20:00:03+00:00",
       "keywords": [
         "사회공헌",
-        "기업",
-        "봉사"
-      ],
-      "priority": 5
-    },
-    {
-      "id": "7296721096592036918",
-      "category": "csr",
-      "title": "[칼럼]ESG 공시후 한국 사회 사회적 가치와 변화에 대해서 - 이로운넷",
-      "summary": "[칼럼]ESG 공시후 한국 사회 사회적 가치와 변화에 대해서 이로운넷",
-      "source": "이로운넷",
-      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5EUkttY0FoLVVPYzZmbk5xQXJDWFV2WVNvRFhOMHlaTzdNM3N5cXJXWlJ3cDU5eWplZGllRllFazl6WnQ5Sks5N2NocmthODlWc25hTHpyZVVIbm9qbWNTN2N0anVoZw?oc=5",
-      "published_at": "2026-07-09T02:39:16+00:00",
-      "keywords": [],
-      "priority": 2
-    },
-    {
-      "id": "6442944227218922097",
-      "category": "csr",
-      "title": "보람그룹, 지역사회와 미래세대 위한 ESG 나눔 확대 - 상조장례뉴스",
-      "summary": "보람그룹, 지역사회와 미래세대 위한 ESG 나눔 확대 상조장례뉴스",
-      "source": "상조장례뉴스",
-      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBXeFZodjJ0S1hTbjluODVZejFVbXdSdkZnUTh1WFVoNENMdlJEUUh0OEV0TUJPVDIweU83ZUZoY280djV5OU53WnBEVUNFMGRNdW5zaWl1ZFdTSzd3NHlEQlY4NzRlNFZXN3c?oc=5",
-      "published_at": "2026-07-08T07:50:00+00:00",
-      "keywords": [],
-      "priority": 2
-    },
-    {
-      "id": "4645160013610230072",
-      "category": "csr",
-      "title": "보람그룹, 부산·울산·경남 1.5억 기부…PC 1000대 지원 - 한국경제",
-      "summary": "보람그룹, 부산·울산·경남 1.5억 기부…PC 1000대 지원 한국경제",
-      "source": "한국경제",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5mNFJVWEJsQy1odlI2NDVTcjNrSGVjOTVKR0dDRUI0YzlxdG1jcjhwbXc1cUhOOTdaYXNlV1dxdklMYkkxWlRvSjQyazhoUU0xbmg4dWliN0J4QQ?oc=5",
-      "published_at": "2026-07-08T07:00:00+00:00",
-      "keywords": [],
-      "priority": 2
-    },
-    {
-      "id": "8678401778511201577",
-      "category": "esg",
-      "title": "사회공헌·기부에서 기후위기 대응까지…달라진 제약업계 ESG - 이투데이",
-      "summary": "사회공헌·기부에서 기후위기 대응까지…달라진 제약업계 ESG 이투데이",
-      "source": "이투데이",
-      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1NWVRxQ2FkNFlRX0w3c1BBNlZ4TXpfTFd0MFo0ZFdrakdxQ2w1Yl9kR29aYmNVWEtGYVZpRUlzT2VPTWRjSDVrcHFLREZIeE5tUzV0aw?oc=5",
-      "published_at": "2026-07-07T07:00:00+00:00",
-      "keywords": [
         "ESG",
         "기부"
       ],
-      "priority": 4
+      "priority": 5,
+      "ai_analyzed": false,
+      "insight": "",
+      "trend_tags": [],
+      "confidence": "원문 확인 필요"
     },
     {
-      "id": "456049671464167367",
+      "id": "d48423800587581546",
       "category": "csr",
-      "title": "'사회·환경·안전' 아우른 ESG…삼표그룹의 지속가능한 성장 - 뉴스포스트",
-      "summary": "'사회·환경·안전' 아우른 ESG…삼표그룹의 지속가능한 성장 뉴스포스트",
-      "source": "뉴스포스트",
-      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFB1WFpGczFGVktpT3VxWFlNYklSdFd1MC1CWEZNTW5TdkZpRF83Q3ZUSklzOE9lR1dheHJ6d3NBNjdNTzBaLW5HOUpCLWdXTlJIS1paeExZS1ZQMHZ0NmJRT1BEeloyZGJLV1E?oc=5",
-      "published_at": "2026-07-07T05:07:56+00:00",
-      "keywords": [],
-      "priority": 2
-    },
-    {
-      "id": "2863014780516084458",
-      "category": "law",
-      "title": "행정규칙 > 금융정보분석원 정보공개 운영 규정 - 국가법령정보센터",
-      "summary": "행정규칙 > 금융정보분석원 정보공개 운영 규정 국가법령정보센터",
-      "source": "국가법령정보센터",
-      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBjd2lybktWQ0licnZNVGVmWkV1RTBWQ1hrdHBDMFRrV1kxemJsc1lNZzc0Q3JvZWRjS3RSTUV1M0YxQ200NHA3VEZrV3daR0E2Q2g0MVVVT2RLcmprS0dfSkFSOUVQNGltTGg0QmFkUFI0VUJM?oc=5",
-      "published_at": "2026-07-05T07:00:00+00:00",
-      "keywords": [],
-      "priority": 2
-    },
-    {
-      "id": "3099631637517761295",
-      "category": "csr",
-      "title": "안양시공익활동지원센터-코레일유통 경인본부, 지역 공익활동과 사회공헌 잇는다 - 경기경제신문",
-      "summary": "안양시공익활동지원센터-코레일유통 경인본부, 지역 공익활동과 사회공헌 잇는다 경기경제신문",
-      "source": "경기경제신문",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5iZnRxMXRWM1V0NzBaRzl6d2lDMTFuZWxSX0hYSkkwUjRvcnBwUS1sRWpneXBzVGhvNkNON0lLckV1blplODJvOU92dkVQWHRXREwxbGZjdE9uTmM?oc=5",
-      "published_at": "2026-07-03T07:00:00+00:00",
-      "keywords": [
-        "사회공헌"
-      ],
-      "priority": 3
-    },
-    {
-      "id": "5967264442963678002",
-      "category": "csr",
-      "title": "'지속가능경영' 띄우는 게임업계…사회공헌 넘어설 올해 키워드는 - 민주신문",
-      "summary": "'지속가능경영' 띄우는 게임업계…사회공헌 넘어설 올해 키워드는 민주신문",
-      "source": "민주신문",
-      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBuTXBxbmtlaDJaWkpMUFdDcFJGV3puT2lYSzZVcnBvdHhVV2trbm1XWUdkZ1RiR281ZWNGQXJ0ZGlpdFJla2J1MmdXVldlYlpwdzlraEd5MjFBdy1sOGhadXNOY29LQ3fSAWtBVV95cUxQZmczZW9PRXVLdGxPVnBwZ3RiT3BZTWZVZ0Zfd2FkaHF5Nm9TS1dWdVNfaWlfbnp3a1djRWJkNkQ4S1pIZm5PNkRlNmg3Y0JOQlRYZlpmZjB4OHZnOGtIQXBCUVhyb2JFMzkxWQ?oc=5",
-      "published_at": "2026-07-03T01:05:24+00:00",
-      "keywords": [
-        "사회공헌"
-      ],
-      "priority": 3
-    },
-    {
-      "id": "5276125064905840566",
-      "category": "csr",
-      "title": "더스킨팩토리, 기빙플러스와 시청각장애인 봉사활동…ESG 경영 실천 강화 - 피플게이트",
-      "summary": "더스킨팩토리, 기빙플러스와 시청각장애인 봉사활동…ESG 경영 실천 강화 피플게이트",
-      "source": "피플게이트",
-      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNQTFyV3JmVzI4R3JUX2ptRVpiVUd6LVdvLWk5YzZPblBEbU9DWjFjZ2h4UUVlNGw4NDBtU29iRXNlSkNrVE44al9TR3BPQ0ROVTl2WWo0bloxZWFTNC15NVJPaW10blhzZDdFSEVuRENCWlZNM1NCRnhZN2Mxd25sWE9IQ01zQUpGYm45UWtnamkyaVk2MG9obVA0WUJxMzl5QUNWdVhFb2NvdVUzZmhkOV9Pb1g2UFBZV3pzVTB1c1N4eFVI?oc=5",
+      "subcategory": "csr",
+      "subcategory_label": "기업 사회공헌 사례",
+      "title": "[나눔 트렌드] (주)비엔씨티, 소아암 어린이 치료비 1천만 원 기부 外 - v.daum.net",
+      "summary": "[나눔 트렌드] (주)비엔씨티, 소아암 어린이 치료비 1천만 원 기부 外 v.daum.net",
+      "source": "v.daum.net",
+      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1VT1JKTGFtYXF3WTBrSmZSTnhieVlzUlhKVm5BaFJ3eG1iVmIxVEVSMG9xTzJYWFAyY3hXUzVKdERyM3V2NUF1TDItTQ?oc=5",
       "published_at": "2026-07-01T07:00:00+00:00",
       "keywords": [
-        "봉사"
+        "기부"
       ],
-      "priority": 3
+      "priority": 3,
+      "ai_analyzed": false,
+      "insight": "",
+      "trend_tags": [],
+      "confidence": "원문 확인 필요"
     },
     {
-      "id": "3481645919924450374",
-      "category": "esg",
-      "title": "[주목! e금융] 신한은행·우리금융·하나은행·KB국민·IBK기업...\"금융권, 사회적 가치 확대\" - 한국면세뉴스",
-      "summary": "[주목! e금융] 신한은행·우리금융·하나은행·KB국민·IBK기업...\"금융권, 사회적 가치 확대\" 한국면세뉴스",
+      "id": "8630f4f67d03ab9523",
+      "category": "csr",
+      "subcategory": "csr",
+      "subcategory_label": "기업 사회공헌 사례",
+      "title": "고립 예방부터 청년 일자리까지…기업 사회적 가치 실현 확대 - 한국면세뉴스",
+      "summary": "고립 예방부터 청년 일자리까지…기업 사회적 가치 실현 확대 한국면세뉴스",
       "source": "한국면세뉴스",
-      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5OdkJXMnB1X040bkp5bVBfTC0xSnFaTWRwWmhNRGZuNUUzb1VGazIxQS1WYWEyd1F3MGxEUUVyOVh0dTNKZWU5ZG1UZUpnM0ZjZ0k0NjRUWXhldllnbDZUcVBxMHFOVktnRFE?oc=5",
-      "published_at": "2026-07-01T02:27:50+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5uWEp3RDhGWmlSLTE4SE40ODRVeEFUV3poTndMbWhuOE9haElCa1JhQVhYbEdFcklZMmE1OGYxbUxBSjQ5eXB6dEs2cG5teERiQi0yaEY1RW1XSWI5U2pGM0JpOHMzSklPNmc?oc=5",
+      "published_at": "2026-06-30T05:08:01+00:00",
       "keywords": [
         "사회적 가치"
       ],
-      "priority": 3
+      "priority": 3,
+      "ai_analyzed": false,
+      "insight": "",
+      "trend_tags": [],
+      "confidence": "원문 확인 필요"
     },
     {
-      "id": "739808802743234878",
-      "category": "law",
-      "title": "자본시장과 금융투자업에 관한 법률 시행령 - 국가법령정보센터",
-      "summary": "자본시장과 금융투자업에 관한 법률 시행령 국가법령정보센터",
-      "source": "국가법령정보센터",
-      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5hcmxmb1N0SGRxRktTdzFSdHpIVXFrMHhEc3dRVktGN0JnYzhsdjJwOEhGQ090LWk1elFNTHplMEdweDlhUjVPUGh5ZmRIWTFYRzU4N1VwQnZUUnd0SmQ0?oc=5",
-      "published_at": "2026-06-29T20:16:41+00:00",
-      "keywords": [
-        "법률",
-        "시행령"
-      ],
-      "priority": 4
-    },
-    {
-      "id": "9071812080416303118",
-      "category": "law",
-      "title": "과세기준자문상세 - 국세법령정보시스템",
-      "summary": "과세기준자문상세 국세법령정보시스템",
-      "source": "국세법령정보시스템",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNQmlxNnllejE4ZWZUay1PZVJQMTgxRURnWU5KZ1ZHT1JNajRkWV9jUG5IOUlET1FmTnhwckxDZF9UcGFBRHhfVHcwNjV2VzhjdldhYkV2UFFmLTlvT2JVRFY1NFhYTlZpV3lmc2h5SXdmYXZNaUpXVkNMa2U0XzlwTUtZeGplb0tyVHpLRnFVRVJDdEZiaWl6NjhMb1ZrY3RXNkRxaGNud19TbWZoWnBYdzVtQQ?oc=5",
-      "published_at": "2026-06-29T07:00:00+00:00",
-      "keywords": [
-        "세법"
-      ],
-      "priority": 3
-    },
-    {
-      "id": "6908856527104816458",
+      "id": "2d4ea2472987cbba91",
       "category": "csr",
-      "title": "기업·NGO·사회적경제 조직 뭉쳤다, 사회 혁신 관건은 ‘협력’ - 조선일보",
-      "summary": "기업·NGO·사회적경제 조직 뭉쳤다, 사회 혁신 관건은 ‘협력’ 조선일보",
-      "source": "조선일보",
-      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNY085alJmTWZKVWxXNXRvemsyZEtMZXNqaTQtRnVXVm41Q3hsVHhXcXllVjktT0U1NGliMGdvNGhyaXNhRmxxQnMwVlJPeUNGQnhQdnZNNlg4RVVjZTY5V2xiQ2FDMzV6d1A4aWNGR1ZMUUVqV2VGZjNma2VfMzlOMVZTQmNZeEVPYkFJ?oc=5",
-      "published_at": "2026-06-26T07:00:00+00:00",
-      "keywords": [
-        "기업"
-      ],
-      "priority": 3
-    },
-    {
-      "id": "4384287941857517162",
-      "category": "esg",
+      "subcategory": "csr",
+      "subcategory_label": "기업 사회공헌 사례",
       "title": "[허프 트렌드] 현대차는 왜 디저트 생산 지원할까 : '장애인 표준사업장' 통해 사회적 가치 창출 나서는 기업들 - 허프포스트코리아",
       "summary": "[허프 트렌드] 현대차는 왜 디저트 생산 지원할까 : '장애인 표준사업장' 통해 사회적 가치 창출 나서는 기업들 허프포스트코리아",
       "source": "허프포스트코리아",
@@ -1106,74 +375,55 @@
       "keywords": [
         "사회적 가치"
       ],
-      "priority": 3
+      "priority": 3,
+      "ai_analyzed": false,
+      "insight": "",
+      "trend_tags": [],
+      "confidence": "원문 확인 필요"
     },
     {
-      "id": "2424451843891221086",
+      "id": "59520dcdff461fcbd8",
       "category": "csr",
-      "title": "[기업들] 청년 금융교육부터 AI 돌봄까지…사회문제 해결형 ESG 행보 확대 - 데일리팝",
-      "summary": "[기업들] 청년 금융교육부터 AI 돌봄까지…사회문제 해결형 ESG 행보 확대 데일리팝",
-      "source": "데일리팝",
-      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE51em5uTTJWczduSU1MUkpEdkpnNmYxRS04WENUczZyUEY3RU5HaW9SQ0hUUmc4NURFcE1yVE5zelNsWjdCemxPamtJMlptYkRveS13SHFGaFVhSWRlNjd1QVlBOUdrYnNDNmc?oc=5",
-      "published_at": "2026-06-24T07:00:00+00:00",
-      "keywords": [
-        "기업"
-      ],
-      "priority": 3
-    },
-    {
-      "id": "837166450823400013",
-      "category": "csr",
-      "title": "티웨이항공, 국내외 사회공헌 활동 시선집중 - ER 이코노믹리뷰",
-      "summary": "티웨이항공, 국내외 사회공헌 활동 시선집중 ER 이코노믹리뷰",
-      "source": "ER 이코노믹리뷰",
-      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5EVkpPZndSd0xualREMTQ1NXZDTDVBZDJVSkRiRDZkMTBMWXNkbXRyOE03SEdvMkxhX1BseTJLaTFSVXlBaTdzbm82UXA3ZncxaG0tRFpsRkpxZ015N2YwM1A0eUdDS195Mmg1cw?oc=5",
-      "published_at": "2026-06-24T07:00:00+00:00",
-      "keywords": [
-        "사회공헌"
-      ],
-      "priority": 3
-    },
-    {
-      "id": "1183454794558455401",
-      "category": "law",
-      "title": "연계정보 - 국가법령정보센터",
-      "summary": "연계정보 국가법령정보센터",
-      "source": "국가법령정보센터",
-      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBwZDBJd0NZTWRsa3kyRkdBN3o4UXZ0U0RDUEtDVElnSF9VbWpMaDdvVzd2WEFFOTNISlpUdEJrYzc4Wnh1cGwzLWxScE1OMFFIV1lYbzVuSFVraGpPUWVRc2p1aUxCT3FGcW9id0lUd3BUZE1HcndNOVBkYw?oc=5",
-      "published_at": "2026-06-23T07:00:00+00:00",
-      "keywords": [],
-      "priority": 2
-    },
-    {
-      "id": "3310313268127668663",
-      "category": "law",
-      "title": "전남광주통합특별시 설치를 위한 특별법 시행령 - 국가법령정보센터",
-      "summary": "전남광주통합특별시 설치를 위한 특별법 시행령 국가법령정보센터",
-      "source": "국가법령정보센터",
-      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5IYlV6UGlTYkx2Sy1KTFRMOHhIZXZyQ0hBc3R6UG82UmRJOXBWakVhTE9KdU80WktvM0t6SmFZMlA0WE9TTFNZZEJWZ0ZQVVd4NnpUWm05S1hxMXhhcG9OUGtPaHBDLURlUzNJTGg0eUlPdVNoNjRv?oc=5",
+      "subcategory": "csr",
+      "subcategory_label": "기업 사회공헌 사례",
+      "title": "[ESG 트렌드] 42년 숲환경 캠페인 철학 담은 ‘유한킴벌리 푸른숲체’ 공개 外 - 베이비뉴스",
+      "summary": "[ESG 트렌드] 42년 숲환경 캠페인 철학 담은 ‘유한킴벌리 푸른숲체’ 공개 外 베이비뉴스",
+      "source": "베이비뉴스",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9DME93STQxb1JkQ3lZWUJTaUdGVWI5NlVxZDBWYWdEYTdwM1M2ekhDMklweEhuRzZ0NkdxSXJtRlVmdWNIWHlVYVhkV0JSS0Z0WFczaGNoSVpjOHRoVWZTT0R5SFlLZWxGbU9QZQ?oc=5",
       "published_at": "2026-06-23T07:00:00+00:00",
       "keywords": [
-        "시행령"
+        "ESG"
       ],
-      "priority": 3
+      "priority": 3,
+      "ai_analyzed": false,
+      "insight": "",
+      "trend_tags": [],
+      "confidence": "원문 확인 필요"
     },
     {
-      "id": "6624934437515390678",
+      "id": "74b6e9e463bb50ec90",
       "category": "csr",
-      "title": "서울우유협동조합, ‘플로깅 봉사활동’…지역사회 ESG 경영 강화 - 나눔경제뉴스",
-      "summary": "서울우유협동조합, ‘플로깅 봉사활동’…지역사회 ESG 경영 강화 나눔경제뉴스",
-      "source": "나눔경제뉴스",
-      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE10WGxrdEx4VER0cXFlaHhkVGxNRDl3WVpPako0dDQxUnY4ZFpVUWFzU1NFampwdXlxVW94OXVKcU9iUExSS3Rqb3RYWDkxd1MwU3JEODlZMzZQZWJCVnVxVkVJY05sSmxCU2t0Uw?oc=5",
+      "subcategory": "csr",
+      "subcategory_label": "기업 사회공헌 사례",
+      "title": "[나눔 트렌드] 'D.O.경수다움', 소아암 환아 위해 7년째 온기…고액기부자 클럽 ‘드림아너스 골드회원’ 1호 위촉 外 - 베이비뉴스",
+      "summary": "[나눔 트렌드] 'D.O.경수다움', 소아암 환아 위해 7년째 온기…고액기부자 클럽 ‘드림아너스 골드회원’ 1호 위촉 外 베이비뉴스",
+      "source": "베이비뉴스",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9kbUoydjI3TVUyNnhCT3M3UXZBN0ZvR0ZRNEYwc0pxc1lTVF9xdDBWekRJLUVULTlsbmJiZ3lmcjI3OXR3dmVkbDZFRW1BV0U3aF9OcWNod1dkUU9UWk1FVWRQQUNQNDNNSVAzUg?oc=5",
       "published_at": "2026-06-23T07:00:00+00:00",
       "keywords": [
-        "봉사"
+        "기부"
       ],
-      "priority": 3
+      "priority": 3,
+      "ai_analyzed": false,
+      "insight": "",
+      "trend_tags": [],
+      "confidence": "원문 확인 필요"
     },
     {
-      "id": "3478609055783891358",
-      "category": "esg",
+      "id": "d350ab3df0ebcb6cf1",
+      "category": "csr",
+      "subcategory": "csr",
+      "subcategory_label": "기업 사회공헌 사례",
       "title": "[심층분석] ‘가치경영’이 기술혁신과 만날 때…HS효성, 장애인 스포츠 지원으로 ESG 경쟁력 확장 - 뉴스밸류",
       "summary": "[심층분석] ‘가치경영’이 기술혁신과 만날 때…HS효성, 장애인 스포츠 지원으로 ESG 경쟁력 확장 뉴스밸류",
       "source": "뉴스밸류",
@@ -1182,251 +432,11 @@
       "keywords": [
         "ESG"
       ],
-      "priority": 3
-    },
-    {
-      "id": "1206710685151050583",
-      "category": "law",
-      "title": "사립대학의 구조개선 지원에 관한 법률 - 국가법령정보센터",
-      "summary": "사립대학의 구조개선 지원에 관한 법률 국가법령정보센터",
-      "source": "국가법령정보센터",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPRjRNWFpwbjQzUlE1Y0Z5dHFiUV9YVHZOYkpkM1FUTk9KcXIwUjNTd3lrUGdrejNhQ3VINzdUazVwMjlOdmd1VXZXVWQtMlFxcWwyb1RkbmFhTFltdUs0TEt2UnliZVpPX3luMVFiWkpxVUVVVEtUb2ZPN2d0Wl9YOHNWeENVQ2VOTnp0V1hMdFp6dElhYm8tbzQzSE1BeUxVZ3VzOWc1RVJYMms?oc=5",
-      "published_at": "2026-06-18T10:43:09+00:00",
-      "keywords": [
-        "법률"
-      ],
-      "priority": 3
-    },
-    {
-      "id": "2167228104354021303",
-      "category": "law",
-      "title": "현행 자치법규 > 법규명 > 경기도 사회주택 활성화 지원에 관한 조례 - 국가법령정보센터",
-      "summary": "현행 자치법규 > 법규명 > 경기도 사회주택 활성화 지원에 관한 조례 국가법령정보센터",
-      "source": "국가법령정보센터",
-      "url": "https://news.google.com/rss/articles/CBMivAJBVV95cUxOaHdRRmJrejBtbDBPckNRRzdPd1E2NHplNEdCVXJ1ME1XSEpjOE9TTjVkTWdKTnA0WnlES3dlZ3FkZkh5QW1LNnZkaTdseVdBaHRNeGtib0VzUHpjblZxTkkzRUh1TGEyYV9xQ1VWalJwRjhtZGEwamcxUTMzR3drWmVnckhCWmZ1OFRtNEx1SS05Z1RJNG5uN25EVE9pS01nN0tSWTFWc2h6VUtnTG0tZTV5OElPcFNzLTBNYTZPR1JCMTdlZllZMWRWcTRtNnFCVnE5VV9uNm1vRWdBcGlnUk9walBqR2IzS185ZXlqQVFHRHhDa1BzV1NtTU44OUV2YlFKYjdrbkpBenI3ek42a1Y5X0w3TzB1QXFZdzZOM24ydUVkMEpLRVNnNmNtMTVReFFsMFJjSHFfV2VJ?oc=5",
-      "published_at": "2026-06-04T10:27:38+00:00",
-      "keywords": [],
-      "priority": 2
-    },
-    {
-      "id": "4301924755205236731",
-      "category": "law",
-      "title": "소득세법 시행령 - 국가법령정보센터",
-      "summary": "소득세법 시행령 국가법령정보센터",
-      "source": "국가법령정보센터",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9kQms2REZHeGtnNVZvUG1KRWpIdzhoZWczOUVHeG9KazVoeEtDUWQ3NWRDNVVBdm5Qa2E4NGQxMm01VXR0OU5GeDhEaUhuNEdEd1lMSDUyU3FXZw?oc=5",
-      "published_at": "2026-05-29T05:52:34+00:00",
-      "keywords": [
-        "시행령",
-        "세법"
-      ],
-      "priority": 4
-    },
-    {
-      "id": "6738619293432529988",
-      "category": "law",
-      "title": "공연법 - 국가법령정보센터",
-      "summary": "공연법 국가법령정보센터",
-      "source": "국가법령정보센터",
-      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxONXBCeDg4VEQ4ellYY0NVb3JnZjA4dXZvdXQwRXlUM3hZWlRMRWN4MjFRNEE1YkJ6NFdHSm1pWE5JVmRIT0c4SVlKZWNwSTI5V09BMk9wa0RQN2Zpc1NUajg1MXpaMjFLYUIxdV9RbHp6aDJLYkNYX3ltdUI5SDBhU3V0Mk1kMEJKS05idmhuWVRtTmYtRWc?oc=5",
-      "published_at": "2026-05-11T06:18:41+00:00",
-      "keywords": [],
-      "priority": 2
-    },
-    {
-      "id": "3022706813011669130",
-      "category": "law",
-      "title": "소득세법 제21호 서식 원천징수이행상황신고서 - 국세청",
-      "summary": "소득세법 제21호 서식 원천징수이행상황신고서 국세청",
-      "source": "국세청",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE10R05kX2RYYlNBSmFpQk53Vkx1YmRQX2ppN2xHQ2xoVFF0LTZkdG5wYnBpMTR0Q24zdElqLTAxU2Q1ZXJ4b2NFMWZ2VDRhdnFkc05wbXhuRTFTSWprMGpsMGJGRXE4UzFPTWVSN2ZaYnZtNFdEdnc?oc=5",
-      "published_at": "2026-01-09T09:46:12+00:00",
-      "keywords": [
-        "세법"
-      ],
-      "priority": 3
-    },
-    {
-      "id": "204080662116365595",
-      "category": "law",
-      "title": "행정규칙 > 창업기획자 등록 및 관리규정 - 국가법령정보센터",
-      "summary": "행정규칙 > 창업기획자 등록 및 관리규정 국가법령정보센터",
-      "source": "국가법령정보센터",
-      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9ReVlZWVdfRHpuXzJrdHloNXIyLXZBdk9aQlVZYVFLeHQxN1NZSTVsMlRNaGdzUWk4eWpfSXlRRnVIZ09TVElWQUFBdWk3UjljajBuUHlqRnhQUGZRbEVDcG1McFBaQjE1bDM5T1ZTeThydw?oc=5",
-      "published_at": "2025-11-25T16:32:37+00:00",
-      "keywords": [],
-      "priority": 2
-    },
-    {
-      "id": "288954513589963928",
-      "category": "law",
-      "title": "도시 및 주거환경정비법 시행령 - 국가법령정보센터",
-      "summary": "도시 및 주거환경정비법 시행령 국가법령정보센터",
-      "source": "국가법령정보센터",
-      "url": "https://news.google.com/rss/articles/CBMijwJBVV95cUxNcktqdXZwQktTajRhZ1I0Q2lGM0JOQThZTG0xTVNLMjNMQWVIejVrVkpMWi1PRnlzamhQTzczMlNvTFJQSUZWMjdERWE5ZHBoSGYzOXk2cG8ycDlfVVFDZWNZdjZZbGp2eTZnUjR2anhFdVBMaFlFWVFuazVWTG1iTm1YQ0V2SmhQOHhuVWJ5bGVtUUZtM0pYUFNrTDQwWTFNVnhFZlp0bmhFWGwwSmNWM201Q2dkdUNaQzM3TVAtRVVJekFqRVBmUUdBQklQM2tSMTBzZVNrOWJsUUNTWVUteE9lTWw1ZWszZFMyNm9wSE8zcFR4STlmYXgySHFZQmREbG9pYjZmdnZYa21wRmVj?oc=5",
-      "published_at": "2025-11-14T19:00:12+00:00",
-      "keywords": [
-        "시행령"
-      ],
-      "priority": 3
-    },
-    {
-      "id": "2610021908363771659",
-      "category": "law",
-      "title": "세무일정 - 국세청",
-      "summary": "세무일정 국세청",
-      "source": "국세청",
-      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPXzhaU19YSG9KVmc3OENBR3k1c1BrOFh2aF9XZ0Nhd2ZPUWhTalFtZGVxLVR6eTYwLUZSR0YxWGZxeGpzR3ZHa0k5RnhhajM2YS1FSlU2dlpwVGlMRnNmWGwtWEdkVmJralhDODNYVFFscVRjenBiYkhyMmxvSlFGaUdrVkpaMFhMNW5ZYW1xVlM?oc=5",
-      "published_at": "2025-01-13T02:19:01+00:00",
-      "keywords": [],
-      "priority": 2
-    },
-    {
-      "id": "4608470746342839953",
-      "category": "law",
-      "title": "행정규칙 > 벤처투자회사 등록 및 관리규정 - 국가법령정보센터",
-      "summary": "행정규칙 > 벤처투자회사 등록 및 관리규정 국가법령정보센터",
-      "source": "국가법령정보센터",
-      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5jc0JlZWJVOFhTd0NXM2ZLaVhEQVBBeVM2dUhjczJ3MzhEbjM2ZUNVRm16Z1FkZEEzaUFoaVFMMXVqQ3FvRVZBN1NzbVZmakR3NjJlMEc4eG50MUFBVXBJMUp3aHJfeXBoVHdHMXRfdUw3QQ?oc=5",
-      "published_at": "2024-11-01T05:03:22+00:00",
-      "keywords": [],
-      "priority": 2
-    },
-    {
-      "id": "294917609767811738",
-      "category": "law",
-      "title": "위임행정규칙 - 국가법령정보센터",
-      "summary": "위임행정규칙 국가법령정보센터",
-      "source": "국가법령정보센터",
-      "url": "https://news.google.com/rss/articles/CBMitwNBVV95cUxNYW05MFpzbW5NQm9xR2RPN00wVjZJOW9GdkNieWp6ZXY5S1E2RjBrendxYzlNajBKNnVlRVpyb3ZJamVBT2NnWndRQ1l2Q0kwRUluWDNlVVJfRElEbHdPWnc4cGNCMm5Xejk0OWNOUlhwZ093T1Y2MzkteXR0SXVlWEFwUVctWFJzdXhFNHEyR3pCMlVkandjaGJMNjU4RWZMc3B5dkkxX0hTQVdHSWM5dFJiTW1JbzhDV1N0bzY0a0dzcGRoWjlJc3dXSzh3SzI0RElRN29SQlFIV1d3akJScW91aG1ZUXlNdDZmR1RKUjZTOUN4MWNfazJ3dnYzaG5UYWRrV2g1N1M4WXVWUWd5UWROdWdGWEhpeG5WdFdYcm1IVjFDUF84Z0t6SGNKYzBxNGNOMER0b2R3UVktSkNvTWZ6ejR4ZmRWNVlQa2RfX2VtcTZYazU3ZzB6dU4tYWlhOFpleU9wVXVBcFFzNmREQXk5TE83WE1xNjZEdEtONzRXV18ySTZxNWV6Zmlxc2d3OEhTQm5nenRFcm5UZ0FZRnlLNnJubE9mWkRrR0xDeVY5S3lvSnE4?oc=5",
-      "published_at": "2024-06-27T06:00:12+00:00",
-      "keywords": [],
-      "priority": 2
-    },
-    {
-      "id": "4709136161362834750",
-      "category": "law",
-      "title": "별표·서식 > 비영리법인의 수익사업 개시신고서(사업자등록증 발급 신청서) - 국가법령정보센터",
-      "summary": "별표·서식 > 비영리법인의 수익사업 개시신고서(사업자등록증 발급 신청서) 국가법령정보센터",
-      "source": "국가법령정보센터",
-      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5pTC1nQTJrZDFlbm0yeVp6VGw4NjZneV9IYU5UZ2lNT2RuR0lfSjZoVFJzbWlKcWczYVNOSUM2Q0ZtTW9HdGhSU1YxeU1NYnMxblAyRjU3YVZrUXZGaDgweXlZeVBzMzM2Q2lkcQ?oc=5",
-      "published_at": "2024-04-03T02:11:05+00:00",
-      "keywords": [],
-      "priority": 2
-    },
-    {
-      "id": "4013458348707671637",
-      "category": "law",
-      "title": "행정권한의 위임 및 위탁에 관한 규정 - 국가법령정보센터",
-      "summary": "행정권한의 위임 및 위탁에 관한 규정 국가법령정보센터",
-      "source": "국가법령정보센터",
-      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFB4U0Z3ejBLcS1NdkI5MVZuelgyeDZSU09EMExJVW9va1F0LTB1MThmUEZkT2YwQU9uU19kRDNPZmpyVTJlek9zSjFTQXJuU19OWkkzWG0wek4zQ2hWeHplZF95TnZqVzFqcE5zeQ?oc=5",
-      "published_at": "2024-02-27T01:35:13+00:00",
-      "keywords": [],
-      "priority": 2
-    },
-    {
-      "id": "4152478976699852308",
-      "category": "law",
-      "title": "보도자료 - 국세청",
-      "summary": "보도자료 국세청",
-      "source": "국세청",
-      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFByNlpvV05abUZMSnlwMFV6cjl3OC1wWlNlT0stbWI2TktNWnhEeWNPcEFndS1oYXA3QUFJVk5fUlRuaFZKSTJYQW5GZ0ZwWmZheGNndWt4VWFPajFYdW1RcEtfdGZuOVVZV3I4Z2RlREF0WjlH?oc=5",
-      "published_at": "2023-01-19T22:34:59+00:00",
-      "keywords": [],
-      "priority": 2
-    },
-    {
-      "id": "5826693291524800804",
-      "category": "law",
-      "title": "지방자치법 - 국가법령정보센터",
-      "summary": "지방자치법 국가법령정보센터",
-      "source": "국가법령정보센터",
-      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE01NVpRdk83N3VwTVVvOVc0Zlo2eVpBNVVyNE9YUG5aa2pwYUNod1R5bG9JRGJ4RHMxOFBoZGdxclB2OXlfX25JUTZsOV9Bc25oMDVJRHdtVkt5SjZM?oc=5",
-      "published_at": "2022-06-06T10:40:25+00:00",
-      "keywords": [],
-      "priority": 2
-    },
-    {
-      "id": "8428378215336550086",
-      "category": "law",
-      "title": "소득세법 시행규칙 - 국가법령정보센터",
-      "summary": "소득세법 시행규칙 국가법령정보센터",
-      "source": "국가법령정보센터",
-      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBwbl9Kc3habmdPdlVBWmJxYVVWZmxqR2lSOVJ2ZFd0UFQ1ZzQ1a0dpV3RYSWJhTDFQWXQ3STd2SVBGb082d1o4UkdybFNvRDFJM29GakI2STk4X0I2OWVTS0tnWEtzVXFMZncxLUpsR1RoQQ?oc=5",
-      "published_at": "2021-05-13T21:46:17+00:00",
-      "keywords": [
-        "세법"
-      ],
-      "priority": 3
-    },
-    {
-      "id": "6267937984627009791",
-      "category": "law",
-      "title": "전체 제정·개정이유 - 국가법령정보센터",
-      "summary": "전체 제정·개정이유 국가법령정보센터",
-      "source": "국가법령정보센터",
-      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPendlRnMxY0hlNDd0RVdfVlhWQWVKN2V4S01XYUU1SXdnTnBhYnBfN0dMWFduVEdMamV4SjFlOGZFUzVQcWJETGRORnQ4VDRUemctaGlReE5hajhvYVlFTlZLLUNXckJybWRFMTE1Tldta1dIM3d4U3pNTlNSTXp3MW82SUduUkpkNFdBN3Jn?oc=5",
-      "published_at": "2020-02-12T00:11:18+00:00",
-      "keywords": [],
-      "priority": 2
-    },
-    {
-      "id": "2514242531109153550",
-      "category": "law",
-      "title": "별표·서식 > 업종별 자산의 기준내용연수 및 내용연수범위(제15조제3항 관련) - 국가법령정보센터",
-      "summary": "별표·서식 > 업종별 자산의 기준내용연수 및 내용연수범위(제15조제3항 관련) 국가법령정보센터",
-      "source": "국가법령정보센터",
-      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5FdUpoa1FWT0JncVNGSzdteUloOVJJcGhzT2hoSlFyVEtkUnVYbDI2N1h4RXM4VzI5a0NkRTR2MUJ5a09CSXFXeDVFT2dRbGx3UVVMQllEMHBjUjJJVHpTRXlSRUlnVWZRSUVRZTFWcUxXQQ?oc=5",
-      "published_at": "2018-10-03T18:10:17+00:00",
-      "keywords": [],
-      "priority": 2
-    },
-    {
-      "id": "6323737929596135951",
-      "category": "law",
-      "title": "별표·서식 > 삭제 - 국가법령정보센터",
-      "summary": "별표·서식 > 삭제 국가법령정보센터",
-      "source": "국가법령정보센터",
-      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE4teXU2S3JnYzlHWGZxZEFQMXFSazI0enluWUU4aWlhM2JDRlNsTlg0MFBGdWI2UHBzWEJwbW55akZSRHhZcFJOWFNqN2c2V0JKdkNzTkdHdFVxWDNaRGFSMGdxWGZ2VlpWVVJYSmNhYmFIUQ?oc=5",
-      "published_at": "2018-10-03T17:34:11+00:00",
-      "keywords": [],
-      "priority": 2
-    },
-    {
-      "id": "1181368148621279616",
-      "category": "kbs",
-      "title": "KBS 뉴스 - KBS 뉴스",
-      "summary": "KBS 뉴스 KBS 뉴스",
-      "source": "KBS 뉴스",
-      "url": "https://news.google.com/rss/articles/CBMiO0FVX3lxTE1mTTluNVRaVEl0clp2YjRUdVpGbmVVbmZVb3hZSF95eUI5WnNBMjdhU0o0WVBBSzU3TlBF?oc=5",
-      "published_at": "2018-07-08T02:24:42+00:00",
-      "keywords": [
-        "KBS"
-      ],
-      "priority": 3
-    },
-    {
-      "id": "3783359259661649144",
-      "category": "law",
-      "title": "법령 - 국가법령정보센터",
-      "summary": "법령 국가법령정보센터",
-      "source": "국가법령정보센터",
-      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPRXMtbDBBV2lhSGtsVlVCNC1MRTJsUndnQWl3SVhxZ2lXRWtCeExTVnpuU3l6dFRwMGIyTjM3VTZwZlB4ZW5RdVNxM3lFUDAzNjBfZVhvN2ZXWnphQnI2X2FkRXg4LUg4SW0tZGFhdkRhMWFuQ1VOLUM3bFVFaVQ4Q1R5R0ozUklacnpmRE5rRnhrRlkwWFVLbTVaMWM0Y3dTWENUbXpR?oc=5",
-      "published_at": "2018-06-20T20:22:31+00:00",
-      "keywords": [],
-      "priority": 2
-    },
-    {
-      "id": "7929125425815449115",
-      "category": "law",
-      "title": "국가법령정보센터 - 국가법령정보센터",
-      "summary": "국가법령정보센터 국가법령정보센터",
-      "source": "국가법령정보센터",
-      "url": "https://news.google.com/rss/articles/CBMiOkFVX3lxTE5ZS3RGY2FlbTBlOG1xZHNsaTlreDVfQV8tX0ktSmNtRTQ5YWZLN2xocEZqQi1INk1kdEE?oc=5",
-      "published_at": "2012-01-13T11:37:52+00:00",
-      "keywords": [],
-      "priority": 2
+      "priority": 3,
+      "ai_analyzed": false,
+      "insight": "",
+      "trend_tags": [],
+      "confidence": "원문 확인 필요"
     }
   ]
 }
