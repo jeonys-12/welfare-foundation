@@ -98,6 +98,31 @@ SOURCE_GUIDES={
  "accounting":{"type":"회계기준·공시","final_source":"국세청·국가법령정보센터","url":"https://www.nts.go.kr/"}
 }
 
+OFFICIAL_LAW_BASELINES=[
+ ("tax_reform","기획재정부 세제개편·세법개정안 공식 확인","기획재정부가 발표하는 세제개편안과 세법개정안의 최신 원문을 확인합니다.","기획재정부","https://www.moef.go.kr/"),
+ ("corporate_tax","법인세법","공익법인의 법인세·기부금 과세와 관련된 현행 법률입니다.","국가법령정보센터","https://www.law.go.kr/법령/법인세법"),
+ ("corporate_tax","법인세법 시행령","공익법인의 법인세·기부금 과세와 관련된 현행 시행령입니다.","국가법령정보센터","https://www.law.go.kr/법령/법인세법시행령"),
+ ("gift_tax","상속세 및 증여세법","공익법인의 출연재산과 사후관리 의무에 관한 현행 법률입니다.","국가법령정보센터","https://www.law.go.kr/법령/상속세및증여세법"),
+ ("gift_tax","상속세 및 증여세법 시행령","공익법인의 출연재산과 사후관리 세부기준에 관한 현행 시행령입니다.","국가법령정보센터","https://www.law.go.kr/법령/상속세및증여세법시행령"),
+ ("fair_trade","독점규제 및 공정거래에 관한 법률","대기업집단 소속 공익법인의 의결권 제한 등 관련 규정을 확인합니다.","국가법령정보센터","https://www.law.go.kr/법령/독점규제및공정거래에관한법률"),
+ ("accounting","공익법인회계기준","공익법인 회계처리와 재무제표 작성에 적용되는 현행 회계기준입니다.","국가법령정보센터","https://www.law.go.kr/행정규칙/공익법인회계기준"),
+]
+
+def collect_official_law_baselines():
+ verified_at=datetime.now(timezone.utc).isoformat()
+ out=[]
+ for sub,title,summary,source,url in OFFICIAL_LAW_BASELINES:
+  out.append({
+   "id":"","category":"law","subcategory":sub,"subcategory_label":SUB_LABELS[sub],
+   "title":title,"summary":summary,"source":source,"url":url,
+   "published_at":verified_at,"keywords":KEYS[sub][:4],"priority":5,
+   "ai_analyzed":False,"insight":"최신 개정일·시행일과 부칙은 공식 원문에서 확인하세요.",
+   "trend_tags":["현행법령","공식원문"],"confidence":"공식기관 자료",
+   "source_type":"현행 법령 기준정보","final_source":source,
+   "verification_url":url,"official_baseline":True,"verified_at":verified_at
+  })
+ return out
+
 def clean(s):
  s=html.unescape(re.sub(r"<[^>]+>"," ",s or ""))
  return re.sub(r"\s+"," ",s).strip()
@@ -517,6 +542,8 @@ def main():
  old={"items":[]}; errors=[]; items=[]
  try: old=json.loads(OUT.read_text(encoding="utf-8"))
  except Exception: pass
+ # 최근 기사 유무와 무관하게 공식 현행 법령 기본목록을 항상 제공한다.
+ items+=collect_official_law_baselines()
  for cat,sub,q,domains in SOURCES:
   full=q+(" ("+" OR ".join("site:"+d for d in domains)+")" if domains else "")
   try: items+=parse_rss(fetch(google_rss(full)),cat,sub)
