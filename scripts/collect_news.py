@@ -53,7 +53,6 @@ KR_OFFICIAL_PAGES=[
 GDACS_RSS_URL="https://www.gdacs.org/xml/rss.xml"
 GDACS_MIN_SCORE=1.0
 RELIEFWEB_API_URL="https://api.reliefweb.int/v1/reports?appname=welfare-foundation-monitor&limit=40&profile=list&preset=latest"
-USGS_FEED_URL="https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/significant_month.geojson"
 
 KBS_VERIFIED_SEEDS=[
  ("동행 567회 산골 소녀 지민이의 독립 선언","2026-07-18","https://vod.kbs.co.kr/m/index.html?program_code=T2014-0877&program_id=PS-2026122474-01-000&section_code=05&sname=vod&source=episode&stype=vod"),
@@ -266,18 +265,6 @@ def collect_global_official():
                       f.get("body-html",""),stamp,"ReliefWeb","해외 공식 상황보고")
    if item: out.append(item)
  except Exception as e: errors.append({"source":"ReliefWeb","error":str(e)[:160]})
- try:
-  payload=json.loads(fetch(USGS_FEED_URL))
-  for row in payload.get("features",[]):
-   p=row.get("properties",{}); epoch=p.get("time")
-   if not epoch: continue
-   stamp=datetime.fromtimestamp(epoch/1000,tz=timezone.utc).isoformat()
-   mag=p.get("mag"); title=p.get("title","")
-   summary=("USGS significant earthquake"+((" magnitude "+str(mag)) if mag is not None else ""))
-   item=disaster_item("disaster_global",title,p.get("url",""),summary,stamp,
-                      "USGS","해외 공식 지진정보")
-   if item: out.append(item)
- except Exception as e: errors.append({"source":"USGS","error":str(e)[:160]})
  return out,errors
 
 def keep_recent_disasters(old_items,days=DISASTER_DAYS):
@@ -292,6 +279,15 @@ def keep_recent_disasters(old_items,days=DISASTER_DAYS):
   )
   if is_gdacs:
    # GDACS는 누적본을 재사용하지 않고 매 실행의 검증된 RSS 결과만 사용한다.
+   continue
+  is_usgs=(
+   str(item.get("source","")).strip().lower()=="usgs"
+   or str(item.get("final_source","")).strip().lower()=="usgs"
+   or "earthquake.usgs.gov" in str(item.get("url","")).lower()
+   or "usgs.gov" in str(item.get("verification_url","")).lower()
+  )
+  if is_usgs:
+   # USGS는 모니터링 대상에서 제외하며 기존 누적자료도 재사용하지 않는다.
    continue
   try:
    stamp=datetime.fromisoformat(item.get("published_at","").replace("Z","+00:00"))
