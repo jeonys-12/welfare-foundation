@@ -56,11 +56,11 @@ def clean(s):
  s=html.unescape(re.sub(r"<[^>]+>"," ",s or ""))
  return re.sub(r"\s+"," ",s).strip()
 
-def fetch(url, data=None, headers=None, tries=2):
+def fetch(url, data=None, headers=None, tries=2, timeout=35):
  hdr={"User-Agent":UA, **(headers or {})}
  for i in range(tries):
   try:
-   with urlopen(Request(url,data=data,headers=hdr),timeout=35) as r:
+   with urlopen(Request(url,data=data,headers=hdr),timeout=timeout) as r:
     return r.read()
   except Exception:
    if i+1==tries: raise
@@ -127,7 +127,7 @@ def analyze_with_openai(items):
  body={"model":OPENAI_MODEL,"store":False,"input":prompt,
        "text":{"format":{"type":"json_schema","name":"monitoring_analysis","strict":True,"schema":schema}}}
  raw=fetch("https://api.openai.com/v1/responses",data=json.dumps(body).encode(),
-           headers={"Authorization":"Bearer "+OPENAI_API_KEY,"Content-Type":"application/json"},tries=1)
+           headers={"Authorization":"Bearer "+OPENAI_API_KEY,"Content-Type":"application/json"},tries=1,timeout=120)
  parsed=json.loads(extract_output_text(json.loads(raw)))
  by_id={x["id"]:x for x in parsed.get("items",[])}
  analyzed=0
