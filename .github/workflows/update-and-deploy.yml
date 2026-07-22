@@ -1,4 +1,5 @@
 name: Update news and deploy Pages
+
 on:
   schedule:
     - cron: "0 22 * * *" # 07:00 Asia/Seoul (UTC+9)
@@ -7,41 +8,86 @@ on:
     branches: [main]
     paths-ignore:
       - "data/news.json"
+
 permissions:
   contents: write
   pages: write
   id-token: write
+
 concurrency:
-  group: pages
+  group: welfare-foundation-pages
   cancel-in-progress: false
+
 jobs:
   collect:
     runs-on: ubuntu-latest
+    timeout-minutes: 25
     steps:
       - uses: actions/checkout@v5
+
       - uses: actions/setup-python@v6
         with:
           python-version: "3.13"
+
+      - name: Validate collector
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m py_compile scripts/collect_news.py
+          python - <<'PY'
+          import scripts.collect_news as collector
+
+          assert collector.keep_recent_disasters([
+              {
+                  "category": "disaster",
+                  "source": "USGS",
+                  "final_source": "USGS",
+                  "url": "https://earthquake.usgs.gov/example",
+                  "published_at": "2026-07-22T00:00:00+00:00",
+              }
+          ]) == []
+
+          assert collector.parse_gdacs_rss(
+              b"""<rss xmlns:gdacs="http://www.gdacs.org"><channel><item>
+              <title>Flood alert</title><link>https://www.gdacs.org/example</link>
+              <description>flood emergency</description>
+              <pubDate>Wed, 22 Jul 2026 00:00:00 GMT</pubDate>
+              <gdacs:alertscore>0.5</gdacs:alertscore>
+              <gdacs:alertlevel>Green</gdacs:alertlevel>
+              </item></channel></rss>"""
+          ) == []
+          print("collector validation passed")
+          PY
+
       - name: Collect and analyze public-interest news
+        shell: bash
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY || secrets.OPEN_API_KEY }}
           OPENAI_MODEL: ${{ vars.OPENAI_MODEL || 'gpt-5-mini' }}
-        run: python scripts/collect_news.py
-      - name: Commit refreshed data
         run: |
+          set -euo pipefail
+          timeout 20m python scripts/collect_news.py
+          python -m json.tool data/news.json > /dev/null
+
+      - name: Commit refreshed data
+        shell: bash
+        run: |
+          set -euo pipefail
           if git diff --quiet -- data/news.json; then
             echo "No data changes"
-          else
-            git config user.name "github-actions[bot]"
-            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add data/news.json
-            git commit -m "Update monitoring data"
-            git push
+            exit 0
           fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/news.json
+          git commit -m "Update monitoring data"
+          git push
+
       - name: Upload site
         uses: actions/upload-pages-artifact@v3
         with:
           path: .
+
   deploy:
     environment:
       name: github-pages
