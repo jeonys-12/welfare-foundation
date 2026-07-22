@@ -1,6 +1,6 @@
 {
   "updated_at": "2026-07-22T05:37:29.254785+00:00",
-  "item_count": 224,
+  "item_count": 214,
   "errors": [
     {
       "source": "NGO 공식 대한적십자사",
@@ -442,60 +442,6 @@
       "source_type": "뉴스·기관자료",
       "final_source": "원문 제공기관",
       "verification_url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1LWEFyVXl6WXAzSnVUQ2JIelZpSFIyM1BQN185TzBuWFdjbzhIbGJqYjhZVVlqU2hMLXg3czhYVE5oVFNwY1ozRjU3dDl1dFNjdDFuQ3REZXpzeDZ6U1p3R3FwcGduY3NCblJV?oc=5"
-    },
-    {
-      "id": "9b48e89f67292867a9",
-      "category": "disaster",
-      "subcategory": "disaster_global",
-      "subcategory_label": "해외 재해",
-      "title": "Green flood alert in Japan",
-      "summary": "GDACS가 일본에서 7.17~19 발생한 홍수에 대해 Green 등급의 경보를 발령했다; 인명피해 2명·피난 91명 발생으로 보고됐다.",
-      "source": "GDACS",
-      "url": "https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104034",
-      "published_at": "2026-07-21T10:49:29+00:00",
-      "keywords": [
-        "flood"
-      ],
-      "priority": 4,
-      "ai_analyzed": true,
-      "insight": "국제적 재난 모니터링 정보는 국내 NGO의 해외 지원 우선순위 판단과 안전정보 공유에 도움이 된다.",
-      "trend_tags": [
-        "국제재난",
-        "홍수경보",
-        "피해보고"
-      ],
-      "confidence": "보통",
-      "source_type": "해외 공식 재난경보",
-      "final_source": "GDACS",
-      "verification_url": "https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104034",
-      "gdacs_score": 1.0
-    },
-    {
-      "id": "b0ce97ffe373d11cb0",
-      "category": "disaster",
-      "subcategory": "disaster_global",
-      "subcategory_label": "해외 재해",
-      "title": "Green flood alert in Afghanistan",
-      "summary": "GDACS가 아프가니스탄에서 7.19~21 발생한 홍수에 대해 Green 등급 경보를 발령했으며, 사망자 20명이 보고됐다.",
-      "source": "GDACS",
-      "url": "https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104033",
-      "published_at": "2026-07-21T09:29:40+00:00",
-      "keywords": [
-        "flood"
-      ],
-      "priority": 4,
-      "ai_analyzed": true,
-      "insight": "사상자 발생이 보고된 재난은 해외구호 단체의 현지 상황 파악과 긴급 지원 검토를 촉발할 수 있다.",
-      "trend_tags": [
-        "국제재난",
-        "사상자보고",
-        "긴급지원"
-      ],
-      "confidence": "보통",
-      "source_type": "해외 공식 재난경보",
-      "final_source": "GDACS",
-      "verification_url": "https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104033",
-      "gdacs_score": 1.0
     },
     {
       "id": "b6ff63fc455d1d24bf",
@@ -2721,53 +2667,6 @@
       "verification_url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1tMFhlbEVFcmV2VERDQUxWZ1RNVzZvek1yTjZNS0toX3ZFWE5pVXpzZGg3LXhNZ29WNzI3N3dDdFpTUHE4cmdlMDRhVEs5R0haTDRv?oc=5"
     },
     {
-      "id": "e912c060c3387e1e68",
-      "category": "disaster",
-      "subcategory": "disaster_global",
-      "subcategory_label": "해외 재해",
-      "title": "Green notification for tropical cyclone BERTHA-26. Population affected by Category 1 (120 km/h) wind speeds or higher is 0 (0 in Tropical Storm).",
-      "summary": "From 19/07/2026 to 22/07/2026, a Tropical Storm (maximum wind speed of 93 km/h) BERTHA-26 was active in Atlantic. The cyclone affects these countries: United States (vulnerability Low). Estimated population affected by category 1 (120 km/h) wind speeds or higher is 0 (0 in tropical storm).",
-      "source": "GDACS",
-      "url": "https://www.gdacs.org/report.aspx?eventtype=TC&eventid=1001290",
-      "published_at": "2026-07-19T15:09:29+00:00",
-      "keywords": [
-        "cyclone",
-        "storm"
-      ],
-      "priority": 4,
-      "ai_analyzed": false,
-      "insight": "",
-      "trend_tags": [],
-      "confidence": "공식기관 자료",
-      "source_type": "해외 공식 재난경보",
-      "final_source": "GDACS",
-      "verification_url": "https://www.gdacs.org/report.aspx?eventtype=TC&eventid=1001290",
-      "gdacs_score": 1.0
-    },
-    {
-      "id": "561619c5b7bb7f7c9e",
-      "category": "disaster",
-      "subcategory": "disaster_global",
-      "subcategory_label": "해외 재해",
-      "title": "Green flood alert in South Korea",
-      "summary": "On 18/07/2026, a flood started in South Korea, lasting until 20/07/2026 (last update). The flood caused 0 deaths and 95 displaced .",
-      "source": "GDACS",
-      "url": "https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104032",
-      "published_at": "2026-07-19T12:38:47+00:00",
-      "keywords": [
-        "flood"
-      ],
-      "priority": 3,
-      "ai_analyzed": false,
-      "insight": "",
-      "trend_tags": [],
-      "confidence": "공식기관 자료",
-      "source_type": "해외 공식 재난경보",
-      "final_source": "GDACS",
-      "verification_url": "https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104032",
-      "gdacs_score": 1.0
-    },
-    {
       "id": "d96b402c9a261483dd",
       "category": "ngo",
       "subcategory": "ngo",
@@ -2835,32 +2734,6 @@
       "source_type": "뉴스·기관자료",
       "final_source": "원문 제공기관",
       "verification_url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE12TTJhZDhQR240MXAwOS0tQ1FQekhXbklPajNMUTdCRTdMOFJnNWd3Q0VNaVdaUHUyeTYxYWdDTzNGb2lXOXdIU1Q3cFY5WUpqQTdDbk5LckpZZ2pncEpUUVg3cTRKUQ?oc=5"
-    },
-    {
-      "id": "583ac470a5d031504c",
-      "category": "disaster",
-      "subcategory": "disaster_global",
-      "subcategory_label": "해외 재해",
-      "title": "Green notification for tropical cyclone FAUSTO-26. Population affected by Category 1 (120 km/h) wind speeds or higher is 0 (0 in Tropical Storm).",
-      "summary": "From 19/07/2026 to 22/07/2026, a Hurricane/Typhoon > 74 mph (maximum wind speed of 157 km/h) FAUSTO-26 was active in EastPacific. The cyclone affects these countries: [unknown] (vulnerability [unknown]). Estimated population affected by category 1 (120 km/h) wind speeds or higher is 0 (0 in tropical storm).",
-      "source": "GDACS",
-      "url": "https://www.gdacs.org/report.aspx?eventtype=TC&eventid=1001289",
-      "published_at": "2026-07-19T02:53:14+00:00",
-      "keywords": [
-        "typhoon",
-        "cyclone",
-        "hurricane",
-        "storm"
-      ],
-      "priority": 5,
-      "ai_analyzed": false,
-      "insight": "",
-      "trend_tags": [],
-      "confidence": "공식기관 자료",
-      "source_type": "해외 공식 재난경보",
-      "final_source": "GDACS",
-      "verification_url": "https://www.gdacs.org/report.aspx?eventtype=TC&eventid=1001289",
-      "gdacs_score": 1.0
     },
     {
       "id": "4a8ccc3b2cea20c692",
@@ -3928,30 +3801,6 @@
       "verification_url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFB1dHh1Q091SzhHdjhjcXZ3Zm9PWWJTVTh3TUpqb1QxZmE3eTdkUzJuc0NpaU0zbXZPai1ULU1LN3hyZVdBY2hacXVnR1dhV2YtNGo4Ug?oc=5"
     },
     {
-      "id": "89cc6129e3f35d2b65",
-      "category": "disaster",
-      "subcategory": "disaster_global",
-      "subcategory_label": "해외 재해",
-      "title": "Green notification for tropical cyclone ELIDA-26. Population affected by Category 1 (120 km/h) wind speeds or higher is 0 (0 in Tropical Storm).",
-      "summary": "From 14/07/2026 to 20/07/2026, a Tropical Storm (maximum wind speed of 111 km/h) ELIDA-26 was active in EastPacific. The cyclone affects these countries: [unknown] (vulnerability [unknown]). Estimated population affected by category 1 (120 km/h) wind speeds or higher is 0 (0 in tropical storm).",
-      "source": "GDACS",
-      "url": "https://www.gdacs.org/report.aspx?eventtype=TC&eventid=1001282",
-      "published_at": "2026-07-14T21:06:26+00:00",
-      "keywords": [
-        "cyclone",
-        "storm"
-      ],
-      "priority": 4,
-      "ai_analyzed": false,
-      "insight": "",
-      "trend_tags": [],
-      "confidence": "공식기관 자료",
-      "source_type": "해외 공식 재난경보",
-      "final_source": "GDACS",
-      "verification_url": "https://www.gdacs.org/report.aspx?eventtype=TC&eventid=1001282",
-      "gdacs_score": 1.0
-    },
-    {
       "id": "616dc6bab49f23d16e",
       "category": "disaster",
       "subcategory": "disaster_global",
@@ -3994,7 +3843,7 @@
       "source_type": "해외 공식 재난경보",
       "final_source": "GDACS",
       "verification_url": "https://www.gdacs.org/report.aspx?eventtype=DR&eventid=1027491",
-      "gdacs_score": 1.0
+      "gdacs_score": 1
     },
     {
       "id": "ea3073c813c91ff261",
@@ -4289,7 +4138,7 @@
       "source_type": "해외 공식 재난경보",
       "final_source": "GDACS",
       "verification_url": "https://www.gdacs.org/report.aspx?eventtype=DR&eventid=1027450",
-      "gdacs_score": 2.0
+      "gdacs_score": 2
     },
     {
       "id": "13229776b042eeed9a",
@@ -4312,7 +4161,7 @@
       "source_type": "해외 공식 재난경보",
       "final_source": "GDACS",
       "verification_url": "https://www.gdacs.org/report.aspx?eventtype=DR&eventid=1027449",
-      "gdacs_score": 1.0
+      "gdacs_score": 1
     },
     {
       "id": "552ac0bab32e9cddc9",
@@ -4335,7 +4184,7 @@
       "source_type": "해외 공식 재난경보",
       "final_source": "GDACS",
       "verification_url": "https://www.gdacs.org/report.aspx?eventtype=DR&eventid=1023877",
-      "gdacs_score": 1.0
+      "gdacs_score": 1
     },
     {
       "id": "9a51734f8548e337c4",
@@ -4358,7 +4207,7 @@
       "source_type": "해외 공식 재난경보",
       "final_source": "GDACS",
       "verification_url": "https://www.gdacs.org/report.aspx?eventtype=DR&eventid=1027448",
-      "gdacs_score": 1.0
+      "gdacs_score": 1
     },
     {
       "id": "64c24e9ded85d5020b",
@@ -4427,29 +4276,6 @@
       "source_type": "뉴스·기관자료",
       "final_source": "원문 제공기관",
       "verification_url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1VT1JKTGFtYXF3WTBrSmZSTnhieVlzUlhKVm5BaFJ3eG1iVmIxVEVSMG9xTzJYWFAyY3hXUzVKdERyM3V2NUF1TDItTQ?oc=5"
-    },
-    {
-      "id": "51356399ab4a70b0e1",
-      "category": "disaster",
-      "subcategory": "disaster_global",
-      "subcategory_label": "해외 재해",
-      "title": "Green flood alert in Mexico",
-      "summary": "On 28/06/2026, a flood started in Mexico, lasting until 17/07/2026 (last update). The flood caused 5 deaths and 50 displaced .",
-      "source": "GDACS",
-      "url": "https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1103981",
-      "published_at": "2026-07-01T06:08:17+00:00",
-      "keywords": [
-        "flood"
-      ],
-      "priority": 3,
-      "ai_analyzed": false,
-      "insight": "",
-      "trend_tags": [],
-      "confidence": "공식기관 자료",
-      "source_type": "해외 공식 재난경보",
-      "final_source": "GDACS",
-      "verification_url": "https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1103981",
-      "gdacs_score": 1.0
     },
     {
       "id": "b263f0aba941fd9f40",
@@ -4561,29 +4387,6 @@
       "source_type": "해외 공식 지진정보",
       "final_source": "USGS",
       "verification_url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000t8ec"
-    },
-    {
-      "id": "45ee565f5c7e9ebb28",
-      "category": "disaster",
-      "subcategory": "disaster_global",
-      "subcategory_label": "해외 재해",
-      "title": "Green flood alert in India",
-      "summary": "On 23/06/2026, a flood started in India, lasting until 18/07/2026 (last update). The flood caused 24 deaths and 4652 displaced .",
-      "source": "GDACS",
-      "url": "https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1103972",
-      "published_at": "2026-06-25T07:47:24+00:00",
-      "keywords": [
-        "flood"
-      ],
-      "priority": 3,
-      "ai_analyzed": false,
-      "insight": "",
-      "trend_tags": [],
-      "confidence": "공식기관 자료",
-      "source_type": "해외 공식 재난경보",
-      "final_source": "GDACS",
-      "verification_url": "https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1103972",
-      "gdacs_score": 1.0
     },
     {
       "id": "b055722037eed0e9c2",
@@ -4740,52 +4543,6 @@
       "verification_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE15RVp5SEJ6R2NQS3V3aEtRVHdYMmFPMGhMR0ZoUXJTWmw5WFBSeUtEMVV4ZnN0ZFdscGpnNTlsZHh2ajhBZ0RkcG0teTlJRHVmRGt2M1lXZHFDa3Y2TG12ZTRUVDhUZGJuemc?oc=5"
     },
     {
-      "id": "141f4981ee74e8bfbb",
-      "category": "disaster",
-      "subcategory": "disaster_global",
-      "subcategory_label": "해외 재해",
-      "title": "Green flood alert in Philippines",
-      "summary": "On 13/06/2026, a flood started in Philippines, lasting until 19/07/2026 (last update). The flood caused 2 deaths and 11246 displaced .",
-      "source": "GDACS",
-      "url": "https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1103942",
-      "published_at": "2026-06-15T09:44:33+00:00",
-      "keywords": [
-        "flood"
-      ],
-      "priority": 3,
-      "ai_analyzed": false,
-      "insight": "",
-      "trend_tags": [],
-      "confidence": "공식기관 자료",
-      "source_type": "해외 공식 재난경보",
-      "final_source": "GDACS",
-      "verification_url": "https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1103942",
-      "gdacs_score": 1.0
-    },
-    {
-      "id": "4d97ea4f273db6f09c",
-      "category": "disaster",
-      "subcategory": "disaster_global",
-      "subcategory_label": "해외 재해",
-      "title": "Green flood alert in United States",
-      "summary": "On 19/05/2026, a flood started in United States, lasting until 19/07/2026 (last update). The flood caused 15 deaths and 431 displaced .",
-      "source": "GDACS",
-      "url": "https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1103888",
-      "published_at": "2026-05-21T06:15:32+00:00",
-      "keywords": [
-        "flood"
-      ],
-      "priority": 3,
-      "ai_analyzed": false,
-      "insight": "",
-      "trend_tags": [],
-      "confidence": "공식기관 자료",
-      "source_type": "해외 공식 재난경보",
-      "final_source": "GDACS",
-      "verification_url": "https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1103888",
-      "gdacs_score": 1.0
-    },
-    {
       "id": "6a7ec2fc24cc8e0a7b",
       "category": "ngo",
       "subcategory": "ngo",
@@ -4850,7 +4607,7 @@
       "source_type": "해외 공식 재난경보",
       "final_source": "GDACS",
       "verification_url": "https://www.gdacs.org/report.aspx?eventtype=DR&eventid=1018545",
-      "gdacs_score": 1.0
+      "gdacs_score": 1
     },
     {
       "id": "23c7426e18872499ac",
@@ -4873,7 +4630,7 @@
       "source_type": "해외 공식 재난경보",
       "final_source": "GDACS",
       "verification_url": "https://www.gdacs.org/report.aspx?eventtype=DR&eventid=1018546",
-      "gdacs_score": 1.0
+      "gdacs_score": 1
     },
     {
       "id": "656bdc0e11a52f4262",
@@ -4896,7 +4653,7 @@
       "source_type": "해외 공식 재난경보",
       "final_source": "GDACS",
       "verification_url": "https://www.gdacs.org/report.aspx?eventtype=DR&eventid=1018431",
-      "gdacs_score": 2.0
+      "gdacs_score": 2
     },
     {
       "id": "7ede9f30fd9d907832",
@@ -4941,7 +4698,7 @@
       "source_type": "해외 공식 재난경보",
       "final_source": "GDACS",
       "verification_url": "https://www.gdacs.org/report.aspx?eventtype=DR&eventid=1018332",
-      "gdacs_score": 2.0
+      "gdacs_score": 2
     },
     {
       "id": "3f5f5150f292ff5e6e",
@@ -4964,7 +4721,7 @@
       "source_type": "해외 공식 재난경보",
       "final_source": "GDACS",
       "verification_url": "https://www.gdacs.org/report.aspx?eventtype=DR&eventid=1018344",
-      "gdacs_score": 1.0
+      "gdacs_score": 1
     },
     {
       "id": "00a84116364cad15c8",
@@ -5054,7 +4811,7 @@
       "source_type": "해외 공식 재난경보",
       "final_source": "GDACS",
       "verification_url": "https://www.gdacs.org/report.aspx?eventtype=DR&eventid=1018093",
-      "gdacs_score": 1.0
+      "gdacs_score": 1
     },
     {
       "id": "2c804e04555d2e1bdf",
