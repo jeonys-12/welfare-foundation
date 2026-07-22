@@ -164,9 +164,23 @@ def parse_rss(raw,cat,sub):
  return out
 
 
+MARKUP_NOISE=re.compile(r"(?:<\\/?(?:script|style|a|div|span)\\b|javascript:|onclick\\s*=|src\\s*=|class\\s*=|section-wrap|\\{\\s*[\\w$]+\\s*:)",re.I)
+GENERIC_DISASTER_TITLES={"지진과학관","최근지진","지진목록","재난안전","국내재해","해외재해","발생현황","주요자료"}
+
+def is_clean_monitoring_item(item):
+ title=clean(str(item.get("title",""))); summary=clean(str(item.get("summary","")))
+ if not title or MARKUP_NOISE.search(title+" "+summary): return False
+ if item.get("category")=="disaster":
+  compact=re.sub(r"\\s+","",title)
+  if compact in GENERIC_DISASTER_TITLES: return False
+  keywords=KR_DISASTER_KEYWORDS if item.get("subcategory")=="disaster_kr" else GLOBAL_DISASTER_KEYWORDS
+  if not any(k.lower() in (title+" "+summary).lower() for k in keywords): return False
+ return True
+
 def disaster_item(sub,title,url,summary,published_at,source,source_type):
  title=clean(title); summary=clean(summary)
- if not title or not url: return None
+ if not title or not url or MARKUP_NOISE.search(title+" "+summary): return None
+ if re.sub(r"\\s+","",title) in GENERIC_DISASTER_TITLES: return None
  keywords=KR_DISASTER_KEYWORDS if sub=="disaster_kr" else GLOBAL_DISASTER_KEYWORDS
  text=(title+" "+summary).lower()
  matched=[k for k in keywords if k.lower() in text]
@@ -459,20 +473,25 @@ def extract_output_text(response):
 def analyze_with_openai(items):
  if not OPENAI_API_KEY or not items:
   return items, {"enabled":False,"analyzed":0,"message":"OPENAI_API_KEY가 없어 기본 요약을 사용했습니다."}
- candidates=items[:40]
+ # 해외 재난을 우선 분석해 영문 경보가 한국어 제목·요약 없이 노출되지 않게 한다.
+ ordered=sorted(items,key=lambda x:x.get("subcategory")=="disaster_global",reverse=True)
+ candidates=ordered[:40]
  compact=[{"id":x["id"],"category":x["category"],"subcategory":x["subcategory"],
            "title":x["title"],"source":x["source"],"published_at":x["published_at"],
            "raw_summary":x["summary"][:260]} for x in candidates]
  schema={
   "type":"object","properties":{"items":{"type":"array","items":{"type":"object",
-   "properties":{"id":{"type":"string"},"summary":{"type":"string"},"insight":{"type":"string"},
+   "properties":{"id":{"type":"string"},"title_ko":{"type":"string"},"summary":{"type":"string"},"insight":{"type":"string"},
     "trend_tags":{"type":"array","items":{"type":"string"}},"priority":{"type":"integer","minimum":1,"maximum":5},
     "confidence":{"type":"string","enum":["높음","보통","낮음"]}},
-   "required":["id","summary","insight","trend_tags","priority","confidence"],"additionalProperties":False}}},
+   "required":["id","title_ko","summary","insight","trend_tags","priority","confidence"],"additionalProperties":False}}},
   "required":["items"],"additionalProperties":False}
  prompt=("다음 모니터링 목록을 한국어로 분석하세요. 제공된 제목·요약에 없는 사실은 만들지 마세요. "
-         "summary는 2문장 이내의 핵심 요약, insight는 공익법인 또는 사회공헌 실무 관점의 시사점 1문장, "
-         "trend_tags는 최대 3개, priority는 업무 중요도 1~5입니다. 정보가 빈약하면 confidence를 낮음으로 표시하세요.\n"
+         "title_ko는 자연스러운 한국어 제목입니다. 특히 subcategory가 disaster_global이면 원문 제목을 반드시 한국어로 번역하고, "
+         "summary에는 재난 종류·발생지역·발생시각·피해·대응 중 원문에서 확인되는 내용만 2문장 이내로 요약하세요. "
+         "그 밖의 항목도 title_ko를 한국어로 쓰되 기존 한국어 제목은 그대로 유지하세요. "
+         "insight는 공익법인 또는 사회공헌 실무 관점의 시사점 1문장, trend_tags는 최대 3개, "
+         "priority는 업무 중요도 1~5입니다. 정보가 빈약하면 confidence를 낮음으로 표시하세요.\n"
          +json.dumps(compact,ensure_ascii=False))
  body={"model":OPENAI_MODEL,"store":False,"input":prompt,
        "text":{"format":{"type":"json_schema","name":"monitoring_analysis","strict":True,"schema":schema}}}
@@ -484,6 +503,10 @@ def analyze_with_openai(items):
  for item in items:
   a=by_id.get(item["id"])
   if not a: continue
+  translated=clean(a.get("title_ko",""))
+  if item.get("subcategory")=="disaster_global" and translated:
+   item["original_title"]=item["title"]
+   item["title"]=translated[:220]
   item.update({"summary":a["summary"][:500],"insight":a["insight"][:300],
                "trend_tags":a["trend_tags"][:3],"priority":a["priority"],
                "confidence":a["confidence"],"ai_analyzed":True})
@@ -529,6 +552,9 @@ def main():
   required=("title","category","subcategory","published_at")
   if any(not isinstance(x.get(k),str) or not x.get(k) for k in required):
    errors.append({"source":"postprocess","error":"item with missing required fields skipped"})
+   continue
+  if not is_clean_monitoring_item(x):
+   errors.append({"source":"quality_filter","error":"markup, menu, or non-event item skipped: "+clean(x.get("title",""))[:80]})
    continue
   valid_items.append(x)
  seen=set(); dedup=[]
