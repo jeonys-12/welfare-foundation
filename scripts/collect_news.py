@@ -279,6 +279,10 @@ def keep_recent_disasters(old_items,days=DISASTER_DAYS):
  kept=[]
  for item in old_items:
   if item.get("category")!="disaster": continue
+  if item.get("source")=="GDACS":
+   try: score=float(item.get("gdacs_score"))
+   except (TypeError,ValueError): continue
+   if score<GDACS_MIN_SCORE: continue
   try:
    stamp=datetime.fromisoformat(item.get("published_at","").replace("Z","+00:00"))
    if stamp.tzinfo is None: stamp=stamp.replace(tzinfo=timezone.utc)
