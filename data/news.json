@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-22T01:48:10.406770+00:00",
+  "updated_at": "2026-07-22T02:45:57.352737+00:00",
   "item_count": 22,
   "errors": [
     {
@@ -11,6 +11,33 @@
     "enabled": true,
     "analyzed": 0,
     "message": "AI 분석 실패 — 기본 요약 유지"
+  },
+  "source_guides": {
+    "tax_reform": {
+      "type": "개정안·입법동향",
+      "final_source": "기획재정부·국회 의안정보시스템",
+      "url": "https://www.moef.go.kr/"
+    },
+    "corporate_tax": {
+      "type": "현행법·세무해석",
+      "final_source": "국가법령정보센터·국세법령정보시스템",
+      "url": "https://taxlaw.nts.go.kr/"
+    },
+    "gift_tax": {
+      "type": "현행법·세무해석",
+      "final_source": "국가법령정보센터·국세법령정보시스템",
+      "url": "https://www.law.go.kr/"
+    },
+    "fair_trade": {
+      "type": "규제·정책",
+      "final_source": "공정거래위원회·국가법령정보센터",
+      "url": "https://www.ftc.go.kr/"
+    },
+    "accounting": {
+      "type": "회계기준·공시",
+      "final_source": "국세청·국가법령정보센터",
+      "url": "https://www.nts.go.kr/"
+    }
   },
   "items": [
     {
@@ -31,7 +58,10 @@
       "ai_analyzed": false,
       "insight": "",
       "trend_tags": [],
-      "confidence": "원문 확인 필요"
+      "confidence": "원문 확인 필요",
+      "source_type": "뉴스·기관자료",
+      "final_source": "원문 제공기관",
+      "verification_url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBQSGNORFp3SFFzdHdkREV4UHZMa3VNSkowb2ZnNUlHYXVDNllDZXRVc2J6NnVKSTIyUEtnLV9fN3hiLVlKTWZVRjJNVzg0RW5vSWxBdHNfaFN4eXViVV9Bbkx5cmpzYjh5S2JF?oc=5"
     },
     {
       "id": "a1801e8c5af98e1939",
@@ -51,7 +81,10 @@
       "ai_analyzed": false,
       "insight": "",
       "trend_tags": [],
-      "confidence": "원문 확인 필요"
+      "confidence": "원문 확인 필요",
+      "source_type": "뉴스·기관자료",
+      "final_source": "원문 제공기관",
+      "verification_url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1JbndrQU9fekMyallzYkN4Q3pGNlNoRUpfNjd2aXV1YVlrSnVnU0tEYzFkUmV3b3pzWUxoV2wwLV9GVGtXNFBzN2x3MXFHcXlHelJpZXViQ2UyTkF3dEplQkhuRFZuMmc0V3pkZS1yYVc1SjBRelpN0gF3QVVfeXFMTUlud2tBT196QzJqWXNiQ3hDekY2U2hFSl82N3ZpdXVhWWtKdWdTS0RjMWRSZXdvenNZTGhXbDAtX0ZUa1c0UHM3bHcxcUdxeUd6UmlldWJDZTJOQXd0SmVCSG5EVm4yZzRXemRlLXJhVzVKMFF6Wk0?oc=5"
     },
     {
       "id": "0f064c8f69b4d3705e",
@@ -70,7 +103,10 @@
       "ai_analyzed": false,
       "insight": "",
       "trend_tags": [],
-      "confidence": "원문 확인 필요"
+      "confidence": "원문 확인 필요",
+      "source_type": "뉴스·기관자료",
+      "final_source": "원문 제공기관",
+      "verification_url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5JMWdTVFJBRW9LMHN3RkZlb2JaTFN6UUVIeFJNa3BWMVRMUzl1WmFHTmY2QXVBMTNUcVJEZmJyM3Q1cmE5WFc3ZktkNkpYdVZPTmV4bXY3U1BzUnJ1VU5rSXVWX1hRdzVQbG54NzdBVms?oc=5"
     },
     {
       "id": "03863e0272f555d4c0",
@@ -89,7 +125,10 @@
       "ai_analyzed": false,
       "insight": "",
       "trend_tags": [],
-      "confidence": "원문 확인 필요"
+      "confidence": "원문 확인 필요",
+      "source_type": "뉴스·기관자료",
+      "final_source": "원문 제공기관",
+      "verification_url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1WWWtYYnRDa2hWRDBDaHFqZGF6cE9JcWMxNUFtQzBFOUtZLWpHZVg4V2JVY01mWjlrUkVsa3M4LTRBZ2x5YmEyN21KM3F5THdHUUNsX0k1TzdrbXFvRGhUa3NXVnR0Sm81Zk54UEZJMA?oc=5"
     },
     {
       "id": "f251f24646d1eb5692",
@@ -108,7 +147,10 @@
       "ai_analyzed": false,
       "insight": "",
       "trend_tags": [],
-      "confidence": "원문 확인 필요"
+      "confidence": "원문 확인 필요",
+      "source_type": "뉴스·기관자료",
+      "final_source": "원문 제공기관",
+      "verification_url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9mLTNyTFFKNF9yWGNKR3ZrZnJURFlvZGY0V0h6UEo3OXg0VDhXQXROQWFmanJrcmtmTnY4RGRjMWF2ZFVlWmJFMFd3dTduR0lUYW5xNjhDQ3BERHlvQUZEd2ZsQUI3TDZPWkUw?oc=5"
     },
     {
       "id": "2411fc8d6f162fcc7a",
@@ -127,7 +169,10 @@
       "ai_analyzed": false,
       "insight": "",
       "trend_tags": [],
-      "confidence": "원문 확인 필요"
+      "confidence": "원문 확인 필요",
+      "source_type": "뉴스·기관자료",
+      "final_source": "원문 제공기관",
+      "verification_url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5HcmswdDlBZmZkN01xRVEtQmRGeXBuV0dGRkp3bnRtVC0yN1hoYnE4R3ZxOG41bHltbFhBWmNfMXhwb2hCYUdGSlhuOXZFemo3dndybktnNlU4cGFqNjNtYjk0a1M5QWFua2ZxS3Zab3A?oc=5"
     },
     {
       "id": "a772ebf573a06b2917",
@@ -147,7 +192,10 @@
       "ai_analyzed": false,
       "insight": "",
       "trend_tags": [],
-      "confidence": "원문 확인 필요"
+      "confidence": "원문 확인 필요",
+      "source_type": "뉴스·기관자료",
+      "final_source": "원문 제공기관",
+      "verification_url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9FNEptdFM0a3RVb0IzbEh3TmdfRHNVcjctUFc0d25XNG9JZFJvaWpEaS1odkpxa01BQ0xTNllQdEUxU3doYlZmRVJ6bnZHcUpKUUFhSXRMQ2JZNV9JN1htTzdHNjM1djJIdTkyTDVlSQ?oc=5"
     },
     {
       "id": "c5a9206787b81c8683",
@@ -166,7 +214,10 @@
       "ai_analyzed": false,
       "insight": "",
       "trend_tags": [],
-      "confidence": "원문 확인 필요"
+      "confidence": "원문 확인 필요",
+      "source_type": "뉴스·기관자료",
+      "final_source": "원문 제공기관",
+      "verification_url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE1FVnBwdlNqaTFFRWI2dU5ubDlxNFpSaHRuRVBxSGVRcENkdEZFbGsxZUpNWW9kSzNScnFNaXg5TWxNMC1vWnZfNF9CcFc?oc=5"
     },
     {
       "id": "c551de252e9fc63beb",
@@ -185,7 +236,10 @@
       "ai_analyzed": false,
       "insight": "",
       "trend_tags": [],
-      "confidence": "원문 확인 필요"
+      "confidence": "원문 확인 필요",
+      "source_type": "뉴스·기관자료",
+      "final_source": "원문 제공기관",
+      "verification_url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9NaGpVTmd2YkRvTGpPaTZDNUk3T3IzUjRkZDFDNVdwdHdjN1JzTnFHem9TR0VzcHYtbUp2WVlmYk1XSTFLeHVVUGJWX2ZEaFBfMXlvaDJ3VTJTS1U2UkFYZUFYOGNlLUVXSEdpREJB?oc=5"
     },
     {
       "id": "9f7f7a08c131aceead",
@@ -205,7 +259,10 @@
       "ai_analyzed": false,
       "insight": "",
       "trend_tags": [],
-      "confidence": "원문 확인 필요"
+      "confidence": "원문 확인 필요",
+      "source_type": "뉴스·기관자료",
+      "final_source": "원문 제공기관",
+      "verification_url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE8wWjR2dXdoT01JYmhhNklka1pFeVd3MUdwbUstWUxYa2JNVzMyTzh3aWUtME9sNjRKOXhaMGpVSzBfT1BQaE1NTDhlbzFpQUQ1TWZScGZFTV9FcnlhUnNGWVJ4S2RsaEpQN1EweTJHc9IBc0FVX3lxTE1KN09GRU1Pa0tGa0lFVTNiVDNORVZBNWo1Vi1OekFlLW1EWThfaVNmTzZJcGFkMW9tZGNRaV90WVlqb191MFBUODFOTzFVZFgxVXJqM3o1cW12d0xzOGpmWFpvWTZteFowSXVwN0pRdWlhOTQ?oc=5"
     },
     {
       "id": "7732257d5cd9dafe49",
@@ -225,7 +282,10 @@
       "ai_analyzed": false,
       "insight": "",
       "trend_tags": [],
-      "confidence": "원문 확인 필요"
+      "confidence": "원문 확인 필요",
+      "source_type": "뉴스·기관자료",
+      "final_source": "원문 제공기관",
+      "verification_url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9kQVdQLUkyVkhidnN3SGRubi14VGlvN0JBTW1WWWV2dlBxQlpSdVJGdkdacl9oUGRUOU9MS2lXQWxUTzlQS3ZZMktVZExqcmVEeE9OZDJIUzZnMVY5T1poamlpOVYtazBYT0pKaQ?oc=5"
     },
     {
       "id": "572eedc9e3e762e084",
@@ -246,7 +306,10 @@
       "ai_analyzed": false,
       "insight": "",
       "trend_tags": [],
-      "confidence": "원문 확인 필요"
+      "confidence": "원문 확인 필요",
+      "source_type": "뉴스·기관자료",
+      "final_source": "원문 제공기관",
+      "verification_url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9rTHR1TFM4X2ozODFOOVJKV0kwWHZaMEM2TUJtU1dRUVZCS1ZoN19oVXVJY0o0TTliY3ljaWdIQmpjcGlUcFdybGt1N24yZW5FUk9qelhCbENBWTFJcnhjUDlFdU5VT1FpRzdxQUt4QdIBc0FVX3lxTE1zNUI4TV9OTDRVZUFNOFVva2xHdU8zNjJGaURTQ19TbjVhNXRJNDhQRzBNNVJNTUl5dVZMSS1xMHEyQS1xLVpFVmhoN3NNQTFMOXB6bUV2TkNLbjJ4elNZWGxqdGhMNnFaOFlJZzlxc0tfYlk?oc=5"
     },
     {
       "id": "dda250abd8383b33ec",
@@ -265,7 +328,10 @@
       "ai_analyzed": false,
       "insight": "",
       "trend_tags": [],
-      "confidence": "원문 확인 필요"
+      "confidence": "원문 확인 필요",
+      "source_type": "뉴스·기관자료",
+      "final_source": "원문 제공기관",
+      "verification_url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE0zNFBCeDdMVVl0TUFRdTZyM3QzN3hCWUdrMWR6a09FSXc5OVdqTThhRVFheWgyTVNqbXVDQ2NHWVJ2SUwxeGc?oc=5"
     },
     {
       "id": "8fa185eb49d78ddfa7",
@@ -286,7 +352,10 @@
       "ai_analyzed": false,
       "insight": "",
       "trend_tags": [],
-      "confidence": "원문 확인 필요"
+      "confidence": "원문 확인 필요",
+      "source_type": "뉴스·기관자료",
+      "final_source": "원문 제공기관",
+      "verification_url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5VUWEzVGFqNGxGSWwxcUdzcDBHX20xd185cWx4WkM1NVFxYi1obTFGRGF0NDRkdFNMRlQ0OUJ1THJhNXlSUnVhMmFxUQ?oc=5"
     },
     {
       "id": "e1d2938d1b255a2171",
@@ -306,7 +375,10 @@
       "ai_analyzed": false,
       "insight": "",
       "trend_tags": [],
-      "confidence": "원문 확인 필요"
+      "confidence": "원문 확인 필요",
+      "source_type": "뉴스·기관자료",
+      "final_source": "원문 제공기관",
+      "verification_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5NclpubS0tMWdxTmxvZEQxczQxSkdqOUVuVTlhQmVKVXFidnNrQ21nQmIxUWVNUGVwZllrVE1jWU8tTlVGWng1X3ZBLV82NTNQR1Q1UFhn?oc=5"
     },
     {
       "id": "c580b730b21b338b07",
@@ -327,7 +399,10 @@
       "ai_analyzed": false,
       "insight": "",
       "trend_tags": [],
-      "confidence": "원문 확인 필요"
+      "confidence": "원문 확인 필요",
+      "source_type": "뉴스·기관자료",
+      "final_source": "원문 제공기관",
+      "verification_url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE4tUG8yUGFSSmpDNEU4VXppLVNQdllPZWFDVEdZZksyNXowSVc4bEVZUS01QzZVbnZOLW41MzNCM0hIc3BiSmZNelFDYklnc2ZlTkJrMg?oc=5"
     },
     {
       "id": "d48423800587581546",
@@ -346,7 +421,10 @@
       "ai_analyzed": false,
       "insight": "",
       "trend_tags": [],
-      "confidence": "원문 확인 필요"
+      "confidence": "원문 확인 필요",
+      "source_type": "뉴스·기관자료",
+      "final_source": "원문 제공기관",
+      "verification_url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1VT1JKTGFtYXF3WTBrSmZSTnhieVlzUlhKVm5BaFJ3eG1iVmIxVEVSMG9xTzJYWFAyY3hXUzVKdERyM3V2NUF1TDItTQ?oc=5"
     },
     {
       "id": "8630f4f67d03ab9523",
@@ -365,7 +443,10 @@
       "ai_analyzed": false,
       "insight": "",
       "trend_tags": [],
-      "confidence": "원문 확인 필요"
+      "confidence": "원문 확인 필요",
+      "source_type": "뉴스·기관자료",
+      "final_source": "원문 제공기관",
+      "verification_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5uWEp3RDhGWmlSLTE4SE40ODRVeEFUV3poTndMbWhuOE9haElCa1JhQVhYbEdFcklZMmE1OGYxbUxBSjQ5eXB6dEs2cG5teERiQi0yaEY1RW1XSWI5U2pGM0JpOHMzSklPNmc?oc=5"
     },
     {
       "id": "2d4ea2472987cbba91",
@@ -384,7 +465,10 @@
       "ai_analyzed": false,
       "insight": "",
       "trend_tags": [],
-      "confidence": "원문 확인 필요"
+      "confidence": "원문 확인 필요",
+      "source_type": "뉴스·기관자료",
+      "final_source": "원문 제공기관",
+      "verification_url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1heEVhd1UwMWtTMVdyRWwtTklsTk5IdWloeTE5Nk9JYnlDUEVVc1NkUHhMMWxSMHp5Qm5SeWdzVk1NTGZKbGpLRGxjMWI0c25WQXhJTFp3UQ?oc=5"
     },
     {
       "id": "59520dcdff461fcbd8",
@@ -403,7 +487,10 @@
       "ai_analyzed": false,
       "insight": "",
       "trend_tags": [],
-      "confidence": "원문 확인 필요"
+      "confidence": "원문 확인 필요",
+      "source_type": "뉴스·기관자료",
+      "final_source": "원문 제공기관",
+      "verification_url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9DME93STQxb1JkQ3lZWUJTaUdGVWI5NlVxZDBWYWdEYTdwM1M2ekhDMklweEhuRzZ0NkdxSXJtRlVmdWNIWHlVYVhkV0JSS0Z0WFczaGNoSVpjOHRoVWZTT0R5SFlLZWxGbU9QZQ?oc=5"
     },
     {
       "id": "74b6e9e463bb50ec90",
@@ -422,7 +509,10 @@
       "ai_analyzed": false,
       "insight": "",
       "trend_tags": [],
-      "confidence": "원문 확인 필요"
+      "confidence": "원문 확인 필요",
+      "source_type": "뉴스·기관자료",
+      "final_source": "원문 제공기관",
+      "verification_url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9kbUoydjI3TVUyNnhCT3M3UXZBN0ZvR0ZRNEYwc0pxc1lTVF9xdDBWekRJLUVULTlsbmJiZ3lmcjI3OXR3dmVkbDZFRW1BV0U3aF9OcWNod1dkUU9UWk1FVWRQQUNQNDNNSVAzUg?oc=5"
     },
     {
       "id": "d350ab3df0ebcb6cf1",
@@ -441,7 +531,10 @@
       "ai_analyzed": false,
       "insight": "",
       "trend_tags": [],
-      "confidence": "원문 확인 필요"
+      "confidence": "원문 확인 필요",
+      "source_type": "뉴스·기관자료",
+      "final_source": "원문 제공기관",
+      "verification_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE15RVp5SEJ6R2NQS3V3aEtRVHdYMmFPMGhMR0ZoUXJTWmw5WFBSeUtEMVV4ZnN0ZFdscGpnNTlsZHh2ajhBZ0RkcG0teTlJRHVmRGt2M1lXZHFDa3Y2TG12ZTRUVDhUZGJuemc?oc=5"
     }
   ]
 }
