@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-07-22T06:37:36.588125+00:00",
-  "item_count": 195,
+  "updated_at": "2026-07-22T06:47:28.153Z",
+  "item_count": 191,
   "errors": [
     {
       "source": "NGO 공식 대한적십자사",
@@ -3931,29 +3931,6 @@
       "verification_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5NclpubS0tMWdxTmxvZEQxczQxSkdqOUVuVTlhQmVKVXFidnNrQ21nQmIxUWVNUGVwZllrVE1jWU8tTlVGWng1X3ZBLV82NTNQR1Q1UFhn?oc=5"
     },
     {
-      "id": "39fe74574960313cbc",
-      "category": "disaster",
-      "subcategory": "disaster_kr",
-      "subcategory_label": "국내 재해",
-      "title": "지진과학관",
-      "summary": "s=\"section-wrap\"> 통보기준 진도등급 별 현상 지진·화산 대피요령 지진과학관 <script src=\"/w/resources/js/app-2021/dong-config.js?ver=202607091110",
-      "source": "기상청",
-      "url": "https://www.kma.go.kr/eqk_pub/",
-      "published_at": "2026-07-09T00:00:00+00:00",
-      "keywords": [
-        "지진",
-        "대피"
-      ],
-      "priority": 4,
-      "ai_analyzed": false,
-      "insight": "",
-      "trend_tags": [],
-      "confidence": "공식기관 자료",
-      "source_type": "국내 공식기관 직접수집",
-      "final_source": "기상청",
-      "verification_url": "https://www.kma.go.kr/eqk_pub/"
-    },
-    {
       "id": "c580b730b21b338b07",
       "category": "csr",
       "subcategory": "csr",
@@ -4021,7 +3998,7 @@
       "source_type": "해외 공식 재난경보",
       "final_source": "GDACS",
       "verification_url": "https://www.gdacs.org/report.aspx?eventtype=DR&eventid=1027450",
-      "gdacs_score": 2.0,
+      "gdacs_score": 2,
       "gdacs_alert_level": "Orange"
     },
     {
@@ -4246,7 +4223,7 @@
       "source_type": "해외 공식 재난경보",
       "final_source": "GDACS",
       "verification_url": "https://www.gdacs.org/report.aspx?eventtype=DR&eventid=1018431",
-      "gdacs_score": 2.0,
+      "gdacs_score": 2,
       "gdacs_alert_level": "Orange"
     },
     {
@@ -4292,7 +4269,7 @@
       "source_type": "해외 공식 재난경보",
       "final_source": "GDACS",
       "verification_url": "https://www.gdacs.org/report.aspx?eventtype=DR&eventid=1018332",
-      "gdacs_score": 2.0,
+      "gdacs_score": 2,
       "gdacs_alert_level": "Orange"
     },
     {
@@ -4316,28 +4293,6 @@
       "source_type": "뉴스·기관자료",
       "final_source": "원문 제공기관",
       "verification_url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQUjZxMVpTM0g3WjhwTHBQdXdzeE16RTRRWUJIVDZ6Y1ZTU1U5Y0pQM1U5WlZmeTFOTVdwWnBLSjZwRzdhWjVmaFB0MXRuZTdFTndPOHNpcEFadHFsNDBweGJ4dTRaMVd1YTdnOWJMd2dxVXZQcGE3eVpla3RIVzhoaEJ3bnQ5TlhuT1FzSTdlV2cxbGRwOW1FVWd2MTUtMUhldXVZem1uVy1CVGt5MzdMSFlHekdCRmFr?oc=5"
-    },
-    {
-      "id": "aeb74dd300efdf6b55",
-      "category": "ngo",
-      "subcategory": "ngo",
-      "subcategory_label": "NGO 모금·사업",
-      "title": "캠페인",
-      "summary": "nage/2025/12/19/UMQAccAUE_20251219102204.png\" alt=\"\"> --> 캠페인 캠페인 캠페인 후기 --> <a href=\"/camp/cpView20001457_main.do\" onclick=\"track",
-      "source": "초록우산",
-      "url": "https://www.childfund.or.kr/campaign/campaignList.do#reportReview",
-      "published_at": "2025-12-19T00:00:00+00:00",
-      "keywords": [
-        "캠페인"
-      ],
-      "priority": 2,
-      "ai_analyzed": false,
-      "insight": "",
-      "trend_tags": [],
-      "confidence": "공식 NGO 자료",
-      "source_type": "NGO 공식 홈페이지 직접수집",
-      "final_source": "초록우산",
-      "verification_url": "https://www.childfund.or.kr/campaign/campaignList.do#reportReview"
     },
     {
       "id": "b9aa8aff42e70965b6",
@@ -4383,50 +4338,6 @@
       "source_type": "뉴스·기관자료",
       "final_source": "원문 제공기관",
       "verification_url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9FMGtjMVdkMTFJUFRNd2xnSHhRNHAzbGxKMUlWdlRnNjFGNnhZYzRUSmU3VlFzUDJfQ0YzaDQ5TUN6MExVWUZCOGU4dw?oc=5"
-    },
-    {
-      "id": "8954476cff84e58ad0",
-      "category": "ngo",
-      "subcategory": "ngo",
-      "subcategory_label": "NGO 모금·사업",
-      "title": "바로 후원하기",
-      "summary": "페이지타이틀 뒤로가기 8 D : 20230925 #8885 2차 오픈용으로 주석 처리 --> 바로 후원하기 알림함 알림함 <a href=\"javascript:void(0);\" onclick=\"noti_close();\"",
-      "source": "월드비전",
-      "url": "https://my.worldvision.or.kr/support/?code=2901&crmcd=68814&sd=a",
-      "published_at": "2023-09-25T00:00:00+00:00",
-      "keywords": [
-        "후원"
-      ],
-      "priority": 2,
-      "ai_analyzed": false,
-      "insight": "",
-      "trend_tags": [],
-      "confidence": "공식 NGO 자료",
-      "source_type": "NGO 공식 홈페이지 직접수집",
-      "final_source": "월드비전",
-      "verification_url": "https://my.worldvision.or.kr/support/?code=2901&crmcd=68814&sd=a"
-    },
-    {
-      "id": "8d2784145b5226324a",
-      "category": "ngo",
-      "subcategory": "ngo",
-      "subcategory_label": "NGO 모금·사업",
-      "title": "사람들",
-      "summary": ");\" class=\"btn_search\"> 검색 전체 사업 사람들 기획특집 캠페인 <!-- //20210927 div 추가",
-      "source": "월드비전",
-      "url": "https://www.worldvision.or.kr/informationCenter/story#people",
-      "published_at": "2021-09-27T00:00:00+00:00",
-      "keywords": [
-        "캠페인"
-      ],
-      "priority": 2,
-      "ai_analyzed": false,
-      "insight": "",
-      "trend_tags": [],
-      "confidence": "공식 NGO 자료",
-      "source_type": "NGO 공식 홈페이지 직접수집",
-      "final_source": "월드비전",
-      "verification_url": "https://www.worldvision.or.kr/informationCenter/story#people"
     },
     {
       "id": "63330ace49bf76665d",
