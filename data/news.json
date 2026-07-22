@@ -1,0 +1,91 @@
+{
+  "updated_at": "2026-07-22T07:00:00+09:00",
+  "item_count": 6,
+  "errors": [],
+  "items": [
+    {
+      "id": "sample-law",
+      "category": "law",
+      "title": "공익법인 관련 법·정책 모니터링이 시작됩니다",
+      "summary": "국가법령정보센터, 국세청, 행정안전부 등 공식 출처를 우선 탐색합니다.",
+      "source": "시스템 안내",
+      "url": "https://www.law.go.kr",
+      "published_at": "2026-07-22T07:00:00+09:00",
+      "keywords": [
+        "공익법인",
+        "법률"
+      ],
+      "priority": 3
+    },
+    {
+      "id": "sample-esg",
+      "category": "esg",
+      "title": "ESG 및 기부 트렌드 모니터링",
+      "summary": "지속가능경영, 사회적 가치, 기부문화 관련 최신 동향을 수집합니다.",
+      "source": "시스템 안내",
+      "url": "https://www.esgsupport.or.kr",
+      "published_at": "2026-07-22T07:00:00+09:00",
+      "keywords": [
+        "ESG",
+        "기부"
+      ],
+      "priority": 3
+    },
+    {
+      "id": "sample-csr",
+      "category": "csr",
+      "title": "기업 사회공헌 사례 모니터링",
+      "summary": "국내외 기업의 사회공헌, 상생, 임직원 봉사 사례를 확인합니다.",
+      "source": "시스템 안내",
+      "url": "https://www.csrhub.or.kr",
+      "published_at": "2026-07-22T07:00:00+09:00",
+      "keywords": [
+        "사회공헌",
+        "기업"
+      ],
+      "priority": 3
+    },
+    {
+      "id": "sample-disaster",
+      "category": "disaster",
+      "title": "국내외 재해 발생상황 모니터링",
+      "summary": "공식 재난정보와 국제 구호기관 발표를 중심으로 재해 상황을 살핍니다.",
+      "source": "시스템 안내",
+      "url": "https://www.safekorea.go.kr",
+      "published_at": "2026-07-22T07:00:00+09:00",
+      "keywords": [
+        "재난",
+        "구호"
+      ],
+      "priority": 4
+    },
+    {
+      "id": "sample-ngo",
+      "category": "ngo",
+      "title": "NGO 모금 및 사업 모니터링",
+      "summary": "주요 NGO의 모금 캠페인, 지원 사업, 현장 활동을 확인합니다.",
+      "source": "시스템 안내",
+      "url": "https://www.ngokorea.org",
+      "published_at": "2026-07-22T07:00:00+09:00",
+      "keywords": [
+        "NGO",
+        "모금"
+      ],
+      "priority": 3
+    },
+    {
+      "id": "sample-kbs",
+      "category": "kbs",
+      "title": "KBS 동행 프로그램 모니터링",
+      "summary": "KBS 동행의 방송과 후원 관련 새 소식을 모니터링합니다.",
+      "source": "시스템 안내",
+      "url": "https://program.kbs.co.kr/1tv/culture/accompany/pc/index.html",
+      "published_at": "2026-07-22T07:00:00+09:00",
+      "keywords": [
+        "KBS",
+        "동행"
+      ],
+      "priority": 3
+    }
+  ]
+}
