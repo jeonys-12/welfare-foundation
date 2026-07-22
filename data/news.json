@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-07-22T06:20:28.700265+00:00",
-  "item_count": 211,
+  "updated_at": "2026-07-22T06:27:48.579Z",
+  "item_count": 194,
   "errors": [
     {
       "source": "NGO 공식 대한적십자사",
@@ -2834,28 +2834,6 @@
       "gdacs_alert_level": "Orange"
     },
     {
-      "id": "cb7e70e7c79f576a12",
-      "category": "disaster",
-      "subcategory": "disaster_global",
-      "subcategory_label": "해외 재해",
-      "title": "M 5.5 - 4 km SSW of Chupaca, Peru",
-      "summary": "USGS significant earthquake magnitude 5.5",
-      "source": "USGS",
-      "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t1q7",
-      "published_at": "2026-07-19T02:24:35.623000+00:00",
-      "keywords": [
-        "earthquake"
-      ],
-      "priority": 3,
-      "ai_analyzed": false,
-      "insight": "",
-      "trend_tags": [],
-      "confidence": "공식기관 자료",
-      "source_type": "해외 공식 지진정보",
-      "final_source": "USGS",
-      "verification_url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t1q7"
-    },
-    {
       "id": "f5a2067b3fc0ac344b",
       "category": "disaster",
       "subcategory": "disaster_kr",
@@ -2944,50 +2922,6 @@
       "source_type": "KBS 공식 회차·방송정보",
       "final_source": "KBS",
       "verification_url": "https://vod.kbs.co.kr/m/index.html?program_code=T2014-0877&program_id=PS-2026122474-01-000&section_code=05&sname=vod&source=episode&stype=vod"
-    },
-    {
-      "id": "1b8f8b6127d34c65f1",
-      "category": "disaster",
-      "subcategory": "disaster_global",
-      "subcategory_label": "해외 재해",
-      "title": "M 6.4 - 86 km WSW of Puerto Madero, Mexico",
-      "summary": "USGS significant earthquake magnitude 6.4",
-      "source": "USGS",
-      "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t1cc",
-      "published_at": "2026-07-17T15:20:07.228000+00:00",
-      "keywords": [
-        "earthquake"
-      ],
-      "priority": 3,
-      "ai_analyzed": false,
-      "insight": "",
-      "trend_tags": [],
-      "confidence": "공식기관 자료",
-      "source_type": "해외 공식 지진정보",
-      "final_source": "USGS",
-      "verification_url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t1cc"
-    },
-    {
-      "id": "b6c640ea5bfebe25d2",
-      "category": "disaster",
-      "subcategory": "disaster_global",
-      "subcategory_label": "해외 재해",
-      "title": "M 7.3 - 58 km WSW of Puerto Madero, Mexico",
-      "summary": "USGS significant earthquake magnitude 7.3",
-      "source": "USGS",
-      "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t1bu",
-      "published_at": "2026-07-17T14:48:39.769000+00:00",
-      "keywords": [
-        "earthquake"
-      ],
-      "priority": 3,
-      "ai_analyzed": false,
-      "insight": "",
-      "trend_tags": [],
-      "confidence": "공식기관 자료",
-      "source_type": "해외 공식 지진정보",
-      "final_source": "USGS",
-      "verification_url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t1bu"
     },
     {
       "id": "f53057ebdf177d580b",
@@ -3921,28 +3855,6 @@
       "verification_url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFB1dHh1Q091SzhHdjhjcXZ3Zm9PWWJTVTh3TUpqb1QxZmE3eTdkUzJuc0NpaU0zbXZPai1ULU1LN3hyZVdBY2hacXVnR1dhV2YtNGo4Ug?oc=5"
     },
     {
-      "id": "616dc6bab49f23d16e",
-      "category": "disaster",
-      "subcategory": "disaster_global",
-      "subcategory_label": "해외 재해",
-      "title": "M 6.2 - 32 km WSW of Sarangani, Philippines",
-      "summary": "USGS significant earthquake magnitude 6.2",
-      "source": "USGS",
-      "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t0d0",
-      "published_at": "2026-07-14T15:49:39.282000+00:00",
-      "keywords": [
-        "earthquake"
-      ],
-      "priority": 3,
-      "ai_analyzed": false,
-      "insight": "",
-      "trend_tags": [],
-      "confidence": "공식기관 자료",
-      "source_type": "해외 공식 지진정보",
-      "final_source": "USGS",
-      "verification_url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t0d0"
-    },
-    {
       "id": "ea3073c813c91ff261",
       "category": "ngo",
       "subcategory": "ngo",
@@ -3963,116 +3875,6 @@
       "source_type": "뉴스·기관자료",
       "final_source": "원문 제공기관",
       "verification_url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBTNkpXeWd0WkRab3VBZEhKQjN6b3h4QzhYUUZfYkhuY3JldEVxSlhuODZ1S09rY1lnRUR3LVgxdnQxU2pqWnVzb0hWcGhaQzRCSUEwbll3dHZlRDVxeUZfZTQteFhoaF84VzBaMk5BTGhPVzFqU2JRQkF3?oc=5"
-    },
-    {
-      "id": "2f6f9bcd2f261390cf",
-      "category": "disaster",
-      "subcategory": "disaster_global",
-      "subcategory_label": "해외 재해",
-      "title": "M 4.3 - 18 km WSW of Johannesburg, CA",
-      "summary": "USGS significant earthquake magnitude 4.31762677888687",
-      "source": "USGS",
-      "url": "https://earthquake.usgs.gov/earthquakes/eventpage/ci41292687",
-      "published_at": "2026-07-13T16:40:55.170000+00:00",
-      "keywords": [
-        "earthquake"
-      ],
-      "priority": 3,
-      "ai_analyzed": false,
-      "insight": "",
-      "trend_tags": [],
-      "confidence": "공식기관 자료",
-      "source_type": "해외 공식 지진정보",
-      "final_source": "USGS",
-      "verification_url": "https://earthquake.usgs.gov/earthquakes/eventpage/ci41292687"
-    },
-    {
-      "id": "bad88cf23edf82c104",
-      "category": "disaster",
-      "subcategory": "disaster_global",
-      "subcategory_label": "해외 재해",
-      "title": "M 6.3 - southeast of the Loyalty Islands",
-      "summary": "USGS significant earthquake magnitude 6.3",
-      "source": "USGS",
-      "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t01n",
-      "published_at": "2026-07-13T14:45:49.203000+00:00",
-      "keywords": [
-        "earthquake"
-      ],
-      "priority": 3,
-      "ai_analyzed": false,
-      "insight": "",
-      "trend_tags": [],
-      "confidence": "공식기관 자료",
-      "source_type": "해외 공식 지진정보",
-      "final_source": "USGS",
-      "verification_url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t01n"
-    },
-    {
-      "id": "1a90ea851038afd8e5",
-      "category": "disaster",
-      "subcategory": "disaster_global",
-      "subcategory_label": "해외 재해",
-      "title": "M 6.4 - 191 km SE of Lorengau, Papua New Guinea",
-      "summary": "USGS significant earthquake magnitude 6.4",
-      "source": "USGS",
-      "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000szzy",
-      "published_at": "2026-07-13T08:53:27.913000+00:00",
-      "keywords": [
-        "earthquake"
-      ],
-      "priority": 3,
-      "ai_analyzed": false,
-      "insight": "",
-      "trend_tags": [],
-      "confidence": "공식기관 자료",
-      "source_type": "해외 공식 지진정보",
-      "final_source": "USGS",
-      "verification_url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000szzy"
-    },
-    {
-      "id": "3beccc031f42237111",
-      "category": "disaster",
-      "subcategory": "disaster_global",
-      "subcategory_label": "해외 재해",
-      "title": "M 4.1 - 2 km ESE of Frazier Park, CA",
-      "summary": "USGS significant earthquake magnitude 4.10922888670317",
-      "source": "USGS",
-      "url": "https://earthquake.usgs.gov/earthquakes/eventpage/ci41291863",
-      "published_at": "2026-07-12T10:38:04.730000+00:00",
-      "keywords": [
-        "earthquake"
-      ],
-      "priority": 3,
-      "ai_analyzed": false,
-      "insight": "",
-      "trend_tags": [],
-      "confidence": "공식기관 자료",
-      "source_type": "해외 공식 지진정보",
-      "final_source": "USGS",
-      "verification_url": "https://earthquake.usgs.gov/earthquakes/eventpage/ci41291863"
-    },
-    {
-      "id": "33b6a48be95f3e4a83",
-      "category": "disaster",
-      "subcategory": "disaster_global",
-      "subcategory_label": "해외 재해",
-      "title": "M 6.4 - South Sandwich Islands region",
-      "summary": "USGS significant earthquake magnitude 6.4",
-      "source": "USGS",
-      "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000szpb",
-      "published_at": "2026-07-11T10:26:42.691000+00:00",
-      "keywords": [
-        "earthquake"
-      ],
-      "priority": 3,
-      "ai_analyzed": false,
-      "insight": "",
-      "trend_tags": [],
-      "confidence": "공식기관 자료",
-      "source_type": "해외 공식 지진정보",
-      "final_source": "USGS",
-      "verification_url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000szpb"
     },
     {
       "id": "8847d039859c89457f",
@@ -4235,7 +4037,7 @@
       "source_type": "해외 공식 재난경보",
       "final_source": "GDACS",
       "verification_url": "https://www.gdacs.org/report.aspx?eventtype=DR&eventid=1027450",
-      "gdacs_score": 2.0,
+      "gdacs_score": 2,
       "gdacs_alert_level": "Orange"
     },
     {
@@ -4263,28 +4065,6 @@
       "verification_url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9SQjdUYUtXY3p3TF9WQnplS1d6REV5RVgwNFFjZkxTVXhqZXdSakJqQW9Tbk1XRzlCMFRKeHVSSHFzN1BVaEtuVGQ3YXlQcFhQ?oc=5"
     },
     {
-      "id": "29a30968d55f4335fa",
-      "category": "disaster",
-      "subcategory": "disaster_global",
-      "subcategory_label": "해외 재해",
-      "title": "M 3.8 - 2 km E of Oak Harbor, Washington",
-      "summary": "USGS significant earthquake magnitude 3.8",
-      "source": "USGS",
-      "url": "https://earthquake.usgs.gov/earthquakes/eventpage/uw714040221",
-      "published_at": "2026-07-02T06:35:47.600000+00:00",
-      "keywords": [
-        "earthquake"
-      ],
-      "priority": 3,
-      "ai_analyzed": false,
-      "insight": "",
-      "trend_tags": [],
-      "confidence": "공식기관 자료",
-      "source_type": "해외 공식 지진정보",
-      "final_source": "USGS",
-      "verification_url": "https://earthquake.usgs.gov/earthquakes/eventpage/uw714040221"
-    },
-    {
       "id": "d48423800587581546",
       "category": "csr",
       "subcategory": "csr",
@@ -4305,28 +4085,6 @@
       "source_type": "뉴스·기관자료",
       "final_source": "원문 제공기관",
       "verification_url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1VT1JKTGFtYXF3WTBrSmZSTnhieVlzUlhKVm5BaFJ3eG1iVmIxVEVSMG9xTzJYWFAyY3hXUzVKdERyM3V2NUF1TDItTQ?oc=5"
-    },
-    {
-      "id": "b263f0aba941fd9f40",
-      "category": "disaster",
-      "subcategory": "disaster_global",
-      "subcategory_label": "해외 재해",
-      "title": "M 5.3 - 272 km SSE of Dunhuang, China",
-      "summary": "USGS significant earthquake magnitude 5.3",
-      "source": "USGS",
-      "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000t9bg",
-      "published_at": "2026-06-30T23:44:54.898000+00:00",
-      "keywords": [
-        "earthquake"
-      ],
-      "priority": 3,
-      "ai_analyzed": false,
-      "insight": "",
-      "trend_tags": [],
-      "confidence": "공식기관 자료",
-      "source_type": "해외 공식 지진정보",
-      "final_source": "USGS",
-      "verification_url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000t9bg"
     },
     {
       "id": "8630f4f67d03ab9523",
@@ -4372,138 +4130,6 @@
       "source_type": "뉴스·기관자료",
       "final_source": "원문 제공기관",
       "verification_url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1YdlNlVXp4Tm1Sd05Xek1KR21qMWhxeU1uLWJRcTFZM1JhVVhOQng2aXBnYWZYeGdaUkRoWEZadFBwS0xjZUh3U0g2T3RaUlI5MWc?oc=5"
-    },
-    {
-      "id": "c0f71f427b688d25b5",
-      "category": "disaster",
-      "subcategory": "disaster_global",
-      "subcategory_label": "해외 재해",
-      "title": "M 4.2 - 27 km WNW of Hope, Alaska",
-      "summary": "USGS significant earthquake magnitude 4.2",
-      "source": "USGS",
-      "url": "https://earthquake.usgs.gov/earthquakes/eventpage/aka2026mpitdk",
-      "published_at": "2026-06-27T05:25:52.321000+00:00",
-      "keywords": [
-        "earthquake"
-      ],
-      "priority": 3,
-      "ai_analyzed": false,
-      "insight": "",
-      "trend_tags": [],
-      "confidence": "공식기관 자료",
-      "source_type": "해외 공식 지진정보",
-      "final_source": "USGS",
-      "verification_url": "https://earthquake.usgs.gov/earthquakes/eventpage/aka2026mpitdk"
-    },
-    {
-      "id": "ba04307041cc8955a6",
-      "category": "disaster",
-      "subcategory": "disaster_global",
-      "subcategory_label": "해외 재해",
-      "title": "M 6.5 - 44 km SW of Balangonan, Philippines",
-      "summary": "USGS significant earthquake magnitude 6.5",
-      "source": "USGS",
-      "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000t8ec",
-      "published_at": "2026-06-26T11:34:41.463000+00:00",
-      "keywords": [
-        "earthquake"
-      ],
-      "priority": 3,
-      "ai_analyzed": false,
-      "insight": "",
-      "trend_tags": [],
-      "confidence": "공식기관 자료",
-      "source_type": "해외 공식 지진정보",
-      "final_source": "USGS",
-      "verification_url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000t8ec"
-    },
-    {
-      "id": "b055722037eed0e9c2",
-      "category": "disaster",
-      "subcategory": "disaster_global",
-      "subcategory_label": "해외 재해",
-      "title": "M 6.9 - 33 km ENE of Noda, Japan",
-      "summary": "USGS significant earthquake magnitude 6.9",
-      "source": "USGS",
-      "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000t7zq",
-      "published_at": "2026-06-24T22:30:12.989000+00:00",
-      "keywords": [
-        "earthquake"
-      ],
-      "priority": 3,
-      "ai_analyzed": false,
-      "insight": "",
-      "trend_tags": [],
-      "confidence": "공식기관 자료",
-      "source_type": "해외 공식 지진정보",
-      "final_source": "USGS",
-      "verification_url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000t7zq"
-    },
-    {
-      "id": "6810cb1e1d2fd6ef27",
-      "category": "disaster",
-      "subcategory": "disaster_global",
-      "subcategory_label": "해외 재해",
-      "title": "M 7.5 - 20 km ESE of Yumare, Venezuela",
-      "summary": "USGS significant earthquake magnitude 7.5",
-      "source": "USGS",
-      "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000t7zp",
-      "published_at": "2026-06-24T22:05:11.743000+00:00",
-      "keywords": [
-        "earthquake"
-      ],
-      "priority": 3,
-      "ai_analyzed": false,
-      "insight": "",
-      "trend_tags": [],
-      "confidence": "공식기관 자료",
-      "source_type": "해외 공식 지진정보",
-      "final_source": "USGS",
-      "verification_url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000t7zp"
-    },
-    {
-      "id": "80e7149e0f24be0fd7",
-      "category": "disaster",
-      "subcategory": "disaster_global",
-      "subcategory_label": "해외 재해",
-      "title": "M 7.2 - 21 km ENE of San Felipe, Venezuela",
-      "summary": "USGS significant earthquake magnitude 7.2",
-      "source": "USGS",
-      "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000t7zc",
-      "published_at": "2026-06-24T22:04:34.363000+00:00",
-      "keywords": [
-        "earthquake"
-      ],
-      "priority": 3,
-      "ai_analyzed": false,
-      "insight": "",
-      "trend_tags": [],
-      "confidence": "공식기관 자료",
-      "source_type": "해외 공식 지진정보",
-      "final_source": "USGS",
-      "verification_url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000t7zc"
-    },
-    {
-      "id": "1eef4fde8e165651cc",
-      "category": "disaster",
-      "subcategory": "disaster_global",
-      "subcategory_label": "해외 재해",
-      "title": "M 5.6 - 11 km N of Redwood Valley, CA",
-      "summary": "USGS significant earthquake magnitude 5.59",
-      "source": "USGS",
-      "url": "https://earthquake.usgs.gov/earthquakes/eventpage/nc75382936",
-      "published_at": "2026-06-24T15:10:40.760000+00:00",
-      "keywords": [
-        "earthquake"
-      ],
-      "priority": 3,
-      "ai_analyzed": false,
-      "insight": "",
-      "trend_tags": [],
-      "confidence": "공식기관 자료",
-      "source_type": "해외 공식 지진정보",
-      "final_source": "USGS",
-      "verification_url": "https://earthquake.usgs.gov/earthquakes/eventpage/nc75382936"
     },
     {
       "id": "2d4ea2472987cbba91",
@@ -4636,7 +4262,7 @@
       "source_type": "해외 공식 재난경보",
       "final_source": "GDACS",
       "verification_url": "https://www.gdacs.org/report.aspx?eventtype=DR&eventid=1018431",
-      "gdacs_score": 2.0,
+      "gdacs_score": 2,
       "gdacs_alert_level": "Orange"
     },
     {
@@ -4682,7 +4308,7 @@
       "source_type": "해외 공식 재난경보",
       "final_source": "GDACS",
       "verification_url": "https://www.gdacs.org/report.aspx?eventtype=DR&eventid=1018332",
-      "gdacs_score": 2.0,
+      "gdacs_score": 2,
       "gdacs_alert_level": "Orange"
     },
     {
