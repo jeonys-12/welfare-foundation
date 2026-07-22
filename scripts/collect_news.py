@@ -260,7 +260,7 @@ def collect_ngo_official():
   for page_url in ngo["pages"]:
    try:
     doc=fetch(page_url).decode("utf-8","replace"); seen=set()
-    for m in re.finditer(r'<a\\b[^>]*href=["\\']([^"\\']+)["\\'][^>]*>(.*?)</a>',doc,re.I|re.S):
+    for m in re.finditer(r"<a\\b[^>]*href=[\"']([^\"']+)[\"'][^>]*>(.*?)</a>",doc,re.I|re.S):
      url=urljoin(page_url,html.unescape(m.group(1)))
      if not is_official_ngo(url,ngo["domains"]) or url in seen: continue
      title=clean(m.group(2))
