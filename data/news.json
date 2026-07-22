@@ -1,11 +1,16 @@
 {
-  "updated_at": "2026-07-22T01:39:21.168055+00:00",
+  "updated_at": "2026-07-22T01:46:45.782975+00:00",
   "item_count": 22,
-  "errors": [],
+  "errors": [
+    {
+      "source": "openai",
+      "error": "The read operation timed out"
+    }
+  ],
   "ai_status": {
-    "enabled": false,
+    "enabled": true,
     "analyzed": 0,
-    "message": "OPENAI_API_KEY가 없어 기본 요약을 사용했습니다."
+    "message": "AI 분석 실패 — 기본 요약 유지"
   },
   "items": [
     {
