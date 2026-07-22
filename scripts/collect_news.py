@@ -255,6 +255,9 @@ def parse_gdacs_rss(raw,min_score=GDACS_MIN_SCORE):
     if score_text: break
   event_type=gdacs_xml_value(e,"eventtype")
   event_id=gdacs_xml_value(e,"eventid")
+  alert_level=gdacs_xml_value(e,"alertlevel").lower()
+  # 공식 구간상 Green은 1 미만이므로 Orange/Red만 점수 검증 대상으로 삼는다.
+  if alert_level not in ("orange","red"): continue
   try: rss_score=float(score_text)
   except (TypeError,ValueError): continue
   # 상세 API의 수치가 웹 이벤트 화면과 동일한 최종 GDACS Score다.
