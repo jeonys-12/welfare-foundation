@@ -6,6 +6,7 @@ from pathlib import Path
 from urllib.parse import quote, urljoin, urlparse
 from urllib.request import Request, urlopen
 import xml.etree.ElementTree as ET
+from html.parser import HTMLParser
 
 ROOT=Path(__file__).resolve().parents[1]
 OUT=ROOT/"data/news.json"
@@ -19,6 +20,8 @@ KBS_SEARCH_URLS=[
 ]
 DISASTER_DAYS=30
 NGO_DAYS=30
+MAX_RESPONSE_BYTES=5*1024*1024
+MAX_PAGE_LINKS=300
 NGO_KEYWORDS=[
  "NGO","비정부기구","모금","후원","후원금","기부","기부금","나눔","캠페인","구호",
  "긴급구호","긴급지원","인도적 지원","지원사업","아동지원","취약계층","국제개발협력",
@@ -99,12 +102,30 @@ def clean(s):
  s=html.unescape(re.sub(r"<[^>]+>"," ",s or ""))
  return re.sub(r"\s+"," ",s).strip()
 
+class AnchorParser(HTMLParser):
+ def __init__(self,limit=MAX_PAGE_LINKS):
+  super().__init__(convert_charrefs=True); self.limit=limit; self.links=[]; self.href=None; self.parts=[]
+ def handle_starttag(self,tag,attrs):
+  if tag.lower()=="a" and self.href is None and len(self.links)<self.limit:
+   self.href=dict(attrs).get("href"); self.parts=[]
+ def handle_data(self,data):
+  if self.href is not None: self.parts.append(data)
+ def handle_endtag(self,tag):
+  if tag.lower()=="a" and self.href is not None:
+   self.links.append((self.href," ".join(self.parts))); self.href=None; self.parts=[]
+
+def parse_anchors(doc,limit=MAX_PAGE_LINKS):
+ parser=AnchorParser(limit); parser.feed(doc); parser.close(); return parser.links
+
 def fetch(url, data=None, headers=None, tries=2, timeout=35):
  hdr={"User-Agent":UA, **(headers or {})}
  for i in range(tries):
   try:
    with urlopen(Request(url,data=data,headers=hdr),timeout=timeout) as r:
-    return r.read()
+    raw=r.read(MAX_RESPONSE_BYTES+1)
+    if len(raw)>MAX_RESPONSE_BYTES:
+     raise ValueError(f"response too large: {len(raw)} bytes")
+    return raw
   except Exception:
    if i+1==tries: raise
    time.sleep(1+i)
@@ -260,11 +281,12 @@ def collect_ngo_official():
   for page_url in ngo["pages"]:
    try:
     doc=fetch(page_url).decode("utf-8","replace"); seen=set()
-    for m in re.finditer(r"<a\\b[^>]*href=[\"']([^\"']+)[\"'][^>]*>(.*?)</a>",doc,re.I|re.S):
-     url=urljoin(page_url,html.unescape(m.group(1)))
+    for href,anchor_text in parse_anchors(doc):
+     url=urljoin(page_url,html.unescape(href))
      if not is_official_ngo(url,ngo["domains"]) or url in seen: continue
-     title=clean(m.group(2))
-     context=clean(doc[max(0,m.start()-500):min(len(doc),m.end()+500)])
+     title=clean(anchor_text)
+     pos=doc.find(href)
+     context=clean(doc[max(0,pos-500):min(len(doc),pos+len(href)+500)]) if pos>=0 else title
      stamp=parse_date_flexible(context)
      item=ngo_item(title,url,context,stamp,ngo["name"],"NGO 공식 홈페이지 직접수집")
      if item: seen.add(url); out.append(item)
