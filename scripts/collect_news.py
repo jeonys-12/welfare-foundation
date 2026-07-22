@@ -218,9 +218,11 @@ def parse_gdacs_rss(raw,min_score=GDACS_MIN_SCORE):
  root=ET.fromstring(raw); out=[]
  for e in root.findall(".//item")[:40]:
   score_text=""
+  # GDACS RSS에는 여러 종류의 score가 있으므로 정확한 alertscore만 사용한다.
+  # 일반 <score>를 허용하면 severity/episode score를 GDACS Score로 오인할 수 있다.
   for child in e.iter():
    local=child.tag.rsplit("}",1)[-1].lower()
-   if local in ("alertscore","score"):
+   if local=="alertscore":
     score_text=clean(child.text)
     if score_text: break
   try: score=float(score_text)
@@ -280,9 +282,9 @@ def keep_recent_disasters(old_items,days=DISASTER_DAYS):
  for item in old_items:
   if item.get("category")!="disaster": continue
   if item.get("source")=="GDACS":
-   try: score=float(item.get("gdacs_score"))
-   except (TypeError,ValueError): continue
-   if score<GDACS_MIN_SCORE: continue
+   # GDACS는 매 실행마다 공식 RSS에서 다시 수집·검증한다.
+   # 과거 데이터에 잘못 저장된 score가 30일 병합으로 되살아나는 것을 차단한다.
+   continue
   try:
    stamp=datetime.fromisoformat(item.get("published_at","").replace("Z","+00:00"))
    if stamp.tzinfo is None: stamp=stamp.replace(tzinfo=timezone.utc)
