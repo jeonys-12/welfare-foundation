@@ -214,27 +214,6 @@ def collect_kr_official():
  return out,errors
 
 
-def gdacs_api_score(event_type,event_id):
- if not event_type or not event_id: return None
- url=("https://www.gdacs.org/gdacsapi/api/events/geteventdata?eventtype="
-      +quote(event_type)+"&eventid="+quote(event_id))
- payload=json.loads(fetch(url,tries=1,timeout=25))
- preferred=[]; fallback=[]
- def walk(value):
-  if isinstance(value,dict):
-   for key,val in value.items():
-    name=str(key).lower().replace("_","")
-    if name=="alertscore": preferred.append(val)
-    elif name=="score": fallback.append(val)
-    walk(val)
-  elif isinstance(value,list):
-   for val in value: walk(val)
- walk(payload)
- for value in preferred+fallback:
-  try: return float(value)
-  except (TypeError,ValueError): pass
- return None
-
 def gdacs_xml_value(element,name):
  for child in element.iter():
   if child.tag.rsplit("}",1)[-1].lower()==name:
@@ -245,36 +224,24 @@ def gdacs_xml_value(element,name):
 def parse_gdacs_rss(raw,min_score=GDACS_MIN_SCORE):
  root=ET.fromstring(raw); out=[]
  for e in root.findall(".//item")[:40]:
-  score_text=""
-  # GDACS RSS에는 여러 종류의 score가 있으므로 정확한 alertscore만 사용한다.
-  # 일반 <score>를 허용하면 severity/episode score를 GDACS Score로 오인할 수 있다.
-  for child in e.iter():
-   local=child.tag.rsplit("}",1)[-1].lower()
-   if local=="alertscore":
-    score_text=clean(child.text)
-    if score_text: break
-  event_type=gdacs_xml_value(e,"eventtype")
-  event_id=gdacs_xml_value(e,"eventid")
+  # RSS의 공식 alertscore와 alertlevel만 사용한다. 일반 score/API score는
+  # 성격이 다른 값일 수 있어 GDACS Score 판정에 사용하지 않는다.
+  score_text=gdacs_xml_value(e,"alertscore")
   alert_level=gdacs_xml_value(e,"alertlevel").lower()
-  # 공식 구간상 Green은 1 미만이므로 Orange/Red만 점수 검증 대상으로 삼는다.
-  if alert_level not in ("orange","red"): continue
-  try: rss_score=float(score_text)
+  try: score=float(score_text)
   except (TypeError,ValueError): continue
-  # 상세 API의 수치가 웹 이벤트 화면과 동일한 최종 GDACS Score다.
-  # RSS 값만으로 통과시키지 않으며 API 검증 실패 항목도 보수적으로 제외한다.
-  try: score=gdacs_api_score(event_type,event_id)
-  except Exception: continue
-  if score is None or score<min_score: continue
+  if score<min_score or alert_level not in ("orange","red"): continue
+
   title=clean(e.findtext("title")); link=clean(e.findtext("link"))
-  desc=clean(e.findtext("description")); source=clean(e.findtext("source")) or "GDACS"
-  combined=title+" "+desc+" "+source
+  desc=clean(e.findtext("description"))
+  combined=title+" "+desc+" GDACS"
   if not title or not link or not relevant("disaster","disaster_global",combined): continue
   pub=clean(e.findtext("pubDate"))
   try: stamp=datetime.strptime(pub,"%a, %d %b %Y %H:%M:%S %Z").replace(tzinfo=timezone.utc).isoformat()
   except Exception: stamp=datetime.now(timezone.utc).isoformat()
   item=disaster_item("disaster_global",title,link,desc,stamp,"GDACS","해외 공식 재난경보")
   if not item: continue
-  item.update({"gdacs_score":score,"keywords":item["keywords"][:6],
+  item.update({"gdacs_score":score,"gdacs_alert_level":alert_level.title(),
                "final_source":"GDACS","confidence":"공식기관 자료",
                "verification_url":link})
   out.append(item)
@@ -318,9 +285,13 @@ def keep_recent_disasters(old_items,days=DISASTER_DAYS):
  kept=[]
  for item in old_items:
   if item.get("category")!="disaster": continue
-  if item.get("source")=="GDACS":
-   # GDACS는 매 실행마다 공식 RSS에서 다시 수집·검증한다.
-   # 과거 데이터에 잘못 저장된 score가 30일 병합으로 되살아나는 것을 차단한다.
+  is_gdacs=(
+   str(item.get("source","")).strip().lower()=="gdacs"
+   or str(item.get("final_source","")).strip().lower()=="gdacs"
+   or "gdacs.org" in str(item.get("url","")).lower()
+  )
+  if is_gdacs:
+   # GDACS는 누적본을 재사용하지 않고 매 실행의 검증된 RSS 결과만 사용한다.
    continue
   try:
    stamp=datetime.fromisoformat(item.get("published_at","").replace("Z","+00:00"))
