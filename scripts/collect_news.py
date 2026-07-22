@@ -51,6 +51,7 @@ KR_OFFICIAL_PAGES=[
  ("소방청","https://www.nfa.go.kr/nfa/news/pressrelease/press/?boardId=bbs_0000000000000010&mode=list"),
 ]
 GDACS_RSS_URL="https://www.gdacs.org/xml/rss.xml"
+GDACS_MIN_SCORE=1.0
 RELIEFWEB_API_URL="https://api.reliefweb.int/v1/reports?appname=welfare-foundation-monitor&limit=40&profile=list&preset=latest"
 USGS_FEED_URL="https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/significant_month.geojson"
 
@@ -212,10 +213,38 @@ def collect_kr_official():
    errors.append({"source":"국내 공식 "+source,"error":str(e)[:160]})
  return out,errors
 
+
+def parse_gdacs_rss(raw,min_score=GDACS_MIN_SCORE):
+ root=ET.fromstring(raw); out=[]
+ for e in root.findall(".//item")[:40]:
+  score_text=""
+  for child in e.iter():
+   local=child.tag.rsplit("}",1)[-1].lower()
+   if local in ("alertscore","score"):
+    score_text=clean(child.text)
+    if score_text: break
+  try: score=float(score_text)
+  except (TypeError,ValueError): continue
+  if score<min_score: continue
+  title=clean(e.findtext("title")); link=clean(e.findtext("link"))
+  desc=clean(e.findtext("description")); source=clean(e.findtext("source")) or "GDACS"
+  combined=title+" "+desc+" "+source
+  if not title or not link or not relevant("disaster","disaster_global",combined): continue
+  pub=clean(e.findtext("pubDate"))
+  try: stamp=datetime.strptime(pub,"%a, %d %b %Y %H:%M:%S %Z").replace(tzinfo=timezone.utc).isoformat()
+  except Exception: stamp=datetime.now(timezone.utc).isoformat()
+  item=disaster_item("disaster_global",title,link,desc,stamp,"GDACS","해외 공식 재난경보")
+  if not item: continue
+  item.update({"gdacs_score":score,"keywords":item["keywords"][:6],
+               "final_source":"GDACS","confidence":"공식기관 자료",
+               "verification_url":link})
+  out.append(item)
+ return out
+
 def collect_global_official():
  out=[]; errors=[]
  try:
-  for item in parse_rss(fetch(GDACS_RSS_URL),"disaster","disaster_global"):
+  for item in parse_gdacs_rss(fetch(GDACS_RSS_URL)):
    item.update({"source":"GDACS","source_type":"해외 공식 재난경보",
                 "final_source":"GDACS","confidence":"공식기관 자료",
                 "verification_url":item["url"]})
