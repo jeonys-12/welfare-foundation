@@ -1,35 +1,30 @@
-# 공익·ESG 인사이트 모니터
+# 공익·사회공헌 인사이트 모니터
 
-공익법인 관련 법·정책, ESG·기부 트렌드, 기업 사회공헌, 국내외 재난, NGO 활동, KBS 동행을 한 화면에서 확인하는 반응형 모니터링 대시보드입니다.
+공익법인 관련법, 기업 사회공헌과 ESG·기부 트렌드, 국내외 재해, NGO 모금·사업, KBS 동행을 매일 수집하고 OpenAI API로 분석하는 반응형 대시보드입니다.
 
-## 주요 기능
+## 카테고리
 
-- 6개 주제별 뉴스·공시 자동 수집
-- 출처·게시일·핵심 키워드 표시
-- 검색, 기간·주제 필터, 중요도 정렬
-- 모바일/태블릿/PC 반응형 UI
-- 매일 오전 7시(KST) GitHub Actions 자동 갱신
-- GitHub Pages 자동 배포
-- RSS 수집 실패 시 기존 데이터를 보존하고 상태 기록
+1. 공익법인 관련법
+   - 공익법인 세법개정안
+   - 공익법인 법인세법
+   - 공익법인 증여세법
+   - 공익법인 공정거래법
+   - 공익법인 회계기준
+2. 기업 사회공헌 사례 — ESG 및 기부 트렌드 분석 포함
+3. 국내외 재해 및 발생상황
+4. NGO 모금 및 사업사례
+5. KBS 동행 모니터링 및 요약
+
+## OpenAI 분석 설정
+
+저장소 **Settings → Secrets and variables → Actions → Secrets**에 `OPENAI_API_KEY`를 등록하세요. 키는 브라우저나 저장소 파일에 포함되지 않고 GitHub Actions 실행 시에만 전달됩니다.
+
+선택 사항으로 **Variables**에 `OPENAI_MODEL`을 등록할 수 있습니다. 미등록 시 `gpt-5-mini`를 사용합니다. 매 실행마다 최신 수집물 중 최대 40건을 분석해 핵심요약, 실무 시사점, 트렌드 태그, 중요도, 신뢰도를 생성합니다. API 호출 실패 시에도 원래 RSS 요약을 보존하고 배포를 계속합니다.
 
 ## 자동 업데이트
 
-`.github/workflows/update-and-deploy.yml`은 매일 07:00 KST(22:00 UTC)에 실행됩니다. GitHub Actions의 `Run workflow`로 수동 실행할 수도 있습니다.
+`.github/workflows/update-and-deploy.yml`은 매일 07:00 KST(22:00 UTC)에 실행됩니다. Actions의 **Run workflow**로 수동 실행할 수 있습니다. Pages 최초 설정은 **Settings → Pages → Source → GitHub Actions**입니다.
 
-## GitHub Pages 최초 설정
+## 정보 이용 원칙
 
-저장소 **Settings → Pages → Build and deployment → Source**에서 **GitHub Actions**를 선택하세요. 이후 Actions에서 **Update news and deploy Pages**를 한 번 수동 실행하면 배포 주소가 생성됩니다.
-
-## 로컬 확인
-
-정적 파일은 로컬 서버로 확인하세요.
-
-```bash
-python -m http.server 8000
-```
-
-브라우저에서 http://localhost:8000 을 엽니다.
-
-## 데이터 출처
-
-공식기관·원문 매체를 우선하며, Google News RSS는 발견 경로로만 사용합니다. 각 카드의 링크를 눌러 반드시 원문과 게시일을 확인하세요. 수집 결과는 정보 모니터링 목적이며 법률·재난 대응의 최종 판단 근거가 아닙니다.
+공식기관·원문 매체를 우선하고 Google News RSS는 발견 경로로 사용합니다. AI 분석은 제목과 RSS 요약 범위에서만 생성되며 법률·재해 대응·기부 결정의 최종 근거가 아닙니다. 카드의 **원문 보기**에서 출처와 최신 내용을 확인하세요.
