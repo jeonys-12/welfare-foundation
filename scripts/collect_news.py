@@ -556,9 +556,12 @@ def analyze_with_openai(items):
 
 DEDUP_STOPWORDS={
  "관련","통해","위해","대한","대상","지원","후원","사업","활동","진행","제공","참여",
- "기자","뉴스","보도","단독","종합","영상","사진","네이트","연합뉴스","연합뉴스tv",
- "뉴시스","뉴스1","머니투데이","한국경제","매일경제","서울경제","이데일리"
+ "기자","뉴스","보도","보도입니다","단독","종합","영상","사진","프로그램","기업","사회공헌",
+ "네이트","연합뉴스","연합뉴스tv","뉴시스","뉴스1","머니투데이","한국경제","매일경제",
+ "서울경제","이데일리"
 }
+KOREAN_PARTICLES=("으로부터","에게서","까지","부터","처럼","보다","으로","에서","에게","하고",
+                  "이며","과","와","가","이","은","는","을","를","에","의","도")
 
 def item_datetime(item):
  try:
@@ -569,14 +572,30 @@ def item_datetime(item):
 
 def normalized_event_text(value):
  text=clean(str(value or "")).lower()
- text=re.sub(r"\s*[-|]\s*(?:네이트|연합뉴스tv?|뉴시스|뉴스1|머니투데이|한국경제|매일경제|서울경제|이데일리)\s*$","",text)
+ text=re.sub(r"\s*[-|]\s*(?:네이트|연합뉴스tv?|뉴시스|뉴스1|머니투데이|한국경제|매일경제|서울경제|이데일리|[\w.]+\.(?:com|co\.kr|kr))\s*$","",text)
+ text=re.sub(r"(?<=\d),(?=\d)","",text)
  text=re.sub(r"[^0-9a-z가-힣]+"," ",text)
  return re.sub(r"\s+"," ",text).strip()
+
+def normalized_event_token(token):
+ token=token.lower()
+ for suffix in KOREAN_PARTICLES:
+  if token.endswith(suffix) and len(token)>len(suffix)+1:
+   token=token[:-len(suffix)]
+   break
+ return token
 
 def event_tokens(item):
  text=normalized_event_text(item.get("title","")+" "+item.get("summary",""))
  tokens=re.findall(r"[가-힣]{2,}|[a-z]{3,}|\d+(?:억|만|천|년|명|원|회)?",text)
- return {token for token in tokens if token not in DEDUP_STOPWORDS}
+ return {
+  normalized_event_token(token) for token in tokens
+  if normalized_event_token(token) not in DEDUP_STOPWORDS and len(normalized_event_token(token))>=2
+ }
+
+def event_ngrams(item,size=3):
+ compact=re.sub(r"\s+","",normalized_event_text(item.get("title","")+" "+item.get("summary","")))
+ return {compact[i:i+size] for i in range(max(0,len(compact)-size+1))}
 
 def same_news_event(left,right):
  if left.get("official_baseline") or right.get("official_baseline"):
@@ -589,13 +608,22 @@ def same_news_event(left,right):
  right_title=normalized_event_text(right.get("title",""))
  if not left_title or not right_title:
   return False
+ if left_title==right_title:
+  return True
  title_ratio=difflib.SequenceMatcher(None,left_title,right_title).ratio()
  left_tokens,right_tokens=event_tokens(left),event_tokens(right)
  common=left_tokens & right_tokens
- union=left_tokens | right_tokens
- anchors={token for token in common if len(token)>=4 or any(ch.isdigit() for ch in token)}
- token_ratio=len(common)/len(union) if union else 0
- return bool(anchors) and (title_ratio>=0.72 or (len(common)>=3 and token_ratio>=0.34) or (len(common)>=5 and title_ratio>=0.48))
+ anchors={token for token in common if len(token)>=3 and token not in DEDUP_STOPWORDS}
+ left_grams,right_grams=event_ngrams(left),event_ngrams(right)
+ gram_common=len(left_grams & right_grams)
+ gram_ratio=(2*gram_common/(len(left_grams)+len(right_grams))) if left_grams and right_grams else 0
+ shared_numbers={token for token in anchors if any(ch.isdigit() for ch in token)}
+ return (
+  title_ratio>=0.68
+  or gram_ratio>=0.50
+  or (len(anchors)>=2 and gram_ratio>=0.25)
+  or (bool(shared_numbers) and len(anchors)>=2 and gram_ratio>=0.18)
+ )
 
 def representative_score(item):
  source_type=str(item.get("source_type",""))
