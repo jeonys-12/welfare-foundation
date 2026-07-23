@@ -615,8 +615,18 @@ def main():
  except Exception as e:
   errors.append({"source":"openai","error":str(e)[:200]})
   ai_status={"enabled":bool(OPENAI_API_KEY),"analyzed":0,"message":"AI 분석 실패 — 기본 요약 유지"}
- dedup.sort(key=lambda x:((x.get("priority") if isinstance(x.get("priority"),(int,float)) else 0),x.get("published_at","")),reverse=True)
- dedup=dedup[:MAX_ITEMS]
+ # 전체 상한은 유지하되 최근 30일 KBS 회차가 대량 수집원에 밀려 모두 사라지지 않게 보존한다.
+ sort_key=lambda x:((x.get("priority") if isinstance(x.get("priority"),(int,float)) else 0),x.get("published_at",""))
+ dedup.sort(key=sort_key,reverse=True)
+ selected=dedup[:MAX_ITEMS]
+ selected_ids={x.get("id") for x in selected}
+ missing_kbs=[x for x in keep_recent_kbs(dedup,30) if x.get("id") not in selected_ids]
+ if missing_kbs:
+  replaceable=[i for i,x in enumerate(selected) if x.get("category")!="kbs"]
+  for item,index in zip(missing_kbs,reversed(replaceable)):
+   selected[index]=item
+ selected.sort(key=sort_key,reverse=True)
+ dedup=selected[:MAX_ITEMS]
  payload={"updated_at":datetime.now(timezone.utc).isoformat(),"item_count":len(dedup),
           "errors":errors,"ai_status":ai_status,"source_guides":SOURCE_GUIDES,"items":dedup}
  OUT.parent.mkdir(exist_ok=True)
