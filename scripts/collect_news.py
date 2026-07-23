@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Public-interest monitoring collector with optional OpenAI analysis."""
-import hashlib, html, json, os, re, time
+import difflib, hashlib, html, json, os, re, time
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from urllib.parse import quote, urljoin, urlparse
@@ -554,6 +554,72 @@ def analyze_with_openai(items):
   analyzed+=1
  return items, {"enabled":True,"model":OPENAI_MODEL,"analyzed":analyzed,"message":"OpenAI 분석 완료"}
 
+DEDUP_STOPWORDS={
+ "관련","통해","위해","대한","대상","지원","후원","사업","활동","진행","제공","참여",
+ "기자","뉴스","보도","단독","종합","영상","사진","네이트","연합뉴스","연합뉴스tv",
+ "뉴시스","뉴스1","머니투데이","한국경제","매일경제","서울경제","이데일리"
+}
+
+def item_datetime(item):
+ try:
+  stamp=datetime.fromisoformat(str(item.get("published_at","")).replace("Z","+00:00"))
+  return stamp if stamp.tzinfo else stamp.replace(tzinfo=timezone.utc)
+ except Exception:
+  return datetime.min.replace(tzinfo=timezone.utc)
+
+def normalized_event_text(value):
+ text=clean(str(value or "")).lower()
+ text=re.sub(r"\s*[-|]\s*(?:네이트|연합뉴스tv?|뉴시스|뉴스1|머니투데이|한국경제|매일경제|서울경제|이데일리)\s*$","",text)
+ text=re.sub(r"[^0-9a-z가-힣]+"," ",text)
+ return re.sub(r"\s+"," ",text).strip()
+
+def event_tokens(item):
+ text=normalized_event_text(item.get("title","")+" "+item.get("summary",""))
+ tokens=re.findall(r"[가-힣]{2,}|[a-z]{3,}|\d+(?:억|만|천|년|명|원|회)?",text)
+ return {token for token in tokens if token not in DEDUP_STOPWORDS}
+
+def same_news_event(left,right):
+ if left.get("category")!=right.get("category") or left.get("subcategory")!=right.get("subcategory"):
+  return False
+ if abs((item_datetime(left)-item_datetime(right)).total_seconds())>3*86400:
+  return False
+ left_title=normalized_event_text(left.get("title",""))
+ right_title=normalized_event_text(right.get("title",""))
+ if not left_title or not right_title:
+  return False
+ title_ratio=difflib.SequenceMatcher(None,left_title,right_title).ratio()
+ left_tokens,right_tokens=event_tokens(left),event_tokens(right)
+ common=left_tokens & right_tokens
+ union=left_tokens | right_tokens
+ token_ratio=len(common)/len(union) if union else 0
+ return title_ratio>=0.72 or (len(common)>=3 and token_ratio>=0.34) or (len(common)>=5 and title_ratio>=0.48)
+
+def representative_score(item):
+ source_type=str(item.get("source_type",""))
+ confidence=str(item.get("confidence",""))
+ official=int("공식" in source_type or "공식" in confidence or item.get("official_baseline") is True)
+ priority=item.get("priority") if isinstance(item.get("priority"),(int,float)) else 0
+ detail=min(len(clean(item.get("title","")))+len(clean(item.get("summary",""))),700)
+ return (official,priority,detail,item_datetime(item).timestamp())
+
+def deduplicate_news_events(items):
+ groups=[]
+ for item in sorted(items,key=item_datetime,reverse=True):
+  group=next((g for g in groups if any(same_news_event(item,member) for member in g)),None)
+  if group is None:
+   groups.append([item])
+  else:
+   group.append(item)
+ representatives=[]
+ for group in groups:
+  representative=max(group,key=representative_score)
+  if len(group)>1:
+   representative["duplicate_count"]=len(group)-1
+  else:
+   representative.pop("duplicate_count",None)
+  representatives.append(representative)
+ return representatives
+
 def main():
  old={"items":[]}; errors=[]; items=[]
  try: old=json.loads(OUT.read_text(encoding="utf-8"))
@@ -602,13 +668,10 @@ def main():
    errors.append({"source":"quality_filter","error":"markup, menu, or non-event item skipped: "+clean(x.get("title",""))[:80]})
    continue
   valid_items.append(x)
- seen=set(); dedup=[]
- for x in sorted(valid_items,key=lambda z:z.get("published_at",""),reverse=True):
-  key=re.sub(r"\W","",x.get("title","").lower())[:120]
-  if not key or key in seen: continue
-  seen.add(key)
+ dedup=deduplicate_news_events(valid_items)
+ for x in dedup:
+  key=normalized_event_text(x.get("title",""))[:160]
   x["id"]=hashlib.sha256((x["category"]+"|"+x["subcategory"]+"|"+key).encode()).hexdigest()[:18]
-  dedup.append(x)
  if not dedup: dedup=[x for x in old.get("items",[]) if isinstance(x,dict)]
  ai_status={"enabled":False,"analyzed":0,"message":"분석 미실행"}
  try: dedup,ai_status=analyze_with_openai(dedup)
