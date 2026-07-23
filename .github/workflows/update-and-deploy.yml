@@ -2,7 +2,9 @@ name: Update news and deploy Pages
 
 on:
   schedule:
-    - cron: "0 22 * * *" # 07:00 Asia/Seoul (UTC+9)
+    # GitHub Actions scheduled runs can be delayed around the top of the hour.
+    # Start at 06:30 KST so collection and deployment can normally finish by 07:00.
+    - cron: "30 21 * * *" # 06:30 Asia/Seoul (UTC+9)
   workflow_dispatch:
   push:
     branches: [main]
@@ -21,7 +23,7 @@ concurrency:
 jobs:
   collect:
     runs-on: ubuntu-latest
-    timeout-minutes: 25
+    timeout-minutes: 40
     steps:
       - uses: actions/checkout@v5
 
@@ -66,7 +68,7 @@ jobs:
           OPENAI_MODEL: ${{ vars.OPENAI_MODEL || 'gpt-5-mini' }}
         run: |
           set -euo pipefail
-          timeout 20m python scripts/collect_news.py
+          timeout 35m python scripts/collect_news.py
           python -m json.tool data/news.json > /dev/null
 
       # A push-triggered run deploys the freshly generated artifact only. Committing from
