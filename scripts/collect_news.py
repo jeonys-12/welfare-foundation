@@ -579,6 +579,8 @@ def event_tokens(item):
  return {token for token in tokens if token not in DEDUP_STOPWORDS}
 
 def same_news_event(left,right):
+ if left.get("official_baseline") or right.get("official_baseline"):
+  return False
  if left.get("category")!=right.get("category") or left.get("subcategory")!=right.get("subcategory"):
   return False
  if abs((item_datetime(left)-item_datetime(right)).total_seconds())>3*86400:
@@ -591,8 +593,9 @@ def same_news_event(left,right):
  left_tokens,right_tokens=event_tokens(left),event_tokens(right)
  common=left_tokens & right_tokens
  union=left_tokens | right_tokens
+ anchors={token for token in common if len(token)>=4 or any(ch.isdigit() for ch in token)}
  token_ratio=len(common)/len(union) if union else 0
- return title_ratio>=0.72 or (len(common)>=3 and token_ratio>=0.34) or (len(common)>=5 and title_ratio>=0.48)
+ return bool(anchors) and (title_ratio>=0.72 or (len(common)>=3 and token_ratio>=0.34) or (len(common)>=5 and title_ratio>=0.48))
 
 def representative_score(item):
  source_type=str(item.get("source_type",""))
