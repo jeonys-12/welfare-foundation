@@ -558,7 +558,7 @@ DEDUP_STOPWORDS={
  "관련","통해","위해","대한","대상","지원","후원","사업","활동","진행","제공","참여",
  "기자","뉴스","보도","보도입니다","단독","종합","영상","사진","프로그램","기업","사회공헌",
  "네이트","연합뉴스","연합뉴스tv","뉴시스","뉴스1","머니투데이","한국경제","매일경제",
- "서울경제","이데일리"
+ "서울경제","이데일리","캠페인","취약계층","아동","어린이"
 }
 KOREAN_PARTICLES=("으로부터","에게서","까지","부터","처럼","보다","으로","에서","에게","하고",
                   "이며","과","와","가","이","은","는","을","를","에","의","도")
@@ -613,16 +613,16 @@ def same_news_event(left,right):
  title_ratio=difflib.SequenceMatcher(None,left_title,right_title).ratio()
  left_tokens,right_tokens=event_tokens(left),event_tokens(right)
  common=left_tokens & right_tokens
- anchors={token for token in common if len(token)>=3 and token not in DEDUP_STOPWORDS}
+ anchors={token for token in common if len(token)>=4 and token not in DEDUP_STOPWORDS}
  left_grams,right_grams=event_ngrams(left),event_ngrams(right)
  gram_common=len(left_grams & right_grams)
  gram_ratio=(2*gram_common/(len(left_grams)+len(right_grams))) if left_grams and right_grams else 0
- shared_numbers={token for token in anchors if any(ch.isdigit() for ch in token)}
+ shared_numbers={token for token in common if any(ch.isdigit() for ch in token)}
  return (
-  title_ratio>=0.68
-  or gram_ratio>=0.50
-  or (len(anchors)>=2 and gram_ratio>=0.25)
-  or (bool(shared_numbers) and len(anchors)>=2 and gram_ratio>=0.18)
+  title_ratio>=0.72
+  or gram_ratio>=0.58
+  or (len(anchors)>=2 and gram_ratio>=0.18)
+  or (bool(shared_numbers) and len(anchors)>=1 and gram_ratio>=0.15)
  )
 
 def representative_score(item):
