@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-28T06:51:03.538780+00:00",
+  "updated_at": "2026-07-28T07:15:52.984Z",
   "item_count": 150,
   "errors": [
     {
@@ -3585,26 +3585,27 @@
       "verification_url": "https://news.google.com/rss/articles/CBMickFVX3lxTE0weWZSY2ZMMXpabW03Uk5LZ25yUW9yUjRxUFIxcWctbXdNbXFjeWJUUXlBempoSVBpbElzaVBIX0k2LS03LVlubzF3NWpmVVBIclg3Z1dmdFB1LTVpX1g1cmhQbFJ2cDJEb0EtdWwxcmJ0QQ?oc=5"
     },
     {
-      "id": "2a667f2e560988de81",
-      "category": "ngo",
-      "subcategory": "ngo",
-      "subcategory_label": "NGO 모금·사업",
-      "title": "[세이브더칠드런] 아동식사지원사업 > 사진첩 - 밀양시종합사회복지관",
-      "summary": "[세이브더칠드런] 아동식사지원사업 > 사진첩 밀양시종합사회복지관",
-      "source": "밀양시종합사회복지관",
-      "url": "https://news.google.com/rss/articles/CBMiQkFVX3lxTE5UZE5Fdzh6MXBRRWJ2VmREX3ZPODNzRWF4Ym9zWmp6a3gzWDNXMS1YMVRIcGJEWGdpLWtQVWF0cW9mQQ?oc=5",
-      "published_at": "2026-07-21T04:13:00+00:00",
+      "id": "43f51c431ca907f33d",
+      "category": "kbs",
+      "subcategory": "kbs_donghaeng",
+      "subcategory_label": "KBS 동행",
+      "title": "동행 568회 용주 씨의 고군분투 육아일기",
+      "summary": "동행 568회 용주 씨의 고군분투 육아일기 2026-07-25",
+      "source": "KBS 공식 다시보기",
+      "url": "https://vod.kbs.co.kr/m/index.html?program_code=T2014-0877&program_id=PS-2026122475-01-000&section_code=05&sname=vod&source=episode&stype=vod",
+      "published_at": "2026-07-25T00:00:00+00:00",
       "keywords": [
-        "지원사업"
+        "동행",
+        "568회"
       ],
       "priority": 3,
       "ai_analyzed": false,
       "insight": "",
       "trend_tags": [],
-      "confidence": "원문 확인 필요",
-      "source_type": "뉴스·기관자료",
-      "final_source": "원문 제공기관",
-      "verification_url": "https://news.google.com/rss/articles/CBMiQkFVX3lxTE5UZE5Fdzh6MXBRRWJ2VmREX3ZPODNzRWF4Ym9zWmp6a3gzWDNXMS1YMVRIcGJEWGdpLWtQVWF0cW9mQQ?oc=5"
+      "confidence": "공식 KBS 자료",
+      "source_type": "KBS 공식 회차·방송정보",
+      "final_source": "KBS",
+      "verification_url": "https://vod.kbs.co.kr/m/index.html?program_code=T2014-0877&program_id=PS-2026122475-01-000&section_code=05&sname=vod&source=episode&stype=vod"
     },
     {
       "id": "f68471846712cf234a",

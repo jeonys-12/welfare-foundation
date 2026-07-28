@@ -37,6 +37,7 @@ jobs:
           set -euo pipefail
           python -m py_compile scripts/collect_news.py
           python - <<'PY'
+          from datetime import datetime, timezone
           import scripts.collect_news as collector
 
           assert collector.keep_recent_disasters([
@@ -58,6 +59,54 @@ jobs:
               <gdacs:alertlevel>Green</gdacs:alertlevel>
               </item></channel></rss>"""
           ) == []
+
+          assert collector.parse_kbs_date(
+              "3일 전 방송",
+              now=datetime(2026, 7, 28, tzinfo=timezone.utc),
+          ) == "2026-07-25T00:00:00+00:00"
+
+          kbs_api = b"""{
+            "status": 200,
+            "data": [
+              {
+                "program_code": "T2014-0877",
+                "program_id": "PS-2026122475-01-000",
+                "program_number": "568",
+                "program_date": "20260725",
+                "descriptive_video_service_yn": "N",
+                "target_url": "/index.html?source=episode&program_code=T2014-0877&program_id=PS-2026122475-01-000",
+                "description": "[\uc6a9\uc8fc \uc528\uc758 \uace0\uad70\ubd84\ud22c \uc721\uc544\uc77c\uae30] \uc544\ube60\uc640 \ub450 \uc544\ub4e4\uc758 \uc774\uc57c\uae30"
+              },
+              {
+                "program_code": "T2014-0877",
+                "program_id": "PS-OLD-01-000D",
+                "program_number": "543",
+                "program_date": "20260728",
+                "descriptive_video_service_yn": "Y",
+                "target_url": "/index.html?program_code=T2014-0877&program_id=PS-OLD-01-000D",
+                "description": "[\ud574\uc124\ubc29\uc1a1] \uae30\uc874 \ud68c\ucc28"
+              }
+            ]
+          }"""
+          api_items = collector.parse_kbs_api(
+              kbs_api,
+              now=datetime(2026, 7, 28, tzinfo=timezone.utc),
+          )
+          assert len(api_items) == 1
+          assert api_items[0]["title"] == "동행 568회 용주 씨의 고군분투 육아일기"
+          assert api_items[0]["published_at"] == "2026-07-25T00:00:00+00:00"
+
+          kbs_html = b"""<a href="https://vod.kbs.co.kr/m/index.html?program_code=T2014-0877&amp;program_id=PS-2026122475-01-000">
+          <strong>3\xec\x9d\xbc \xec\xa0\x84 \xeb\xb0\xa9\xec\x86\xa1</strong>
+          <p>[\xec\x9a\xa9\xec\xa3\xbc \xec\x94\xa8\xec\x9d\x98 \xea\xb3\xa0\xea\xb5\xb0\xeb\xb6\x84\xed\x88\xac \xec\x9c\xa1\xec\x95\x84\xec\x9d\xbc\xea\xb8\xb0]</p>
+          </a>"""
+          kbs_items = collector.parse_kbs_html(
+              kbs_html,
+              collector.KBS_PROGRAM_URL,
+              "KBS 동행 공식 프로그램",
+          )
+          assert len(kbs_items) == 1
+          assert kbs_items[0]["title"] == "동행 용주 씨의 고군분투 육아일기"
           print("collector validation passed")
           PY
 

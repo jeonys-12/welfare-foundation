@@ -3,7 +3,7 @@
 import difflib, hashlib, html, json, os, re, time
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
-from urllib.parse import quote, urljoin, urlparse
+from urllib.parse import parse_qs, quote, urljoin, urlparse
 from urllib.request import Request, urlopen
 import xml.etree.ElementTree as ET
 from html.parser import HTMLParser
@@ -18,6 +18,12 @@ KBS_SEARCH_URLS=[
  "https://www.kbs.co.kr/m/search/main.html?keyword=%EB%8F%99%ED%96%89",
  "https://www.kbs.co.kr/m/search/replay.html?keyword=%EB%8F%99%ED%96%89",
 ]
+KST=timezone(timedelta(hours=9))
+KBS_PROGRAM_CODE="T2014-0877"
+KBS_REPLAY_API_URL=(
+ "https://reco.kbs.co.kr/v2/search?target=vod_web&keyword=%EB%8F%99%ED%96%89"
+ "&page_size=40&page=1&filter_year=&sort_option="
+)
 DISASTER_DAYS=30
 NGO_DAYS=30
 LAW_DAYS=365
@@ -57,6 +63,7 @@ GDACS_MIN_SCORE=1.0
 RELIEFWEB_API_URL="https://api.reliefweb.int/v1/reports?appname=welfare-foundation-monitor&limit=40&profile=list&preset=latest"
 
 KBS_VERIFIED_SEEDS=[
+ ("동행 568회 용주 씨의 고군분투 육아일기","2026-07-25","https://vod.kbs.co.kr/m/index.html?program_code=T2014-0877&program_id=PS-2026122475-01-000&section_code=05&sname=vod&source=episode&stype=vod"),
  ("동행 567회 산골 소녀 지민이의 독립 선언","2026-07-18","https://vod.kbs.co.kr/m/index.html?program_code=T2014-0877&program_id=PS-2026122474-01-000&section_code=05&sname=vod&source=episode&stype=vod"),
  ("동행 566회 기적의 아빠, 상봉 씨","2026-07-11","https://vod.kbs.co.kr/m/index.html?program_code=T2014-0877&program_id=PS-2026112095-01-000&section_code=05&sname=vod&source=episode&stype=vod"),
  ("동행 565회 오늘도 활짝, 무공해 삼 남매","2026-07-04","https://vod.kbs.co.kr/m/index.html?program_code=T2014-0877&program_id=PS-2026112094-01-000&section_code=05&sname=vod&source=episode&stype=vod"),
@@ -413,7 +420,12 @@ def is_official_kbs(url):
  host=urlparse(url).netloc.lower().split(":")[0]
  return host=="kbs.co.kr" or host.endswith(".kbs.co.kr")
 
-def parse_kbs_date(text):
+def is_kbs_donghaeng_episode_url(url):
+ if not is_official_kbs(url): return False
+ query=parse_qs(urlparse(url).query)
+ return KBS_PROGRAM_CODE in query.get("program_code",[])
+
+def parse_kbs_date(text,now=None):
  patterns=[
   (r"(20\d{2})[.\-/년]\s*(\d{1,2})[.\-/월]\s*(\d{1,2})",("%Y","%m","%d")),
   (r"(20\d{2})(\d{2})(\d{2})",("%Y","%m","%d")),
@@ -424,17 +436,31 @@ def parse_kbs_date(text):
   try:
    return datetime(int(m.group(1)),int(m.group(2)),int(m.group(3)),tzinfo=timezone.utc).isoformat()
   except ValueError: pass
+ # 최신 KBS VOD는 회차·날짜 대신 '오늘/어제/N일 전 방송'으로 먼저 노출될 수 있다.
+ relative=re.search(r"(?:(오늘)|(어제)|(\d{1,3})\s*일\s*전)\s*(?:방송)?",text)
+ if relative:
+  days=0 if relative.group(1) else 1 if relative.group(2) else int(relative.group(3))
+  reference=now or datetime.now(KST)
+  if reference.tzinfo is None: reference=reference.replace(tzinfo=KST)
+  local_date=reference.astimezone(KST).date()-timedelta(days=days)
+  return datetime(local_date.year,local_date.month,local_date.day,tzinfo=timezone.utc).isoformat()
  return ""
 
 def kbs_item(title,url,context,source):
  title=clean(title)
  if not title or not is_official_kbs(url): return None
- episode=re.search(r"(\d{1,4})\s*회",context)
- date=parse_kbs_date(context)
- # 공식 동행 프로그램 페이지에서는 KBS 문구가 없어도 인정한다.
- if "동행" not in title and episode:
-  title="동행 "+episode.group(1)+"회 "+title
- if "동행" not in title: return None
+ episode=re.search(r"(\d{1,4})\s*회",title) or re.search(r"(\d{1,4})\s*회",context)
+ # 현재 카드 안의 날짜를 먼저 사용해 인접 회차 날짜가 섞이는 것을 막는다.
+ date=parse_kbs_date(title) or parse_kbs_date(context)
+ known_episode_url=is_kbs_donghaeng_episode_url(url)
+ if "동행" not in title and not episode and not known_episode_url: return None
+ story=re.search(r"\[([^\[\]]{4,100})\]",title) or re.search(r"\[([^\[\]]{4,100})\]",context)
+ if story:
+  title="동행 "+((episode.group(1)+"회 ") if episode else "")+clean(story.group(1))
+ elif "동행" not in title:
+  cleaned_title=re.sub(r"(?:오늘|어제|\d{1,3}\s*일\s*전)\s*방송","",title)
+  cleaned_title=re.sub(r"20\d{2}[.\-/]\s*\d{1,2}[.\-/]\s*\d{1,2}","",cleaned_title)
+  title="동행 "+((episode.group(1)+"회 ") if episode else "")+clean(cleaned_title)
  if not date:
   # 날짜가 없는 공식 검색 결과는 수집 시각을 방송일로 오인하지 않도록 제외한다.
   return None
@@ -448,6 +474,42 @@ def kbs_item(title,url,context,source):
   "confidence":"공식 KBS 자료","source_type":"KBS 공식 회차·방송정보",
   "final_source":"KBS","verification_url":url
  }
+
+def parse_kbs_api(raw,days=30,now=None):
+ payload=json.loads(raw)
+ if payload.get("status")!=200 or not isinstance(payload.get("data"),list):
+  raise ValueError("unexpected KBS replay API response")
+ reference=now or datetime.now(KST)
+ if reference.tzinfo is None: reference=reference.replace(tzinfo=KST)
+ cutoff_date=reference.astimezone(KST).date()-timedelta(days=days)
+ out=[]; seen=set()
+ for row in payload["data"]:
+  if not isinstance(row,dict) or row.get("program_code")!=KBS_PROGRAM_CODE: continue
+  if row.get("descriptive_video_service_yn")=="Y": continue
+  program_id=clean(str(row.get("program_id","")))
+  number=clean(str(row.get("program_number","")))
+  description=clean(str(row.get("description","")))
+  date=parse_kbs_date(str(row.get("program_date","")))
+  target=clean(str(row.get("target_url","")))
+  if not program_id or not number or not date or not target or program_id in seen: continue
+  if datetime.fromisoformat(date).date()<cutoff_date: continue
+  story=re.search(r"\[([^\[\]]{4,100})\]",description)
+  story_title=clean(story.group(1)) if story else clean(str(row.get("program_title","동행")))
+  url=urljoin("https://vod.kbs.co.kr",html.unescape(target))
+  if not is_kbs_donghaeng_episode_url(url): continue
+  seen.add(program_id)
+  out.append({
+   "id":"","category":"kbs","subcategory":"kbs_donghaeng",
+   "subcategory_label":SUB_LABELS["kbs_donghaeng"],
+   "title":"동행 "+number+"회 "+story_title,
+   "summary":description[:360] or story_title,
+   "source":"KBS 공식 다시보기","url":url,"published_at":date,
+   "keywords":["동행",number+"회"],"priority":3,"ai_analyzed":False,
+   "insight":"","trend_tags":[],"confidence":"공식 KBS 자료",
+   "source_type":"KBS 공식 회차·방송정보","final_source":"KBS",
+   "verification_url":url
+  })
+ return out
 
 def parse_kbs_html(raw,page_url,source):
  doc=raw.decode("utf-8","replace")
@@ -485,6 +547,8 @@ def verified_kbs_seeds(days=30):
 
 def collect_kbs_official():
  out=[]; errors=[]
+ try: out+=parse_kbs_api(fetch(KBS_REPLAY_API_URL))
+ except Exception as e: errors.append({"source":"KBS 공식 다시보기 API","error":str(e)[:160]})
  targets=[(KBS_PROGRAM_URL,"KBS 동행 공식 프로그램")]
  targets += [(url,"KBS 통합검색") for url in KBS_SEARCH_URLS]
  for url,source in targets:
