@@ -74,7 +74,7 @@ jobs:
                 "program_number": "568",
                 "program_date": "20260725",
                 "descriptive_video_service_yn": "N",
-                "target_url": "/index.html?source=episode&program_code=T2014-0877&program_id=PS-2026122475-01-000",
+                "target_url": "/index.html?source=episode&program_code=T2014-0877&program_id=PS-2026122475-01-000&section_code=05",
                 "description": "[\uc6a9\uc8fc \uc528\uc758 \uace0\uad70\ubd84\ud22c \uc721\uc544\uc77c\uae30] \uc544\ube60\uc640 \ub450 \uc544\ub4e4\uc758 \uc774\uc57c\uae30"
               },
               {
@@ -95,6 +95,17 @@ jobs:
           assert len(api_items) == 1
           assert api_items[0]["title"] == "동행 568회 용주 씨의 고군분투 육아일기"
           assert api_items[0]["published_at"] == "2026-07-25T00:00:00+00:00"
+          assert "&section_code=05" in api_items[0]["url"]
+
+          replay_copy = dict(api_items[0])
+          replay_copy.update({
+              "published_at": "2026-07-28T00:00:00+00:00",
+              "priority": 1,
+              "summary": "보조 검색 경로에서 재노출된 같은 회차",
+          })
+          deduped_kbs = collector.deduplicate_news_events([replay_copy, api_items[0]])
+          assert len(deduped_kbs) == 1
+          assert deduped_kbs[0]["published_at"] == "2026-07-25T00:00:00+00:00"
 
           kbs_html = b"""<a href="https://vod.kbs.co.kr/m/index.html?program_code=T2014-0877&amp;program_id=PS-2026122475-01-000">
           <strong>3\xec\x9d\xbc \xec\xa0\x84 \xeb\xb0\xa9\xec\x86\xa1</strong>

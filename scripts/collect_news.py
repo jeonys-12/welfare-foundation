@@ -490,12 +490,13 @@ def parse_kbs_api(raw,days=30,now=None):
   number=clean(str(row.get("program_number","")))
   description=clean(str(row.get("description","")))
   date=parse_kbs_date(str(row.get("program_date","")))
-  target=clean(str(row.get("target_url","")))
+  target=str(row.get("target_url","")).strip()
   if not program_id or not number or not date or not target or program_id in seen: continue
   if datetime.fromisoformat(date).date()<cutoff_date: continue
   story=re.search(r"\[([^\[\]]{4,100})\]",description)
   story_title=clean(story.group(1)) if story else clean(str(row.get("program_title","동행")))
-  url=urljoin("https://vod.kbs.co.kr",html.unescape(target))
+  # JSON API의 '&section_code'를 html.unescape하면 '&sect'가 '§'로 손상될 수 있다.
+  url=urljoin("https://vod.kbs.co.kr",target)
   if not is_kbs_donghaeng_episode_url(url): continue
   seen.add(program_id)
   out.append({
@@ -666,6 +667,14 @@ def same_news_event(left,right):
   return False
  if left.get("category")!=right.get("category") or left.get("subcategory")!=right.get("subcategory"):
   return False
+ if left.get("category")=="kbs":
+  # 재노출·보조검색 날짜가 본방일과 달라도 같은 회차는 한 건으로 합친다.
+  left_program=parse_qs(urlparse(str(left.get("url",""))).query).get("program_id",[""])[0]
+  right_program=parse_qs(urlparse(str(right.get("url",""))).query).get("program_id",[""])[0]
+  if left_program and left_program==right_program: return True
+  left_episode=re.search(r"(\d{1,4})\s*회",str(left.get("title","")))
+  right_episode=re.search(r"(\d{1,4})\s*회",str(right.get("title","")))
+  if left_episode and right_episode and left_episode.group(1)==right_episode.group(1): return True
  if abs((item_datetime(left)-item_datetime(right)).total_seconds())>3*86400:
   return False
  left_title=normalized_event_text(left.get("title",""))
