@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-19T21:57:16.847366+00:00",
+  "updated_at": "2026-08-20T21:59:07.143621+00:00",
   "item_count": 150,
   "errors": [
     {
@@ -70,7 +70,7 @@
       "summary": "기획재정부가 발표하는 세제개편안과 세법개정안의 최신 원문을 확인합니다.",
       "source": "기획재정부",
       "url": "https://www.moef.go.kr/",
-      "published_at": "2026-08-19T21:52:19.008378+00:00",
+      "published_at": "2026-08-20T21:54:56.358111+00:00",
       "keywords": [
         "공익법인",
         "세법개정",
@@ -79,18 +79,253 @@
       ],
       "priority": 5,
       "ai_analyzed": true,
-      "insight": "공익법인은 세제개편안의 법인세·기부금 관련 변화가 사업과 기부 설계에 미칠 영향을 조기에 점검해야 합니다.",
+      "insight": "세제개편안은 공익법인의 세무·기부금 운용에 직결되므로 개정안 원문을 즉시 검토해 재무·기부 정책 영향을 평가해야 합니다.",
       "trend_tags": [
-        "세제개편",
-        "세법개정",
-        "정책모니터링"
+        "법규모니터링",
+        "세제개편"
       ],
-      "confidence": "보통",
+      "confidence": "높음",
       "source_type": "현행 법령 기준정보",
       "final_source": "기획재정부",
       "verification_url": "https://www.moef.go.kr/",
       "official_baseline": true,
-      "verified_at": "2026-08-19T21:52:19.008378+00:00"
+      "verified_at": "2026-08-20T21:54:56.358111+00:00"
+    },
+    {
+      "id": "56f22015d7257e28b0",
+      "category": "law",
+      "subcategory": "corporate_tax",
+      "subcategory_label": "공익법인 법인세법",
+      "title": "법인세법",
+      "summary": "공익법인의 법인세·기부금 과세와 관련된 현행 법률입니다.",
+      "source": "국가법령정보센터",
+      "url": "https://www.law.go.kr/법령/법인세법",
+      "published_at": "2026-08-20T21:54:56.358111+00:00",
+      "keywords": [
+        "공익법인",
+        "법인세법",
+        "기부금"
+      ],
+      "priority": 5,
+      "ai_analyzed": true,
+      "insight": "공익법인의 과세·기부금 규정은 기부유도와 세무준수 방안 수립에 핵심이므로 재무팀과 상시 점검해야 합니다.",
+      "trend_tags": [
+        "법규모니터링",
+        "세무"
+      ],
+      "confidence": "높음",
+      "source_type": "현행 법령 기준정보",
+      "final_source": "국가법령정보센터",
+      "verification_url": "https://www.law.go.kr/법령/법인세법",
+      "official_baseline": true,
+      "verified_at": "2026-08-20T21:54:56.358111+00:00"
+    },
+    {
+      "id": "228dcbcadfebdb8824",
+      "category": "law",
+      "subcategory": "corporate_tax",
+      "subcategory_label": "공익법인 법인세법",
+      "title": "법인세법 시행령",
+      "summary": "공익법인의 법인세·기부금 과세와 관련된 현행 시행령입니다.",
+      "source": "국가법령정보센터",
+      "url": "https://www.law.go.kr/법령/법인세법시행령",
+      "published_at": "2026-08-20T21:54:56.358111+00:00",
+      "keywords": [
+        "공익법인",
+        "법인세법",
+        "기부금"
+      ],
+      "priority": 5,
+      "ai_analyzed": true,
+      "insight": "시행령의 세부 기준은 실무 적용에서 쟁점이 되므로 사례별 해석을 준비해 내부 지침으로 반영해야 합니다.",
+      "trend_tags": [
+        "법규모니터링",
+        "세무"
+      ],
+      "confidence": "높음",
+      "source_type": "현행 법령 기준정보",
+      "final_source": "국가법령정보센터",
+      "verification_url": "https://www.law.go.kr/법령/법인세법시행령",
+      "official_baseline": true,
+      "verified_at": "2026-08-20T21:54:56.358111+00:00"
+    },
+    {
+      "id": "70c4fe9e452e428bb6",
+      "category": "law",
+      "subcategory": "corporate_tax",
+      "subcategory_label": "공익법인 법인세법",
+      "title": "공익법인의 설립ㆍ운영에 관한 법률",
+      "summary": "공익법인의 설립·운영과 감독에 관한 기본 사항을 정한 현행 법률입니다.",
+      "source": "국가법령정보센터",
+      "url": "https://www.law.go.kr/법령/공익법인의설립ㆍ운영에관한법률",
+      "published_at": "2026-08-20T21:54:56.358111+00:00",
+      "keywords": [
+        "공익법인",
+        "법인세법",
+        "기부금"
+      ],
+      "priority": 5,
+      "ai_analyzed": true,
+      "insight": "설립·운영 규정은 거버넌스·투명성 기준 수립에 기반이 되므로 내부 규정 정비 시 우선 검토해야 합니다.",
+      "trend_tags": [
+        "거버넌스",
+        "법규모니터링"
+      ],
+      "confidence": "높음",
+      "source_type": "현행 법령 기준정보",
+      "final_source": "국가법령정보센터",
+      "verification_url": "https://www.law.go.kr/법령/공익법인의설립ㆍ운영에관한법률",
+      "official_baseline": true,
+      "verified_at": "2026-08-20T21:54:56.358111+00:00"
+    },
+    {
+      "id": "f0c52290cb489022b0",
+      "category": "law",
+      "subcategory": "corporate_tax",
+      "subcategory_label": "공익법인 법인세법",
+      "title": "공익법인의 설립ㆍ운영에 관한 법률 시행령",
+      "summary": "공익법인의 설립·운영과 감독에 필요한 세부 사항을 정한 현행 시행령입니다.",
+      "source": "국가법령정보센터",
+      "url": "https://www.law.go.kr/법령/공익법인의설립ㆍ운영에관한법률시행령",
+      "published_at": "2026-08-20T21:54:56.358111+00:00",
+      "keywords": [
+        "공익법인",
+        "법인세법",
+        "기부금"
+      ],
+      "priority": 5,
+      "ai_analyzed": true,
+      "insight": "시행령의 세부 규정은 운영절차와 감독 대응에 직접적 영향을 미치므로 운영 매뉴얼과 대조해 갱신이 필요합니다.",
+      "trend_tags": [
+        "거버넌스",
+        "운영지침"
+      ],
+      "confidence": "높음",
+      "source_type": "현행 법령 기준정보",
+      "final_source": "국가법령정보센터",
+      "verification_url": "https://www.law.go.kr/법령/공익법인의설립ㆍ운영에관한법률시행령",
+      "official_baseline": true,
+      "verified_at": "2026-08-20T21:54:56.358111+00:00"
+    },
+    {
+      "id": "44b12748d3a09a8b60",
+      "category": "law",
+      "subcategory": "gift_tax",
+      "subcategory_label": "상속세 및 증여세법",
+      "title": "상속세 및 증여세법",
+      "summary": "공익법인의 출연재산과 사후관리 의무에 관한 현행 법률입니다.",
+      "source": "국가법령정보센터",
+      "url": "https://www.law.go.kr/법령/상속세및증여세법",
+      "published_at": "2026-08-20T21:54:56.358111+00:00",
+      "keywords": [
+        "공익법인",
+        "증여세",
+        "상속세",
+        "출연재산"
+      ],
+      "priority": 5,
+      "ai_analyzed": true,
+      "insight": "출연재산 관련 규정은 기부받은 자산의 사후관리와 보고체계에 영향을 주므로 기부 수락 기준을 검토해야 합니다.",
+      "trend_tags": [
+        "기부관리",
+        "법규모니터링"
+      ],
+      "confidence": "높음",
+      "source_type": "현행 법령 기준정보",
+      "final_source": "국가법령정보센터",
+      "verification_url": "https://www.law.go.kr/법령/상속세및증여세법",
+      "official_baseline": true,
+      "verified_at": "2026-08-20T21:54:56.358111+00:00"
+    },
+    {
+      "id": "7057bca1257d16b431",
+      "category": "law",
+      "subcategory": "gift_tax",
+      "subcategory_label": "상속세 및 증여세법",
+      "title": "상속세 및 증여세법 시행령",
+      "summary": "공익법인의 출연재산과 사후관리 세부기준에 관한 현행 시행령입니다.",
+      "source": "국가법령정보센터",
+      "url": "https://www.law.go.kr/법령/상속세및증여세법시행령",
+      "published_at": "2026-08-20T21:54:56.358111+00:00",
+      "keywords": [
+        "공익법인",
+        "증여세",
+        "상속세",
+        "출연재산"
+      ],
+      "priority": 5,
+      "ai_analyzed": true,
+      "insight": "시행령의 세부기준은 출연재산 관리 절차와 세무처리에 직결되므로 자산관리 규정을 재점검해야 합니다.",
+      "trend_tags": [
+        "기부관리",
+        "세무"
+      ],
+      "confidence": "높음",
+      "source_type": "현행 법령 기준정보",
+      "final_source": "국가법령정보센터",
+      "verification_url": "https://www.law.go.kr/법령/상속세및증여세법시행령",
+      "official_baseline": true,
+      "verified_at": "2026-08-20T21:54:56.358111+00:00"
+    },
+    {
+      "id": "60741e6d5cd79a251b",
+      "category": "law",
+      "subcategory": "fair_trade",
+      "subcategory_label": "공정거래법상 공익법인 규제",
+      "title": "독점규제 및 공정거래에 관한 법률",
+      "summary": "대기업집단 소속 공익법인의 의결권 제한 등 관련 규정을 확인합니다.",
+      "source": "국가법령정보센터",
+      "url": "https://www.law.go.kr/법령/독점규제및공정거래에관한법률",
+      "published_at": "2026-08-20T21:54:56.358111+00:00",
+      "keywords": [
+        "공익법인",
+        "공정거래",
+        "대기업집단",
+        "의결권"
+      ],
+      "priority": 5,
+      "ai_analyzed": true,
+      "insight": "대기업 소속 공익법인 관련 규제는 이해충돌·지배구조 이슈로 연결되므로 공익법인 연계 기업과의 관계를 투명하게 관리해야 합니다.",
+      "trend_tags": [
+        "거버넌스",
+        "법규모니터링"
+      ],
+      "confidence": "보통",
+      "source_type": "현행 법령 기준정보",
+      "final_source": "국가법령정보센터",
+      "verification_url": "https://www.law.go.kr/법령/독점규제및공정거래에관한법률",
+      "official_baseline": true,
+      "verified_at": "2026-08-20T21:54:56.358111+00:00"
+    },
+    {
+      "id": "cecf17e28891986382",
+      "category": "law",
+      "subcategory": "accounting",
+      "subcategory_label": "공익법인 회계기준",
+      "title": "공익법인회계기준",
+      "summary": "공익법인 회계처리와 재무제표 작성에 적용되는 현행 회계기준입니다.",
+      "source": "국가법령정보센터",
+      "url": "https://www.law.go.kr/행정규칙/공익법인회계기준",
+      "published_at": "2026-08-20T21:54:56.358111+00:00",
+      "keywords": [
+        "공익법인",
+        "회계기준",
+        "결산서류",
+        "공시"
+      ],
+      "priority": 5,
+      "ai_analyzed": true,
+      "insight": "회계기준 준수는 공시·신뢰성 확보의 기초이므로 회계정책과 보고 체계를 정기적으로 점검해야 합니다.",
+      "trend_tags": [
+        "회계",
+        "투명성"
+      ],
+      "confidence": "높음",
+      "source_type": "현행 법령 기준정보",
+      "final_source": "국가법령정보센터",
+      "verification_url": "https://www.law.go.kr/행정규칙/공익법인회계기준",
+      "official_baseline": true,
+      "verified_at": "2026-08-20T21:54:56.358111+00:00"
     },
     {
       "id": "5c2e70914d867dc068",
@@ -108,12 +343,12 @@
       ],
       "priority": 5,
       "ai_analyzed": true,
-      "insight": "재난지역에서 아동 보호·구호 역량을 신속히 투입하는 준비가 필요합니다.",
+      "insight": "아동전문 단체의 재난 긴급구호는 아동특화 지원을 강화할 수 있는 모델로 참고할 필요가 있습니다.",
       "trend_tags": [
         "긴급구호",
-        "호우"
+        "아동지원"
       ],
-      "confidence": "높음",
+      "confidence": "보통",
       "source_type": "뉴스·기관자료",
       "final_source": "원문 제공기관",
       "verification_url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNcUhnaDl1YUR4OUZDVm5oTmlZNi1Eb2stWF9PSVJTTk1SVl9NVFN4Q0MyM0NiUTA1ZGhDcm50S1gtaUtGbzdTamd0bXU1NU81S0ZJa013X0RheHl4eUV1R3dWSFBkcVdMcUhkLWlSMmJpWjJYUGd5bDNMaTEzMERheQ?oc=5",
@@ -143,7 +378,8 @@
       "confidence": "높음",
       "source_type": "뉴스·기관자료",
       "final_source": "원문 제공기관",
-      "verification_url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFA1X0hxYUxHaEpRQ29LMmxVZFR5SVBNdFpUS3FiUkVTaTFzbFJHNjRhcmRiMEs0ZktweEtOVUVvQzBvQjN0bDJXMkEwZ0h1VGh2cHI4SWVITi1SRUHSAWBBVV95cUxObGNWcE5PWXIwNWszUDhTMlFWcGIyMFN0SGNBT1NfNC1Hb043SFBCbmRmMXdtdWloVG1VNlRwRGo5bm9OeURTd2huRVJsZW1PdnZGSU9aSmlYTDZFcDJ3SHY?oc=5"
+      "verification_url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFA1X0hxYUxHaEpRQ29LMmxVZFR5SVBNdFpUS3FiUkVTaTFzbFJHNjRhcmRiMEs0ZktweEtOVUVvQzBvQjN0bDJXMkEwZ0h1VGh2cHI4SWVITi1SRUHSAWBBVV95cUxObGNWcE5PWXIwNWszUDhTMlFWcGIyMFN0SGNBT1NfNC1Hb043SFBCbmRmMXdtdWloVG1VNlRwRGo5bm9OeURTd2huRVJsZW1PdnZGSU9aSmlYTDZFcDJ3SHY?oc=5",
+      "duplicate_count": 2
     },
     {
       "id": "caaa4b30a7481117c2",
@@ -187,15 +423,40 @@
       ],
       "priority": 5,
       "ai_analyzed": true,
-      "insight": "지역 집중호우 대응 상황을 모니터링해 현장 지원 필요성 판단에 활용해야 합니다.",
+      "insight": "지방 적십자사의 신속한 긴급구호는 민간구호 네트워크와의 연계 필요성을 보여주므로 협력체계 점검이 중요합니다.",
       "trend_tags": [
         "긴급구호",
-        "호우"
+        "재난대응"
       ],
-      "confidence": "높음",
+      "confidence": "보통",
       "source_type": "뉴스·기관자료",
       "final_source": "원문 제공기관",
       "verification_url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBzajdfSjctRVVGSS1yTl81TWkwdnhySG9fc05YOF93alhKQVdjRmN4Z3RlQ1VNWC04WGkwVzhweUJoYkl3eEhYZE9Da2xUWWhBSXhRa2ZCZy01aGl3c21HUlBzcV80MTlGMFJzVjdZcTFOUWdyaGJobNIBeEFVX3lxTFBzajdfSjctRVVGSS1yTl81TWkwdnhySG9fc05YOF93alhKQVdjRmN4Z3RlQ1VNWC04WGkwVzhweUJoYkl3eEhYZE9Da2xUWWhBSXhRa2ZCZy01aGl3c21HUlBzcV80MTlGMFJzVjdZcTFOUWdyaGJobA?oc=5",
+      "duplicate_count": 3
+    },
+    {
+      "id": "cd9f8008c68f225364",
+      "category": "ngo",
+      "subcategory": "ngo",
+      "subcategory_label": "NGO 모금·사업",
+      "title": "다이아몬드CC, 유니세프 후원금 1000만 원 기부 - v.daum.net",
+      "summary": "다이아몬드CC, 유니세프 후원금 1000만 원 기부 v.daum.net",
+      "source": "v.daum.net",
+      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9wTGhsTmF2YlhsUENjZ0dCWmh4ZGJmTzA0Um5ZV1RsSFAzRXR3QXVDUnpMM19XTGxhZFBzbXFhLWNNXzNqWEV3YWtmdw?oc=5",
+      "published_at": "2026-08-18T02:30:15+00:00",
+      "keywords": [
+        "후원",
+        "후원금",
+        "기부"
+      ],
+      "priority": 5,
+      "ai_analyzed": false,
+      "insight": "",
+      "trend_tags": [],
+      "confidence": "원문 확인 필요",
+      "source_type": "뉴스·기관자료",
+      "final_source": "원문 제공기관",
+      "verification_url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9wTGhsTmF2YlhsUENjZ0dCWmh4ZGJmTzA0Um5ZV1RsSFAzRXR3QXVDUnpMM19XTGxhZFBzbXFhLWNNXzNqWEV3YWtmdw?oc=5",
       "duplicate_count": 3
     },
     {
@@ -274,7 +535,7 @@
       "source_type": "뉴스·기관자료",
       "final_source": "원문 제공기관",
       "verification_url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBSYlVDT0lNWmo5WDlWYS1tZVpraXdXcDBQR3dpVFB0amstYlI4MVFHNjVwYllFNC1pQVBORnNZbTFYTWViWWVoUTVGTlhlVXNXYzlRZlJpci1Xek1aX0sxZk1nSlAzeGVyUW1vONIBcEFVX3lxTFA1elQya3l0bnNQdHczUlJUcUo2aFZ1WE92ZVF4NTVzZVhHczlWNHlKVFlkZmgxdlZ0TWkxYkxPc1BLT1I2TER1T3poUWxQM2o1UHd0TmNkUlpMSTdGRzF0VUktSGtPa3dITUZiNGZWMFk?oc=5",
-      "duplicate_count": 14
+      "duplicate_count": 2
     },
     {
       "id": "ada78917680be93d35",
@@ -298,8 +559,7 @@
       "confidence": "원문 확인 필요",
       "source_type": "뉴스·기관자료",
       "final_source": "원문 제공기관",
-      "verification_url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE5SeXR3WXM2bmg1cUJRZEsyQVp6ZXBQbXlXUVRvUjZBZjJ1eWc3ZHdxTTRuYnduZUtJblN3M0JRbk9GUm16MHRnZnpoRzY?oc=5",
-      "duplicate_count": 1
+      "verification_url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE5SeXR3WXM2bmg1cUJRZEsyQVp6ZXBQbXlXUVRvUjZBZjJ1eWc3ZHdxTTRuYnduZUtJblN3M0JRbk9GUm16MHRnZnpoRzY?oc=5"
     },
     {
       "id": "ac1d74fc11ce0c4133",
@@ -469,8 +729,7 @@
       "confidence": "원문 확인 필요",
       "source_type": "뉴스·기관자료",
       "final_source": "원문 제공기관",
-      "verification_url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9HUHJPU1hfUGxsWkx1Ykk1UFRDN0tybmpjQzh6T0tIamUzLU5uWVVGaURRRXczaWM3dHJoN3A3QV9PYUg3WFFfZmJjMldDSmJ6TFE?oc=5",
-      "duplicate_count": 1
+      "verification_url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9HUHJPU1hfUGxsWkx1Ykk1UFRDN0tybmpjQzh6T0tIamUzLU5uWVVGaURRRXczaWM3dHJoN3A3QV9PYUg3WFFfZmJjMldDSmJ6TFE?oc=5"
     },
     {
       "id": "41bf47795b5a5263b8",
@@ -688,8 +947,7 @@
       "confidence": "원문 확인 필요",
       "source_type": "뉴스·기관자료",
       "final_source": "원문 제공기관",
-      "verification_url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9JZEVBLTJ4ekZFajJUQ1pMMFR0VGtTcmM5NnJfcnlGdEFRbEczX2l1UVA4aHhjOTBpbVdqd2E0SlQ1VG1sOE9XNFQ3ZVNXMjVHWVc4OUsybDNiSjBvN0NsOEVFNTlkOWpi?oc=5",
-      "duplicate_count": 1
+      "verification_url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9JZEVBLTJ4ekZFajJUQ1pMMFR0VGtTcmM5NnJfcnlGdEFRbEczX2l1UVA4aHhjOTBpbVdqd2E0SlQ1VG1sOE9XNFQ3ZVNXMjVHWVc4OUsybDNiSjBvN0NsOEVFNTlkOWpi?oc=5"
     },
     {
       "id": "d9281de9ca5147d5ca",
@@ -789,55 +1047,6 @@
       "verification_url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE43R25WUnN4UHRGVjROcnh4X3NBd2Nwck0xUl9yNHhfU21uNnlMblZzRkxwX3dEbXBjZ05objBhcU1VS2lGVnlCc2VQVkhrSXpXaGc?oc=5"
     },
     {
-      "id": "6f927b0a8d6b735957",
-      "category": "ngo",
-      "subcategory": "ngo",
-      "subcategory_label": "NGO 모금·사업",
-      "title": "홍천 내촌봉사회, 환경정비와 개인정보 보호 캠페인 전개…“나눔에도 존엄성 지킨다” - 뉴스타운",
-      "summary": "홍천 내촌봉사회, 환경정비와 개인정보 보호 캠페인 전개…“나눔에도 존엄성 지킨다” 뉴스타운",
-      "source": "뉴스타운",
-      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9GdkFCUnA3SnNLSVoyWi1JVkFWY0JabTlTVUlLSjBZam9MUDlHbDFUZVd0NjZXeWU1MmVaMEtXaDNzWXhPQVNxTGNQS2w1SjlhTktmX1ZPZ0VzSk9lVTRFMG9LZk5BbnZiZV91MWlR?oc=5",
-      "published_at": "2026-07-21T04:16:35+00:00",
-      "keywords": [
-        "나눔",
-        "캠페인",
-        "봉사"
-      ],
-      "priority": 5,
-      "ai_analyzed": false,
-      "insight": "",
-      "trend_tags": [],
-      "confidence": "원문 확인 필요",
-      "source_type": "뉴스·기관자료",
-      "final_source": "원문 제공기관",
-      "verification_url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9GdkFCUnA3SnNLSVoyWi1JVkFWY0JabTlTVUlLSjBZam9MUDlHbDFUZVd0NjZXeWU1MmVaMEtXaDNzWXhPQVNxTGNQS2w1SjlhTktmX1ZPZ0VzSk9lVTRFMG9LZk5BbnZiZV91MWlR?oc=5"
-    },
-    {
-      "id": "e1f4ae64e394235417",
-      "category": "ngo",
-      "subcategory": "ngo",
-      "subcategory_label": "NGO 모금·사업",
-      "title": "지역사회 나눔 실천…루피엘의원, 정기 후원금 전달 캠페인 동참 - gukjenews.com",
-      "summary": "지역사회 나눔 실천…루피엘의원, 정기 후원금 전달 캠페인 동참 gukjenews.com",
-      "source": "gukjenews.com",
-      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1Cd05WUmt0WUVEdHA1Y0l0eHJBYlZIVHNPYlRpZkl6dGhiY3ZFVnJPZXhxMGNnZ19DdFZSX1VlMFFPNm5zVDJIQm9hbHRxck1zbWYtTzA2d0Z0RE5tSnE2dHVCc0RWcmZTOGxtNE53?oc=5",
-      "published_at": "2026-07-21T00:00:34+00:00",
-      "keywords": [
-        "후원",
-        "후원금",
-        "나눔",
-        "캠페인"
-      ],
-      "priority": 5,
-      "ai_analyzed": false,
-      "insight": "",
-      "trend_tags": [],
-      "confidence": "원문 확인 필요",
-      "source_type": "뉴스·기관자료",
-      "final_source": "원문 제공기관",
-      "verification_url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1Cd05WUmt0WUVEdHA1Y0l0eHJBYlZIVHNPYlRpZkl6dGhiY3ZFVnJPZXhxMGNnZ19DdFZSX1VlMFFPNm5zVDJIQm9hbHRxck1zbWYtTzA2d0Z0RE5tSnE2dHVCc0RWcmZTOGxtNE53?oc=5"
-    },
-    {
       "id": "57ceb332f607ce7854",
       "category": "ngo",
       "subcategory": "ngo",
@@ -886,6 +1095,30 @@
       "verification_url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1WcGlTY3ZXVUhCLXI3NW1zVnh1TmhUOXAwOUVHNWtpbzBCdzVnRzZEZ3JxbUJZY2o0TE5ZV2VzU3Y1MlhvNkJxQl9NNXB5LW4wVWcxcFRHaUNPXzlPb1MtNTlRZWFqdlk?oc=5"
     },
     {
+      "id": "e9098ee6177246e00b",
+      "category": "ngo",
+      "subcategory": "ngo",
+      "subcategory_label": "NGO 모금·사업",
+      "title": "굿네이버스 후원물품(교구) 취약계층 지원 - 강서희망나눔복지재단",
+      "summary": "굿네이버스 후원물품(교구) 취약계층 지원 강서희망나눔복지재단",
+      "source": "강서희망나눔복지재단",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPNjd5OFl3ZENGSFhvVC0zTEd4NVVpQ3dYd1hlcnVsb3dEdmNXUEYybUhBTVhENm1Uc3FOdDZjc2ZuRVE0eERIemRIdGNUS3BtWWpLQmZyT1d0UDI2ZWdBYUxXV1pNNWZCWHdJRENEYnlDU2R3aktuYVA4cHYtcHdkaWNuR2Nfb2N4dUFrdjE5TGR3NEhpQWhVTFpGUXIzRnlwQ1MyYXJscw?oc=5",
+      "published_at": "2023-10-13T07:00:00+00:00",
+      "keywords": [
+        "후원",
+        "나눔",
+        "취약계층"
+      ],
+      "priority": 5,
+      "ai_analyzed": false,
+      "insight": "",
+      "trend_tags": [],
+      "confidence": "원문 확인 필요",
+      "source_type": "뉴스·기관자료",
+      "final_source": "원문 제공기관",
+      "verification_url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPNjd5OFl3ZENGSFhvVC0zTEd4NVVpQ3dYd1hlcnVsb3dEdmNXUEYybUhBTVhENm1Uc3FOdDZjc2ZuRVE0eERIemRIdGNUS3BtWWpLQmZyT1d0UDI2ZWdBYUxXV1pNNWZCWHdJRENEYnlDU2R3aktuYVA4cHYtcHdkaWNuR2Nfb2N4dUFrdjE5TGR3NEhpQWhVTFpGUXIzRnlwQ1MyYXJscw?oc=5"
+    },
+    {
       "id": "7b5fd8f0dfe390c634",
       "category": "ngo",
       "subcategory": "ngo",
@@ -908,30 +1141,6 @@
       "source_type": "뉴스·기관자료",
       "final_source": "원문 제공기관",
       "verification_url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5MRzVqME9CSXVhR25PcmlvckpSanZfRFl6UlQ1V25ibjFyWjJERzNmWk5sRnJocVJiVW85RnB5QXkwT0MwMTZKei1xSXVnbnlvY0I5d2dTV1BzZW45S2U2cm1B?oc=5"
-    },
-    {
-      "id": "312d1d57f1cf32d50c",
-      "category": "ngo",
-      "subcategory": "ngo",
-      "subcategory_label": "NGO 모금·사업",
-      "title": "SK나이츠 변기훈, 굿네이버스 서울본부에 후원금 기부 - 서울Pn",
-      "summary": "SK나이츠 변기훈, 굿네이버스 서울본부에 후원금 기부 서울Pn",
-      "source": "서울Pn",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPQjhMWG15NkwzNHpNUF9sMkM1Yk43ZmFBQ0JSSEVKcjFKcEM3Zm5PTk11NDE2NkJaaEV6aUdoeG1FWXFHSE9ndVZSN243Uk05Mlp1RG5idFl5c01GSWZSY1A0RTNPRWs4UHRvOWhxSldQeWdpOHpzVHZmNWZ3NXNfNU9sYXBsMkVH?oc=5",
-      "published_at": "2020-11-05T08:00:00+00:00",
-      "keywords": [
-        "후원",
-        "후원금",
-        "기부"
-      ],
-      "priority": 5,
-      "ai_analyzed": false,
-      "insight": "",
-      "trend_tags": [],
-      "confidence": "원문 확인 필요",
-      "source_type": "뉴스·기관자료",
-      "final_source": "원문 제공기관",
-      "verification_url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPQjhMWG15NkwzNHpNUF9sMkM1Yk43ZmFBQ0JSSEVKcjFKcEM3Zm5PTk11NDE2NkJaaEV6aUdoeG1FWXFHSE9ndVZSN243Uk05Mlp1RG5idFl5c01GSWZSY1A0RTNPRWs4UHRvOWhxSldQeWdpOHpzVHZmNWZ3NXNfNU9sYXBsMkVH?oc=5"
     },
     {
       "id": "8e8876f37cd2308832",
@@ -983,240 +1192,234 @@
       "verification_url": "https://news.google.com/rss/articles/CBMiREFVX3lxTE5jNDg5c2NKOHR2bDVfZDBTX3p3ZFU2dGtfNVNBcVZxQl9NN1FRUnlWeEJSaWY3NWhMcGlydDdYdkZqT09O?oc=5"
     },
     {
-      "id": "56f22015d7257e28b0",
-      "category": "law",
-      "subcategory": "corporate_tax",
-      "subcategory_label": "공익법인 법인세법",
-      "title": "법인세법",
-      "summary": "공익법인의 법인세·기부금 과세와 관련된 현행 법률입니다.",
-      "source": "국가법령정보센터",
-      "url": "https://www.law.go.kr/법령/법인세법",
-      "published_at": "2026-08-19T21:52:19.008378+00:00",
+      "id": "b83d13076311bd99ca",
+      "category": "ngo",
+      "subcategory": "ngo",
+      "subcategory_label": "NGO 모금·사업",
+      "title": "아모레퍼시픽, 연세대에 10억 기부…“청소년 내면의 아름다움 연구” - 동아일보",
+      "summary": "아모레퍼시픽이 연세대에 10억을 기부해 청소년 내면의 아름다움 연구를 지원합니다.",
+      "source": "동아일보",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1MdERuT0dndUhpZWpUZWVoSFBmSE9NR0wzUGZZcFZXb3d6WUhYVWo1cVZsWXVPLVN4S2Qxd0JvejF6RzdSM0ZMOTEzSy12Ti1YSnpoTVdCTWtTaUJtYUo1TmZzQUdYRUpGVEJtSVlnLXpTQnRrS1HSAWZBVV95cUxOQ0k4MXJzd3ZaZm1OeXlFcnJocHU0ZHA5S1Z1ZGlRRk85dUI5MEczM0pETmZLVXYxRXpEUmk3LUYwdXRlWW4yYjlMRGRvUmRlbzdVSlRoRlFsLVFUcDBYcGVHb3pPRHc?oc=5",
+      "published_at": "2026-08-20T09:31:00+00:00",
       "keywords": [
-        "공익법인",
-        "법인세법",
-        "기부금"
+        "기부"
       ],
       "priority": 4,
       "ai_analyzed": true,
-      "insight": "공익법인의 세무·기부금 처리 기준을 규정하므로 회계·세무 준수 관점에서 주기적 확인이 필요합니다.",
+      "insight": "기업의 연구지원형 기부는 학계와의 협업으로 프로그램 효과 측정·증거기반 활동을 설계하는 데 유리합니다.",
       "trend_tags": [
-        "법령",
-        "세제"
+        "기업기부",
+        "연구지원"
       ],
       "confidence": "보통",
-      "source_type": "현행 법령 기준정보",
-      "final_source": "국가법령정보센터",
-      "verification_url": "https://www.law.go.kr/법령/법인세법",
-      "official_baseline": true,
-      "verified_at": "2026-08-19T21:52:19.008378+00:00"
+      "source_type": "뉴스·기관자료",
+      "final_source": "원문 제공기관",
+      "verification_url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1MdERuT0dndUhpZWpUZWVoSFBmSE9NR0wzUGZZcFZXb3d6WUhYVWo1cVZsWXVPLVN4S2Qxd0JvejF6RzdSM0ZMOTEzSy12Ti1YSnpoTVdCTWtTaUJtYUo1TmZzQUdYRUpGVEJtSVlnLXpTQnRrS1HSAWZBVV95cUxOQ0k4MXJzd3ZaZm1OeXlFcnJocHU0ZHA5S1Z1ZGlRRk85dUI5MEczM0pETmZLVXYxRXpEUmk3LUYwdXRlWW4yYjlMRGRvUmRlbzdVSlRoRlFsLVFUcDBYcGVHb3pPRHc?oc=5"
     },
     {
-      "id": "228dcbcadfebdb8824",
-      "category": "law",
-      "subcategory": "corporate_tax",
-      "subcategory_label": "공익법인 법인세법",
-      "title": "법인세법 시행령",
-      "summary": "공익법인의 법인세·기부금 과세와 관련된 현행 시행령입니다.",
-      "source": "국가법령정보센터",
-      "url": "https://www.law.go.kr/법령/법인세법시행령",
-      "published_at": "2026-08-19T21:52:19.008378+00:00",
+      "id": "cb892d088ad0beaa9d",
+      "category": "ngo",
+      "subcategory": "ngo",
+      "subcategory_label": "NGO 모금·사업",
+      "title": "스타벅스, 역사문화체험에 3억원 기부 - 매일경제",
+      "summary": "스타벅스가 지역아동의 역사문화체험 사업에 3억원을 기부했습니다.",
+      "source": "매일경제",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9fTmJtLXVOLU9leHV5WUN2b0V1UDN3RGd5RktMWHRtbkhMRUZtNmZ5NlpOZTZmQ0lxOXpIRTJ1TmloNy1GdXlLODB1TmxaZHIyLVI1SkZR?oc=5",
+      "published_at": "2026-08-20T08:38:49+00:00",
       "keywords": [
-        "공익법인",
-        "법인세법",
-        "기부금"
+        "기부"
       ],
       "priority": 4,
       "ai_analyzed": true,
-      "insight": "법인세법의 세부 적용 기준을 담고 있어 실무상 해석·적용 지침으로 활용해야 합니다.",
+      "insight": "기업의 문화교육 지원은 지역사회 프로그램의 지속성 확보에 도움이 되므로 장기 파트너십을 모색할 만합니다.",
       "trend_tags": [
-        "시행령",
-        "세제"
+        "기업기부",
+        "교육지원"
       ],
       "confidence": "보통",
-      "source_type": "현행 법령 기준정보",
-      "final_source": "국가법령정보센터",
-      "verification_url": "https://www.law.go.kr/법령/법인세법시행령",
-      "official_baseline": true,
-      "verified_at": "2026-08-19T21:52:19.008378+00:00"
+      "source_type": "뉴스·기관자료",
+      "final_source": "원문 제공기관",
+      "verification_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9fTmJtLXVOLU9leHV5WUN2b0V1UDN3RGd5RktMWHRtbkhMRUZtNmZ5NlpOZTZmQ0lxOXpIRTJ1TmloNy1GdXlLODB1TmxaZHIyLVI1SkZR?oc=5",
+      "duplicate_count": 1
     },
     {
-      "id": "70c4fe9e452e428bb6",
-      "category": "law",
-      "subcategory": "corporate_tax",
-      "subcategory_label": "공익법인 법인세법",
-      "title": "공익법인의 설립ㆍ운영에 관한 법률",
-      "summary": "공익법인의 설립·운영과 감독에 관한 기본 사항을 정한 현행 법률입니다.",
-      "source": "국가법령정보센터",
-      "url": "https://www.law.go.kr/법령/공익법인의설립ㆍ운영에관한법률",
-      "published_at": "2026-08-19T21:52:19.008378+00:00",
+      "id": "b5e36b2b6997ae9efe",
+      "category": "ngo",
+      "subcategory": "ngo",
+      "subcategory_label": "NGO 모금·사업",
+      "title": "예장합동, 베네수엘라에 2억여 원 긴급구호금 전달 - - 크리스천 노컷뉴스",
+      "summary": "예장합동이 베네수엘라에 2억여 원의 긴급구호금을 전달했습니다.",
+      "source": "크리스천 노컷뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1hRmw3TExSeXJTMHEyY01QSWtkbUw2dENiOFh6VHJURklXU0s4eWQtN2NEZlpBOHJKaHBrbDE5dHZWS21mcmJkbWZCc09Hblk2UF9UaWQ1QXh5dw?oc=5",
+      "published_at": "2026-08-20T08:24:00+00:00",
       "keywords": [
-        "공익법인",
-        "법인세법",
-        "기부금"
+        "구호",
+        "긴급구호"
       ],
       "priority": 4,
       "ai_analyzed": true,
-      "insight": "설립요건과 운영·감독 규정은 공익법인의 거버넌스와 법적 위험 관리의 핵심입니다.",
+      "insight": "종교단체의 해외 긴급구호 기여는 민간 공공협력의 또 다른 채널이므로 국제구호 협업 가능성을 검토해야 합니다.",
       "trend_tags": [
-        "법령",
-        "거버넌스"
+        "해외지원",
+        "긴급구호"
       ],
       "confidence": "보통",
-      "source_type": "현행 법령 기준정보",
-      "final_source": "국가법령정보센터",
-      "verification_url": "https://www.law.go.kr/법령/공익법인의설립ㆍ운영에관한법률",
-      "official_baseline": true,
-      "verified_at": "2026-08-19T21:52:19.008378+00:00"
+      "source_type": "뉴스·기관자료",
+      "final_source": "원문 제공기관",
+      "verification_url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1hRmw3TExSeXJTMHEyY01QSWtkbUw2dENiOFh6VHJURklXU0s4eWQtN2NEZlpBOHJKaHBrbDE5dHZWS21mcmJkbWZCc09Hblk2UF9UaWQ1QXh5dw?oc=5"
     },
     {
-      "id": "f0c52290cb489022b0",
-      "category": "law",
-      "subcategory": "corporate_tax",
-      "subcategory_label": "공익법인 법인세법",
-      "title": "공익법인의 설립ㆍ운영에 관한 법률 시행령",
-      "summary": "공익법인의 설립·운영과 감독에 필요한 세부 사항을 정한 현행 시행령입니다.",
-      "source": "국가법령정보센터",
-      "url": "https://www.law.go.kr/법령/공익법인의설립ㆍ운영에관한법률시행령",
-      "published_at": "2026-08-19T21:52:19.008378+00:00",
+      "id": "1e20708574b4ab839e",
+      "category": "ngo",
+      "subcategory": "ngo",
+      "subcategory_label": "NGO 모금·사업",
+      "title": "한국의료재단, 탄자니아 깨끗한 물 위해 월드비전 후원 - 국민일보",
+      "summary": "한국의료재단이 탄자니아의 깨끗한 물을 위해 월드비전에 후원했습니다.",
+      "source": "국민일보",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNcVBxSjdZMlhreC03cmtRU2Mza29lVXRWX1lBZXlDd3p4RVBjTjc0dW9ka3JNWjFPN0pKNEZYdS1pOWJUVkNLU2tCX1VzMUZFLWpTVE1HTGstdllHZWRYNk15TlZCRkhSYndVS0gxMlkxdEVISzczUVFEQlVxOXRjS1NIX1ZIeW9sUXlnUHMzeGhNbm0zT3fSAWxBVV95cUxQX0NiWndjUlJsdmNiT05tSE9CampLSFdGMXB4YkEta3BzZ040VzZ2VnlfOExMMVZydlZ5S3NQbUozQlQ4N2RYQ3N4My1EQWtmOVQwSHpUN0xkRDFaOGdWZHhJellRTFNEanVvbzQ?oc=5",
+      "published_at": "2026-08-20T06:13:00+00:00",
       "keywords": [
-        "공익법인",
-        "법인세법",
-        "기부금"
+        "후원"
       ],
       "priority": 4,
       "ai_analyzed": true,
-      "insight": "운영 실무에서 필요한 세부 규정 확인을 통해 규정 위반 리스크를 줄일 수 있습니다.",
+      "insight": "의료재단의 국제 물 사업 후원은 보건·물 위생 결합사업의 민관협력 모델로 활용될 수 있습니다.",
       "trend_tags": [
-        "시행령",
-        "거버넌스"
+        "해외지원",
+        "물보건"
       ],
       "confidence": "보통",
-      "source_type": "현행 법령 기준정보",
-      "final_source": "국가법령정보센터",
-      "verification_url": "https://www.law.go.kr/법령/공익법인의설립ㆍ운영에관한법률시행령",
-      "official_baseline": true,
-      "verified_at": "2026-08-19T21:52:19.008378+00:00"
+      "source_type": "뉴스·기관자료",
+      "final_source": "원문 제공기관",
+      "verification_url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNcVBxSjdZMlhreC03cmtRU2Mza29lVXRWX1lBZXlDd3p4RVBjTjc0dW9ka3JNWjFPN0pKNEZYdS1pOWJUVkNLU2tCX1VzMUZFLWpTVE1HTGstdllHZWRYNk15TlZCRkhSYndVS0gxMlkxdEVISzczUVFEQlVxOXRjS1NIX1ZIeW9sUXlnUHMzeGhNbm0zT3fSAWxBVV95cUxQX0NiWndjUlJsdmNiT05tSE9CampLSFdGMXB4YkEta3BzZ040VzZ2VnlfOExMMVZydlZ5S3NQbUozQlQ4N2RYQ3N4My1EQWtmOVQwSHpUN0xkRDFaOGdWZHhJellRTFNEanVvbzQ?oc=5"
     },
     {
-      "id": "44b12748d3a09a8b60",
-      "category": "law",
-      "subcategory": "gift_tax",
-      "subcategory_label": "상속세 및 증여세법",
-      "title": "상속세 및 증여세법",
-      "summary": "공익법인의 출연재산과 사후관리 의무에 관한 현행 법률입니다.",
-      "source": "국가법령정보센터",
-      "url": "https://www.law.go.kr/법령/상속세및증여세법",
-      "published_at": "2026-08-19T21:52:19.008378+00:00",
+      "id": "8128758f5e94e90cee",
+      "category": "ngo",
+      "subcategory": "ngo",
+      "subcategory_label": "NGO 모금·사업",
+      "title": "드론에 병원까지 공격받는데 구호 손길은 막혔다…월드비전, 韓 인도적 지원 해법 논의 - 동아일보",
+      "summary": "월드비전이 한국의 인도적 지원 해법을 논의하는 내용을 다루며, 구호 활동이 제약받는 상황을 지적합니다.",
+      "source": "동아일보",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBOYXZVa2hRTnpGaXlvT1FoX000a1lWUUpuT1N1MEJOQlF5V1dYY2g1a3B3aTFKRzBuekJzdVRhaVpqMUluYXdid2J1Y2J3RTRzMzg2c19WQXo0SlJwQng1SzFRbmJNR25yb3piVDZWdjhMYjR1LWfSAWZBVV95cUxOYXVjTkY5YllpbnJobUZfSWJxVUxXQlRndWVsdElUQWNPWlVPMzR1MnNWdXhlZ1BIOUdIRUNLSE9kcElGNU1VQUpnVWpwYzJmRGFSMUxMYWRXLXZfYkQ5VEdwUU1tVmc?oc=5",
+      "published_at": "2026-08-20T02:36:00+00:00",
       "keywords": [
-        "공익법인",
-        "증여세",
-        "상속세",
-        "출연재산"
+        "구호",
+        "인도적 지원"
       ],
       "priority": 4,
       "ai_analyzed": true,
-      "insight": "출연재산 관리·사후관리 의무는 기부금 수령·자산관리 정책에 직접적 영향을 줍니다.",
+      "insight": "긴급상황에서의 접근성 제한은 민관협력과 안전기준 재검토 필요성을 제기하므로 대응 전략을 마련해야 합니다.",
       "trend_tags": [
-        "세제",
-        "출연재산관리"
+        "인도주의",
+        "민관협력"
       ],
       "confidence": "보통",
-      "source_type": "현행 법령 기준정보",
-      "final_source": "국가법령정보센터",
-      "verification_url": "https://www.law.go.kr/법령/상속세및증여세법",
-      "official_baseline": true,
-      "verified_at": "2026-08-19T21:52:19.008378+00:00"
+      "source_type": "뉴스·기관자료",
+      "final_source": "원문 제공기관",
+      "verification_url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBOYXZVa2hRTnpGaXlvT1FoX000a1lWUUpuT1N1MEJOQlF5V1dYY2g1a3B3aTFKRzBuekJzdVRhaVpqMUluYXdid2J1Y2J3RTRzMzg2c19WQXo0SlJwQng1SzFRbmJNR25yb3piVDZWdjhMYjR1LWfSAWZBVV95cUxOYXVjTkY5YllpbnJobUZfSWJxVUxXQlRndWVsdElUQWNPWlVPMzR1MnNWdXhlZ1BIOUdIRUNLSE9kcElGNU1VQUpnVWpwYzJmRGFSMUxMYWRXLXZfYkQ5VEdwUU1tVmc?oc=5"
     },
     {
-      "id": "7057bca1257d16b431",
-      "category": "law",
-      "subcategory": "gift_tax",
-      "subcategory_label": "상속세 및 증여세법",
-      "title": "상속세 및 증여세법 시행령",
-      "summary": "공익법인의 출연재산과 사후관리 세부기준에 관한 현행 시행령입니다.",
-      "source": "국가법령정보센터",
-      "url": "https://www.law.go.kr/법령/상속세및증여세법시행령",
-      "published_at": "2026-08-19T21:52:19.008378+00:00",
+      "id": "d310a9b986963b8670",
+      "category": "ngo",
+      "subcategory": "ngo",
+      "subcategory_label": "NGO 모금·사업",
+      "title": "월드비전, 인도적 지원 민관 협력 강화 방안 논의 - 뉴스인사이드",
+      "summary": "월드비전이 인도적 지원에서 민관 협력 강화 방안을 논의했습니다.",
+      "source": "뉴스인사이드",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBhSnBZOGhXckdVTTV3TWtGUHBMNEZMRUY0Sk5OWVZuUTk0MlZHTk9HZjBVdWQ3NFRhaldxWWdKUmpKaEdSenVqSmtKbWJvVHVqdDFyZHVDRDk4UDZ3ckpyRGRvSElPWG1PZy1Wakp3?oc=5",
+      "published_at": "2026-08-20T02:22:11+00:00",
       "keywords": [
-        "공익법인",
-        "증여세",
-        "상속세",
-        "출연재산"
+        "인도적 지원"
       ],
       "priority": 4,
       "ai_analyzed": true,
-      "insight": "사후관리 기준 등 구체적 요건을 확인해 기부수령 조건을 명확히 해야 합니다.",
+      "insight": "민관 협력 논의는 자원동원과 현장접근성 개선에 직결되므로 실무적 협의체 참여를 고려해야 합니다.",
       "trend_tags": [
-        "시행령",
-        "출연재산"
+        "민관협력",
+        "인도주의"
       ],
       "confidence": "보통",
-      "source_type": "현행 법령 기준정보",
-      "final_source": "국가법령정보센터",
-      "verification_url": "https://www.law.go.kr/법령/상속세및증여세법시행령",
-      "official_baseline": true,
-      "verified_at": "2026-08-19T21:52:19.008378+00:00"
+      "source_type": "뉴스·기관자료",
+      "final_source": "원문 제공기관",
+      "verification_url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBhSnBZOGhXckdVTTV3TWtGUHBMNEZMRUY0Sk5OWVZuUTk0MlZHTk9HZjBVdWQ3NFRhaldxWWdKUmpKaEdSenVqSmtKbWJvVHVqdDFyZHVDRDk4UDZ3ckpyRGRvSElPWG1PZy1Wakp3?oc=5"
     },
     {
-      "id": "60741e6d5cd79a251b",
-      "category": "law",
-      "subcategory": "fair_trade",
-      "subcategory_label": "공정거래법상 공익법인 규제",
-      "title": "독점규제 및 공정거래에 관한 법률",
-      "summary": "대기업집단 소속 공익법인의 의결권 제한 등 관련 규정을 확인합니다.",
-      "source": "국가법령정보센터",
-      "url": "https://www.law.go.kr/법령/독점규제및공정거래에관한법률",
-      "published_at": "2026-08-19T21:52:19.008378+00:00",
+      "id": "0d173837b61ab56e10",
+      "category": "ngo",
+      "subcategory": "ngo",
+      "subcategory_label": "NGO 모금·사업",
+      "title": "벼랑 끝 아이들 일상 지키는 ‘위기아동지원사업’ - 한겨레",
+      "summary": "‘위기아동지원사업’이 벼랑 끝 아이들의 일상을 지키는 내용을 다룹니다.",
+      "source": "한겨레",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5HTV9IZng4UXpvTG5BMWdxTTVhLVRySklYZDJoLS1URkNMbFpWaHg4RUNlbVI1cUxveTczSzcwUnRna0NwNk9YQTF1eDFVVnlNSWV5NGJhYjVLQlNOSG9zMlBn?oc=5",
+      "published_at": "2026-08-20T00:36:00+00:00",
       "keywords": [
-        "공익법인",
-        "공정거래",
-        "대기업집단",
-        "의결권"
+        "지원사업",
+        "아동지원"
       ],
       "priority": 4,
       "ai_analyzed": true,
-      "insight": "대기업 소속 공익법인과의 관계는 의결권·지배구조 측면에서 준법·투명성 관리가 필요합니다.",
+      "insight": "위기아동 지원사업은 취약계층 조기개입과 지역연계 서비스 모델 강화의 필요성을 시사합니다.",
       "trend_tags": [
-        "공정거래",
-        "지배구조"
+        "아동복지",
+        "프로그램"
       ],
-      "confidence": "보통",
-      "source_type": "현행 법령 기준정보",
-      "final_source": "국가법령정보센터",
-      "verification_url": "https://www.law.go.kr/법령/독점규제및공정거래에관한법률",
-      "official_baseline": true,
-      "verified_at": "2026-08-19T21:52:19.008378+00:00"
+      "confidence": "낮음",
+      "source_type": "뉴스·기관자료",
+      "final_source": "원문 제공기관",
+      "verification_url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5HTV9IZng4UXpvTG5BMWdxTTVhLVRySklYZDJoLS1URkNMbFpWaHg4RUNlbVI1cUxveTczSzcwUnRna0NwNk9YQTF1eDFVVnlNSWV5NGJhYjVLQlNOSG9zMlBn?oc=5"
     },
     {
-      "id": "cecf17e28891986382",
-      "category": "law",
-      "subcategory": "accounting",
-      "subcategory_label": "공익법인 회계기준",
-      "title": "공익법인회계기준",
-      "summary": "공익법인 회계처리와 재무제표 작성에 적용되는 현행 회계기준입니다.",
-      "source": "국가법령정보센터",
-      "url": "https://www.law.go.kr/행정규칙/공익법인회계기준",
-      "published_at": "2026-08-19T21:52:19.008378+00:00",
+      "id": "899a803efd63fad038",
+      "category": "ngo",
+      "subcategory": "ngo",
+      "subcategory_label": "NGO 모금·사업",
+      "title": "스타벅스, 지역아동 역사문화체험 첫발…총 3억원 후원 - v.daum.net",
+      "summary": "스타벅스가 지역아동 역사문화체험을 위해 총 3억원을 후원했습니다.",
+      "source": "v.daum.net",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9sdkw2NjdGTE1Eak9ZdGFzUlBvRWs1NG1pMlMtVXB0UFRPbEE1ZW9iazl1Si1VbWZ2Z3RIcllQbDR6V3MtSXNWeHJvU2gxWFk?oc=5",
+      "published_at": "2026-08-20T00:30:26+00:00",
       "keywords": [
-        "공익법인",
-        "회계기준",
-        "결산서류",
-        "공시"
+        "후원"
       ],
       "priority": 4,
       "ai_analyzed": true,
-      "insight": "투명한 재무보고를 위해 회계기준에 따른 일관된 회계처리가 필수적입니다.",
+      "insight": "기업의 대규모 지정기부는 프로그램 확장성 확보에 유리하므로 협업 제안 시 근거 사례로 활용할 수 있습니다.",
       "trend_tags": [
-        "회계기준",
-        "투명성"
+        "기업기부",
+        "교육지원"
       ],
       "confidence": "보통",
-      "source_type": "현행 법령 기준정보",
-      "final_source": "국가법령정보센터",
-      "verification_url": "https://www.law.go.kr/행정규칙/공익법인회계기준",
-      "official_baseline": true,
-      "verified_at": "2026-08-19T21:52:19.008378+00:00"
+      "source_type": "뉴스·기관자료",
+      "final_source": "원문 제공기관",
+      "verification_url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9sdkw2NjdGTE1Eak9ZdGFzUlBvRWs1NG1pMlMtVXB0UFRPbEE1ZW9iazl1Si1VbWZ2Z3RIcllQbDR6V3MtSXNWeHJvU2gxWFk?oc=5",
+      "duplicate_count": 3
+    },
+    {
+      "id": "6c6d1440ff2c42d25a",
+      "category": "ngo",
+      "subcategory": "ngo",
+      "subcategory_label": "NGO 모금·사업",
+      "title": "‘거제 홍보대사’ 리센느, 수해 성금 5000만원 기부 - 동아일보",
+      "summary": "거제 홍보대사 리센느가 수해 성금 5000만원을 기부했습니다.",
+      "source": "동아일보",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1NTFpYYzJQTzktS0x2b0I2RzBDSGV3aGliNmpDY0pKNlJnamNVNzJfcWNIekx1OGM5Um8wSDN0dUhDQkhUUzYzcTRqNHg0cFJHR2dqdk1GdjlPY0g4RDNSTVN1NUdxeUYyRU1hQk41dHQ1dUdXSlHSAWZBVV95cUxNR1BmdGZLODNnTXQtNHVQQ3FFdDEtN2ZKd2VvVnB0WVpKQkkyT2VaVGVwelhQdEkyaEtNRXhIXzU0UEFrOVNJN3lQdUUxd3VCaklYNWlrTENud0ZaS1FIdHMwcmdhN1E?oc=5",
+      "published_at": "2026-08-19T10:06:00+00:00",
+      "keywords": [
+        "기부"
+      ],
+      "priority": 4,
+      "ai_analyzed": true,
+      "insight": "지역 홍보대사·유명인사의 기부는 지역 재난복구 모금에 즉각적 주목을 불러일으킬 수 있습니다.",
+      "trend_tags": [
+        "재난구호",
+        "유명인기부"
+      ],
+      "confidence": "보통",
+      "source_type": "뉴스·기관자료",
+      "final_source": "원문 제공기관",
+      "verification_url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1NTFpYYzJQTzktS0x2b0I2RzBDSGV3aGliNmpDY0pKNlJnamNVNzJfcWNIekx1OGM5Um8wSDN0dUhDQkhUUzYzcTRqNHg0cFJHR2dqdk1GdjlPY0g4RDNSTVN1NUdxeUYyRU1hQk41dHQ1dUdXSlHSAWZBVV95cUxNR1BmdGZLODNnTXQtNHVQQ3FFdDEtN2ZKd2VvVnB0WVpKQkkyT2VaVGVwelhQdEkyaEtNRXhIXzU0UEFrOVNJN3lQdUUxd3VCaklYNWlrTENud0ZaS1FIdHMwcmdhN1E?oc=5"
     },
     {
       "id": "68c0ce5024450b7b33",
@@ -1233,15 +1436,42 @@
       ],
       "priority": 4,
       "ai_analyzed": true,
-      "insight": "지방자치단체와 NGO의 자원결합은 지역 아동복지 사업의 지속가능성을 높입니다.",
+      "insight": "지자체와의 재정협력은 지역 기반 사업의 안정적 운영과 공공성 확보에 유리합니다.",
       "trend_tags": [
-        "지방정부후원",
+        "지자체협력",
         "아동복지"
       ],
       "confidence": "보통",
       "source_type": "뉴스·기관자료",
       "final_source": "원문 제공기관",
-      "verification_url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBNUjh5ZWtjd1ZUTks5QUhVVkRZQ1RVM0N3TVdXaURINUhNVDQ1MDZwWHRVRkNJYlg4b1dHazZvOXZBOTFHdXFFRGxQVGo3a1BkTzM2WEFoNlVuME00M0stVNIBeEFVX3lxTE44OTRjMGRXVktwQW9vQ2xyeHNNdWJpZjI4dXkzTnNIdjg3alI3NFdhSldfR3g3UXBHTG1nQVFTWlpqNjdBbW1hTFA2bFUya0ZIaU1NYVhWeFF6VmZRM21KNTloVnJGQUNILXpqQ3Fta3dld0laelVudg?oc=5"
+      "verification_url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBNUjh5ZWtjd1ZUTks5QUhVVkRZQ1RVM0N3TVdXaURINUhNVDQ1MDZwWHRVRkNJYlg4b1dHazZvOXZBOTFHdXFFRGxQVGo3a1BkTzM2WEFoNlVuME00M0stVNIBeEFVX3lxTE44OTRjMGRXVktwQW9vQ2xyeHNNdWJpZjI4dXkzTnNIdjg3alI3NFdhSldfR3g3UXBHTG1nQVFTWlpqNjdBbW1hTFA2bFUya0ZIaU1NYVhWeFF6VmZRM21KNTloVnJGQUNILXpqQ3Fta3dld0laelVudg?oc=5",
+      "duplicate_count": 1
+    },
+    {
+      "id": "8c509218c7bfcfe29d",
+      "category": "ngo",
+      "subcategory": "ngo",
+      "subcategory_label": "NGO 모금·사업",
+      "title": "농어촌 아동에 책 선물…세이브더칠드런 '책드림' 캠페인 - 연합뉴스",
+      "summary": "세이브더칠드런이 농어촌 아동에게 책을 선물하는 '책드림' 캠페인을 진행합니다.",
+      "source": "연합뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBESEl3YlVpQWZmVGJuVFl5a0Q0MnJyT29pa0ZQa1E0Q2xjanhDbUxjdWxIVkZZNUlCcjF4eU5LSm0yUHdjRWZoMkt4VUx6Q3A0VjlkaWxJS1lLRHPSAWBBVV95cUxQRl9GUFRSbGNXOXhvYnBSY0hoWUlrbmpLSHV2NEZEeS0zVXh1ZUtIUDBrc3hqNzgyUjQyNVYxTUdlZ1FjMnZYdjZZajRVN3RSR25ndjd5WkxkWWRUc2t5SVI?oc=5",
+      "published_at": "2026-08-19T01:15:56+00:00",
+      "keywords": [
+        "캠페인"
+      ],
+      "priority": 4,
+      "ai_analyzed": true,
+      "insight": "교육물품 지원 캠페인은 지역 격차 완화와 아동 학습 지원에 직접적 영향을 주므로 협력검토 가치가 있습니다.",
+      "trend_tags": [
+        "교육지원",
+        "캠페인"
+      ],
+      "confidence": "보통",
+      "source_type": "뉴스·기관자료",
+      "final_source": "원문 제공기관",
+      "verification_url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBESEl3YlVpQWZmVGJuVFl5a0Q0MnJyT29pa0ZQa1E0Q2xjanhDbUxjdWxIVkZZNUlCcjF4eU5LSm0yUHdjRWZoMkt4VUx6Q3A0VjlkaWxJS1lLRHPSAWBBVV95cUxQRl9GUFRSbGNXOXhvYnBSY0hoWUlrbmpLSHV2NEZEeS0zVXh1ZUtIUDBrc3hqNzgyUjQyNVYxTUdlZ1FjMnZYdjZZajRVN3RSR25ndjd5WkxkWWRUc2t5SVI?oc=5",
+      "duplicate_count": 1
     },
     {
       "id": "bd22486c7c1600e001",
@@ -1268,7 +1498,30 @@
       "source_type": "뉴스·기관자료",
       "final_source": "원문 제공기관",
       "verification_url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5wcVVWUGlwdktEQWZoRDFvX1FLa0FVTE1wV0VsYUtNOU1vUjBwNEl0a2tHQ0lyMFQ3b0FpY1gxS3Vja2stYWdHZUVRNDBQUXMzLUotWVNVNHdXWWtaSW93MA?oc=5",
-      "duplicate_count": 7
+      "duplicate_count": 11
+    },
+    {
+      "id": "df9bdf427f8c583b0f",
+      "category": "ngo",
+      "subcategory": "ngo",
+      "subcategory_label": "NGO 모금·사업",
+      "title": "삼성전자, 월드비전과 함께 '삼성 페이-사랑의 빵' 기부 캠페인 실시 - samsung.com",
+      "summary": "삼성전자, 월드비전과 함께 '삼성 페이-사랑의 빵' 기부 캠페인 실시 samsung.com",
+      "source": "samsung.com",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFA4VWlTUjBYNFBVVzF1OERvS1BicDVyMEhTNE1IYVNTWVhQSzlRX1hnMHNtU1Jfa2dsZDZRTm9RclFCRE03b3AzYTFwWno4TzFVcDZRMlpiaTdRa2kwMVpYSTdTTUJ3X3BfSmFtdFhmNA?oc=5",
+      "published_at": "2026-08-17T09:08:09+00:00",
+      "keywords": [
+        "기부",
+        "캠페인"
+      ],
+      "priority": 4,
+      "ai_analyzed": false,
+      "insight": "",
+      "trend_tags": [],
+      "confidence": "원문 확인 필요",
+      "source_type": "뉴스·기관자료",
+      "final_source": "원문 제공기관",
+      "verification_url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFA4VWlTUjBYNFBVVzF1OERvS1BicDVyMEhTNE1IYVNTWVhQSzlRX1hnMHNtU1Jfa2dsZDZRTm9RclFCRE03b3AzYTFwWno4TzFVcDZRMlpiaTdRa2kwMVpYSTdTTUJ3X3BfSmFtdFhmNA?oc=5"
     },
     {
       "id": "f01491d3e1d4da6cee",
@@ -1292,7 +1545,7 @@
       "source_type": "뉴스·기관자료",
       "final_source": "원문 제공기관",
       "verification_url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE90TG5Kc19FRFpZVmdxMy1sS19JWUNfTGE4SlVvODgyYU9JYkJwOUMyOTBsNUZmNmM2UTRyZFJFMHFVR0p4ZW0ya0xGbFJTSWxER0h0RVdnVDFMUQ?oc=5",
-      "duplicate_count": 4
+      "duplicate_count": 5
     },
     {
       "id": "0b60720b72aa72bdec",
@@ -1318,7 +1571,8 @@
       "confidence": "보통",
       "source_type": "뉴스·기관자료",
       "final_source": "원문 제공기관",
-      "verification_url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5VREIwX2tHeUFZRy1RaVllbHczN3hXNU5CVFFtQ3FEU0dJZXBaeHhJVWRxVnd5X0VWN1BQVl9OMEswNkhSdGhTc0JzdTN2UVU?oc=5"
+      "verification_url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5VREIwX2tHeUFZRy1RaVllbHczN3hXNU5CVFFtQ3FEU0dJZXBaeHhJVWRxVnd5X0VWN1BQVl9OMEswNkhSdGhTc0JzdTN2UVU?oc=5",
+      "duplicate_count": 3
     },
     {
       "id": "d4917d22c17e1a3467",
@@ -1366,7 +1620,7 @@
       "source_type": "뉴스·기관자료",
       "final_source": "원문 제공기관",
       "verification_url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1INHdiR2EtLU00TVkzeURUM0tqVGhObl85bWc3RndROHpRWmVkZW50NnVPRVBVZGVEWmFvUG1LdE81c1BTT1ZLRW1pX1ZxMnMtaDln?oc=5",
-      "duplicate_count": 3
+      "duplicate_count": 1
     },
     {
       "id": "2f95f576c96b5ca2f7",
@@ -1486,8 +1740,7 @@
       "confidence": "원문 확인 필요",
       "source_type": "뉴스·기관자료",
       "final_source": "원문 제공기관",
-      "verification_url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5Iei1idkVDS1o3QVM4S2tJSldyY0I2VEtvaWc2UFZVM193YWZCM0Z2ck93QTBvbF9xRkM1V1JkcnBQRGM4M3l6eUU0LUVKUDJ0eHk0VA?oc=5",
-      "duplicate_count": 1
+      "verification_url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5Iei1idkVDS1o3QVM4S2tJSldyY0I2VEtvaWc2UFZVM193YWZCM0Z2ck93QTBvbF9xRkM1V1JkcnBQRGM4M3l6eUU0LUVKUDJ0eHk0VA?oc=5"
     },
     {
       "id": "d7d2e78608af9a6ee9",
@@ -1671,8 +1924,7 @@
       "confidence": "원문 확인 필요",
       "source_type": "뉴스·기관자료",
       "final_source": "원문 제공기관",
-      "verification_url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1Ja0JFY2JZcGRtdG5nek5sMHlFMEJQdWhLYVFVVk8tZjhDd09hMlVkU09VLW15T2NiX0FhNWJOSVU3M05PbVFaRktwYlFPMVdMSkRLZWN0eUp0WXpSZUxKNTN1WHdlRWMwZTZLc3ZqNlZUdw?oc=5",
-      "duplicate_count": 1
+      "verification_url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1Ja0JFY2JZcGRtdG5nek5sMHlFMEJQdWhLYVFVVk8tZjhDd09hMlVkU09VLW15T2NiX0FhNWJOSVU3M05PbVFaRktwYlFPMVdMSkRLZWN0eUp0WXpSZUxKNTN1WHdlRWMwZTZLc3ZqNlZUdw?oc=5"
     },
     {
       "id": "aac0ef78a832d7fd9f",
@@ -1864,6 +2116,29 @@
       "verification_url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1Zakg3Vjd6dEs2cHliWG9ZWXZQQWlyNy01VmhUeUlnX0hjX3JZWWtxOWNTenhjUzBKUExlYXBsYVVFUy1GNmZ3aGw0elczSWZzTkpzR3pjdUwyLUNRY05NTDY2MWZlZWk3anRhNVBR?oc=5"
     },
     {
+      "id": "496f8f196462a608e4",
+      "category": "ngo",
+      "subcategory": "ngo",
+      "subcategory_label": "NGO 모금·사업",
+      "title": "굿네이버스 – 기부·후원으로 만드는 변화 - ربما يعجبك أيضًا - Apple",
+      "summary": "굿네이버스 – 기부·후원으로 만드는 변화 - ربما يعجبك أيضًا Apple",
+      "source": "Apple",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOWFdzWldEbHJfVGJwbjBsdk9XbzA3Q2s5ckluZlZMUXlraUdYeXFMdXhqdzhsSE1RVnhEei1MdHpsaWdTdjgxNDB1NFNLTUFFZ1VJbE8xZ1Vsa1hxdXlScjBYekhBMTVhVTN2SzZ4bldyX0NITGhoV1hRcDlndzloWV9zbnN5T3UwMjJIaEkwd3VLdnNjMXE1SXpn?oc=5",
+      "published_at": "2026-08-07T02:03:50+00:00",
+      "keywords": [
+        "후원",
+        "기부"
+      ],
+      "priority": 4,
+      "ai_analyzed": false,
+      "insight": "",
+      "trend_tags": [],
+      "confidence": "원문 확인 필요",
+      "source_type": "뉴스·기관자료",
+      "final_source": "원문 제공기관",
+      "verification_url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOWFdzWldEbHJfVGJwbjBsdk9XbzA3Q2s5ckluZlZMUXlraUdYeXFMdXhqdzhsSE1RVnhEei1MdHpsaWdTdjgxNDB1NFNLTUFFZ1VJbE8xZ1Vsa1hxdXlScjBYekhBMTVhVTN2SzZ4bldyX0NITGhoV1hRcDlndzloWV9zbnN5T3UwMjJIaEkwd3VLdnNjMXE1SXpn?oc=5"
+    },
+    {
       "id": "b669d86e367aeedde3",
       "category": "ngo",
       "subcategory": "ngo",
@@ -2050,7 +2325,7 @@
       "source_type": "뉴스·기관자료",
       "final_source": "원문 제공기관",
       "verification_url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE82ZDdNRTBNekJoMVlKdng3SUctYU1SaktVR0dFX1FQSlBvN1RYQ29xUW1HZldyNjFadnJ4eFdmd1NRZnVBdnplZUtBY3lnNUtmR19UTFRSMEZzQzFQVlZqSVlpRGhiSTZUY3J5VWd6SdIBb0FVX3lxTE82ZDdNRTBNekJoMVlKdng3SUctYU1SaktVR0dFX1FQSlBvN1RYQ29xUW1HZldyNjFadnJ4eFdmd1NRZnVBdnplZUtBY3lnNUtmR19UTFRSMEZzQzFQVlZqSVlpRGhiSTZUY3J5VWd6SQ?oc=5",
-      "duplicate_count": 5
+      "duplicate_count": 1
     },
     {
       "id": "55d2f35fb200a94318",
@@ -2145,7 +2420,8 @@
       "confidence": "원문 확인 필요",
       "source_type": "뉴스·기관자료",
       "final_source": "원문 제공기관",
-      "verification_url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9xU0FjWTN1Ym5xZlNkMVRoWXpSUzhkNUc4Z2tyMWhVUGNETl9UOUZQWUVRZTZEaS13M3Zad1Zhb0pFUnlDbmNsWEh4bmZndw?oc=5"
+      "verification_url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9xU0FjWTN1Ym5xZlNkMVRoWXpSUzhkNUc4Z2tyMWhVUGNETl9UOUZQWUVRZTZEaS13M3Zad1Zhb0pFUnlDbmNsWEh4bmZndw?oc=5",
+      "duplicate_count": 1
     },
     {
       "id": "73634acbbe3b2be61e",
@@ -2168,8 +2444,7 @@
       "confidence": "원문 확인 필요",
       "source_type": "뉴스·기관자료",
       "final_source": "원문 제공기관",
-      "verification_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9FWEFXenlWYXpVblc4WHplRW9lTEFMY3hBX3JGenpYTkJYbzVNamRNZnAxcE5LMlVLWFU5OEJLNm1IdHBCMlZpRU5MUXNnWjJQYkV1cGc3ZENZVU11cWtpeWIzbHJ5M2x1NGfSAW9BVV95cUxQeFNKQ0VaZ3QwMzhuS0FGTHNweElROFozQks2TmNJaFA5WE5aaTZEZjZobllOWjNiVGNzc0IyQVRRZVZULVJBbGQ1Z1htWnpoZXZnTTBBMkdsZTM3Z3RrekViU1JjOHhKNjB0Q3lRRTg?oc=5",
-      "duplicate_count": 1
+      "verification_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9FWEFXenlWYXpVblc4WHplRW9lTEFMY3hBX3JGenpYTkJYbzVNamRNZnAxcE5LMlVLWFU5OEJLNm1IdHBCMlZpRU5MUXNnWjJQYkV1cGc3ZENZVU11cWtpeWIzbHJ5M2x1NGfSAW9BVV95cUxQeFNKQ0VaZ3QwMzhuS0FGTHNweElROFozQks2TmNJaFA5WE5aaTZEZjZobllOWjNiVGNzc0IyQVRRZVZULVJBbGQ1Z1htWnpoZXZnTTBBMkdsZTM3Z3RrekViU1JjOHhKNjB0Q3lRRTg?oc=5"
     },
     {
       "id": "52ee15391bbc06ac29",
@@ -3229,8 +3504,7 @@
       "confidence": "원문 확인 필요",
       "source_type": "뉴스·기관자료",
       "final_source": "원문 제공기관",
-      "verification_url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1fb1pGVVNpMm53TmwyWUJncTZPaDU2Z19lN21PUEtFdGFyd2RtT0Eya3ZuWlU1UVBqREdneUJiMzFacU9CZzhYNHJfNkllM3dqeHc?oc=5",
-      "duplicate_count": 1
+      "verification_url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1fb1pGVVNpMm53TmwyWUJncTZPaDU2Z19lN21PUEtFdGFyd2RtT0Eya3ZuWlU1UVBqREdneUJiMzFacU9CZzhYNHJfNkllM3dqeHc?oc=5"
     },
     {
       "id": "073cbb61569d248b98",
@@ -3346,268 +3620,6 @@
       "source_type": "뉴스·기관자료",
       "final_source": "원문 제공기관",
       "verification_url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5mVjRCVVdEN29QUkxBRmltNl9OOEZvX0JTMWhITmRaTmtaRm9PSXJaVDdFRl9CclROcGdtS3FuOUl3Q1FVMTlidmx6bVpva0Zjd1ZxM2JFLW5Tdw?oc=5"
-    },
-    {
-      "id": "c7b5f3dfaae6c4dc69",
-      "category": "ngo",
-      "subcategory": "ngo",
-      "subcategory_label": "NGO 모금·사업",
-      "title": "대전 동구 들썩인 '재능기부 콘서트'… 따뜻한 나눔 실천 - 비알뉴스",
-      "summary": "대전 동구 들썩인 '재능기부 콘서트'… 따뜻한 나눔 실천 비알뉴스",
-      "source": "비알뉴스",
-      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1nbFozdzd2YWFMbmVxZ3U1TmF5ZE5VaDBWbFNxMFNVc0FfOHBJdXZRcl96SVlMYmdJNFNsWkVwemFvcTlidlBOS0J0MnNDOUtKbnVwZ01WcUw1bXNtclE2NkZlMUdHTUNrbFE?oc=5",
-      "published_at": "2026-07-22T07:00:00+00:00",
-      "keywords": [
-        "기부",
-        "나눔"
-      ],
-      "priority": 4,
-      "ai_analyzed": false,
-      "insight": "",
-      "trend_tags": [],
-      "confidence": "원문 확인 필요",
-      "source_type": "뉴스·기관자료",
-      "final_source": "원문 제공기관",
-      "verification_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1nbFozdzd2YWFMbmVxZ3U1TmF5ZE5VaDBWbFNxMFNVc0FfOHBJdXZRcl96SVlMYmdJNFNsWkVwemFvcTlidlBOS0J0MnNDOUtKbnVwZ01WcUw1bXNtclE2NkZlMUdHTUNrbFE?oc=5"
-    },
-    {
-      "id": "c70ad449259da619d4",
-      "category": "ngo",
-      "subcategory": "ngo",
-      "subcategory_label": "NGO 모금·사업",
-      "title": "월드비전–SGC에너지, 조식지원사업 등 국내 위기 아동 지원 확대 - 시선뉴스",
-      "summary": "월드비전과 SGC에너지가 조식지원사업 등 국내 위기 아동 지원을 확대한다고 보도되었다.",
-      "source": "시선뉴스",
-      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1qNG1jM0NyeFhCcTBBb2tfY19aazhVaW5LR3dKM3RMU1R4S2tyRk90SHRuVUI2QmtFRGtZbmlpR1ljRTMtaU4yZjFqaU9jTmYzWkRsVnc5X0k1TWlMd0hrOFBFVy1jYXBwZ2hteWdR0gFyQVVfeXFMUHRyUXFJcEFfVUJKWC1zUVRiZVNNeTE0TFJ2Rm9EZ2RfamhFYmQ2NHZiWDJXWFU3SGh5cjQwZ2hfd09Rd0RCeE9nQWFRLVJsRFNqZ2FBelRmOU1qUU15MVVPTjgzUXFkVjQ3eEd1SWExN3Zn?oc=5",
-      "published_at": "2026-07-22T02:08:22+00:00",
-      "keywords": [
-        "지원사업"
-      ],
-      "priority": 4,
-      "ai_analyzed": true,
-      "insight": "기업-NGO 연계로 아동 급식·돌봄 분야 지원을 확대하는 사례로 기업의 현물·프로그램 후원이 주목된다.",
-      "trend_tags": [
-        "기업·NGO파트너십",
-        "아동지원"
-      ],
-      "confidence": "보통",
-      "source_type": "뉴스·기관자료",
-      "final_source": "원문 제공기관",
-      "verification_url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1qNG1jM0NyeFhCcTBBb2tfY19aazhVaW5LR3dKM3RMU1R4S2tyRk90SHRuVUI2QmtFRGtZbmlpR1ljRTMtaU4yZjFqaU9jTmYzWkRsVnc5X0k1TWlMd0hrOFBFVy1jYXBwZ2hteWdR0gFyQVVfeXFMUHRyUXFJcEFfVUJKWC1zUVRiZVNNeTE0TFJ2Rm9EZ2RfamhFYmQ2NHZiWDJXWFU3SGh5cjQwZ2hfd09Rd0RCeE9nQWFRLVJsRFNqZ2FBelRmOU1qUU15MVVPTjgzUXFkVjQ3eEd1SWExN3Zn?oc=5"
-    },
-    {
-      "id": "a56e29a725ccda22a2",
-      "category": "ngo",
-      "subcategory": "ngo",
-      "subcategory_label": "NGO 모금·사업",
-      "title": "세이브더칠드런 위기아동지원사업 선정, 사례가정 주거환경 개선 실시 > 포토앨범 - 천안시장애인종합복지관",
-      "summary": "세이브더칠드런 위기아동지원사업 선정, 사례가정 주거환경 개선 실시 > 포토앨범 천안시장애인종합복지관",
-      "source": "천안시장애인종합복지관",
-      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNQ3VlTDgyV2I5S3N2d2xqS0p1TDg2c2Y2ckExaTdLZFU0bm9WOWVXcDR2T3p3cTVmRGFxMWZOdjY3U1BhamZ5TldPMjY3SXFXajl2WGIyNHBIMUdxY1ZZaWw5U1FiTFhha2ZRX0xxaW1RWFN5R3pfd1hfa2ZKMlVnMml3?oc=5",
-      "published_at": "2026-07-21T21:52:51+00:00",
-      "keywords": [
-        "지원사업",
-        "아동지원"
-      ],
-      "priority": 4,
-      "ai_analyzed": false,
-      "insight": "",
-      "trend_tags": [],
-      "confidence": "원문 확인 필요",
-      "source_type": "뉴스·기관자료",
-      "final_source": "원문 제공기관",
-      "verification_url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNQ3VlTDgyV2I5S3N2d2xqS0p1TDg2c2Y2ckExaTdLZFU0bm9WOWVXcDR2T3p3cTVmRGFxMWZOdjY3U1BhamZ5TldPMjY3SXFXajl2WGIyNHBIMUdxY1ZZaWw5U1FiTFhha2ZRX0xxaW1RWFN5R3pfd1hfa2ZKMlVnMml3?oc=5"
-    },
-    {
-      "id": "b676d43302bf32a9c7",
-      "category": "ngo",
-      "subcategory": "ngo",
-      "subcategory_label": "NGO 모금·사업",
-      "title": "미추홀구, 한의사회 여름나기 보약 1,800포 후원…취약계층 건강 지원 - 뉴스타운",
-      "summary": "미추홀구가 한의사회와 협력해 여름나기 보약 1,800포를 후원하여 취약계층 건강을 지원했다.",
-      "source": "뉴스타운",
-      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1rdGNpSS1vUGF1bDRvY0NzOFhuY3ZteWdxOVY0MXR4dG9yQjRid25kTUJpNW9wYlVUUGIzdWJfOURHcGxxVzUzU2dUTmRnN3BzU2o1aVNZZlFvUE9vYXZWUWR1RkZrRlFteEllYXRR?oc=5",
-      "published_at": "2026-07-21T08:07:08+00:00",
-      "keywords": [
-        "후원",
-        "취약계층"
-      ],
-      "priority": 4,
-      "ai_analyzed": true,
-      "insight": "지자체-전문단체 연계의 건강물품 지원은 취약계층 건강관리의 실질적 보완책이 된다.",
-      "trend_tags": [
-        "지자체협력",
-        "건강지원"
-      ],
-      "confidence": "보통",
-      "source_type": "뉴스·기관자료",
-      "final_source": "원문 제공기관",
-      "verification_url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1rdGNpSS1vUGF1bDRvY0NzOFhuY3ZteWdxOVY0MXR4dG9yQjRid25kTUJpNW9wYlVUUGIzdWJfOURHcGxxVzUzU2dUTmRnN3BzU2o1aVNZZlFvUE9vYXZWUWR1RkZrRlFteEllYXRR?oc=5"
-    },
-    {
-      "id": "baed77d4ef71a7a899",
-      "category": "ngo",
-      "subcategory": "ngo",
-      "subcategory_label": "NGO 모금·사업",
-      "title": "인천시의회 문화복지위, 당선 축하 화분 기부로 '나눔 의정' 첫발 - 프레시안",
-      "summary": "인천시의회 문화복지위, 당선 축하 화분 기부로 '나눔 의정' 첫발 프레시안",
-      "source": "프레시안",
-      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE04TW1TQ2pKdjB1SjZTdTZramFNUEV1ajVoTVV4UERWVTY4TXl6ZkJJdVRsb25Rc204UVprbC1XN2JyNW41U0FCMDhKNkp0WndhQnM1TkxUREl6NzNfa29LTFJwanh6el9RZkFv?oc=5",
-      "published_at": "2026-07-21T08:02:53+00:00",
-      "keywords": [
-        "기부",
-        "나눔"
-      ],
-      "priority": 4,
-      "ai_analyzed": false,
-      "insight": "",
-      "trend_tags": [],
-      "confidence": "원문 확인 필요",
-      "source_type": "뉴스·기관자료",
-      "final_source": "원문 제공기관",
-      "verification_url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE04TW1TQ2pKdjB1SjZTdTZramFNUEV1ajVoTVV4UERWVTY4TXl6ZkJJdVRsb25Rc204UVprbC1XN2JyNW41U0FCMDhKNkp0WndhQnM1TkxUREl6NzNfa29LTFJwanh6el9RZkFv?oc=5"
-    },
-    {
-      "id": "dd909a7078424c4f16",
-      "category": "ngo",
-      "subcategory": "ngo",
-      "subcategory_label": "NGO 모금·사업",
-      "title": "대전시교육청·초록우산, 취약계층 학생에 2400만 원 상당 상품권·동행 장보기 지원 - 보도자료 | 기사 - 더팩트",
-      "summary": "대전시교육청과 초록우산이 취약계층 학생에 2,400만 원 상당의 상품권 및 동행 장보기 지원을 진행했다.",
-      "source": "더팩트",
-      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE10VnE4TnpERjJicDRBd3FFaVNldlFrNU94LUF6Wl93ZDRzb3lmQmZCSXJDYVRuVWVSOU9DZU9fZldJNWcwaloxRHB5Q3BRQmppdko1SkhhWGI2WDFBelVB?oc=5",
-      "published_at": "2026-07-21T07:36:11+00:00",
-      "keywords": [
-        "취약계층"
-      ],
-      "priority": 4,
-      "ai_analyzed": true,
-      "insight": "현금성(상품권)·동행 지원 병행은 취약학생의 즉각적 생활안정과 장기적 자립 지원을 동시에 고려한 조치다.",
-      "trend_tags": [
-        "상품권지원",
-        "교육복지"
-      ],
-      "confidence": "보통",
-      "source_type": "뉴스·기관자료",
-      "final_source": "원문 제공기관",
-      "verification_url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE10VnE4TnpERjJicDRBd3FFaVNldlFrNU94LUF6Wl93ZDRzb3lmQmZCSXJDYVRuVWVSOU9DZU9fZldJNWcwaloxRHB5Q3BRQmppdko1SkhhWGI2WDFBelVB?oc=5"
-    },
-    {
-      "id": "fc7e23b78942e40cd5",
-      "category": "ngo",
-      "subcategory": "ngo",
-      "subcategory_label": "NGO 모금·사업",
-      "title": "굿네이버스, '1억2000만원 후원' 정숙자 후원자 아너스클럽 등재 - 뉴시스",
-      "summary": "굿네이버스, '1억2000만원 후원' 정숙자 후원자 아너스클럽 등재 뉴시스",
-      "source": "뉴시스",
-      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9CZEJycmZYSmd1YjlEd2dyay1sOEZQWU5MQzhOOHAzLW9JY284U2M3M0lGeFFBTFNrXzlMOWQxZFdpWVdpYkhidlVwUC12RGtaYjNkTUN1Q2xSODBsUTg1ZDR3?oc=5",
-      "published_at": "2026-07-21T07:00:00+00:00",
-      "keywords": [
-        "후원",
-        "후원자"
-      ],
-      "priority": 4,
-      "ai_analyzed": false,
-      "insight": "",
-      "trend_tags": [],
-      "confidence": "원문 확인 필요",
-      "source_type": "뉴스·기관자료",
-      "final_source": "원문 제공기관",
-      "verification_url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9CZEJycmZYSmd1YjlEd2dyay1sOEZQWU5MQzhOOHAzLW9JY284U2M3M0lGeFFBTFNrXzlMOWQxZFdpWVdpYkhidlVwUC12RGtaYjNkTUN1Q2xSODBsUTg1ZDR3?oc=5"
-    },
-    {
-      "id": "bd69f56af1708471a5",
-      "category": "ngo",
-      "subcategory": "ngo",
-      "subcategory_label": "NGO 모금·사업",
-      "title": "[도서 기부 캠페인] 2026 어린이 책Dream 프로젝트 - event.kyobobook.co.kr",
-      "summary": "[도서 기부 캠페인] 2026 어린이 책Dream 프로젝트 event.kyobobook.co.kr",
-      "source": "event.kyobobook.co.kr",
-      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9jS0psUVFaV1RyX3RtYk9yNjg1WS1pTjhnSEtFVkNrc1VmTG9SZXZCWWh5MG1oR09aOUhGUGdHZGY1dWtROWJ6SDFDbjJUS1BrVW1R?oc=5",
-      "published_at": "2026-07-21T06:34:23+00:00",
-      "keywords": [
-        "기부",
-        "캠페인"
-      ],
-      "priority": 4,
-      "ai_analyzed": false,
-      "insight": "",
-      "trend_tags": [],
-      "confidence": "원문 확인 필요",
-      "source_type": "뉴스·기관자료",
-      "final_source": "원문 제공기관",
-      "verification_url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9jS0psUVFaV1RyX3RtYk9yNjg1WS1pTjhnSEtFVkNrc1VmTG9SZXZCWWh5MG1oR09aOUhGUGdHZGY1dWtROWJ6SDFDbjJUS1BrVW1R?oc=5"
-    },
-    {
-      "id": "b00cf0c6e43797cf80",
-      "category": "ngo",
-      "subcategory": "ngo",
-      "subcategory_label": "NGO 모금·사업",
-      "title": "SGC에너지, 취약계층 아동 지원 확대…식사·주거 등 지원 - 뉴시스",
-      "summary": "SGC에너지가 취약계층 아동 지원을 확대해 식사·주거 등 지원을 확대한다는 내용이 뉴시스에 보도됐다.",
-      "source": "뉴시스",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE90VE53ZWE4WU1WaHRYVGRGZWtwRTdXR3RuRXI4VGhUVFBmbEF2QUc5andsYW5nbmJ4X0o3cXhaWjhfeFdhWHlXbmRZaHBlZEFjaHZMOU9PU2ZVeE9wQW5sbtIBeEFVX3lxTFByM2czWGRnYlRwZkFIYUxjeU5HYlhjSWFDcWFmN0N2dnQ2UVE2SUZ5Y3VySFFjUFljZUNHVUFUZm9MV3gzUU1YT2lhaFZaeXVYdkdLRXZuYWNYT2psVmh3MmUtZFJWWF8yZnczLU9XelhadXpramRlZQ?oc=5",
-      "published_at": "2026-07-21T06:18:35+00:00",
-      "keywords": [
-        "취약계층"
-      ],
-      "priority": 4,
-      "ai_analyzed": true,
-      "insight": "언론 보도 확산은 해당 기업-NGO 협력의 사회적 관심을 높여 추가 후원 확장에 유리하다.",
-      "trend_tags": [
-        "기업·NGO협력",
-        "언론확산"
-      ],
-      "confidence": "보통",
-      "source_type": "뉴스·기관자료",
-      "final_source": "원문 제공기관",
-      "verification_url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE90VE53ZWE4WU1WaHRYVGRGZWtwRTdXR3RuRXI4VGhUVFBmbEF2QUc5andsYW5nbmJ4X0o3cXhaWjhfeFdhWHlXbmRZaHBlZEFjaHZMOU9PU2ZVeE9wQW5sbtIBeEFVX3lxTFByM2czWGRnYlRwZkFIYUxjeU5HYlhjSWFDcWFmN0N2dnQ2UVE2SUZ5Y3VySFFjUFljZUNHVUFUZm9MV3gzUU1YT2lhaFZaeXVYdkdLRXZuYWNYT2psVmh3MmUtZFJWWF8yZnczLU9XelhadXpramRlZQ?oc=5"
-    },
-    {
-      "id": "8fc04f5937dfdbc43e",
-      "category": "ngo",
-      "subcategory": "ngo",
-      "subcategory_label": "NGO 모금·사업",
-      "title": "주식회사 비앤엠, '2026 화성특례시 굿마켓'서 ‘바디앤 EMS 슬림핏 괄사 Pro' 나눔 기부 선행 보여 - 시선뉴스",
-      "summary": "주식회사 비앤엠, '2026 화성특례시 굿마켓'서 ‘바디앤 EMS 슬림핏 괄사 Pro' 나눔 기부 선행 보여 시선뉴스",
-      "source": "시선뉴스",
-      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1lcTRZaGRBVERQbUVfaDFrQ1I3ZW1UQkplTjk4dHN0Y0N6Wnc5NXBzTW1IUWxfX3NDSFdkcXpFMHVTM3YwTV9oeHh3a3JWdXFjUXZRYzZkcHVhMkZMUERoUE44LVZnU1hXWG9iSlhB0gFyQVVfeXFMT21jb1FPaHlqTk9sR1ZPVHY1dTZGaFdJV0ltUmRmbWZKQWtZSXVTN2pzNGExM3ktYnpUNHk5XzllU2x1US1GVW5PNzJad3praWJsTFhPRy1leTl3bTNvYzJ5WjNBcTlwS0hMX05temVBRmx3?oc=5",
-      "published_at": "2026-07-21T04:13:06+00:00",
-      "keywords": [
-        "기부",
-        "나눔"
-      ],
-      "priority": 4,
-      "ai_analyzed": false,
-      "insight": "",
-      "trend_tags": [],
-      "confidence": "원문 확인 필요",
-      "source_type": "뉴스·기관자료",
-      "final_source": "원문 제공기관",
-      "verification_url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1lcTRZaGRBVERQbUVfaDFrQ1I3ZW1UQkplTjk4dHN0Y0N6Wnc5NXBzTW1IUWxfX3NDSFdkcXpFMHVTM3YwTV9oeHh3a3JWdXFjUXZRYzZkcHVhMkZMUERoUE44LVZnU1hXWG9iSlhB0gFyQVVfeXFMT21jb1FPaHlqTk9sR1ZPVHY1dTZGaFdJV0ltUmRmbWZKQWtZSXVTN2pzNGExM3ktYnpUNHk5XzllU2x1US1GVW5PNzJad3praWJsTFhPRy1leTl3bTNvYzJ5WjNBcTlwS0hMX05temVBRmx3?oc=5"
-    },
-    {
-      "id": "a902d082c41958a743",
-      "category": "ngo",
-      "subcategory": "ngo",
-      "subcategory_label": "NGO 모금·사업",
-      "title": "적십자·마사회, 강남 취약계층에 건강 푸드패키지 전달 봉사 - gukjenews.com",
-      "summary": "적십자·마사회, 강남 취약계층에 건강 푸드패키지 전달 봉사 gukjenews.com",
-      "source": "gukjenews.com",
-      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5odTB4TTBOdVFEbEw5dGY0cUQxTEUtanlvUFdnQ19PSkxVMU92WHJJanBOZmVrSXVFdGhpUkUxM1pEZ2M5bDBSUkFFdnVTdWFCWjNQQjV4QlFfSWtpUFN3QW1yczlZNzRFWWNrQmdB?oc=5",
-      "published_at": "2026-07-20T23:52:48+00:00",
-      "keywords": [
-        "취약계층",
-        "봉사"
-      ],
-      "priority": 4,
-      "ai_analyzed": false,
-      "insight": "",
-      "trend_tags": [],
-      "confidence": "원문 확인 필요",
-      "source_type": "뉴스·기관자료",
-      "final_source": "원문 제공기관",
-      "verification_url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5odTB4TTBOdVFEbEw5dGY0cUQxTEUtanlvUFdnQ19PSkxVMU92WHJJanBOZmVrSXVFdGhpUkUxM1pEZ2M5bDBSUkFFdnVTdWFCWjNQQjV4QlFfSWtpUFN3QW1yczlZNzRFWWNrQmdB?oc=5"
     },
     {
       "id": "8bd7ed9b030aaf60f7",
