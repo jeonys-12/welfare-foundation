@@ -34,6 +34,19 @@ class AiCostTests(unittest.TestCase):
   self.assertEqual(status2["reused"],1)
   self.assertEqual(status2["analyzed"],0)
 
+ def test_reuses_identical_input_when_url_changes(self):
+  calls=[]
+  def fake_fetch(url,data=None,**kwargs):
+   calls.append(json.loads(data))
+   return self.fake_response(calls[-1])
+  first=item("https://example.com/original")
+  moved=item("https://mirror.example.com/moved")
+  with patch.object(collector,"OPENAI_API_KEY","test"), patch.object(collector,"fetch",fake_fetch):
+   analyzed,_=collector.analyze_with_openai([dict(first)],[])
+   _,status=collector.analyze_with_openai([dict(moved)],[dict(analyzed[0])])
+  self.assertEqual(len(calls),1)
+  self.assertEqual(status["reused"],1)
+
  def test_does_not_backfill_old_unanalyzed_items(self):
   old=item("https://example.com/old")
   with patch.object(collector,"OPENAI_API_KEY","test"), patch.object(
@@ -52,7 +65,8 @@ class AiCostTests(unittest.TestCase):
    collector.analyze_with_openai([dict(old),dict(new)],[dict(old)])
   rows=json.loads(calls[0]["input"].split("\n")[-1])
   self.assertEqual(len(rows),1)
-  self.assertEqual(set(rows[0]),{"i","c","k","t","s"})
+  self.assertEqual(set(rows[0]),{"i","k","t","s"})
+  self.assertEqual(calls[0]["max_output_tokens"],420)
 
 
 if __name__=="__main__":

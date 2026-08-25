@@ -587,13 +587,15 @@ def ai_input_hash(item):
  return hashlib.sha256(json.dumps(payload,ensure_ascii=False,sort_keys=True).encode()).hexdigest()[:16]
 
 def reuse_ai_analysis(items,old_items):
- """Reuse paid output when the same URL/input was already analyzed."""
+ """Reuse paid output for the same URL or identical normalized input."""
  old_by_url={x.get("url"):x for x in old_items if x.get("url") and x.get("ai_analyzed")}
+ old_by_hash={x.get("ai_input_hash"):x for x in old_items
+              if x.get("ai_input_hash") and x.get("ai_analyzed")}
  reused=0
  for item in items:
-  old=old_by_url.get(item.get("url"))
-  if not old: continue
   current_hash=ai_input_hash(item)
+  old=old_by_url.get(item.get("url")) or old_by_hash.get(current_hash)
+  if not old: continue
   # Legacy rows have no hash; URL identity is the safest one-time migration key.
   if old.get("ai_input_hash") and old["ai_input_hash"]!=current_hash: continue
   for field in AI_FIELDS:
@@ -619,7 +621,7 @@ def analyze_with_openai(items,old_items=()):
   return items, {"enabled":True,"model":OPENAI_MODEL,"analyzed":0,"reused":reused,
                  "message":"기존 OpenAI 분석 재사용 — API 호출 없음"}
  input_hashes={x["id"]:ai_input_hash(x) for x in candidates}
- compact=[{"i":x["id"],"c":x["category"],"k":x["subcategory"],
+ compact=[{"i":x["id"],"k":x["subcategory"],
            "t":x["title"][:180],"s":x["summary"][:180]} for x in candidates]
  schema={
   "type":"object","properties":{"items":{"type":"array","items":{"type":"object",
@@ -628,12 +630,13 @@ def analyze_with_openai(items,old_items=()):
     "c":{"type":"string","enum":["높음","보통","낮음"]}},
    "required":["i","t","s","n","g","p","c"],"additionalProperties":False}}},
   "required":["items"],"additionalProperties":False}
- prompt=("한국어로 분석하세요. 입력에 없는 사실은 만들지 마세요. 출력 키: i=입력 i, t=한국어 제목, "
+ prompt=("한국어로 분석하세요. 입력에 없는 사실은 만들지 마세요. 출력 키: i=입력 i, "
+         "t=k가 disaster_global일 때만 한국어 제목(그 외 빈 문자열), "
          "s=핵심 요약(2문장 이내), n=공익법인·사회공헌 실무 시사점(1문장), "
-         "g=태그(최대 3개), p=중요도(1~5), c=신뢰도. k가 disaster_global이면 t를 반드시 번역하세요.\n"
+         "g=태그(최대 3개), p=중요도(1~5), c=신뢰도.\n"
          +json.dumps(compact,ensure_ascii=False))
  body={"model":OPENAI_MODEL,"store":False,"input":prompt,
-       "max_output_tokens":max(900,260*len(candidates)),"reasoning":{"effort":"minimal"},
+       "max_output_tokens":max(420,220*len(candidates)+200),"reasoning":{"effort":"minimal"},
        "prompt_cache_key":"welfare-monitor-v1",
        "text":{"verbosity":"low","format":{"type":"json_schema","name":"monitoring_analysis","strict":True,"schema":schema}}}
  raw=fetch("https://api.openai.com/v1/responses",data=json.dumps(body).encode(),
