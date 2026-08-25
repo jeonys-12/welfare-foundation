@@ -12,7 +12,8 @@ ROOT=Path(__file__).resolve().parents[1]
 OUT=ROOT/"data/news.json"
 UA="Mozilla/5.0 (compatible; PublicValueMonitor/2.0; +https://github.com/jeonys-12/welfare-foundation)"
 OPENAI_API_KEY=(os.getenv("OPENAI_API_KEY") or os.getenv("OPEN_API_KEY") or "").strip()
-OPENAI_MODEL=os.getenv("OPENAI_MODEL","gpt-5-mini").strip()
+OPENAI_MODEL=os.getenv("OPENAI_MODEL","gpt-5-nano").strip()
+OPENAI_MAX_ITEMS=max(0,int(os.getenv("OPENAI_MAX_ITEMS","12")))
 KBS_PROGRAM_URL="https://program.kbs.co.kr/1tv/culture/accompany/pc/list.html?smenu=c2cc5a"
 KBS_SEARCH_URLS=[
  "https://www.kbs.co.kr/m/search/main.html?keyword=%EB%8F%99%ED%96%89",
@@ -576,15 +577,47 @@ def extract_output_text(response):
    if part.get("type")=="output_text": return part.get("text","")
  return ""
 
-def analyze_with_openai(items):
+AI_FIELDS=("summary","insight","trend_tags","priority","confidence","ai_analyzed",
+           "ai_input_hash","original_title")
+
+def ai_input_hash(item):
+ payload={"category":item.get("category",""),"subcategory":item.get("subcategory",""),
+          "title":item.get("original_title") or item.get("title",""),
+          "summary":item.get("summary","")[:220]}
+ return hashlib.sha256(json.dumps(payload,ensure_ascii=False,sort_keys=True).encode()).hexdigest()[:16]
+
+def reuse_ai_analysis(items,old_items):
+ """Reuse paid output when the same URL/input was already analyzed."""
+ old_by_url={x.get("url"):x for x in old_items if x.get("url") and x.get("ai_analyzed")}
+ reused=0
+ for item in items:
+  old=old_by_url.get(item.get("url"))
+  if not old: continue
+  current_hash=ai_input_hash(item)
+  # Legacy rows have no hash; URL identity is the safest one-time migration key.
+  if old.get("ai_input_hash") and old["ai_input_hash"]!=current_hash: continue
+  for field in AI_FIELDS:
+   if field in old: item[field]=old[field]
+  if old.get("original_title"):
+   item["title"]=old.get("title",item["title"])
+  item["ai_input_hash"]=current_hash
+  reused+=1
+ return reused
+
+def analyze_with_openai(items,old_items=()):
  if not OPENAI_API_KEY or not items:
   return items, {"enabled":False,"analyzed":0,"message":"OPENAI_API_KEY가 없어 기본 요약을 사용했습니다."}
+ reused=reuse_ai_analysis(items,old_items)
  # 해외 재난을 우선 분석해 영문 경보가 한국어 제목·요약 없이 노출되지 않게 한다.
- ordered=sorted(items,key=lambda x:x.get("subcategory")=="disaster_global",reverse=True)
- candidates=ordered[:40]
+ pending=[x for x in items if not x.get("ai_analyzed")]
+ ordered=sorted(pending,key=lambda x:x.get("subcategory")=="disaster_global",reverse=True)
+ candidates=ordered[:OPENAI_MAX_ITEMS]
+ if not candidates:
+  return items, {"enabled":True,"model":OPENAI_MODEL,"analyzed":0,"reused":reused,
+                 "message":"기존 OpenAI 분석 재사용 — API 호출 없음"}
+ input_hashes={x["id"]:ai_input_hash(x) for x in candidates}
  compact=[{"id":x["id"],"category":x["category"],"subcategory":x["subcategory"],
-           "title":x["title"],"source":x["source"],"published_at":x["published_at"],
-           "raw_summary":x["summary"][:260]} for x in candidates]
+           "title":x["title"][:180],"raw_summary":x["summary"][:180]} for x in candidates]
  schema={
   "type":"object","properties":{"items":{"type":"array","items":{"type":"object",
    "properties":{"id":{"type":"string"},"title_ko":{"type":"string"},"summary":{"type":"string"},"insight":{"type":"string"},
@@ -592,15 +625,17 @@ def analyze_with_openai(items):
     "confidence":{"type":"string","enum":["높음","보통","낮음"]}},
    "required":["id","title_ko","summary","insight","trend_tags","priority","confidence"],"additionalProperties":False}}},
   "required":["items"],"additionalProperties":False}
- prompt=("다음 모니터링 목록을 한국어로 분석하세요. 제공된 제목·요약에 없는 사실은 만들지 마세요. "
+ prompt=("목록을 한국어 JSON으로 분석하세요. 입력에 없는 사실은 만들지 마세요. "
          "title_ko는 자연스러운 한국어 제목입니다. 특히 subcategory가 disaster_global이면 원문 제목을 반드시 한국어로 번역하고, "
-         "summary에는 재난 종류·발생지역·발생시각·피해·대응 중 원문에서 확인되는 내용만 2문장 이내로 요약하세요. "
+         "summary는 확인되는 핵심만 2문장 이내로 요약하세요. "
          "그 밖의 항목도 title_ko를 한국어로 쓰되 기존 한국어 제목은 그대로 유지하세요. "
          "insight는 공익법인 또는 사회공헌 실무 관점의 시사점 1문장, trend_tags는 최대 3개, "
          "priority는 업무 중요도 1~5입니다. 정보가 빈약하면 confidence를 낮음으로 표시하세요.\n"
          +json.dumps(compact,ensure_ascii=False))
  body={"model":OPENAI_MODEL,"store":False,"input":prompt,
-       "text":{"format":{"type":"json_schema","name":"monitoring_analysis","strict":True,"schema":schema}}}
+       "max_output_tokens":max(900,260*len(candidates)),"reasoning":{"effort":"minimal"},
+       "prompt_cache_key":"welfare-monitor-v1",
+       "text":{"verbosity":"low","format":{"type":"json_schema","name":"monitoring_analysis","strict":True,"schema":schema}}}
  raw=fetch("https://api.openai.com/v1/responses",data=json.dumps(body).encode(),
            headers={"Authorization":"Bearer "+OPENAI_API_KEY,"Content-Type":"application/json"},tries=1,timeout=120)
  parsed=json.loads(extract_output_text(json.loads(raw)))
@@ -615,9 +650,11 @@ def analyze_with_openai(items):
    item["title"]=translated[:220]
   item.update({"summary":a["summary"][:500],"insight":a["insight"][:300],
                "trend_tags":a["trend_tags"][:3],"priority":a["priority"],
-               "confidence":a["confidence"],"ai_analyzed":True})
+               "confidence":a["confidence"],"ai_analyzed":True,
+               "ai_input_hash":input_hashes[item["id"]]})
   analyzed+=1
- return items, {"enabled":True,"model":OPENAI_MODEL,"analyzed":analyzed,"message":"OpenAI 분석 완료"}
+ return items, {"enabled":True,"model":OPENAI_MODEL,"analyzed":analyzed,"reused":reused,
+                "message":"OpenAI 변경분 분석 완료"}
 
 DEDUP_STOPWORDS={
  "관련","통해","위해","대한","대상","지원","후원","사업","활동","진행","제공","참여",
@@ -778,7 +815,7 @@ def main():
   x["id"]=hashlib.sha256((x["category"]+"|"+x["subcategory"]+"|"+key).encode()).hexdigest()[:18]
  if not dedup: dedup=[x for x in old.get("items",[]) if isinstance(x,dict)]
  ai_status={"enabled":False,"analyzed":0,"message":"분석 미실행"}
- try: dedup,ai_status=analyze_with_openai(dedup)
+ try: dedup,ai_status=analyze_with_openai(dedup,old.get("items",[]))
  except Exception as e:
   errors.append({"source":"openai","error":str(e)[:200]})
   ai_status={"enabled":bool(OPENAI_API_KEY),"analyzed":0,"message":"AI 분석 실패 — 기본 요약 유지"}

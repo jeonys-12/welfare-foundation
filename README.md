@@ -39,7 +39,7 @@ Google News RSS는 공식 자료를 발견하기 위한 경로로만 사용합�
 
 저장소 **Settings → Secrets and variables → Actions → Secrets**에 `OPENAI_API_KEY`를 등록하세요. 키는 브라우저나 저장소 파일에 포함되지 않고 GitHub Actions 실행 시에만 전달됩니다.
 
-선택 사항으로 **Variables**에 `OPENAI_MODEL`을 등록할 수 있습니다. 미등록 시 `gpt-5-mini`를 사용합니다. 매 실행마다 최신 수집물 중 최대 40건을 분석해 핵심요약, 실무 시사점, 트렌드 태그, 중요도, 신뢰도를 생성합니다. API 호출 실패 시에도 원래 RSS 요약을 보존하고 배포를 계속합니다.
+선택 사항으로 **Variables**에 `OPENAI_MODEL`과 `OPENAI_MAX_ITEMS`를 등록할 수 있습니다. 기본값은 비용이 가장 낮은 요약·분류용 `gpt-5-nano`와 실행당 신규 최대 12건입니다. 이미 분석한 URL은 입력 내용이 바뀌지 않으면 `data/news.json`의 결과를 재사용하여 API를 호출하지 않습니다. 더 높은 품질이 필요하면 모델이나 건수만 올릴 수 있습니다. API 호출 실패 시에도 원래 RSS 요약을 보존하고 배포를 계속합니다.
 
 ## 자동 업데이트
 
