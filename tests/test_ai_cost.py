@@ -7,7 +7,7 @@ import scripts.collect_news as collector
 
 def item(url, analyzed=False):
  return {"id":url.rsplit("/",1)[-1],"url":url,"category":"csr","subcategory":"csr",
-         "title":"새 소식","summary":"원문 요약","source":"기관",
+         "title":"새 소식","summary":"이 원문은 공익 사업의 구체적인 대상과 일정, 지원 내용 및 향후 계획을 충분히 설명합니다.","source":"기관",
          "published_at":"2026-08-25T00:00:00+00:00","ai_analyzed":analyzed}
 
 
@@ -53,6 +53,15 @@ class AiCostTests(unittest.TestCase):
       collector,"fetch",side_effect=AssertionError("API must not be called")):
    _,status=collector.analyze_with_openai([dict(old)],[dict(old)])
   self.assertEqual(status["analyzed"],0)
+
+ def test_skips_thin_new_input_without_api_call(self):
+  thin=item("https://example.com/thin")
+  thin["summary"]=thin["title"]
+  with patch.object(collector,"OPENAI_API_KEY","test"), patch.object(
+      collector,"fetch",side_effect=AssertionError("API must not be called")):
+   _,status=collector.analyze_with_openai([thin],[])
+  self.assertEqual(status["analyzed"],0)
+  self.assertEqual(status["skipped_thin"],1)
 
  def test_sends_only_new_item_and_compact_keys(self):
   old=item("https://example.com/old")

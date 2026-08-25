@@ -13,7 +13,7 @@ OUT=ROOT/"data/news.json"
 UA="Mozilla/5.0 (compatible; PublicValueMonitor/2.0; +https://github.com/jeonys-12/welfare-foundation)"
 OPENAI_API_KEY=(os.getenv("OPENAI_API_KEY") or os.getenv("OPEN_API_KEY") or "").strip()
 OPENAI_MODEL=os.getenv("OPENAI_MODEL","gpt-5-nano").strip()
-OPENAI_MAX_ITEMS=max(0,int(os.getenv("OPENAI_MAX_ITEMS","12")))
+OPENAI_MAX_ITEMS=max(0,int(os.getenv("OPENAI_MAX_ITEMS","8")))
 KBS_PROGRAM_URL="https://program.kbs.co.kr/1tv/culture/accompany/pc/list.html?smenu=c2cc5a"
 KBS_SEARCH_URLS=[
  "https://www.kbs.co.kr/m/search/main.html?keyword=%EB%8F%99%ED%96%89",
@@ -583,8 +583,19 @@ AI_FIELDS=("summary","insight","trend_tags","priority","confidence","ai_analyzed
 def ai_input_hash(item):
  payload={"category":item.get("category",""),"subcategory":item.get("subcategory",""),
           "title":item.get("original_title") or item.get("title",""),
-          "summary":item.get("summary","")[:180]}
+          "summary":item.get("summary","")[:160]}
  return hashlib.sha256(json.dumps(payload,ensure_ascii=False,sort_keys=True).encode()).hexdigest()[:16]
+
+def ai_candidate_score(item):
+ """Return a ranking tuple, or None when the source text is too thin to justify a paid call."""
+ title=clean(item.get("title","")); summary=clean(item.get("summary",""))
+ is_global=item.get("subcategory")=="disaster_global"
+ normalized_title=normalized_event_text(title)
+ normalized_summary=normalized_event_text(summary)
+ if not is_global and (len(normalized_summary)<40 or normalized_summary==normalized_title):
+  return None
+ priority=item.get("priority") if isinstance(item.get("priority"),(int,float)) else 0
+ return (int(is_global),priority,min(len(summary),360),item_datetime(item).timestamp())
 
 def reuse_ai_analysis(items,old_items):
  """Reuse paid output for the same URL or identical normalized input."""
@@ -613,16 +624,24 @@ def analyze_with_openai(items,old_items=()):
  old_by_url={x.get("url"):x for x in old_items if x.get("url")}
  # 해외 재난을 우선 분석해 영문 경보가 한국어 제목·요약 없이 노출되지 않게 한다.
  # 과거 미분석 항목을 매일 소급 과금하지 않는다. 신규 또는 기존 AI 입력 변경분만 처리한다.
- pending=[x for x in items if not x.get("ai_analyzed") and
-          (x.get("url") not in old_by_url or old_by_url[x.get("url")].get("ai_analyzed"))]
- ordered=sorted(pending,key=lambda x:x.get("subcategory")=="disaster_global",reverse=True)
+ pending=[]; skipped_thin=0
+ for item in items:
+  is_new_or_changed=item.get("url") not in old_by_url or old_by_url[item.get("url")].get("ai_analyzed")
+  if item.get("ai_analyzed") or not is_new_or_changed: continue
+  score=ai_candidate_score(item)
+  if score is None:
+   skipped_thin+=1
+   continue
+  pending.append((score,item))
+ ordered=[item for _,item in sorted(pending,key=lambda pair:pair[0],reverse=True)]
  candidates=ordered[:OPENAI_MAX_ITEMS]
  if not candidates:
   return items, {"enabled":True,"model":OPENAI_MODEL,"analyzed":0,"reused":reused,
+                 "skipped_thin":skipped_thin,
                  "message":"기존 OpenAI 분석 재사용 — API 호출 없음"}
  input_hashes={x["id"]:ai_input_hash(x) for x in candidates}
  compact=[{"i":x["id"],"k":x["subcategory"],
-           "t":x["title"][:180],"s":x["summary"][:180]} for x in candidates]
+           "t":x["title"][:160],"s":x["summary"][:160]} for x in candidates]
  schema={
   "type":"object","properties":{"items":{"type":"array","items":{"type":"object",
    "properties":{"i":{"type":"string"},"t":{"type":"string"},"s":{"type":"string"},"n":{"type":"string"},
@@ -659,6 +678,7 @@ def analyze_with_openai(items,old_items=()):
   analyzed+=1
  usage=response.get("usage",{})
  return items, {"enabled":True,"model":OPENAI_MODEL,"analyzed":analyzed,"reused":reused,
+                "skipped_thin":skipped_thin,
                 "input_tokens":usage.get("input_tokens",0),"output_tokens":usage.get("output_tokens",0),
                 "cached_tokens":usage.get("input_tokens_details",{}).get("cached_tokens",0),
                 "message":"OpenAI 변경분 분석 완료"}
