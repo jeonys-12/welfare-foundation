@@ -583,7 +583,7 @@ AI_FIELDS=("summary","insight","trend_tags","priority","confidence","ai_analyzed
 def ai_input_hash(item):
  payload={"category":item.get("category",""),"subcategory":item.get("subcategory",""),
           "title":item.get("original_title") or item.get("title",""),
-          "summary":item.get("summary","")[:220]}
+          "summary":item.get("summary","")[:180]}
  return hashlib.sha256(json.dumps(payload,ensure_ascii=False,sort_keys=True).encode()).hexdigest()[:16]
 
 def reuse_ai_analysis(items,old_items):
@@ -608,29 +608,29 @@ def analyze_with_openai(items,old_items=()):
  if not OPENAI_API_KEY or not items:
   return items, {"enabled":False,"analyzed":0,"message":"OPENAI_API_KEY가 없어 기본 요약을 사용했습니다."}
  reused=reuse_ai_analysis(items,old_items)
+ old_by_url={x.get("url"):x for x in old_items if x.get("url")}
  # 해외 재난을 우선 분석해 영문 경보가 한국어 제목·요약 없이 노출되지 않게 한다.
- pending=[x for x in items if not x.get("ai_analyzed")]
+ # 과거 미분석 항목을 매일 소급 과금하지 않는다. 신규 또는 기존 AI 입력 변경분만 처리한다.
+ pending=[x for x in items if not x.get("ai_analyzed") and
+          (x.get("url") not in old_by_url or old_by_url[x.get("url")].get("ai_analyzed"))]
  ordered=sorted(pending,key=lambda x:x.get("subcategory")=="disaster_global",reverse=True)
  candidates=ordered[:OPENAI_MAX_ITEMS]
  if not candidates:
   return items, {"enabled":True,"model":OPENAI_MODEL,"analyzed":0,"reused":reused,
                  "message":"기존 OpenAI 분석 재사용 — API 호출 없음"}
  input_hashes={x["id"]:ai_input_hash(x) for x in candidates}
- compact=[{"id":x["id"],"category":x["category"],"subcategory":x["subcategory"],
-           "title":x["title"][:180],"raw_summary":x["summary"][:180]} for x in candidates]
+ compact=[{"i":x["id"],"c":x["category"],"k":x["subcategory"],
+           "t":x["title"][:180],"s":x["summary"][:180]} for x in candidates]
  schema={
   "type":"object","properties":{"items":{"type":"array","items":{"type":"object",
-   "properties":{"id":{"type":"string"},"title_ko":{"type":"string"},"summary":{"type":"string"},"insight":{"type":"string"},
-    "trend_tags":{"type":"array","items":{"type":"string"}},"priority":{"type":"integer","minimum":1,"maximum":5},
-    "confidence":{"type":"string","enum":["높음","보통","낮음"]}},
-   "required":["id","title_ko","summary","insight","trend_tags","priority","confidence"],"additionalProperties":False}}},
+   "properties":{"i":{"type":"string"},"t":{"type":"string"},"s":{"type":"string"},"n":{"type":"string"},
+    "g":{"type":"array","items":{"type":"string"}},"p":{"type":"integer","minimum":1,"maximum":5},
+    "c":{"type":"string","enum":["높음","보통","낮음"]}},
+   "required":["i","t","s","n","g","p","c"],"additionalProperties":False}}},
   "required":["items"],"additionalProperties":False}
- prompt=("목록을 한국어 JSON으로 분석하세요. 입력에 없는 사실은 만들지 마세요. "
-         "title_ko는 자연스러운 한국어 제목입니다. 특히 subcategory가 disaster_global이면 원문 제목을 반드시 한국어로 번역하고, "
-         "summary는 확인되는 핵심만 2문장 이내로 요약하세요. "
-         "그 밖의 항목도 title_ko를 한국어로 쓰되 기존 한국어 제목은 그대로 유지하세요. "
-         "insight는 공익법인 또는 사회공헌 실무 관점의 시사점 1문장, trend_tags는 최대 3개, "
-         "priority는 업무 중요도 1~5입니다. 정보가 빈약하면 confidence를 낮음으로 표시하세요.\n"
+ prompt=("한국어로 분석하세요. 입력에 없는 사실은 만들지 마세요. 출력 키: i=입력 i, t=한국어 제목, "
+         "s=핵심 요약(2문장 이내), n=공익법인·사회공헌 실무 시사점(1문장), "
+         "g=태그(최대 3개), p=중요도(1~5), c=신뢰도. k가 disaster_global이면 t를 반드시 번역하세요.\n"
          +json.dumps(compact,ensure_ascii=False))
  body={"model":OPENAI_MODEL,"store":False,"input":prompt,
        "max_output_tokens":max(900,260*len(candidates)),"reasoning":{"effort":"minimal"},
@@ -638,22 +638,26 @@ def analyze_with_openai(items,old_items=()):
        "text":{"verbosity":"low","format":{"type":"json_schema","name":"monitoring_analysis","strict":True,"schema":schema}}}
  raw=fetch("https://api.openai.com/v1/responses",data=json.dumps(body).encode(),
            headers={"Authorization":"Bearer "+OPENAI_API_KEY,"Content-Type":"application/json"},tries=1,timeout=120)
- parsed=json.loads(extract_output_text(json.loads(raw)))
- by_id={x["id"]:x for x in parsed.get("items",[])}
+ response=json.loads(raw)
+ parsed=json.loads(extract_output_text(response))
+ by_id={x["i"]:x for x in parsed.get("items",[])}
  analyzed=0
  for item in items:
   a=by_id.get(item["id"])
   if not a: continue
-  translated=clean(a.get("title_ko",""))
+  translated=clean(a.get("t",""))
   if item.get("subcategory")=="disaster_global" and translated:
    item["original_title"]=item["title"]
    item["title"]=translated[:220]
-  item.update({"summary":a["summary"][:500],"insight":a["insight"][:300],
-               "trend_tags":a["trend_tags"][:3],"priority":a["priority"],
-               "confidence":a["confidence"],"ai_analyzed":True,
+  item.update({"summary":a["s"][:500],"insight":a["n"][:300],
+               "trend_tags":a["g"][:3],"priority":a["p"],
+               "confidence":a["c"],"ai_analyzed":True,
                "ai_input_hash":input_hashes[item["id"]]})
   analyzed+=1
+ usage=response.get("usage",{})
  return items, {"enabled":True,"model":OPENAI_MODEL,"analyzed":analyzed,"reused":reused,
+                "input_tokens":usage.get("input_tokens",0),"output_tokens":usage.get("output_tokens",0),
+                "cached_tokens":usage.get("input_tokens_details",{}).get("cached_tokens",0),
                 "message":"OpenAI 변경분 분석 완료"}
 
 DEDUP_STOPWORDS={

@@ -120,6 +120,7 @@ jobs:
           assert kbs_items[0]["title"] == "동행 용주 씨의 고군분투 육아일기"
           print("collector validation passed")
           PY
+          python -m unittest discover -s tests -v
 
       - name: Collect and analyze public-interest news
         shell: bash
