@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-27T03:44:59.032571+00:00",
+  "updated_at": "2026-11-28T03:28:36.455063+00:00",
   "item_count": 150,
   "errors": [
     {
@@ -22,11 +22,11 @@
   "ai_status": {
     "enabled": true,
     "model": "gpt-5-nano",
-    "analyzed": 8,
+    "analyzed": 7,
     "reused": 14,
-    "skipped_thin": 73,
-    "input_tokens": 1214,
-    "output_tokens": 1288,
+    "skipped_thin": 71,
+    "input_tokens": 936,
+    "output_tokens": 849,
     "cached_tokens": 0,
     "message": "OpenAI 변경분 분석 완료"
   },
@@ -67,7 +67,7 @@
       "summary": "공익법인의 설립·운영과 감독에 관한 기본 사항을 정한 현행 법률입니다.",
       "source": "국가법령정보센터",
       "url": "https://www.law.go.kr/법령/공익법인의설립ㆍ운영에관한법률",
-      "published_at": "2026-11-27T03:44:05.482141+00:00",
+      "published_at": "2026-11-28T03:27:41.439042+00:00",
       "keywords": [
         "공익법인",
         "법인세법",
@@ -85,7 +85,7 @@
       "final_source": "국가법령정보센터",
       "verification_url": "https://www.law.go.kr/법령/공익법인의설립ㆍ운영에관한법률",
       "official_baseline": true,
-      "verified_at": "2026-11-27T03:44:05.482141+00:00",
+      "verified_at": "2026-11-28T03:27:41.439042+00:00",
       "ai_input_hash": "2549a93e46f637fa"
     },
     {
@@ -110,8 +110,7 @@
       "confidence": "원문 확인 필요",
       "source_type": "뉴스·기관자료",
       "final_source": "원문 제공기관",
-      "verification_url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1ndmRnZ1B2cUZhNXE5N0YxZm0zd3VOSDd3VEtLY0JTczRURXVuam1JTHJHV0RuclBSeFplRVJqX3YzS2xjN2pmT2lJRWgzM2hHNFBfRnpmR0F5SllEV2xqNjNyTTdMUGVxVWJzY2ZGd9IBc0FVX3lxTE1jQXdSd05KOHJYWEVfMEE5cU0tWURUSlUwNy1mNnJ2alhFTzUzTnRJNGdSSUFKR0gxWnFrclZ6eGJUWHM2amQxQWE3bE5Lb0U1NDcySERoXzM5cjJIZVZiSEFyeEdXT0lBNzZRdXRianRROGM?oc=5",
-      "duplicate_count": 1
+      "verification_url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1ndmRnZ1B2cUZhNXE5N0YxZm0zd3VOSDd3VEtLY0JTczRURXVuam1JTHJHV0RuclBSeFplRVJqX3YzS2xjN2pmT2lJRWgzM2hHNFBfRnpmR0F5SllEV2xqNjNyTTdMUGVxVWJzY2ZGd9IBc0FVX3lxTE1jQXdSd05KOHJYWEVfMEE5cU0tWURUSlUwNy1mNnJ2alhFTzUzTnRJNGdSSUFKR0gxWnFrclZ6eGJUWHM2amQxQWE3bE5Lb0U1NDcySERoXzM5cjJIZVZiSEFyeEdXT0lBNzZRdXRianRROGM?oc=5"
     },
     {
       "id": "528159782b1935d273",
@@ -135,8 +134,7 @@
       "confidence": "원문 확인 필요",
       "source_type": "뉴스·기관자료",
       "final_source": "원문 제공기관",
-      "verification_url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9wQ1VNR1hkWXpZS05qUUJTTldqT096WGRVWTAtWnVyTTJrRzVLbDJFNmdqMmRoc1owVG5aRXVoWVQ2bHNYLXBnUjBCTVJGQjFsbWRySnRxS1MwMFJPbS1BU0FtV3JhMWlx?oc=5",
-      "duplicate_count": 1
+      "verification_url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9wQ1VNR1hkWXpZS05qUUJTTldqT096WGRVWTAtWnVyTTJrRzVLbDJFNmdqMmRoc1owVG5aRXVoWVQ2bHNYLXBnUjBCTVJGQjFsbWRySnRxS1MwMFJPbS1BU0FtV3JhMWlx?oc=5"
     },
     {
       "id": "08a8bac17f31652a48",
@@ -185,8 +183,7 @@
       "confidence": "원문 확인 필요",
       "source_type": "뉴스·기관자료",
       "final_source": "원문 제공기관",
-      "verification_url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9keUhGOGdHMDBBMGNsSkZIMnExYURLMXJDTmtyREZadE9lVURJcGM2X0JfS3FRSmk3eFBiY3o1REpYaThNY2VOSDM2VG1zdEJOYTR0YnpTNmFQZTBfR1RMS0pfc2I?oc=5",
-      "duplicate_count": 1
+      "verification_url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9keUhGOGdHMDBBMGNsSkZIMnExYURLMXJDTmtyREZadE9lVURJcGM2X0JfS3FRSmk3eFBiY3o1REpYaThNY2VOSDM2VG1zdEJOYTR0YnpTNmFQZTBfR1RMS0pfc2I?oc=5"
     },
     {
       "id": "28e7f2a85b5bb3aa2d",
@@ -549,8 +546,7 @@
       "confidence": "원문 확인 필요",
       "source_type": "뉴스·기관자료",
       "final_source": "원문 제공기관",
-      "verification_url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5SeUN3MENjWjNoUXdLNW4wdXdEcGUxSDhVZWxvTHJrbzdKZVRQaFMwZ1ZGR3Y5X0MyblFidGptNC1QZ21NaDY5M1lUZl82WXNJWGx4angzQldSWDd5WFNZZUtMTnBoWUlr?oc=5",
-      "duplicate_count": 1
+      "verification_url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5SeUN3MENjWjNoUXdLNW4wdXdEcGUxSDhVZWxvTHJrbzdKZVRQaFMwZ1ZGR3Y5X0MyblFidGptNC1QZ21NaDY5M1lUZl82WXNJWGx4angzQldSWDd5WFNZZUtMTnBoWUlr?oc=5"
     },
     {
       "id": "f88972c5feecc2cd8c",
@@ -843,19 +839,20 @@
       "verification_url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1ia095MExuNzZyMGhNdXdYREhpVkkzUlN6WGJwUzNNM21QdHpZNnkxZWRCNEFfSldPSnVOc1pTcmtWZVRGQTZDRVlwemk4dElDWmxxbUkxMW8zNmFNX0MxaENzZkVXcERmei1KQTVkQU8?oc=5"
     },
     {
-      "id": "0277e50028a0727c41",
+      "id": "9b950760fb51961c09",
       "category": "ngo",
       "subcategory": "ngo",
       "subcategory_label": "NGO 모금·사업",
-      "title": "Stray Kids 리노 님께서 나비야사랑해로 1억원을 기부해 주셨습니다. 후원금은 아이들의 병원비와 보호소 운영비로 오롯이 사용됩니다. 나비야사랑해를 응원해 주신 리노 님께 진심으로 감사드리며, 나비야 또한 Stray Kids 리노 님의 활동을 응원합니다. ​➖ 나비야사랑 - Instagram",
-      "summary": "Stray Kids 리노 님께서 나비야사랑해로 1억원을 기부해 주셨습니다. 후원금은 아이들의 병원비와 보호소 운영비로 오롯이 사용됩니다. 나비야사랑해를 응원해 주신 리노 님께 진심으로 감사드리며, 나비야 또한 Stray Kids 리노 님의 활동을 응원합니다. ​➖ 나비야사랑 Instagram",
-      "source": "Instagram",
-      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE84ZGtGek5HendCdzRIWTlDVU5oLW1CUDdvWkttZVR3V2d6UmViMFVJTTlib2o5anFqN1VWWkx0a2JNejl4WTRocEhBWXZDZUVfLWc?oc=5",
-      "published_at": "2026-10-28T04:45:23+00:00",
+      "title": "공식 UN 산하 아동구호기관 - 긴급구호아동기금, 어린이후원, 국제아동정기후원 - 유니세프",
+      "summary": "공식 UN 산하 아동구호기관 - 긴급구호아동기금, 어린이후원, 국제아동정기후원 유니세프",
+      "source": "유니세프",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5BMlJnWEtyWklXRHlBcWEtSFlaUF9ka1BmSDItbXpRejQtQ013SnJUSDNVcDRBZWNHX3VaY1hReFFCejNrTS1XdXlidVZwRmNOMDR0VE9MTHc3OVU?oc=5",
+      "published_at": "2026-08-24T11:05:00+00:00",
       "keywords": [
         "후원",
-        "후원금",
-        "기부"
+        "구호",
+        "긴급구호",
+        "정기후원"
       ],
       "priority": 5,
       "ai_analyzed": false,
@@ -864,7 +861,228 @@
       "confidence": "원문 확인 필요",
       "source_type": "뉴스·기관자료",
       "final_source": "원문 제공기관",
-      "verification_url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE84ZGtGek5HendCdzRIWTlDVU5oLW1CUDdvWkttZVR3V2d6UmViMFVJTTlib2o5anFqN1VWWkx0a2JNejl4WTRocEhBWXZDZUVfLWc?oc=5"
+      "verification_url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5BMlJnWEtyWklXRHlBcWEtSFlaUF9ka1BmSDItbXpRejQtQ013SnJUSDNVcDRBZWNHX3VaY1hReFFCejNrTS1XdXlidVZwRmNOMDR0VE9MTHc3OVU?oc=5"
+    },
+    {
+      "id": "9b950760fb51961c09",
+      "category": "ngo",
+      "subcategory": "ngo",
+      "subcategory_label": "NGO 모금·사업",
+      "title": "공식 UN 산하 아동구호기관 - 긴급구호아동기금, 어린이후원, 국제아동정기후원 - 유니세프",
+      "summary": "공식 UN 산하 아동구호기관 - 긴급구호아동기금, 어린이후원, 국제아동정기후원 유니세프",
+      "source": "유니세프",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1Bb3NLSDQ5SGN0TU1OVTR4ck5JaWt0ZU9uUnFDc05yTUNNdmJzNGhTQzBrYmZIUldLUVljbzhUYl9lcGZOazA5T1hpY0lkQ19EdlA4TFAwT0kyZw?oc=5",
+      "published_at": "2026-07-01T07:00:00+00:00",
+      "keywords": [
+        "후원",
+        "구호",
+        "긴급구호",
+        "정기후원"
+      ],
+      "priority": 5,
+      "ai_analyzed": false,
+      "insight": "",
+      "trend_tags": [],
+      "confidence": "원문 확인 필요",
+      "source_type": "뉴스·기관자료",
+      "final_source": "원문 제공기관",
+      "verification_url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1Bb3NLSDQ5SGN0TU1OVTR4ck5JaWt0ZU9uUnFDc05yTUNNdmJzNGhTQzBrYmZIUldLUVljbzhUYl9lcGZOazA5T1hpY0lkQ19EdlA4TFAwT0kyZw?oc=5"
+    },
+    {
+      "id": "9b950760fb51961c09",
+      "category": "ngo",
+      "subcategory": "ngo",
+      "subcategory_label": "NGO 모금·사업",
+      "title": "공식 UN 산하 아동구호기관 - 긴급구호아동기금, 어린이후원, 국제아동정기후원 - 유니세프",
+      "summary": "공식 UN 산하 아동구호기관 - 긴급구호아동기금, 어린이후원, 국제아동정기후원 유니세프",
+      "source": "유니세프",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5OMU8wZVpzemsyRUU3N1ZadjB1clRCV0duSDFmZXVaQjdueTVJY0RJSHg1VlhTQllvT05ibGpaR0Q5NVpEb1djdWQwbTdQdDNxMjB0NnlIaTF6QQ?oc=5",
+      "published_at": "2026-05-12T07:00:00+00:00",
+      "keywords": [
+        "후원",
+        "구호",
+        "긴급구호",
+        "정기후원"
+      ],
+      "priority": 5,
+      "ai_analyzed": false,
+      "insight": "",
+      "trend_tags": [],
+      "confidence": "원문 확인 필요",
+      "source_type": "뉴스·기관자료",
+      "final_source": "원문 제공기관",
+      "verification_url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5OMU8wZVpzemsyRUU3N1ZadjB1clRCV0duSDFmZXVaQjdueTVJY0RJSHg1VlhTQllvT05ibGpaR0Q5NVpEb1djdWQwbTdQdDNxMjB0NnlIaTF6QQ?oc=5"
+    },
+    {
+      "id": "9b950760fb51961c09",
+      "category": "ngo",
+      "subcategory": "ngo",
+      "subcategory_label": "NGO 모금·사업",
+      "title": "공식 UN 산하 아동구호기관 - 긴급구호아동기금, 어린이후원, 국제아동정기후원 - 유니세프",
+      "summary": "공식 UN 산하 아동구호기관 - 긴급구호아동기금, 어린이후원, 국제아동정기후원 유니세프",
+      "source": "유니세프",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9jeWVnRXhUTHBTMTh5N1B3NEFydzRRSFhLVnkyR2w3REdFX0cxWENQVjltQllsLWhWZUVEWFN1VzBMWF9IWWNsbHlKckVvc0ZZRXlFbTBPYjRKSVU?oc=5",
+      "published_at": "2026-04-06T03:11:31+00:00",
+      "keywords": [
+        "후원",
+        "구호",
+        "긴급구호",
+        "정기후원"
+      ],
+      "priority": 5,
+      "ai_analyzed": false,
+      "insight": "",
+      "trend_tags": [],
+      "confidence": "원문 확인 필요",
+      "source_type": "뉴스·기관자료",
+      "final_source": "원문 제공기관",
+      "verification_url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9jeWVnRXhUTHBTMTh5N1B3NEFydzRRSFhLVnkyR2w3REdFX0cxWENQVjltQllsLWhWZUVEWFN1VzBMWF9IWWNsbHlKckVvc0ZZRXlFbTBPYjRKSVU?oc=5"
+    },
+    {
+      "id": "9b950760fb51961c09",
+      "category": "ngo",
+      "subcategory": "ngo",
+      "subcategory_label": "NGO 모금·사업",
+      "title": "공식 UN 산하 아동구호기관 - 긴급구호아동기금, 어린이후원, 국제아동정기후원 - 유니세프",
+      "summary": "공식 UN 산하 아동구호기관 - 긴급구호아동기금, 어린이후원, 국제아동정기후원 유니세프",
+      "source": "유니세프",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5ENEFQb0ZWUFdlWjlfV05wSUFEQ0ZIaUJmSk1PSERZQWpmTGN0b1JSTVAyYWJLa2hyaHVxSXRKQVdiQ0JKME1yUk00WFJqbDhGaDlGOHQ5Mzludw?oc=5",
+      "published_at": "2025-12-17T08:00:00+00:00",
+      "keywords": [
+        "후원",
+        "구호",
+        "긴급구호",
+        "정기후원"
+      ],
+      "priority": 5,
+      "ai_analyzed": false,
+      "insight": "",
+      "trend_tags": [],
+      "confidence": "원문 확인 필요",
+      "source_type": "뉴스·기관자료",
+      "final_source": "원문 제공기관",
+      "verification_url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5ENEFQb0ZWUFdlWjlfV05wSUFEQ0ZIaUJmSk1PSERZQWpmTGN0b1JSTVAyYWJLa2hyaHVxSXRKQVdiQ0JKME1yUk00WFJqbDhGaDlGOHQ5Mzludw?oc=5"
+    },
+    {
+      "id": "9b950760fb51961c09",
+      "category": "ngo",
+      "subcategory": "ngo",
+      "subcategory_label": "NGO 모금·사업",
+      "title": "공식 UN 산하 아동구호기관 - 긴급구호아동기금, 어린이후원, 국제아동정기후원 - 유니세프",
+      "summary": "공식 UN 산하 아동구호기관 - 긴급구호아동기금, 어린이후원, 국제아동정기후원 유니세프",
+      "source": "유니세프",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE03MWNlMXE2eHlfVmpLQUNTc0xycGVDaDBaeVBLZ2I0OVMzeWxIZkRpTmVTYjZESnpjR2xObTIxejJZZmRkcWpiSUlORDBNYk5Wei1ZNzZnV3A3dw?oc=5",
+      "published_at": "2025-11-25T08:00:00+00:00",
+      "keywords": [
+        "후원",
+        "구호",
+        "긴급구호",
+        "정기후원"
+      ],
+      "priority": 5,
+      "ai_analyzed": false,
+      "insight": "",
+      "trend_tags": [],
+      "confidence": "원문 확인 필요",
+      "source_type": "뉴스·기관자료",
+      "final_source": "원문 제공기관",
+      "verification_url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE03MWNlMXE2eHlfVmpLQUNTc0xycGVDaDBaeVBLZ2I0OVMzeWxIZkRpTmVTYjZESnpjR2xObTIxejJZZmRkcWpiSUlORDBNYk5Wei1ZNzZnV3A3dw?oc=5"
+    },
+    {
+      "id": "477491acb9a41ffae3",
+      "category": "ngo",
+      "subcategory": "ngo",
+      "subcategory_label": "NGO 모금·사업",
+      "title": "구호텐트 Tent 긴급구호 후원 물품 - 유니세프",
+      "summary": "구호텐트 Tent 긴급구호 후원 물품 유니세프",
+      "source": "유니세프",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5KLWR1NDlmc1h4MnlGcGJyeG4zRWxKOXdPd3o4cEEwMU5vWnE4cUxMb09fUVB4OWtLSlNLdURqMW9RWTVmYUQ3bEhrSXJodzdVTlZoelZBMzd3akpMcnVsR2I4cEE?oc=5",
+      "published_at": "2024-11-06T00:55:30+00:00",
+      "keywords": [
+        "후원",
+        "구호",
+        "긴급구호"
+      ],
+      "priority": 5,
+      "ai_analyzed": false,
+      "insight": "",
+      "trend_tags": [],
+      "confidence": "원문 확인 필요",
+      "source_type": "뉴스·기관자료",
+      "final_source": "원문 제공기관",
+      "verification_url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5KLWR1NDlmc1h4MnlGcGJyeG4zRWxKOXdPd3o4cEEwMU5vWnE4cUxMb09fUVB4OWtLSlNLdURqMW9RWTVmYUQ3bEhrSXJodzdVTlZoelZBMzd3akpMcnVsR2I4cEE?oc=5"
+    },
+    {
+      "id": "e9098ee6177246e00b",
+      "category": "ngo",
+      "subcategory": "ngo",
+      "subcategory_label": "NGO 모금·사업",
+      "title": "굿네이버스 후원물품(교구) 취약계층 지원 - 강서희망나눔복지재단",
+      "summary": "굿네이버스 후원물품(교구) 취약계층 지원 강서희망나눔복지재단",
+      "source": "강서희망나눔복지재단",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNR3dvOXU1cGRCY3NhTzZBOHhSTEkyNmlVcGlmdWVxdXB2R1NJWnRvQWt5Ulk4YlRZYjdHLXpKR0h4RkoyZ3FmNURpQkZOaWJDTzFvRWh6ZkR1cDg4eDR2U1dtS0Z1RUF0RHNmeHFhVGdqN3pHTUZ5ZmZfY19Xb2ZqWjVfTTdKRFVUdXdCR1hFYnJnR1JOQWY4UzBra3RIYnlkbGE3ZUJ4M3RjbG5mY1E?oc=5",
+      "published_at": "2023-10-13T07:00:00+00:00",
+      "keywords": [
+        "후원",
+        "나눔",
+        "취약계층"
+      ],
+      "priority": 5,
+      "ai_analyzed": false,
+      "insight": "",
+      "trend_tags": [],
+      "confidence": "원문 확인 필요",
+      "source_type": "뉴스·기관자료",
+      "final_source": "원문 제공기관",
+      "verification_url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNR3dvOXU1cGRCY3NhTzZBOHhSTEkyNmlVcGlmdWVxdXB2R1NJWnRvQWt5Ulk4YlRZYjdHLXpKR0h4RkoyZ3FmNURpQkZOaWJDTzFvRWh6ZkR1cDg4eDR2U1dtS0Z1RUF0RHNmeHFhVGdqN3pHTUZ5ZmZfY19Xb2ZqWjVfTTdKRFVUdXdCR1hFYnJnR1JOQWY4UzBra3RIYnlkbGE3ZUJ4M3RjbG5mY1E?oc=5"
+    },
+    {
+      "id": "688525e5a4e78d6c76",
+      "category": "ngo",
+      "subcategory": "ngo",
+      "subcategory_label": "NGO 모금·사업",
+      "title": "방탄소년단 제이홉 1억 원 기부 튀르키예·시리아 지진피해 어린이 긴급구호 동참 - 유니세프",
+      "summary": "방탄소년단 제이홉 1억 원 기부 튀르키예·시리아 지진피해 어린이 긴급구호 동참 유니세프",
+      "source": "유니세프",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBhbXc1Vk00SW54T0NjWHdsQ3hrb3JkNWFSei1hamNpSVltYnhkaXdma3FsTW1oMTA0aThiNTQwNmVhZ19NSFBZRmYybEtNZmFJemhjQ3BTcXJYQQ?oc=5",
+      "published_at": "2023-02-16T08:00:00+00:00",
+      "keywords": [
+        "기부",
+        "구호",
+        "긴급구호"
+      ],
+      "priority": 5,
+      "ai_analyzed": false,
+      "insight": "",
+      "trend_tags": [],
+      "confidence": "원문 확인 필요",
+      "source_type": "뉴스·기관자료",
+      "final_source": "원문 제공기관",
+      "verification_url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBhbXc1Vk00SW54T0NjWHdsQ3hrb3JkNWFSei1hamNpSVltYnhkaXdma3FsTW1oMTA0aThiNTQwNmVhZ19NSFBZRmYybEtNZmFJemhjQ3BTcXJYQQ?oc=5"
+    },
+    {
+      "id": "608018b81030ced610",
+      "category": "ngo",
+      "subcategory": "ngo",
+      "subcategory_label": "NGO 모금·사업",
+      "title": "유니세프 기부 단체 FAQ 기부금 후원방법 | 유니세프 - 유니세프",
+      "summary": "유니세프 기부 단체 FAQ 기부금 후원방법 | 유니세프 유니세프",
+      "source": "유니세프",
+      "url": "https://news.google.com/rss/articles/CBMiQkFVX3lxTE0zYllRZTRKOWJIMndpS3hRdmJlZHdUT05PS29GQlBpODNOaEc1UFR4OXZmNjhjb0J6cDI4NGdVUUlUZw?oc=5",
+      "published_at": "2021-09-05T18:15:36+00:00",
+      "keywords": [
+        "후원",
+        "기부",
+        "기부금"
+      ],
+      "priority": 5,
+      "ai_analyzed": false,
+      "insight": "",
+      "trend_tags": [],
+      "confidence": "원문 확인 필요",
+      "source_type": "뉴스·기관자료",
+      "final_source": "원문 제공기관",
+      "verification_url": "https://news.google.com/rss/articles/CBMiQkFVX3lxTE0zYllRZTRKOWJIMndpS3hRdmJlZHdUT05PS29GQlBpODNOaEc1UFR4OXZmNjhjb0J6cDI4NGdVUUlUZw?oc=5"
     },
     {
       "id": "c91d14657982332fd2",
@@ -892,30 +1110,6 @@
       "verification_url": "https://news.google.com/rss/articles/CBMiPkFVX3lxTE9iUGpQUGJTcTY5SGhlQXhKbzl0SEJpQ21tamhOT1JYSndGNEc1RmJKZlVnQ2QwcDAwUVExa2hn?oc=5"
     },
     {
-      "id": "1bf948741f9c52993c",
-      "category": "ngo",
-      "subcategory": "ngo",
-      "subcategory_label": "NGO 모금·사업",
-      "title": "자립 전문 국제구호개발 NGO | 후원을 멈추는 후원 - 월드비전 - 월드비전",
-      "summary": "자립 전문 국제구호개발 NGO | 후원을 멈추는 후원 - 월드비전 월드비전",
-      "source": "월드비전",
-      "url": "https://news.google.com/rss/articles/CBMiREFVX3lxTE5jNDg5c2NKOHR2bDVfZDBTX3p3ZFU2dGtfNVNBcVZxQl9NN1FRUnlWeEJSaWY3NWhMcGlydDdYdkZqT09O?oc=5",
-      "published_at": "2006-04-19T20:15:14+00:00",
-      "keywords": [
-        "NGO",
-        "후원",
-        "구호"
-      ],
-      "priority": 5,
-      "ai_analyzed": false,
-      "insight": "",
-      "trend_tags": [],
-      "confidence": "원문 확인 필요",
-      "source_type": "뉴스·기관자료",
-      "final_source": "원문 제공기관",
-      "verification_url": "https://news.google.com/rss/articles/CBMiREFVX3lxTE5jNDg5c2NKOHR2bDVfZDBTX3p3ZFU2dGtfNVNBcVZxQl9NN1FRUnlWeEJSaWY3NWhMcGlydDdYdkZqT09O?oc=5"
-    },
-    {
       "id": "997366efcb6db5a07d",
       "category": "law",
       "subcategory": "tax_reform",
@@ -924,7 +1118,7 @@
       "summary": "기획재정부가 발표하는 세제개편안과 세법개정안의 최신 원문을 확인합니다.",
       "source": "기획재정부",
       "url": "https://www.moef.go.kr/",
-      "published_at": "2026-11-27T03:44:05.482141+00:00",
+      "published_at": "2026-11-28T03:27:41.439042+00:00",
       "keywords": [
         "공익법인",
         "세법개정",
@@ -944,7 +1138,7 @@
       "final_source": "기획재정부",
       "verification_url": "https://www.moef.go.kr/",
       "official_baseline": true,
-      "verified_at": "2026-11-27T03:44:05.482141+00:00",
+      "verified_at": "2026-11-28T03:27:41.439042+00:00",
       "ai_input_hash": "8910a8e560985b68"
     },
     {
@@ -956,7 +1150,7 @@
       "summary": "공익법인의 법인세·기부금 과세와 관련된 현행 법률입니다.",
       "source": "국가법령정보센터",
       "url": "https://www.law.go.kr/법령/법인세법",
-      "published_at": "2026-11-27T03:44:05.482141+00:00",
+      "published_at": "2026-11-28T03:27:41.439042+00:00",
       "keywords": [
         "공익법인",
         "법인세법",
@@ -974,7 +1168,7 @@
       "final_source": "국가법령정보센터",
       "verification_url": "https://www.law.go.kr/법령/법인세법",
       "official_baseline": true,
-      "verified_at": "2026-11-27T03:44:05.482141+00:00",
+      "verified_at": "2026-11-28T03:27:41.439042+00:00",
       "ai_input_hash": "8724a825a0fd0e76"
     },
     {
@@ -986,7 +1180,7 @@
       "summary": "공익법인의 법인세·기부금 과세와 관련된 현행 시행령입니다.",
       "source": "국가법령정보센터",
       "url": "https://www.law.go.kr/법령/법인세법시행령",
-      "published_at": "2026-11-27T03:44:05.482141+00:00",
+      "published_at": "2026-11-28T03:27:41.439042+00:00",
       "keywords": [
         "공익법인",
         "법인세법",
@@ -1004,7 +1198,7 @@
       "final_source": "국가법령정보센터",
       "verification_url": "https://www.law.go.kr/법령/법인세법시행령",
       "official_baseline": true,
-      "verified_at": "2026-11-27T03:44:05.482141+00:00",
+      "verified_at": "2026-11-28T03:27:41.439042+00:00",
       "ai_input_hash": "1359bf2cd7a33bc7"
     },
     {
@@ -1016,7 +1210,7 @@
       "summary": "공익법인의 설립·운영과 감독에 필요한 세부 사항을 정한 현행 시행령입니다.",
       "source": "국가법령정보센터",
       "url": "https://www.law.go.kr/법령/공익법인의설립ㆍ운영에관한법률시행령",
-      "published_at": "2026-11-27T03:44:05.482141+00:00",
+      "published_at": "2026-11-28T03:27:41.439042+00:00",
       "keywords": [
         "공익법인",
         "법인세법",
@@ -1034,7 +1228,7 @@
       "final_source": "국가법령정보센터",
       "verification_url": "https://www.law.go.kr/법령/공익법인의설립ㆍ운영에관한법률시행령",
       "official_baseline": true,
-      "verified_at": "2026-11-27T03:44:05.482141+00:00",
+      "verified_at": "2026-11-28T03:27:41.439042+00:00",
       "ai_input_hash": "a193a9d179f2b312"
     },
     {
@@ -1046,7 +1240,7 @@
       "summary": "공익법인의 출연재산과 사후관리 의무에 관한 현행 법률입니다.",
       "source": "국가법령정보센터",
       "url": "https://www.law.go.kr/법령/상속세및증여세법",
-      "published_at": "2026-11-27T03:44:05.482141+00:00",
+      "published_at": "2026-11-28T03:27:41.439042+00:00",
       "keywords": [
         "공익법인",
         "증여세",
@@ -1065,7 +1259,7 @@
       "final_source": "국가법령정보센터",
       "verification_url": "https://www.law.go.kr/법령/상속세및증여세법",
       "official_baseline": true,
-      "verified_at": "2026-11-27T03:44:05.482141+00:00",
+      "verified_at": "2026-11-28T03:27:41.439042+00:00",
       "ai_input_hash": "a8741be173e4282c"
     },
     {
@@ -1077,7 +1271,7 @@
       "summary": "공익법인의 출연재산과 사후관리 세부기준에 관한 현행 시행령입니다.",
       "source": "국가법령정보센터",
       "url": "https://www.law.go.kr/법령/상속세및증여세법시행령",
-      "published_at": "2026-11-27T03:44:05.482141+00:00",
+      "published_at": "2026-11-28T03:27:41.439042+00:00",
       "keywords": [
         "공익법인",
         "증여세",
@@ -1096,7 +1290,7 @@
       "final_source": "국가법령정보센터",
       "verification_url": "https://www.law.go.kr/법령/상속세및증여세법시행령",
       "official_baseline": true,
-      "verified_at": "2026-11-27T03:44:05.482141+00:00",
+      "verified_at": "2026-11-28T03:27:41.439042+00:00",
       "ai_input_hash": "2d55870f9d464f56"
     },
     {
@@ -1108,7 +1302,7 @@
       "summary": "대기업집단 소속 공익법인의 의결권 제한 등 관련 규정을 확인합니다.",
       "source": "국가법령정보센터",
       "url": "https://www.law.go.kr/법령/독점규제및공정거래에관한법률",
-      "published_at": "2026-11-27T03:44:05.482141+00:00",
+      "published_at": "2026-11-28T03:27:41.439042+00:00",
       "keywords": [
         "공익법인",
         "공정거래",
@@ -1127,7 +1321,7 @@
       "final_source": "국가법령정보센터",
       "verification_url": "https://www.law.go.kr/법령/독점규제및공정거래에관한법률",
       "official_baseline": true,
-      "verified_at": "2026-11-27T03:44:05.482141+00:00",
+      "verified_at": "2026-11-28T03:27:41.439042+00:00",
       "ai_input_hash": "988afc5e86b5d38f"
     },
     {
@@ -1139,7 +1333,7 @@
       "summary": "공익법인 회계처리와 재무제표 작성에 적용되는 현행 회계기준입니다.",
       "source": "국가법령정보센터",
       "url": "https://www.law.go.kr/행정규칙/공익법인회계기준",
-      "published_at": "2026-11-27T03:44:05.482141+00:00",
+      "published_at": "2026-11-28T03:27:41.439042+00:00",
       "keywords": [
         "공익법인",
         "회계기준",
@@ -1158,8 +1352,81 @@
       "final_source": "국가법령정보센터",
       "verification_url": "https://www.law.go.kr/행정규칙/공익법인회계기준",
       "official_baseline": true,
-      "verified_at": "2026-11-27T03:44:05.482141+00:00",
+      "verified_at": "2026-11-28T03:27:41.439042+00:00",
       "ai_input_hash": "040e17ba80478dc6"
+    },
+    {
+      "id": "83a30954c9cd67245b",
+      "category": "disaster",
+      "subcategory": "disaster_kr",
+      "subcategory_label": "국내 재해",
+      "title": "2026년 12월 재난안전분석 결과 및 중점관리대상 재난안전사고",
+      "summary": "재난안전분석 결과와 중점관리대상 사고에 대한 발표가 이루어졌다.",
+      "source": "행정안전부",
+      "url": "https://www.mois.go.kr/frt/bbs/type001/commonSelectBoardArticle.do;jsessionid=aTVYRXbdyBvgSbtH_YRUvMWnlIGj0VTdNPC_Xuik.node30?bbsId=BBSMSTR_000000000336&nttId=131311",
+      "published_at": "2026-11-28T00:00:00+00:00",
+      "keywords": [
+        "재난"
+      ],
+      "priority": 4,
+      "ai_analyzed": true,
+      "insight": "재난안전 관련 공익사업은 데이터 공개와 이해관계자 소통이 핵심이다.",
+      "trend_tags": [
+        "재난안전",
+        "정책분석",
+        "공익실무"
+      ],
+      "confidence": "보통",
+      "source_type": "국내 공식기관 직접수집",
+      "final_source": "행정안전부",
+      "verification_url": "https://www.mois.go.kr/frt/bbs/type001/commonSelectBoardArticle.do;jsessionid=aTVYRXbdyBvgSbtH_YRUvMWnlIGj0VTdNPC_Xuik.node30?bbsId=BBSMSTR_000000000336&nttId=131311",
+      "ai_input_hash": "a2f657d3c55f60ab"
+    },
+    {
+      "id": "4fe50043cd70eebdcc",
+      "category": "ngo",
+      "subcategory": "ngo",
+      "subcategory_label": "NGO 모금·사업",
+      "title": "포천시 신북면, 취약계층 가전 지원사업 ‘냉장고가 필요해’ 추진 - 내외뉴스통신",
+      "summary": "포천시 신북면, 취약계층 가전 지원사업 ‘냉장고가 필요해’ 추진 내외뉴스통신",
+      "source": "내외뉴스통신",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBvR3dvMGFXZmFUWWFRVTgwWkxlVG41bURJSmplUzJENVhrTlZCblpERzBMenVnRnM0QnlLWEh3SDZjeUgtTTBQVkE5eURLZ1ZQOExlQ3kxSDlKSnZweW9QY3JDdGtxbGJVTTN3MNIBcEFVX3lxTFBuZlpfb2h3QXNRVW11WFNGLVdfWkI3TDRUSDd6UU9BTmYyVl9tbVZERm9xUENTbHVDdmlzZ0lJSHM1eUNGeEJYUEJOV3N1ZTZRUVdNbG11ZzROZnBVaGYyZmkxV2NLMDdiNHJrNXNLdEE?oc=5",
+      "published_at": "2026-11-27T09:51:26+00:00",
+      "keywords": [
+        "지원사업",
+        "취약계층"
+      ],
+      "priority": 4,
+      "ai_analyzed": false,
+      "insight": "",
+      "trend_tags": [],
+      "confidence": "원문 확인 필요",
+      "source_type": "뉴스·기관자료",
+      "final_source": "원문 제공기관",
+      "verification_url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBvR3dvMGFXZmFUWWFRVTgwWkxlVG41bURJSmplUzJENVhrTlZCblpERzBMenVnRnM0QnlLWEh3SDZjeUgtTTBQVkE5eURLZ1ZQOExlQ3kxSDlKSnZweW9QY3JDdGtxbGJVTTN3MNIBcEFVX3lxTFBuZlpfb2h3QXNRVW11WFNGLVdfWkI3TDRUSDd6UU9BTmYyVl9tbVZERm9xUENTbHVDdmlzZ0lJSHM1eUNGeEJYUEJOV3N1ZTZRUVdNbG11ZzROZnBVaGYyZmkxV2NLMDdiNHJrNXNLdEE?oc=5"
+    },
+    {
+      "id": "496f8f196462a608e4",
+      "category": "ngo",
+      "subcategory": "ngo",
+      "subcategory_label": "NGO 모금·사업",
+      "title": "굿네이버스 – 기부·후원으로 만드는 변화 - Apple",
+      "summary": "굿네이버스 – 기부·후원으로 만드는 변화 Apple",
+      "source": "Apple",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPdTl1U2M0V0FYc0VPMW5SYlQ2RnFMTWM1b0hMMGhETjBmaVpjVjVhQTRvaVNMOVRzQncxS3ItT3pFVkVHUjNUd2owcms4MUFRQ0tUNndqS1FGVVkweWpPQm9xMVNtdmp3OWVCc0xIT3pya0lDSUZoUzRLckZkZlBtWkM0MDdtVjNBN0M4NUpwcnhiNGs?oc=5",
+      "published_at": "2026-11-27T05:40:50+00:00",
+      "keywords": [
+        "후원",
+        "기부"
+      ],
+      "priority": 4,
+      "ai_analyzed": false,
+      "insight": "",
+      "trend_tags": [],
+      "confidence": "원문 확인 필요",
+      "source_type": "뉴스·기관자료",
+      "final_source": "원문 제공기관",
+      "verification_url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPdTl1U2M0V0FYc0VPMW5SYlQ2RnFMTWM1b0hMMGhETjBmaVpjVjVhQTRvaVNMOVRzQncxS3ItT3pFVkVHUjNUd2owcms4MUFRQ0tUNndqS1FGVVkweWpPQm9xMVNtdmp3OWVCc0xIT3pya0lDSUZoUzRLckZkZlBtWkM0MDdtVjNBN0M4NUpwcnhiNGs?oc=5"
     },
     {
       "id": "137d5511bd9df1435a",
@@ -1183,7 +1450,7 @@
       "source_type": "뉴스·기관자료",
       "final_source": "원문 제공기관",
       "verification_url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5uQmFTLWcyd19fOE56aTFjWmV1V2JxX1pfRWFVMzRDU1ROeUZ2V3ViUW5ramlMVUFmTXZGWlBuc3JGZWxqZkVBVS0zZUlZUFpKeVdiR1p3aDFMNXNTOU9ERUhIcDJldw?oc=5",
-      "duplicate_count": 1
+      "duplicate_count": 2
     },
     {
       "id": "b362f221b4b71e199f",
@@ -1206,7 +1473,8 @@
       "confidence": "원문 확인 필요",
       "source_type": "뉴스·기관자료",
       "final_source": "원문 제공기관",
-      "verification_url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9Vb1FaaUdhQ3JPbzVRbk5EdHNKUmtjTzZlZHdnZ0VURmg3YU5WV1BRdkRQZ3R1MmtpNzU3VXZLazJDQlFzYjlwQ2p0MDlYbXUxM2RrQmllTzhXY0xwTHF0Mk4zMWg2bjRBZUNWLXhrdkd5d0dPN3fSAWZBVV95cUxQZmhOMGd3bUxwUEE1RndiYS1sR09GcXV3Ny1oU2NvSnp5bmdfS2dyNndmU0hTOURaNzc0bXVONFV6Mkw1ZmV3a0pGcHhSTXpPVFpVRDBFOXZpbTdYZjB1VDBjaTlZNnc?oc=5"
+      "verification_url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9Vb1FaaUdhQ3JPbzVRbk5EdHNKUmtjTzZlZHdnZ0VURmg3YU5WV1BRdkRQZ3R1MmtpNzU3VXZLazJDQlFzYjlwQ2p0MDlYbXUxM2RrQmllTzhXY0xwTHF0Mk4zMWg2bjRBZUNWLXhrdkd5d0dPN3fSAWZBVV95cUxQZmhOMGd3bUxwUEE1RndiYS1sR09GcXV3Ny1oU2NvSnp5bmdfS2dyNndmU0hTOURaNzc0bXVONFV6Mkw1ZmV3a0pGcHhSTXpPVFpVRDBFOXZpbTdYZjB1VDBjaTlZNnc?oc=5",
+      "duplicate_count": 1
     },
     {
       "id": "07802e62e79b5fc773",
@@ -1279,6 +1547,35 @@
       "duplicate_count": 1
     },
     {
+      "id": "9a4655e2614f9e1095",
+      "category": "ngo",
+      "subcategory": "ngo",
+      "subcategory_label": "NGO 모금·사업",
+      "title": "iM뱅크·한국부동산원, 취약계층에 김장 12000kg 나눔...1200세대 전달 - www.gukjenews.com",
+      "summary": "iM뱅크·한국부동산원이 취약계층에 김장 12000kg을 나눔하고 1200세대에 전달했다.",
+      "source": "www.gukjenews.com",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBZbkxuMkdnanN6NnluS0Y1ZWhTZWExMGVYOWloU3ltTGM2QURNaGk1NGFfWTBWZk5xRG5Od0FxNXJwV2R3QUpSdElXakFWbmVZemZpbFBZT2g2cTUtNDdjallWdHhHck5UYWFzb0ZB?oc=5",
+      "published_at": "2026-11-26T04:00:45+00:00",
+      "keywords": [
+        "나눔",
+        "취약계층"
+      ],
+      "priority": 4,
+      "ai_analyzed": true,
+      "insight": "공익법인·사회공헌 시점에서는 대규모 식품기부의 사회적 영향과 공급망 관리가 중요하므로 시스템화된 기부 프로세스 구축이 필요하다.",
+      "trend_tags": [
+        "사회공헌",
+        "식품기부",
+        "취약계층지원"
+      ],
+      "confidence": "보통",
+      "source_type": "뉴스·기관자료",
+      "final_source": "원문 제공기관",
+      "verification_url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBZbkxuMkdnanN6NnluS0Y1ZWhTZWExMGVYOWloU3ltTGM2QURNaGk1NGFfWTBWZk5xRG5Od0FxNXJwV2R3QUpSdElXakFWbmVZemZpbFBZT2g2cTUtNDdjallWdHhHck5UYWFzb0ZB?oc=5",
+      "duplicate_count": 1,
+      "ai_input_hash": "d6bf9be1b3754f0b"
+    },
+    {
       "id": "2effe4104223ee1cb6",
       "category": "ngo",
       "subcategory": "ngo",
@@ -1323,8 +1620,7 @@
       "confidence": "원문 확인 필요",
       "source_type": "뉴스·기관자료",
       "final_source": "원문 제공기관",
-      "verification_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE10OTNXdGUzNk1tOElTa09xZlJQWVlvYXZmWjd5VEY5ekJla3FKcy02X0l1d1gzLTdXVGtLd3phNHBsTTlrS3dlTTNmYVZ0ZWJaa0tlUUFqTTBhUjU4OHBaNXJYQnNXV3BOcVE?oc=5",
-      "duplicate_count": 1
+      "verification_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE10OTNXdGUzNk1tOElTa09xZlJQWVlvYXZmWjd5VEY5ekJla3FKcy02X0l1d1gzLTdXVGtLd3phNHBsTTlrS3dlTTNmYVZ0ZWJaa0tlUUFqTTBhUjU4OHBaNXJYQnNXV3BOcVE?oc=5"
     },
     {
       "id": "de883a6f970d6f2650",
@@ -1395,8 +1691,7 @@
       "confidence": "원문 확인 필요",
       "source_type": "뉴스·기관자료",
       "final_source": "원문 제공기관",
-      "verification_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9ZVl82X0JrLUlPS280cnFmNmliMkNfYXZ3TVgzNU42VENmbXVXNHZHYVlyb0Q0X0tlRUgzY08yekFYclRhUGRFbHVZMkRLSTN3d2Z3R1VR?oc=5",
-      "duplicate_count": 5
+      "verification_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9ZVl82X0JrLUlPS280cnFmNmliMkNfYXZ3TVgzNU42VENmbXVXNHZHYVlyb0Q0X0tlRUgzY08yekFYclRhUGRFbHVZMkRLSTN3d2Z3R1VR?oc=5"
     },
     {
       "id": "374d7d92a22ec2dc75",
@@ -1419,8 +1714,7 @@
       "confidence": "원문 확인 필요",
       "source_type": "뉴스·기관자료",
       "final_source": "원문 제공기관",
-      "verification_url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1XakJqRldMQkxjZnlkdkNjQm5veGFOcENLc3BSdk9NYm9Zd3lIbjh3cF9LUlg1eDJqN0dMdjNKemRCNEdwZENvNXZkcXdKaDgwZEhIcDVlMHhFd2dQelQ4?oc=5",
-      "duplicate_count": 2
+      "verification_url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1XakJqRldMQkxjZnlkdkNjQm5veGFOcENLc3BSdk9NYm9Zd3lIbjh3cF9LUlg1eDJqN0dMdjNKemRCNEdwZENvNXZkcXdKaDgwZEhIcDVlMHhFd2dQelQ4?oc=5"
     },
     {
       "id": "aae4aa65348e3586c6",
@@ -1466,8 +1760,7 @@
       "confidence": "원문 확인 필요",
       "source_type": "뉴스·기관자료",
       "final_source": "원문 제공기관",
-      "verification_url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5NbHlsWEZkUmJBb1ctM0lJWUdQVFBTQXVRTVZ5cEU3Tm82dGhFWmFSUFJTejBJbFhPdVFvNGNuQmxoQWNsMjByZHZTVkxzZ0o3VVJuY0JXZl9SaTFxdk9FOQ?oc=5",
-      "duplicate_count": 1
+      "verification_url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5NbHlsWEZkUmJBb1ctM0lJWUdQVFBTQXVRTVZ5cEU3Tm82dGhFWmFSUFJTejBJbFhPdVFvNGNuQmxoQWNsMjByZHZTVkxzZ0o3VVJuY0JXZl9SaTFxdk9FOQ?oc=5"
     },
     {
       "id": "3db8810561053fb36b",
@@ -1490,8 +1783,7 @@
       "confidence": "원문 확인 필요",
       "source_type": "뉴스·기관자료",
       "final_source": "원문 제공기관",
-      "verification_url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1jQ0lQWldOekZ2WGN4cXRVdUVaNUF5aGpNemVGaFBnd0NPSVRTazFDX01oYjFGaXA3X3FqSWhvczBONTN3ejlWdXFBU2QzSG9HTmxKS3JueVN5RGx1dkZaRktBX05TMzV1TVZYZ0RCWdIBc0FVX3lxTE9JRnJyUUV3MWlXdEFaSXB6cUE5dUNyT24yYmFKLUo3emtmUzJSbW05S1lSNjZwUXlIYVlGT1hBM2F1S3pPQnFjTnFJSHlKY0hMYzEtUnFjdlFOSWhUcUtmYTZLdzdhWkN2eENIT01FdjNTM3c?oc=5",
-      "duplicate_count": 1
+      "verification_url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1jQ0lQWldOekZ2WGN4cXRVdUVaNUF5aGpNemVGaFBnd0NPSVRTazFDX01oYjFGaXA3X3FqSWhvczBONTN3ejlWdXFBU2QzSG9HTmxKS3JueVN5RGx1dkZaRktBX05TMzV1TVZYZ0RCWdIBc0FVX3lxTE9JRnJyUUV3MWlXdEFaSXB6cUE5dUNyT24yYmFKLUo3emtmUzJSbW05S1lSNjZwUXlIYVlGT1hBM2F1S3pPQnFjTnFJSHlKY0hMYzEtUnFjdlFOSWhUcUtmYTZLdzdhWkN2eENIT01FdjNTM3c?oc=5"
     },
     {
       "id": "2adad23e785320a0d3",
@@ -1635,8 +1927,7 @@
       "confidence": "원문 확인 필요",
       "source_type": "뉴스·기관자료",
       "final_source": "원문 제공기관",
-      "verification_url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1yNllJRmxQVnkxSFZINXJTTXEzQXlHRG1ldlVsUk9JWUtwQ09QeUNmRVVZUG1wNVFyR041bGJMY0ZwcGtlS0pLcTdLR0pMWE5ENEE?oc=5",
-      "duplicate_count": 1
+      "verification_url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1yNllJRmxQVnkxSFZINXJTTXEzQXlHRG1ldlVsUk9JWUtwQ09QeUNmRVVZUG1wNVFyR041bGJMY0ZwcGtlS0pLcTdLR0pMWE5ENEE?oc=5"
     },
     {
       "id": "fcff24ab3c91b42e61",
@@ -1663,8 +1954,7 @@
       "source_type": "뉴스·기관자료",
       "final_source": "원문 제공기관",
       "verification_url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9RMTNuQnprN3hXMFFvaXFhWlVocnQ0YXhDYUFXbHE5NVItZXNrNFl1Zm11eE1pbE5SRmc4dlFLWTZRYTVZMHh3YUwtWHlFcGJtNFJqakI5WXdXUQ?oc=5",
-      "ai_input_hash": "1dc4f8ab58f422d8",
-      "duplicate_count": 1
+      "ai_input_hash": "1dc4f8ab58f422d8"
     },
     {
       "id": "9ae4601a5aa9ca87bb",
@@ -1687,8 +1977,7 @@
       "confidence": "원문 확인 필요",
       "source_type": "뉴스·기관자료",
       "final_source": "원문 제공기관",
-      "verification_url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9BUllmUGdIRGVCanZ0aHdram5EUVdpa0kyeGpZNjhJajB6MTJvUVk2N0ROdGZLNTUwTTZ4VnZSMFZqc2ZtMUVOaHNSS2lkS25ILV9TS0hnejFvU0ZSdnpQSFMxdXFFWmpYZDVBWjRKONIBc0FVX3lxTFBQNDhJWUl3OUNTZkQ5U19DNzM2blBnQ3FRdmtzNlZOMVYzMTYxbldydGFXdDZrcmZvT1gwUm55Z0pqejdwTDR3TmlZRkRheEJ1aEE1RlVLdVNMb29tZ3I5djVZTURFRTRWMEwycWx6dkh3Y1E?oc=5",
-      "duplicate_count": 1
+      "verification_url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9BUllmUGdIRGVCanZ0aHdram5EUVdpa0kyeGpZNjhJajB6MTJvUVk2N0ROdGZLNTUwTTZ4VnZSMFZqc2ZtMUVOaHNSS2lkS25ILV9TS0hnejFvU0ZSdnpQSFMxdXFFWmpYZDVBWjRKONIBc0FVX3lxTFBQNDhJWUl3OUNTZkQ5U19DNzM2blBnQ3FRdmtzNlZOMVYzMTYxbldydGFXdDZrcmZvT1gwUm55Z0pqejdwTDR3TmlZRkRheEJ1aEE1RlVLdVNMb29tZ3I5djVZTURFRTRWMEwycWx6dkh3Y1E?oc=5"
     },
     {
       "id": "f4df7c7f22b54128b1",
@@ -1737,6 +2026,30 @@
       "verification_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5DZGNRN2MtWHpUSlBZaXcxRHEzUkhUSng0eG5YWkJZaTVWM1VmYnVIOHhUOVlkVGZUU2hpUjdMQjVza0pjR05DcUdCSHM1OWVPU2daQkxB?oc=5"
     },
     {
+      "id": "d04c1588ab37dd2548",
+      "category": "ngo",
+      "subcategory": "ngo",
+      "subcategory_label": "NGO 모금·사업",
+      "title": "THE성장과나눔, 초록우산 산타원정대에 300만 원 후원 - 중도일보",
+      "summary": "THE성장과나눔, 초록우산 산타원정대에 300만 원 후원 중도일보",
+      "source": "중도일보",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1FXzdhV0RINFN1OXE1Nkl0bVpkNHQwYURzbFM0d3JMTEMyZks0OWEzWkFycW5tc01rRENkOXhlV3dwS29lUWJYZF9pYXFTSEdwdHJPYm9DU0NVYzQzQXlhV2d4aWM?oc=5",
+      "published_at": "2026-11-23T00:29:29+00:00",
+      "keywords": [
+        "후원",
+        "나눔"
+      ],
+      "priority": 4,
+      "ai_analyzed": false,
+      "insight": "",
+      "trend_tags": [],
+      "confidence": "원문 확인 필요",
+      "source_type": "뉴스·기관자료",
+      "final_source": "원문 제공기관",
+      "verification_url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1FXzdhV0RINFN1OXE1Nkl0bVpkNHQwYURzbFM0d3JMTEMyZks0OWEzWkFycW5tc01rRENkOXhlV3dwS29lUWJYZF9pYXFTSEdwdHJPYm9DU0NVYzQzQXlhV2d4aWM?oc=5",
+      "duplicate_count": 4
+    },
+    {
       "id": "b5d4b1f92e167c9d76",
       "category": "ngo",
       "subcategory": "ngo",
@@ -1757,7 +2070,8 @@
       "confidence": "원문 확인 필요",
       "source_type": "뉴스·기관자료",
       "final_source": "원문 제공기관",
-      "verification_url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxQZWZKWV9Ob0hjVlNaQ2kwZW91b2hPV3VCTnc2MERNdlBGblFOdHQwXzNuSlJxcE1oMklKQWFyYnpEQXcwNHhNcGVDbFU3LVh2RFNFUjZkakpURUxBWXkyWUhiNmNfaS14ek15VDZ0Y2tabXFwdVl3b2xGc0NrZENNelVNX1d6Rzd2Y2plWFoyZ25SVFVmaGJiaHJDZHltaXpQWkgzUzJJcUJlRlhJZlpDY0hLcFluRVNaSVFTV0haR3ktMWNLeGtzRWNpZGtqVUsybXAyaE14MkdEMURGaEsyYlNlMk9Zcm9RVHZ6OHZ4LVRlUQ?oc=5"
+      "verification_url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxQZWZKWV9Ob0hjVlNaQ2kwZW91b2hPV3VCTnc2MERNdlBGblFOdHQwXzNuSlJxcE1oMklKQWFyYnpEQXcwNHhNcGVDbFU3LVh2RFNFUjZkakpURUxBWXkyWUhiNmNfaS14ek15VDZ0Y2tabXFwdVl3b2xGc0NrZENNelVNX1d6Rzd2Y2plWFoyZ25SVFVmaGJiaHJDZHltaXpQWkgzUzJJcUJlRlhJZlpDY0hLcFluRVNaSVFTV0haR3ktMWNLeGtzRWNpZGtqVUsybXAyaE14MkdEMURGaEsyYlNlMk9Zcm9RVHZ6OHZ4LVRlUQ?oc=5",
+      "duplicate_count": 1
     },
     {
       "id": "f51defac490a160cc5",
@@ -2394,8 +2708,7 @@
       "confidence": "원문 확인 필요",
       "source_type": "뉴스·기관자료",
       "final_source": "원문 제공기관",
-      "verification_url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1GcFpxYm56OC1QN0pId0RrLTExTWcyT0pfSkhITm44dUFXTEloUUctQWx2bzVmRXpKR3hRNHNzZXRVWTJQc3UyY1JsdmVPdw?oc=5",
-      "duplicate_count": 2
+      "verification_url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1GcFpxYm56OC1QN0pId0RrLTExTWcyT0pfSkhITm44dUFXTEloUUctQWx2bzVmRXpKR3hRNHNzZXRVWTJQc3UyY1JsdmVPdw?oc=5"
     },
     {
       "id": "19b826aa503c457ac1",
@@ -2859,8 +3172,7 @@
       "confidence": "원문 확인 필요",
       "source_type": "뉴스·기관자료",
       "final_source": "원문 제공기관",
-      "verification_url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE01UkpUXzdsZXFrTjdGZ3JCZVJtSTRlZ1F2MHZicXFWeGpYNXViTWFocGM4SUYzQThsQW53RG5vOFItUlczMkRaczlPWjBXV09tSmc?oc=5",
-      "duplicate_count": 1
+      "verification_url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE01UkpUXzdsZXFrTjdGZ3JCZVJtSTRlZ1F2MHZicXFWeGpYNXViTWFocGM4SUYzQThsQW53RG5vOFItUlczMkRaczlPWjBXV09tSmc?oc=5"
     },
     {
       "id": "8b293003ea612f5980",
@@ -3297,304 +3609,6 @@
       "source_type": "뉴스·기관자료",
       "final_source": "원문 제공기관",
       "verification_url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBsUkVTSXhrVE5rSGw3T3VYeEtudWRKMXFsaFU2NGZOcVVjeks3NXpIcnBYNUNqRGUtRU85RTgzU3l4WDB6WmVqZHZrd3E3Q2R0QlpGMHFFU0hQdw?oc=5"
-    },
-    {
-      "id": "02069bc1229400abde",
-      "category": "ngo",
-      "subcategory": "ngo",
-      "subcategory_label": "NGO 모금·사업",
-      "title": "LGU+, 임직원 '천원의 사랑' 기부금 지체장애아동 가정 지원 - 전자신문",
-      "summary": "LGU+, 임직원 '천원의 사랑' 기부금 지체장애아동 가정 지원 전자신문",
-      "source": "전자신문",
-      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1ULXVMRzk2cFNZVU5XWFNwbVNBMjM5M1I0TVd6VWpxN29YbDNpYWhqUHdGOFVOVlJDanh3MHRfS0Npc2hsbnZNY1IxS3JZUQ?oc=5",
-      "published_at": "2026-11-12T00:28:15+00:00",
-      "keywords": [
-        "기부",
-        "기부금"
-      ],
-      "priority": 4,
-      "ai_analyzed": false,
-      "insight": "",
-      "trend_tags": [],
-      "confidence": "원문 확인 필요",
-      "source_type": "뉴스·기관자료",
-      "final_source": "원문 제공기관",
-      "verification_url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1ULXVMRzk2cFNZVU5XWFNwbVNBMjM5M1I0TVd6VWpxN29YbDNpYWhqUHdGOFVOVlJDanh3MHRfS0Npc2hsbnZNY1IxS3JZUQ?oc=5"
-    },
-    {
-      "id": "75b50ebcf211b176ea",
-      "category": "ngo",
-      "subcategory": "ngo",
-      "subcategory_label": "NGO 모금·사업",
-      "title": "현대차, 카마스터와 소아암 환아 후원…6212만원 기부 - 데일리안",
-      "summary": "현대차, 카마스터와 소아암 환아 후원…6212만원 기부 데일리안",
-      "source": "데일리안",
-      "url": "https://news.google.com/rss/articles/CBMijgJBVV95cUxQVTBSWFdOOVRfX1dxNTBfQUZieDZmUTlXeW1weGlhQ0JVX2Yzckl1UzJsQ1hUaldrcVV4UUtuMmViRFVrbjlYSEVXemFiNjY0VlJNNXFFeEU2UEpqZnl4aEUzYWM4aExhb0JER2hCUXJsWlA1RUtaWVZfTFRBMm81NnFjLVpXZF9nWFJPTHhDRW5LYnppb2VYQTNHelAtdWZzcnNxVVBBVG5MbEFpbWhnWlQzVHhVNEFjYzJfaU1NWmFES19sc3F5azRQU2dwM2dEc09RaVNyWEpEdHRVVFF1ckVqelZtblFJbVp2ejkzeF8wZV9PeWU2V0QxQ216WkN1OXdzd0tselc3X1hsOEE?oc=5",
-      "published_at": "2026-11-12T00:07:00+00:00",
-      "keywords": [
-        "후원",
-        "기부"
-      ],
-      "priority": 4,
-      "ai_analyzed": false,
-      "insight": "",
-      "trend_tags": [],
-      "confidence": "원문 확인 필요",
-      "source_type": "뉴스·기관자료",
-      "final_source": "원문 제공기관",
-      "verification_url": "https://news.google.com/rss/articles/CBMijgJBVV95cUxQVTBSWFdOOVRfX1dxNTBfQUZieDZmUTlXeW1weGlhQ0JVX2Yzckl1UzJsQ1hUaldrcVV4UUtuMmViRFVrbjlYSEVXemFiNjY0VlJNNXFFeEU2UEpqZnl4aEUzYWM4aExhb0JER2hCUXJsWlA1RUtaWVZfTFRBMm81NnFjLVpXZF9nWFJPTHhDRW5LYnppb2VYQTNHelAtdWZzcnNxVVBBVG5MbEFpbWhnWlQzVHhVNEFjYzJfaU1NWmFES19sc3F5azRQU2dwM2dEc09RaVNyWEpEdHRVVFF1ckVqelZtblFJbVp2ejkzeF8wZV9PeWU2V0QxQ216WkN1OXdzd0tselc3X1hsOEE?oc=5"
-    },
-    {
-      "id": "3091e63c40e3177564",
-      "category": "ngo",
-      "subcategory": "ngo",
-      "subcategory_label": "NGO 모금·사업",
-      "title": "현대차, 초록우산에 소아암 환아 후원금 6천212만원 전달 - 연합뉴스",
-      "summary": "현대차, 초록우산에 소아암 환아 후원금 6천212만원 전달 연합뉴스",
-      "source": "연합뉴스",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBqWGxXSGIxMWl2SXZwYi0tOHRfOHY4TXNHak1GSGRXUW1TN3hyWWpjS1RRaEdmeWVqc3RPNC1OUklSQ1VralMxZGpmN0RFVVBkUGpOTl9QME5ROHfSAWBBVV95cUxPaUVyZTZrQkpoVHlJZzFzWmgtZUdzYjZVRktZcFpianpMbk9lcW9EdWh1Sm9Qd29ybzVqSXR4OXlNQm9RbXFhYnFjdTlxNGdsNEUwMDlSczhVX3JtYVFsUHo?oc=5",
-      "published_at": "2026-11-11T23:52:31+00:00",
-      "keywords": [
-        "후원",
-        "후원금"
-      ],
-      "priority": 4,
-      "ai_analyzed": false,
-      "insight": "",
-      "trend_tags": [],
-      "confidence": "원문 확인 필요",
-      "source_type": "뉴스·기관자료",
-      "final_source": "원문 제공기관",
-      "verification_url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBqWGxXSGIxMWl2SXZwYi0tOHRfOHY4TXNHak1GSGRXUW1TN3hyWWpjS1RRaEdmeWVqc3RPNC1OUklSQ1VralMxZGpmN0RFVVBkUGpOTl9QME5ROHfSAWBBVV95cUxPaUVyZTZrQkpoVHlJZzFzWmgtZUdzYjZVRktZcFpianpMbk9lcW9EdWh1Sm9Qd29ybzVqSXR4OXlNQm9RbXFhYnFjdTlxNGdsNEUwMDlSczhVX3JtYVFsUHo?oc=5"
-    },
-    {
-      "id": "1474e7448a8999a187",
-      "category": "ngo",
-      "subcategory": "ngo",
-      "subcategory_label": "NGO 모금·사업",
-      "title": "[더버터] 월드비전 구조선이 구한 ‘보트피플’, 고액 후원자 되다 - 미주중앙일보",
-      "summary": "[더버터] 월드비전 구조선이 구한 ‘보트피플’, 고액 후원자 되다 미주중앙일보",
-      "source": "미주중앙일보",
-      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1KaEU1allrN0E1UzJwX3BhdDFnZ0hwVlBmc1hISXFkV0l0MkJCYXFTSC1sWXJ1allPTnZZN0dKejR6SXFiSDA5VjZtQ3JFa25lOTZnZHZ5b0lnUmVlcHJ1ZDNn?oc=5",
-      "published_at": "2026-11-11T20:30:00+00:00",
-      "keywords": [
-        "후원",
-        "후원자"
-      ],
-      "priority": 4,
-      "ai_analyzed": false,
-      "insight": "",
-      "trend_tags": [],
-      "confidence": "원문 확인 필요",
-      "source_type": "뉴스·기관자료",
-      "final_source": "원문 제공기관",
-      "verification_url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1KaEU1allrN0E1UzJwX3BhdDFnZ0hwVlBmc1hISXFkV0l0MkJCYXFTSC1sWXJ1allPTnZZN0dKejR6SXFiSDA5VjZtQ3JFa25lOTZnZHZ5b0lnUmVlcHJ1ZDNn?oc=5"
-    },
-    {
-      "id": "ef68fe736d366063ce",
-      "category": "ngo",
-      "subcategory": "ngo",
-      "subcategory_label": "NGO 모금·사업",
-      "title": "[더버터] 기부자 100명의 나눔 이야기『한국의 기부자들: 더기버스50』 출간 - 미주중앙일보",
-      "summary": "[더버터] 기부자 100명의 나눔 이야기『한국의 기부자들: 더기버스50』 출간 미주중앙일보",
-      "source": "미주중앙일보",
-      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBZaTlQTGpmSEZjVkV5VEdTM0JSeWR2LW1yT09YYVpKUkN5SnNYRlotWWRKTXhmb3pjSjJvZjJKdTJ3WjFGOXpDLXJ5MFRybnNrZTIxc09oZDdET3Q3Q2c2SWt3?oc=5",
-      "published_at": "2026-11-11T20:30:00+00:00",
-      "keywords": [
-        "기부",
-        "나눔"
-      ],
-      "priority": 4,
-      "ai_analyzed": false,
-      "insight": "",
-      "trend_tags": [],
-      "confidence": "원문 확인 필요",
-      "source_type": "뉴스·기관자료",
-      "final_source": "원문 제공기관",
-      "verification_url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBZaTlQTGpmSEZjVkV5VEdTM0JSeWR2LW1yT09YYVpKUkN5SnNYRlotWWRKTXhmb3pjSjJvZjJKdTJ3WjFGOXpDLXJ5MFRybnNrZTIxc09oZDdET3Q3Q2c2SWt3?oc=5"
-    },
-    {
-      "id": "36d85b35e1d17c2f81",
-      "category": "ngo",
-      "subcategory": "ngo",
-      "subcategory_label": "NGO 모금·사업",
-      "title": "배우 하지원, 생존 위기 어린이 위해 재능기부…유니세프 TV 캠페인 참여 - K스피릿",
-      "summary": "배우 하지원, 생존 위기 어린이 위해 재능기부…유니세프 TV 캠페인 참여 K스피릿",
-      "source": "K스피릿",
-      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5GeDl4QmRFTVJiVHcycmhjOEJES1l3OVpYQVZkLXNVamU1T0hYZG1CY1ZoQzJrLWN5RmZITTNPdExJVGZRVXZuNlY2cnZCNEZ0dTZsb0ViZDFuSW5obGdrRXpRU0Mya0lUZFM1Z3hIb9IBc0FVX3lxTE04S2l4a1BReE1RS3ZjejBzUUNyeV9iZzd5MWVXYm9PTENLSHJuMUZBZWlCZWVlRllsZE9vN3JEYlJPelh6QnQ0bVY1dDhHbklFUmdRX1ItbklTMGxic2tSUzNEd1FQYmlqZXZ2dW5nX2NKcm8?oc=5",
-      "published_at": "2026-11-11T08:00:00+00:00",
-      "keywords": [
-        "기부",
-        "캠페인"
-      ],
-      "priority": 4,
-      "ai_analyzed": false,
-      "insight": "",
-      "trend_tags": [],
-      "confidence": "원문 확인 필요",
-      "source_type": "뉴스·기관자료",
-      "final_source": "원문 제공기관",
-      "verification_url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5GeDl4QmRFTVJiVHcycmhjOEJES1l3OVpYQVZkLXNVamU1T0hYZG1CY1ZoQzJrLWN5RmZITTNPdExJVGZRVXZuNlY2cnZCNEZ0dTZsb0ViZDFuSW5obGdrRXpRU0Mya0lUZFM1Z3hIb9IBc0FVX3lxTE04S2l4a1BReE1RS3ZjejBzUUNyeV9iZzd5MWVXYm9PTENLSHJuMUZBZWlCZWVlRllsZE9vN3JEYlJPelh6QnQ0bVY1dDhHbklFUmdRX1ItbklTMGxic2tSUzNEd1FQYmlqZXZ2dW5nX2NKcm8?oc=5"
-    },
-    {
-      "id": "9cb223f6967af6d972",
-      "category": "csr",
-      "subcategory": "csr",
-      "subcategory_label": "기업 사회공헌 사례",
-      "title": "[ESG 트렌드] LG화학 그린클래스 임직원 봉사단, 초등학생 대상 ESG 교육 재능기부 外 - 베이비뉴스",
-      "summary": "[ESG 트렌드] LG화학 그린클래스 임직원 봉사단, 초등학생 대상 ESG 교육 재능기부 外 베이비뉴스",
-      "source": "베이비뉴스",
-      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBaekRUZEhyM3d0UmtDTmozQ1plT1dhbEpRUHlJdzZpUGVGYkppYmt6bXZsSFNOQ1VjdHRIMXhnOGVFTzdDQ3pNdm1odnBLdkFnWmFWa2kwWDhySy03dEpDV2VBUFBpQjEwTFV3Vg?oc=5",
-      "published_at": "2026-11-09T08:00:00+00:00",
-      "keywords": [
-        "ESG",
-        "기부"
-      ],
-      "priority": 4,
-      "ai_analyzed": false,
-      "insight": "",
-      "trend_tags": [],
-      "confidence": "원문 확인 필요",
-      "source_type": "뉴스·기관자료",
-      "final_source": "원문 제공기관",
-      "verification_url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBaekRUZEhyM3d0UmtDTmozQ1plT1dhbEpRUHlJdzZpUGVGYkppYmt6bXZsSFNOQ1VjdHRIMXhnOGVFTzdDQ3pNdm1odnBLdkFnWmFWa2kwWDhySy03dEpDV2VBUFBpQjEwTFV3Vg?oc=5"
-    },
-    {
-      "id": "d33af702f64eec42f9",
-      "category": "csr",
-      "subcategory": "csr",
-      "subcategory_label": "기업 사회공헌 사례",
-      "title": "“댓글 1만 개에 기저귀 10만 장 더”…기부 넘어 투자까지, 달라진 기업 사회공헌 - 동아일보",
-      "summary": "“댓글 1만 개에 기저귀 10만 장 더”…기부 넘어 투자까지, 달라진 기업 사회공헌 동아일보",
-      "source": "동아일보",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5icE9yUUx2aUdhM1F3LVV0Mi1LMlhWNzlHRnQyQ2tTZ2Fxdl8wbGlrTVA1UWJpbXlidVBEZzdrVV9vNUktV3pGV01LaXBxblRBQ1ZFTHM3eVZEUnRuRzIycUtWa1RzOXFiSW1WRVBzRXZvWDNpVUHSAWZBVV95cUxPSG9LQkotS252OWRzcUstSzBfZHdoamJiX0h2VzVCY3JNY3lwckJWR1BScG5PbFdVS0VZNmd6bWNEV0d0VWh6TDJsa1MtbURCNTlxYnNCai0tanZVLVdYTTdKdWM2ZHc?oc=5",
-      "published_at": "2026-10-28T07:00:00+00:00",
-      "keywords": [
-        "사회공헌",
-        "기부"
-      ],
-      "priority": 4,
-      "ai_analyzed": false,
-      "insight": "",
-      "trend_tags": [],
-      "confidence": "원문 확인 필요",
-      "source_type": "뉴스·기관자료",
-      "final_source": "원문 제공기관",
-      "verification_url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5icE9yUUx2aUdhM1F3LVV0Mi1LMlhWNzlHRnQyQ2tTZ2Fxdl8wbGlrTVA1UWJpbXlidVBEZzdrVV9vNUktV3pGV01LaXBxblRBQ1ZFTHM3eVZEUnRuRzIycUtWa1RzOXFiSW1WRVBzRXZvWDNpVUHSAWZBVV95cUxPSG9LQkotS252OWRzcUstSzBfZHdoamJiX0h2VzVCY3JNY3lwckJWR1BScG5PbFdVS0VZNmd6bWNEV0d0VWh6TDJsa1MtbURCNTlxYnNCai0tanZVLVdYTTdKdWM2ZHc?oc=5"
-    },
-    {
-      "id": "46d17ef55590e97298",
-      "category": "ngo",
-      "subcategory": "ngo",
-      "subcategory_label": "NGO 모금·사업",
-      "title": "초록우산어린이재단 소아보약 기부 나눔 활동 - 블로그",
-      "summary": "초록우산어린이재단 소아보약 기부 나눔 활동 블로그",
-      "source": "블로그",
-      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQSmtObkRxS1M3RHpfaGYtVFFXZFg0ZTJqZGNWVXlfRGUtSkNMUU53UExuX3h1dXN5UEpZTHJDc05nWU1sOEpHU3dzWHdYM2wwNDBDNC1BMU1SX2doc1JQX1NKZTFqd293M0RrNGRTdnVjT1h2X2s5TEhlbGQ3bVNvQw?oc=5",
-      "published_at": "2026-09-09T07:00:00+00:00",
-      "keywords": [
-        "기부",
-        "나눔"
-      ],
-      "priority": 4,
-      "ai_analyzed": false,
-      "insight": "",
-      "trend_tags": [],
-      "confidence": "원문 확인 필요",
-      "source_type": "뉴스·기관자료",
-      "final_source": "원문 제공기관",
-      "verification_url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQSmtObkRxS1M3RHpfaGYtVFFXZFg0ZTJqZGNWVXlfRGUtSkNMUU53UExuX3h1dXN5UEpZTHJDc05nWU1sOEpHU3dzWHdYM2wwNDBDNC1BMU1SX2doc1JQX1NKZTFqd293M0RrNGRTdnVjT1h2X2s5TEhlbGQ3bVNvQw?oc=5"
-    },
-    {
-      "id": "ff49a519839e62b1bc",
-      "category": "ngo",
-      "subcategory": "ngo",
-      "subcategory_label": "NGO 모금·사업",
-      "title": "월드비전 후원 저소득 희귀질환아동 맞춤형 보조기기 지원사업 안내(~5/22) - 은평구립 녹번종합사회복지관",
-      "summary": "월드비전 후원 저소득 희귀질환아동 맞춤형 보조기기 지원사업 안내(~5/22) 은평구립 녹번종합사회복지관",
-      "source": "은평구립 녹번종합사회복지관",
-      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNT1cwVkp2c1JaUUFVUXp5LXh4cDRHUTItUEZpVVBIUGNVNldWZmpOQUJhczFZYU1GSzN4SXlpUTJ2UjVoTXRpOFQ1bVN2ck85ZVBoSFdsQmM3UzZyM3h1NEhQb2ZvOE5LQU9PbkRJQnJRbXZ3bl9OZlVpT0YycXptNG1XTQ?oc=5",
-      "published_at": "2026-04-29T07:00:00+00:00",
-      "keywords": [
-        "후원",
-        "지원사업"
-      ],
-      "priority": 4,
-      "ai_analyzed": false,
-      "insight": "",
-      "trend_tags": [],
-      "confidence": "원문 확인 필요",
-      "source_type": "뉴스·기관자료",
-      "final_source": "원문 제공기관",
-      "verification_url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNT1cwVkp2c1JaUUFVUXp5LXh4cDRHUTItUEZpVVBIUGNVNldWZmpOQUJhczFZYU1GSzN4SXlpUTJ2UjVoTXRpOFQ1bVN2ck85ZVBoSFdsQmM3UzZyM3h1NEhQb2ZvOE5LQU9PbkRJQnJRbXZ3bl9OZlVpT0YycXptNG1XTQ?oc=5"
-    },
-    {
-      "id": "da52a0fe758fa4b00f",
-      "category": "ngo",
-      "subcategory": "ngo",
-      "subcategory_label": "NGO 모금·사업",
-      "title": "롯데웰푸드 ‘닥터자일리톨버스’, 거제 수해 피해 어린이집 의료 나눔 - 헤럴드경제",
-      "summary": "롯데웰푸드 ‘닥터자일리톨버스’, 거제 수해 피해 어린이집 의료 나눔 헤럴드경제",
-      "source": "헤럴드경제",
-      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBPdHNFYW9MQU9KVFFKakJTSERoaTRoQ0JIcTYzXzgzQWRlSTJDOVh0M3UxR2xVYTM3blotQUlhSWUtX3J3UDlrWWZhRmpWcVVod3Vjam5n?oc=5",
-      "published_at": "2026-11-27T02:25:09+00:00",
-      "keywords": [
-        "나눔"
-      ],
-      "priority": 3,
-      "ai_analyzed": false,
-      "insight": "",
-      "trend_tags": [],
-      "confidence": "원문 확인 필요",
-      "source_type": "뉴스·기관자료",
-      "final_source": "원문 제공기관",
-      "verification_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBPdHNFYW9MQU9KVFFKakJTSERoaTRoQ0JIcTYzXzgzQWRlSTJDOVh0M3UxR2xVYTM3blotQUlhSWUtX3J3UDlrWWZhRmpWcVVod3Vjam5n?oc=5",
-      "duplicate_count": 3
-    },
-    {
-      "id": "1ee9413701bf13dc11",
-      "category": "ngo",
-      "subcategory": "ngo",
-      "subcategory_label": "NGO 모금·사업",
-      "title": "사랑의열매·선문대, 업무협약…학생·교직원 기부 참여 돕는다 - 파이낸셜뉴스",
-      "summary": "사랑의열매·선문대, 업무협약…학생·교직원 기부 참여 돕는다 파이낸셜뉴스",
-      "source": "파이낸셜뉴스",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE51UjM0QXFoRDZ3MHNmMmxqcVlwVTRkdVh4UGJsV0gzaWM0VFMtRXVqSHJKbzJVSmtNS3VvSEFWbkpWMGplZWZPejlGTVZfeGFtN0ZoT2FFbk1hZw?oc=5",
-      "published_at": "2026-11-27T01:54:07+00:00",
-      "keywords": [
-        "기부"
-      ],
-      "priority": 3,
-      "ai_analyzed": false,
-      "insight": "",
-      "trend_tags": [],
-      "confidence": "원문 확인 필요",
-      "source_type": "뉴스·기관자료",
-      "final_source": "원문 제공기관",
-      "verification_url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE51UjM0QXFoRDZ3MHNmMmxqcVlwVTRkdVh4UGJsV0gzaWM0VFMtRXVqSHJKbzJVSmtNS3VvSEFWbkpWMGplZWZPejlGTVZfeGFtN0ZoT2FFbk1hZw?oc=5"
-    },
-    {
-      "id": "71578209b1bd8da8e2",
-      "category": "ngo",
-      "subcategory": "ngo",
-      "subcategory_label": "NGO 모금·사업",
-      "title": "허금주 유니세프 한국위원회 사무총장, '용신봉사상' 수상 - 파이낸셜뉴스",
-      "summary": "허금주 유니세프 한국위원회 사무총장, '용신봉사상' 수상 파이낸셜뉴스",
-      "source": "파이낸셜뉴스",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9kVDF1Y3E4eHIzSjdiUVVSQjNnN1FTZVI3aWx0czV3UjMtdGxUUVZIS1poYS1kNktMa3pVN21hQlc0OVFMVjZhOHVyNGlCTHZmN2lIa1NwdnhvZw?oc=5",
-      "published_at": "2026-11-27T01:44:36+00:00",
-      "keywords": [
-        "봉사"
-      ],
-      "priority": 3,
-      "ai_analyzed": false,
-      "insight": "",
-      "trend_tags": [],
-      "confidence": "원문 확인 필요",
-      "source_type": "뉴스·기관자료",
-      "final_source": "원문 제공기관",
-      "verification_url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9kVDF1Y3E4eHIzSjdiUVVSQjNnN1FTZVI3aWx0czV3UjMtdGxUUVZIS1poYS1kNktMa3pVN21hQlc0OVFMVjZhOHVyNGlCTHZmN2lIa1NwdnhvZw?oc=5",
-      "duplicate_count": 1
     },
     {
       "id": "b0e79c278b6fd47225",
